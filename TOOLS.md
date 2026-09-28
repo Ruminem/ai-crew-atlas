@@ -2,18 +2,38 @@
 
 클로드를 가운데 두고, 클로드가 직접 못 하는 일을 메워 주는 AI·도구를 모은 사전임. 도구마다 **무료·유료와 이용 조건(개인·상업)**, **등급별 요금과 권한**, **클로드로는 못 하는 것**, **라이선스**를 적음. 조사·갱신 규칙은 [`CLAUDE.md`](CLAUDE.md) 에 있음.
 
+## 목차
+- [읽는 법](#읽는-법)
+- [관계도](#관계도) — [클로드와 어떻게 잇나](#클로드와-어떻게-잇나) · [빈자리를 누가 메우나](#클로드의-빈자리를-누가-메우나) · [조합 예: 마케팅팀](#조합-예-클로드--5개--마케팅팀)
+- [한눈에 보기](#한눈에-보기)
+- [도구](#도구)
+  - 기준선: [Claude](#claude)
+  - 범용: [ChatGPT](#chatgpt) · [Gemini](#gemini)
+  - 조사: [Perplexity](#perplexity) · [NotebookLM](#notebooklm-2026-07-16-부터-gemini-notebook)
+  - 수집: [Firecrawl](#firecrawl)
+  - 제작: [Higgsfield](#higgsfield)
+  - 게시: [Blotato](#blotato)
+  - 기록: [Notion](#notion) · [Obsidian](#obsidian)
+
+각 항목 제목 아래의 단추로 목차 · 한눈에 보기 · 앞뒤 도구로 넘어감. GitHub 파일 화면의 `Outline` 단추로 모든 제목을 펼쳐 볼 수도 있음.
+
 ## 읽는 법
+[<kbd>↑ 목차</kbd>](#목차)
+
 - **`확인 못 함 — <이유>`** 는 빈칸을 추측으로 메우지 않았다는 표시임. 요금이 비어 있으면 결제 전에 공식 가격표를 직접 볼 것
 - **출처 등급**: `공식`(가격표·약관·도움말) · `자사 홍보`(회사 블로그·랜딩의 성능 주장) · `제3자`(리뷰·기사). `(검색 요약)` 은 원문 페이지가 조사 환경에서 막혀 검색 결과 요약으로만 봤다는 뜻임
 - 통화는 표시된 그대로(대개 USD)이고 환산하지 않음. 가격은 세금 별도임
 - **확인한 날짜**는 값이 바뀐 날이 아니라 맞는지 본 날임. 90일이 넘은 항목은 요금부터 의심할 것
 
 ## 관계도
+[<kbd>↑ 목차</kbd>](#목차)
+
 
 ### 클로드와 어떻게 잇나
-굵은 선은 claude.ai 커넥터 디렉터리의 공식 커넥터, 실선은 도구 회사가 낸 공식 MCP·플러그인(대개 "사용자 지정 커넥터"로 URL 을 넣음), 점선은 커뮤니티 부품이나 파일 직접 편집임.
+굵은 주황 선은 claude.ai 커넥터 디렉터리의 공식 커넥터, 회색 실선은 도구 회사가 낸 공식 MCP·플러그인(대개 "사용자 지정 커넥터"로 URL 을 넣음), 점선은 커뮤니티 부품이나 파일 직접 편집임. 칸 색은 세 관계도 모두 역할을 뜻함 — 파랑 범용 · 보라 조사 · 청록 수집 · 분홍 제작 · 노랑 게시 · 초록 기록.
 
 ```mermaid
+%%{init: {"theme": "base", "themeVariables": {"fontSize": "15px", "primaryTextColor": "#1F2328", "textColor": "#1F2328", "lineColor": "#8C959F", "edgeLabelBackground": "#FFFFFF", "clusterBkg": "#F6F8FA", "clusterBorder": "#D0D7DE", "titleColor": "#57606A"}, "flowchart": {"curve": "basis", "nodeSpacing": 28, "rankSpacing": 70}}}%%
 flowchart LR
     C(("Claude"))
 
@@ -48,12 +68,31 @@ flowchart LR
     C -.->|"커뮤니티 MCP · API 키"| GEM
     C -.->|"커뮤니티 MCP · 쿠키"| NLM
     C -.->|"커뮤니티 플러그인 MCP · 공식 CLI · 파일"| OB
+
+    classDef claude fill:#FBE3D6,stroke:#D9774A,stroke-width:2px,color:#5A2A12
+    classDef general fill:#DDE8FB,stroke:#4C7BD9,color:#1B2E57
+    classDef research fill:#EAE2FB,stroke:#8664D6,color:#2E1F57
+    classDef collect fill:#D6F1EA,stroke:#2E9E86,color:#0F3D33
+    classDef create fill:#FBE0EC,stroke:#D6508A,color:#571B35
+    classDef publish fill:#FCEFD2,stroke:#D29A2E,color:#573F0F
+    classDef record fill:#E2F2D9,stroke:#5AA44A,color:#1F3D17
+    class C claude
+    class GPT,GEM general
+    class PPX,NLM research
+    class FC collect
+    class HF create
+    class BL publish
+    class NO,OB record
+    linkStyle 0,1 stroke:#D9774A,stroke-width:3px
+    linkStyle 2,3,4,5 stroke:#6E7781,stroke-width:1.5px
+    linkStyle 6,7,8 stroke:#8C959F,stroke-width:1.5px
 ```
 
 ### 클로드의 빈자리를 누가 메우나
 왼쪽은 `Claude` 항목의 기준선에서 뽑은 "클로드가 직접 못 하는 것"이고, 오른쪽은 그걸 하는 도구임. 실시간 웹 검색은 클로드도 하므로 여기 없음.
 
 ```mermaid
+%%{init: {"theme": "base", "themeVariables": {"fontSize": "15px", "primaryTextColor": "#1F2328", "textColor": "#1F2328", "lineColor": "#8C959F", "edgeLabelBackground": "#FFFFFF", "clusterBkg": "#F6F8FA", "clusterBorder": "#D0D7DE", "titleColor": "#57606A"}, "flowchart": {"curve": "basis", "nodeSpacing": 28, "rankSpacing": 70}}}%%
 flowchart LR
     subgraph 클로드가 직접 못 하는 것
         IMG["이미지 생성·편집"]
@@ -79,12 +118,28 @@ flowchart LR
     EVT --> NO["Notion"]
     LOCAL --> OB["Obsidian"]
     MULTI --> PPX["Perplexity"]
+
+    classDef gap fill:#FFFFFF,stroke:#8C959F,stroke-dasharray:4 3,color:#24292F
+    classDef general fill:#DDE8FB,stroke:#4C7BD9,color:#1B2E57
+    classDef research fill:#EAE2FB,stroke:#8664D6,color:#2E1F57
+    classDef collect fill:#D6F1EA,stroke:#2E9E86,color:#0F3D33
+    classDef create fill:#FBE0EC,stroke:#D6508A,color:#571B35
+    classDef publish fill:#FCEFD2,stroke:#D29A2E,color:#573F0F
+    classDef record fill:#E2F2D9,stroke:#5AA44A,color:#1F3D17
+    class IMG,VID,AUD,CRAWL,SNS,EVT,LOCAL,MULTI gap
+    class GPT,GEM general
+    class PPX,NLM research
+    class FC collect
+    class HF create
+    class BL publish
+    class NO,OB record
 ```
 
 ### 조합 예: 클로드 + 5개 = 마케팅팀
 유튜브 영상([x-iEypjYD3w](https://www.youtube.com/watch?v=x-iEypjYD3w))이 보여 준 구성임. 영상 본문은 조사 환경에서 열지 못했고, 영상 속 도식의 캡처로만 확인함 — 각 단계에서 무엇을 주고받는지는 도식에 적힌 역할 이름까지만 옮김.
 
 ```mermaid
+%%{init: {"theme": "base", "themeVariables": {"fontSize": "15px", "primaryTextColor": "#1F2328", "textColor": "#1F2328", "lineColor": "#8C959F", "edgeLabelBackground": "#FFFFFF", "clusterBkg": "#F6F8FA", "clusterBorder": "#D0D7DE", "titleColor": "#57606A"}, "flowchart": {"curve": "basis", "nodeSpacing": 28, "rankSpacing": 70}}}%%
 flowchart LR
     C(("Claude<br/>지휘"))
     P["01 조사<br/>Perplexity"]
@@ -99,12 +154,29 @@ flowchart LR
     C -.-> H
     C -.-> B
     C -.-> N
+
+    classDef claude fill:#FBE3D6,stroke:#D9774A,stroke-width:2px,color:#5A2A12
+    classDef research fill:#EAE2FB,stroke:#8664D6,color:#2E1F57
+    classDef collect fill:#D6F1EA,stroke:#2E9E86,color:#0F3D33
+    classDef create fill:#FBE0EC,stroke:#D6508A,color:#571B35
+    classDef publish fill:#FCEFD2,stroke:#D29A2E,color:#573F0F
+    classDef record fill:#E2F2D9,stroke:#5AA44A,color:#1F3D17
+    class C claude
+    class P research
+    class F collect
+    class H create
+    class B publish
+    class N record
+    linkStyle 0,1,2,3 stroke:#57606A,stroke-width:2.5px
+    linkStyle 4,5,6,7,8 stroke:#D9774A,stroke-width:1.5px
 ```
 
 - 다섯 개를 다 붙이면 **돈이 드는 자리가 셋**임: Higgsfield·Blotato 는 유료 등급이어야 MCP 가 열리고, Perplexity MCP 는 구독이 아니라 API 사용량으로 과금됨. Firecrawl 은 무료 등급(월 1,000 크레딧)으로도 붙음. Notion 커넥터에 유료 등급 조건이 붙는지는 확인 못 함 — 조사에서 조건이 나오지 않았음
 - 가장 싸게 다 붙이는 값(월 결제 기준): Higgsfield Basic $9 + Blotato Starter $29 + Perplexity API 사용량 + 클로드 요금제. Higgsfield 등급 체계는 확인 못 함이 섞여 있어 아래 항목을 볼 것
 
 ## 한눈에 보기
+[<kbd>↑ 목차</kbd>](#목차)
+
 | 도구 | 역할 | 무료·유료 | 최저 유료가 (월) | 클로드와 잇는 법 | 라이선스 | 확인한 날짜 |
 |---|---|---|---|---|---|---|
 | [Claude](#claude) | 범용 · 기준선 | 부분 무료 · 개인·업무 모두 무료 등급 가능 · 생성물 상업 이용 가능 | Pro $20 (연 결제 $17) | 해당 없음 | 독점 | 2026-09-29 |
@@ -119,8 +191,12 @@ flowchart LR
 | [Obsidian](#obsidian) | 기록 | 부분 무료 · 앱은 개인·업무 모두 무료(2025-02-20 부터) · Sync·Publish 만 유료 | Sync Standard $5 (연 결제 $4) — 앱은 무료 | 커뮤니티 플러그인 MCP · 공식 CLI · 파일 | 독점 소프트웨어 (플러그인 MIT) | 2026-09-29 |
 
 ## 도구
+[<kbd>↑ 목차</kbd>](#목차)
+
 
 ### Claude
+[<kbd>↑ 목차</kbd>](#목차) [<kbd>☰ 한눈에 보기</kbd>](#한눈에-보기) [<kbd>ChatGPT →</kbd>](#chatgpt)
+
 - **역할**: 범용
 - **한 줄**: Anthropic 의 대화형 AI. 웹·데스크톱·모바일 앱(claude.ai), 터미널·IDE 코딩 에이전트(Claude Code), 작업 위임(Cowork)을 한 구독으로 씀
 - **클로드와 잇는 법**: 해당 없음 — 기준선 항목임. 밖의 도구는 클로드 쪽에서 커넥터(원격 MCP, OAuth)와 Claude Code 의 MCP 서버·플러그인으로 붙임
@@ -176,6 +252,8 @@ flowchart LR
 - [anthropics/claude-code LICENSE.md](https://github.com/anthropics/claude-code/blob/main/LICENSE.md) — 공식
 
 ### ChatGPT
+[<kbd>↑ 목차</kbd>](#목차) [<kbd>☰ 한눈에 보기</kbd>](#한눈에-보기) [<kbd>← Claude</kbd>](#claude) [<kbd>Gemini →</kbd>](#gemini)
+
 - **역할**: 범용
 - **한 줄**: OpenAI 의 대화형 AI. 채팅·이미지 생성(ChatGPT Images)·음성·딥 리서치·에이전트 모드·코딩 에이전트(Codex)를 한 구독으로 씀
 - **클로드와 잇는 법**: 공식 Claude Code 플러그인 `openai/codex-plugin-cc` (설치: `/plugin marketplace add openai/codex-plugin-cc` → `/plugin install codex@openai-codex` → `/codex:setup`). `/codex:review`·`/codex:rescue` 등으로 Codex 에게 리뷰·작업을 넘김. 인증은 로컬 Codex CLI 로그인을 그대로 씀 — ChatGPT 계정(Free 포함) 또는 OpenAI API 키. 쓴 양은 Codex 사용 한도에서 빠짐. Codex CLI 를 MCP 서버로 띄우던 `codex mcp-server` 는 2026-08-24 폐기 예고 후 Codex CLI 0.154.0(2026-09-09)에서 없어졌음 — 그걸 쓰는 옛 글·커뮤니티 설정은 지금 안 돎. claude.ai 앱용 공식 커넥터는 확인 못 함 — 커넥터 디렉터리에서 찾아보지 않았음. API 키(`OPENAI_API_KEY`)로 모델을 부르는 커뮤니티 MCP 서버는 여럿 있음
@@ -242,6 +320,8 @@ flowchart LR
 - [trailofbits/skills issue #301 — codex mcp-server removed in 0.154.0](https://github.com/trailofbits/skills/issues/301) — 제3자(Codex 릴리스 노트 인용)
 
 ### Gemini
+[<kbd>↑ 목차</kbd>](#목차) [<kbd>☰ 한눈에 보기</kbd>](#한눈에-보기) [<kbd>← ChatGPT</kbd>](#chatgpt) [<kbd>Perplexity →</kbd>](#perplexity)
+
 - **역할**: 범용
 - **한 줄**: Google 의 대화형 AI. Gemini 앱과 Gmail·Docs·Sheets 안의 Gemini, 이미지(Nano Banana)·영상(Veo·Gemini Omni·Flow) 생성, 딥 리서치, 상시 에이전트(Gemini Spark)를 Google AI 요금제(Google One)로 묶어 팜
 - **클로드와 잇는 법**: 모델을 부르는 공식 MCP 서버·커넥터는 확인 못 함. 공식으로 있는 것은 **Gemini API Docs MCP** (`https://gemini-api-docs-mcp.dev`, 원격 HTTP) 하나인데 **Gemini 문서를 검색해 주는 것뿐이고 Gemini 모델을 부르지는 않음**. 인증 방식은 확인 못 함 — ai.google.dev 가 막혀 있음. 모델을 부르려면 커뮤니티 MCP 서버(`GEMINI_API_KEY` API 키 인증)나 커뮤니티 Claude Code 플러그인(`gemini-plugin-cc` 류, Google 과 무관하다고 스스로 밝힘)을 씀. 주의: 구독 계정으로 로그인하던 Gemini CLI 는 **2026-06-18 에 소비자 등급(무료·AI Pro·AI Ultra) 서비스를 끝내고** Antigravity CLI 로 넘어갔음 — Gemini CLI 를 감싼 옛 플러그인은 API 키 없이는 안 돌 가능성이 큼(추정). 참고로 클로드의 Google Workspace 커넥터(Gmail·Calendar·Drive, OAuth)는 Google 앱에 붙는 것이지 Gemini 에 붙는 것이 아님
@@ -306,6 +386,8 @@ flowchart LR
 - [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) — 공식
 
 ### Perplexity
+[<kbd>↑ 목차</kbd>](#목차) [<kbd>☰ 한눈에 보기</kbd>](#한눈에-보기) [<kbd>← Gemini</kbd>](#gemini) [<kbd>NotebookLM →</kbd>](#notebooklm-2026-07-16-부터-gemini-notebook)
+
 - **역할**: 조사
 - **한 줄**: 질문마다 웹을 검색해 출처 번호가 달린 답을 내는 검색형 AI 서비스. 웹·앱·Comet 브라우저로 쓰고, 개발자용으로 Sonar·Search·Agent API 를 팜
 - **클로드와 잇는 법**: 공식 MCP 서버 — 원격 `https://api.perplexity.ai/mcp`(Streamable HTTP) 또는 로컬 npm `@perplexity-ai/mcp-server`(v1.3.0, 저장소 `perplexityai/modelcontextprotocol`). 인증은 API 키(`Authorization: Bearer` 헤더 또는 `PERPLEXITY_API_KEY`) 또는 원격 서버의 OAuth 로그인. claude.ai 에는 공식 디렉터리 커넥터가 아니라 "사용자 지정 커넥터"로 URL 을 넣어 붙임(검색 요약 기준. `claude.com/connectors/perplexity` 는 404 였음 — 다른 이름으로 등재됐을 가능성까지는 확인 못 함). 별도로 Perplexity Computer 용 MCP 서버도 있음(OAuth, 구독 크레딧 차감)
@@ -387,6 +469,8 @@ MCP 서버가 무엇으로 과금되는지
 - [Perplexity Comet pricing in 2026 — eesel AI](https://www.eesel.ai/blog/perplexity-comet-pricing) — 제3자
 
 ### NotebookLM (2026-07-16 부터 Gemini Notebook)
+[<kbd>↑ 목차</kbd>](#목차) [<kbd>☰ 한눈에 보기</kbd>](#한눈에-보기) [<kbd>← Perplexity</kbd>](#perplexity) [<kbd>Firecrawl →</kbd>](#firecrawl)
+
 - **역할**: 조사
 - **한 줄**: 사용자가 넣은 자료(PDF·웹페이지·유튜브·구글 문서 등)만 근거로 답하고, 그 자료로 오디오·비디오 개요·마인드맵·슬라이드·퀴즈 등을 만들어 주는 구글의 노트북형 AI 서비스
 - **이름**: 2026-07-16 Google 공식 블로그 "NotebookLM is now Gemini Notebook" 로 이름이 바뀜. 같은 제품이고 노트북·링크는 자동 리디렉트됨. 도움말 주소도 `support.google.com/gemininotebook` 으로 옮겨졌고, 기업판도 "Gemini Notebook Enterprise" 로 바뀌었으나 API 엔드포인트는 그대로임(Google Cloud 문서). 이름 변경과 함께 노트북마다 코드를 쓰고 돌리는 "secure cloud computer" 가 붙었음 — 공식 블로그·Workspace Updates 는 도메인 차단으로 원문을 못 열고 검색 요약으로 확인함
@@ -456,6 +540,8 @@ NotebookLM 은 따로 파는 요금제가 없고 Google AI 구독(Google One)에
 - [Gemini Notebook is ditching its simple daily limits — Android Police](https://www.androidpolice.com/gemini-notebook-ditching-daily-limits-more-complicated/) — 제3자
 
 ### Firecrawl
+[<kbd>↑ 목차</kbd>](#목차) [<kbd>☰ 한눈에 보기</kbd>](#한눈에-보기) [<kbd>← NotebookLM</kbd>](#notebooklm-2026-07-16-부터-gemini-notebook) [<kbd>Higgsfield →</kbd>](#higgsfield)
+
 - **역할**: 수집
 - **한 줄**: 웹페이지·사이트 전체를 긁어 LLM 이 읽기 좋은 마크다운이나 스키마에 맞춘 JSON 으로 돌려주는 웹 데이터 API. 검색·크롤·사이트맵·브라우저 조작·변경 감시까지 한 API 로 함
 - **클로드와 잇는 법**: 두 갈래 다 공식임
@@ -538,6 +624,8 @@ MCP·커넥터가 무엇으로 과금되는지
 - [Is Firecrawl Free? (2026) — Costbench](https://costbench.com/software/web-scraping/firecrawl/free-plan/) — 제3자
 
 ### Higgsfield
+[<kbd>↑ 목차</kbd>](#목차) [<kbd>☰ 한눈에 보기</kbd>](#한눈에-보기) [<kbd>← Firecrawl</kbd>](#firecrawl) [<kbd>Blotato →</kbd>](#blotato)
+
 - **역할**: 제작
 - **한 줄**: Kling·Veo·Sora·Seedance·Nano Banana 등 여러 회사의 영상·이미지 생성 모델을 크레딧 하나로 묶어 쓰게 하는 모음형 생성 플랫폼임. 자체 모델(Soul 등)과 캐릭터 학습 기능도 있음
 - **클로드와 잇는 법**: 공식 MCP 서버 `https://mcp.higgsfield.ai/mcp` — claude.ai·데스크톱에서 설정 › 커넥터 › "사용자 지정 커넥터 추가"로 URL 을 넣는 방식(디렉터리 등록 여부는 확인 못 함). 인증은 OAuth(API 키 불필요). Claude Code 에서도 같은 주소로 붙음. **유료 구독이 있어야 쓸 수 있음** — Free 는 크레딧이 0이라 MCP 불가(공식 도움말·제3자 일치). 2026-08-22 변경 기록 기준으로 신규 사용자에게 3일 MCP 체험(카드 인증, MCP 전용 100크레딧, 해지 안 하면 월 결제 Plus 로 전환)이 있다는 제3자 서술이 있음 — 원문(변경 기록)은 못 열어 봄. 8월 22일에 Plus 라는 이름이 쓰였다는 것은 "8월까지 Basic/Pro/Max 로 바뀌었다"는 서술과 어긋나서, 개편 시점과 현재 어느 등급으로 전환되는지는 확인 못 함. 자사 블로그 요약에도 "Starter $9/120크레딧"처럼 옛 이름과 새 값이 섞여 나옴
@@ -632,6 +720,8 @@ MCP·커넥터가 무엇으로 과금되는지
 - [Higgsfield Pricing 2026 | Scopeful](https://www.scopeful.org/blog/higgsfield-pricing-2026) — 제3자 (검색 요약, 약관 4.4조 인용)
 
 ### Blotato
+[<kbd>↑ 목차</kbd>](#목차) [<kbd>☰ 한눈에 보기</kbd>](#한눈에-보기) [<kbd>← Higgsfield</kbd>](#higgsfield) [<kbd>Notion →</kbd>](#notion)
+
 - **역할**: 게시
 - **한 줄**: 글·이미지·영상을 AI 로 만들고 9개 SNS 에 예약·게시하는 소셜 미디어 자동화 도구임. API·MCP 로 AI 에이전트가 직접 게시하게 하는 쪽을 앞세움
 - **클로드와 잇는 법**: 공식 MCP 서버 `https://mcp.blotato.com/mcp`(원격 호스팅, 로컬 프로세스 없음) — claude.ai·Claude 데스크톱·Cowork 는 "사용자 지정 커넥터 추가"로 URL 을 넣고 **OAuth** 로 인증(브라우저에 Blotato 로그인 상태여야 함). Claude Code 등 나머지는 **API 키**를 `blotato-api-key` 헤더로 넣음(키는 Settings › API 에서 복사, 끝의 `=` 까지 포함). 클로드 공식 커넥터 디렉터리에는 없고 URL 로 추가하는 방식이라는 서술이 있음(자사 블로그). **유료 구독이 있어야 API·MCP 를 쓸 수 있음** — 무료 체험 중에는 API 가 막히고, API 키를 만드는 순간 체험이 끝나고 Starter 유료 구독이 시작됨(공식 도움말). Blotato 가 따로 두는 MCP 호출 한도는 확인 못 함 — 검색 결과에는 각 SNS 쪽 한도만 나옴
@@ -693,6 +783,8 @@ MCP·커넥터가 무엇으로 과금되는지
 - [Blotato Review: My Favorite AI Tool for Social Media (2026) | Ryan Doser](https://ryandoser.com/blotato-review/) — 제3자 (검색 요약, 제휴 링크 가능성 있음 — 확인 못 함)
 
 ### Notion
+[<kbd>↑ 목차</kbd>](#목차) [<kbd>☰ 한눈에 보기</kbd>](#한눈에-보기) [<kbd>← Blotato</kbd>](#blotato) [<kbd>Obsidian →</kbd>](#obsidian)
+
 - **역할**: 기록
 - **한 줄**: 문서·위키·데이터베이스·프로젝트 관리를 한 워크스페이스에 담는 협업 SaaS. Business 등급부터 Notion AI(Notion Agent, AI Meeting Notes, Enterprise Search)와 트리거로 스스로 도는 Custom Agents 가 붙음
 - **클로드와 잇는 법**: **공식 커넥터** — claude.ai 커넥터 디렉터리의 Notion(Notion 이 직접 냄, "Anthropic verified", 2025-11 등록). 실체는 Notion 이 호스팅하는 **공식 원격 MCP 서버** `https://mcp.notion.com/mcp`(SSE 는 `https://mcp.notion.com/sse` — 제3자 검색 요약). 인증은 **OAuth**(브라우저에서 Notion 로그인, 사용자의 기존 Notion 권한을 그대로 따름). 따로 자체 호스팅용 공식 로컬 서버 `@notionhq/notion-mcp-server`(v2.5.2, MIT)가 있으나 Notion 이 "더 이상 적극 유지·지원하지 않음, 원격 MCP 를 쓰라"고 README 에 적음 — 이쪽은 Notion 통합 토큰(`NOTION_TOKEN`)과 페이지마다 연결 추가가 필요함. 반대 방향으로 Notion 3.6(2026-07-01)의 **External Agents**(API 는 Alpha)로 Claude 를 Notion 안의 에이전트로 불러 작업을 맡길 수 있음(Notion 릴리스 노트 검색 요약)
@@ -756,6 +848,8 @@ MCP·커넥터가 무엇으로 과금되는지
 - [Notion Custom Agents: Full Tutorial & Pricing Changes — Matthias Frank](https://matthiasfrank.de/en/notion-custom-agents-full-tutorial-use-cases-pricing-changes/) · [techresolve](https://techresolve.blog/2026/03/04/notion-credits-to-cost-10-per-1000-for-notions/) — 제3자 (검색 요약: 2026-05-04 credits 과금)
 
 ### Obsidian
+[<kbd>↑ 목차</kbd>](#목차) [<kbd>☰ 한눈에 보기</kbd>](#한눈에-보기) [<kbd>← Notion</kbd>](#notion)
+
 - **역할**: 기록
 - **한 줄**: 내 컴퓨터 폴더(볼트)에 든 마크다운 파일을 링크·그래프·플러그인으로 엮어 쓰는 로컬 우선 노트 앱. 동기화(Sync)와 웹 게시(Publish)는 유료 부가 서비스임
 - **클로드와 잇는 법**: 공식 커넥터 없음(`claude.com/connectors/obsidian` 이 404, 제3자 글도 디렉터리에 없다고 적음), Obsidian 이 내는 MCP 서버 없음(공식 도움말에 MCP 언급 없음) — 경로는 셋임 (공식 도구를 CLI·Headless 로 나눠 아래 `클로드와 잇는 경로` 표에 네 줄로 적음)

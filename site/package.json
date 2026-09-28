@@ -1,0 +1,14 @@
+{
+  "name": "ai-crew-atlas-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TOOLS.md 를 나무위키 꼴 웹 페이지 한 장으로 만든다",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "github-slugger": "2.0.0",
+    "marked": "18.0.14"
+  }
+}

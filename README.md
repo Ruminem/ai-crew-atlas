@@ -17,6 +17,9 @@ Everything lives in [`TOOLS.md`](TOOLS.md):
 
 Current entries: Claude (the baseline), ChatGPT, Gemini, Perplexity, NotebookLM (now Gemini Notebook), Firecrawl, Higgsfield, Blotato, Notion, Obsidian.
 
+## Web page
+The same content as a single wiki-style page — numbered headings you can fold, a table of contents that follows your scroll (on the right on wide screens, behind the ☰ button on phones), and floating buttons to jump to the top or bottom: [claude.ai artifact](https://claude.ai/artifact/HswUSVDhrA1RkDQC18sq1Y) (private; shared from its Share menu). It is built from `TOOLS.md` by the code in [`site/`](site/) — run `npm ci && npm run build` there.
+
 ## How far to trust it
 Prices go stale fastest. Every entry carries the date it was last checked, and a cell that couldn't be verified says so instead of guessing. Many vendor pricing pages were unreachable from the research environment, so a lot of values come from search-result summaries — those sources are marked `(검색 요약)`. Check the official pricing page before you pay.
 
@@ -24,7 +27,7 @@ Prices go stale fastest. Every entry carries the date it was last checked, and a
 The research and update rules are in [`CLAUDE.md`](CLAUDE.md) (Korean).
 
 ## License
-[CC BY 4.0](LICENSE). Product names belong to their owners; this project is not affiliated with any of them.
+The text is [CC BY 4.0](LICENSE); the page code in `site/` is [Apache-2.0](site/LICENSE). Product names belong to their owners; this project is not affiliated with any of them.
 
 ---
 
@@ -47,6 +50,9 @@ The research and update rules are in [`CLAUDE.md`](CLAUDE.md) (Korean).
 
 지금 있는 항목: Claude(기준선), ChatGPT, Gemini, Perplexity, NotebookLM(지금은 Gemini Notebook), Firecrawl, Higgsfield, Blotato, Notion, Obsidian.
 
+### 웹 페이지
+같은 내용을 위키처럼 한 장으로 본 것임 — 접히는 번호 붙은 제목, 스크롤을 따라가는 목차(넓은 화면은 오른쪽, 휴대폰은 ☰ 단추 안), 맨 위·맨 아래로 가는 떠 있는 단추가 있음: [claude.ai 아티팩트](https://claude.ai/artifact/HswUSVDhrA1RkDQC18sq1Y) (비공개, Share 메뉴로 공유함). [`site/`](site/) 의 코드가 `TOOLS.md` 로 만듦 — 거기서 `npm ci && npm run build` 를 돌림.
+
 ### 어디까지 믿을 수 있나
 요금이 제일 빨리 낡음. 항목마다 마지막으로 확인한 날짜가 있고, 확인하지 못한 칸은 추측으로 메우지 않고 그렇다고 적음. 조사 환경에서 여러 회사의 가격표 페이지가 막혀 검색 결과 요약으로 본 값이 많음 — 그런 출처에는 `(검색 요약)` 이 붙어 있음. 결제하기 전에 공식 가격표를 직접 볼 것.
 
@@ -54,4 +60,4 @@ The research and update rules are in [`CLAUDE.md`](CLAUDE.md) (Korean).
 조사·갱신 규칙은 [`CLAUDE.md`](CLAUDE.md) 에 있음.
 
 ### 라이선스
-[CC BY 4.0](LICENSE). 제품 이름은 각 회사의 것이고, 이 프로젝트는 그 어느 회사와도 관계없음.
+글은 [CC BY 4.0](LICENSE), `site/` 의 페이지 코드는 [Apache-2.0](site/LICENSE) 임. 제품 이름은 각 회사의 것이고, 이 프로젝트는 그 어느 회사와도 관계없음.

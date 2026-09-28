@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Apache-2.0
-// TOOLS.md 를 나무위키 꼴 웹 페이지 한 장(site/atlas.html)으로 만든다. 사용: npm run build
+// TOOLS.md 를 위키 꼴 웹 페이지 한 장(site/atlas.html)으로 만든다. 사용: npm run build
 // 제목 번호·목차·접기 틀은 여기서 다 만들어 두고, 페이지의 스크립트는 스크롤·접기·이동만 한다.
 import fs from 'node:fs';
 import path from 'node:path';

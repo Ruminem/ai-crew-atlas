@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Apache-2.0
-// TOOLS.md 를 위키 꼴 웹 페이지 한 장(site/atlas.html)으로 만든다. 사용: npm run build
+// TOOLS.md 를 위키 꼴 웹 페이지 한 장으로 만든다 — 아티팩트용 조각 site/atlas.html 과 Pages 용 문서 site/dist/index.html. 사용: npm run build
 // 제목 번호·목차·접기 틀은 여기서 다 만들어 두고, 페이지의 스크립트는 스크롤·접기·이동만 한다.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -146,3 +146,30 @@ page = page.replace(/<!-- 틀:[\s\S]*?-->\n/, '<!-- 자동 생성: site 에서 n
 
 fs.writeFileSync(path.join(here, 'atlas.html'), page);
 console.log(`atlas.html · 제목 ${toc.length}개 · 관계도 ${diagrams}개 · ${(page.length / 1024).toFixed(0)}KB · ${stamp}`);
+
+// GitHub Pages 판(dist/index.html). 아티팩트는 문서 뼈대와 mermaid 를 호스트가 대 주지만
+// Pages 는 맨 파일이라 뼈대를 두르고 mermaid 를 CDN 에서 부른다. 저장소에 싣지 않으므로
+// mermaid 가 딸고 오는 elkjs(EPL-2.0) 같은 것을 재배포하지 않는다. 판을 올릴 때는 이 줄만 고친다
+const MERMAID = 'https://cdn.jsdelivr.net/npm/mermaid@12.0.0/dist/mermaid.esm.min.mjs';
+const cut = page.indexOf('</style>\n');
+if (cut < 0) throw new Error('틀에서 </style> 을 못 찾음');
+const doc = `<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+${page.slice(0, cut)}</style>
+</head>
+<body>
+${page.slice(cut + '</style>\n'.length)}<script type="module">
+// 절은 처음에 다 펴져 있어 그림 크기가 제대로 잡힌다. 못 불러오면 관계도 코드가 글자로 남는다
+import mermaid from '${MERMAID}';
+mermaid.initialize({ startOnLoad: false, securityLevel: 'strict' });
+await mermaid.run({ querySelector: 'pre.mermaid' });
+</script>
+</body>
+</html>
+`;
+fs.mkdirSync(path.join(here, 'dist'), { recursive: true });
+fs.writeFileSync(path.join(here, 'dist', 'index.html'), doc);
+console.log(`dist/index.html · ${(doc.length / 1024).toFixed(0)}KB`);

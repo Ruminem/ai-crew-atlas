@@ -16,3 +16,9 @@ The page loads these fonts from Google Fonts at view time; they are not redistri
 | IBM Plex Sans KR | OFL-1.1 | https://github.com/google/fonts/tree/main/ofl/ibmplexsanskr |
 | IBM Plex Mono | OFL-1.1 | https://github.com/google/fonts/tree/main/ofl/ibmplexmono |
 | Hahmlet | OFL-1.1 | https://github.com/google/fonts/tree/main/ofl/hahmlet |
+
+The GitHub Pages build (`dist/index.html`) loads this library from jsDelivr at view time to draw the diagrams; it is not redistributed here.
+
+| Library | Version | License | Source |
+|---|---|---|---|
+| mermaid | 12.0.0 | MIT | https://github.com/mermaid-js/mermaid |

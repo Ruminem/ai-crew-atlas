@@ -52,7 +52,8 @@
 }
 
 * { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+/* 브라우저가 스스로 해시로 스크롤할 때(불러오기가 끝난 뒤 한 번 더 한다)도 제목이 머리 띠에 안 깔리게. 52px 띠 + 12px */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-padding-top: calc(var(--safe-t) + 64px); }
 body {
   margin: 0;
   background: var(--bg);

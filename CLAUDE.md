@@ -10,15 +10,18 @@
 - `site/` — `TOOLS.md` 를 위키 꼴 웹 페이지 한 장으로 만드는 코드. 코드라서 `site/LICENSE` 는 Apache-2.0 이다. 아래 `웹 페이지` 절
   - `build.mjs` — 마크다운 → HTML, 제목 번호 · 접는 절 · 오른쪽 목차 · 역할 색 칩을 만든다
   - `atlas.tpl.html` — 페이지 틀. 색 · 글꼴 · 반응형 · 떠 있는 단추 · 스크롤 따라가는 목차 스크립트
-  - `THIRD_PARTY_NOTICES.md` — 빌드에 쓰는 의존성과 페이지가 불러오는 글꼴의 라이선스. 의존성·글꼴을 바꾸면 같이 고친다
-  - `atlas.html` — 생성물. 커밋하지 않는다(`.gitignore`). 읽지 말고 틀을 읽는다
+  - `THIRD_PARTY_NOTICES.md` — 빌드에 쓰는 의존성과 페이지가 불러오는 글꼴·mermaid 의 라이선스. 셋 중 하나를 바꾸면 같이 고친다
+  - `atlas.html` · `dist/index.html` — 생성물. 앞은 아티팩트용 조각, 뒤는 Pages 용 온전한 문서다. 커밋하지 않는다(`.gitignore`). 읽지 말고 틀을 읽는다
+- `.github/workflows/pages.yml` — main 에 `TOOLS.md`·`site/` 가 바뀌어 들어오면 `site/dist/` 를 만들어 GitHub Pages 에 올린다
 
 ## 웹 페이지
-아티팩트 https://claude.ai/artifact/HswUSVDhrA1RkDQC18sq1Y 로 올라가 있다. 비공개이고 공유는 페이지의 Share 메뉴에서 한다.
-- **`TOOLS.md` 를 고친 커밋에서 페이지도 다시 올린다.** `cd site && npm ci && npm run build` 뒤 `site/atlas.html` 을 아티팩트로 올린다. 이 주소를 모르는 세션에서 올리면 새 주소가 생기므로 `url` 에 위 주소를 넘긴다
+GitHub Pages https://ruminem.github.io/ai-crew-atlas/ 가 본판이다. main 에 푸시하면 `pages` 워크플로가 알아서 다시 올리므로 손으로 할 일이 없다.
+- **워크플로는 저장소가 private 이면 잡을 건너뛴다.** 무료 요금제의 Pages 는 public 저장소에서만 켜지기 때문이다. 저장소 설정의 Pages 에서 Source 를 `GitHub Actions` 로 두어야 올라간다
+- 아티팩트 https://claude.ai/artifact/HswUSVDhrA1RkDQC18sq1Y 는 Pages 전에 쓰던 비공개 사본이다. 다시 올리는 것은 시켰을 때만 하고, 올릴 때는 `site/atlas.html` 을 `url` 에 위 주소를 넘겨 올린다 — 안 넘기면 새 주소가 생긴다
 - 빌드는 기대하는 개수(관계도 3 · 도구 10 · 절 머리 `↑ 목차` 줄 4 · 도구 단추 줄 10)가 안 맞으면 멈춘다. 도구를 넣거나 빼면 `build.mjs` 의 숫자도 같이 고친다 — 멈추는 것은 `TOOLS.md` 의 꼴이 바뀌어 페이지가 조용히 틀어지는 것을 막으려는 것이다
 - 제목 id 는 github-slugger 로 만든다. GitHub 에서 쓰는 `#앵커` 가 페이지에서도 그대로 걸린다
-- 관계도는 `<pre class="mermaid">` 로만 내보내고 아티팩트 쪽이 그린다. 로컬 브라우저로 `atlas.html` 을 열면 그림 대신 원문이 보이는 것이 정상이다
+- 관계도는 `<pre class="mermaid">` 로 내보낸다. 아티팩트는 호스트가 그리고, Pages 판은 `build.mjs` 의 `MERMAID` 주소(jsDelivr, 판 고정)에서 불러 그린다. 저장소에 mermaid 를 싣지 않는 것은 딸린 elkjs 가 EPL-2.0 이라 재배포를 피하려는 것이다. 로컬에서 `atlas.html` 을 열면 그림 대신 원문이 보이는 것이 정상이다
+- 주소에 `#앵커` 를 달고 열면 브라우저가 불러오기를 마친 뒤 한 번 더 그 자리로 스크롤한다. 제목이 머리 띠에 안 깔리는 것은 `html` 의 `scroll-padding-top` 덕이므로 띠 높이를 바꾸면 같이 고친다
 - **기본은 밝은 화면이다.** 시스템·호스트의 다크 설정(`prefers-color-scheme`, 호스트가 붙이는 `data-theme`)을 따라가지 않고 머리 띠의 단추가 `data-atlas-theme="dark"` 를 붙일 때만 어두워진다. 고른 것은 `localStorage` 의 `atlas-theme` 에 두고, 못 읽으면 밝게 둔다. 사용자가 정한 것이다
 - hover 모양은 `@media (hover: hover)` 안에만 둔다. 터치 기기는 탭한 뒤 hover 가 남아 단추가 눌린 채로 보인다
 - 모바일은 iOS 사파리 · 안드로이드 크롬을 같이 맞춘다: 떠 있는 것은 `env(safe-area-inset-*)` 를 더하고, 높이는 `vh` 뒤에 `dvh` 를 한 번 더 적고, 목차 서랍은 `overscroll-behavior: contain` 으로 뒤 페이지가 같이 밀리지 않게 한다. 넓이 1100px 이 경계다(넘으면 오른쪽 고정 목차, 안 넘으면 ☰ 서랍)

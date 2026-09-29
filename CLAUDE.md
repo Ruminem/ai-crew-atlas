@@ -5,6 +5,7 @@
 ## 파일 지도
 - `TOOLS.md` — 사전 본문. 관계도 · 한눈에 보기 표 · 도구 항목. 이 저장소의 전부다
 - `NEXT.md` — 세션 끝에 남기는 3줄 (여기까지 됨 / 다음 할 것 / 막힌 것)
+- `.claude/skills/refresh/SKILL.md` — 항목을 공식 출처로 다시 확인하는 절차. 매일 도는 루틴과 `/refresh` 가 같이 쓴다
 - `README.md` — 영어·한국어 소개. 본문 내용을 옮겨 적지 않고 `TOOLS.md` 를 가리킨다
 - `LICENSE` — CC BY 4.0. 코드가 아니라 글이라서다
 - `site/` — `TOOLS.md` 를 위키 꼴 웹 페이지 한 장으로 만드는 코드. 코드라서 `site/LICENSE` 는 Apache-2.0 이다. 아래 `웹 페이지` 절

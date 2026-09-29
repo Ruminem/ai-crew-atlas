@@ -154,6 +154,10 @@ const git = (...args) => execFileSync('git', args, { cwd: root, encoding: 'utf8'
 const [date, sha] = git('log', '-1', '--format=%cs %h', '--', 'TOOLS.md').split(' ');
 const dirty = git('status', '--porcelain', '--', 'TOOLS.md') ? ' · 커밋 안 된 수정 있음' : '';
 const stamp = `TOOLS.md ${date} · ${sha}${dirty}`;
+// 페이지 시각은 페이지를 바꾸는 파일(TOOLS.md · site/)의 마지막 커밋 시각이다. 빌드 시각을 쓰면 같은 입력에서도 산출물이 달라진다
+const pagedAt = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Asia/Seoul', dateStyle: 'short', timeStyle: 'short' })
+  .format(new Date(git('log', '-1', '--format=%cI', '--', 'TOOLS.md', 'site')));
+const paged = `페이지 ${pagedAt}${git('status', '--porcelain', '--', 'site') ? ' · 커밋 안 된 수정 있음' : ''}`;
 
 const fill = (s, key, val) => {
   if (!s.includes(key)) throw new Error(`틀에 ${key} 가 없음`);
@@ -163,10 +167,11 @@ let page = tpl;
 page = fill(page, '<!--CONTENT-->', html);
 page = fill(page, '<!--TOC-->', tocHtml(toc));
 page = fill(page, '<!--STAMP-->', esc(stamp));
+page = fill(page, '<!--PAGED-->', esc(paged));
 page = page.replace(/<!-- 틀:[\s\S]*?-->\n/, '<!-- 자동 생성: site 에서 npm run build 로 다시 만들 것. 고칠 때는 atlas.tpl.html 이나 ../TOOLS.md 를 고친다 -->\n');
 
 fs.writeFileSync(path.join(here, 'atlas.html'), page);
-console.log(`atlas.html · 제목 ${toc.length}개 · 관계도 ${diagrams}개 · 카드 표 ${cardTables}개 · ${(page.length / 1024).toFixed(0)}KB · ${stamp}`);
+console.log(`atlas.html · 제목 ${toc.length}개 · 관계도 ${diagrams}개 · 카드 표 ${cardTables}개 · ${(page.length / 1024).toFixed(0)}KB · ${stamp} · ${paged}`);
 
 // GitHub Pages 판(dist/index.html). 아티팩트는 문서 뼈대와 mermaid 를 호스트가 대 주지만
 // Pages 는 맨 파일이라 뼈대를 두르고 mermaid 를 CDN 에서 부른다. 저장소에 싣지 않으므로

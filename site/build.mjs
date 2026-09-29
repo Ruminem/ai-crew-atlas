@@ -32,14 +32,21 @@ for (const m of md.matchAll(/^ {2}- (\S+): (.+)$/gm)) {
 }
 expect('목차에서 읽은 도구', Object.keys(roleOf).length, 10);
 
+const icon = (d) => `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${d}"/></svg>`;
+const DG_TOOLS = '<div class="dg-tools">' +
+  `<button type="button" class="dg-btn" data-dg="out" aria-label="그림 축소" disabled>${icon('M5 12h14')}</button>` +
+  `<button type="button" class="dg-btn" data-dg="in" aria-label="그림 확대">${icon('M12 5v14M5 12h14')}</button>` +
+  `<button type="button" class="dg-btn" data-dg="full" aria-label="그림 전체 화면으로 보기">${icon('M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5')}</button>` +
+  '<span class="dg-hint">두 손가락이나 Ctrl+휠로 확대 · 두 번 누르면 확대·되돌림</span></div>';
+
 let diagrams = 0;
 marked.use({
   renderer: {
     code(tok) {
       if (tok.lang !== 'mermaid') return false;
       diagrams++;
-      // 그림은 페이지를 띄우는 쪽이 <pre class="mermaid"> 를 보고 그린다
-      return `<div class="diagram"><pre class="mermaid">${esc(tok.text)}</pre></div>\n`;
+      // 그림은 페이지를 띄우는 쪽이 <pre class="mermaid"> 를 보고 그린다. 확대·전체 화면은 틀의 스크립트가 한다
+      return `<div class="dg"><div class="diagram"><pre class="mermaid">${esc(tok.text)}</pre></div>${DG_TOOLS}</div>\n`;
     },
   },
 });

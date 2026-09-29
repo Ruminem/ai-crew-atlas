@@ -205,22 +205,68 @@ th:first-child, td:first-child {
 }
 th:first-child { background: var(--surface-2); z-index: 2; }
 
-/* 관계도: 어두운 화면에서도 밝은 판 위에 그린다 (그림 테마가 밝은 바탕 기준) */
+/* 관계도: 어두운 화면에서도 밝은 판 위에 그린다 (그림 테마가 밝은 바탕 기준).
+   그림은 늘 상자 폭에 맞춰 통째로 보이고, 확대는 페이지가 아니라 그림만 한다(아래 스크립트).
+   touch-action 으로 이 상자 위에서는 브라우저의 핀치 확대를 끄고 세로 스크롤만 남긴다 */
+.dg { margin: 14px 0 22px; }
 .diagram {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  margin: 14px 0 22px;
+  position: relative;
+  overflow: hidden;
   padding: 16px;
   background: var(--plate);
   border: 1px solid var(--plate-line);
   border-radius: 12px;
   color: #1f2328;
+  touch-action: pan-y;
+  -webkit-user-select: none; user-select: none;
 }
-.diagram pre.mermaid { margin: 0; font: 12px/1.5 var(--f-mono); color: #57606a; white-space: pre; background: none; }
+.diagram.zoomed { touch-action: none; cursor: grab; }
+.diagram.dragging { cursor: grabbing; }
+.diagram pre.mermaid { margin: 0; font: 12px/1.5 var(--f-mono); color: #57606a; white-space: pre; background: none; overflow-x: auto; transform-origin: 0 0; }
 .diagram svg { display: block; margin: 0 auto; height: auto; }
-@media (max-width: 700px) {
-  .diagram svg { max-width: none !important; min-width: 600px; }
+.dg-anim { transition: transform .18s ease-out; }
+/* 단추는 왼쪽에 둔다. 휴대폰에서는 오른쪽 아래에 떠 있는 ☰·↑·↓ 단추가 그 자리를 덮는다 */
+.dg-tools { display: flex; align-items: center; gap: 6px; margin-top: 6px; }
+.dg-hint { margin-left: 6px; color: var(--muted); font-size: .76rem; line-height: 1.3; }
+.dg-btn, .dg-bar button {
+  width: 40px; height: 40px; flex: none;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; padding: 0;
 }
+.dg-btn svg, .dg-bar svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.dg-btn:disabled { opacity: .4; cursor: default; }
+
+/* 전체 화면으로 본 그림. 페이지는 뒤에서 멈춰 있다 */
+.dg-over {
+  position: fixed; inset: 0; z-index: 60;
+  display: flex; flex-direction: column;
+  background: var(--plate);
+  color: #1f2328;
+  overscroll-behavior: contain;
+}
+.dg-over[hidden] { display: none; }
+.dg-full {
+  position: relative; flex: 1; min-height: 0;
+  overflow: hidden;
+  margin: calc(var(--safe-t) + 12px) calc(env(safe-area-inset-right, 0px) + 12px) 0 calc(env(safe-area-inset-left, 0px) + 12px);
+  touch-action: none;
+  cursor: grab;
+  -webkit-user-select: none; user-select: none;
+}
+.dg-full.dragging { cursor: grabbing; }
+.dg-stage { position: absolute; inset: 0; transform-origin: 0 0; }
+.dg-stage svg { display: block; width: 100% !important; height: 100% !important; max-width: none !important; }
+.dg-bar {
+  display: flex; justify-content: center; gap: 8px;
+  padding: 10px 12px calc(env(safe-area-inset-bottom, 0px) + 12px);
+}
+.dg-bar button { width: 44px; height: 44px; }
+.dg-bar .dg-close { width: auto; padding: 0 16px; gap: 6px; font: 500 .9rem var(--f-body); }
+html.dg-lock, html.dg-lock body { overflow: hidden; }
 
 .foot { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: .84rem; }
 .foot p { margin: 4px 0; }
@@ -397,6 +443,16 @@ th:first-child { background: var(--surface-2); z-index: 2; }
 
 <div class="scrim" id="scrim"></div>
 
+<div class="dg-over" id="dg-over" role="dialog" aria-modal="true" aria-label="관계도 크게 보기" hidden>
+  <div class="dg-full" id="dg-full"><div class="dg-stage" id="dg-stage"></div></div>
+  <div class="dg-bar">
+    <button type="button" data-dg="out" aria-label="축소"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+    <button type="button" data-dg="fit" aria-label="화면에 맞춤"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5M9 9h6v6H9z"/></svg></button>
+    <button type="button" data-dg="in" aria-label="확대"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+    <button type="button" class="dg-close" id="dg-close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>닫기</button>
+  </div>
+</div>
+
 <div class="fabs">
   <button type="button" class="fab fab-toc" id="fab-toc" aria-label="목차 열기" aria-controls="toc" aria-expanded="false">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -547,5 +603,221 @@ th:first-child { background: var(--surface-2); z-index: 2; }
   try { start = dec(location.hash.slice(1)); } catch (e) {}
   if (start) requestAnimationFrame(function () { jump(start, 'load'); queue(); });
   queue();
+})();
+</script>
+<script>
+// 관계도 확대: 페이지가 아니라 그림만 키운다. 상자(view)마다 {s, x, y} 를 들고, 그림을 감싼 요소(stage)에
+// translate·scale 을 준다. 원점은 stage 의 원래 자리이고, 확대된 그림이 상자 안에 빈틈을 내지 않게 x·y 를 가둔다.
+// 상자 위의 두 손가락은 여기서 받아 브라우저의 페이지 확대로 안 넘어간다. 한 손가락은 확대 안 됐으면 페이지 스크롤이다
+(function () {
+  var MAX = 8, STEP = 1.6;
+  var over = document.getElementById('dg-over');
+  var full = document.getElementById('dg-full');
+  var fstage = document.getElementById('dg-stage');
+  var closeBtn = document.getElementById('dg-close');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var home = null;
+
+  function stageOf(view) {
+    if (view === full) return fstage;
+    var svg = view.querySelector('svg');
+    if (!svg) return null;
+    if (svg.parentElement === view) {
+      // 호스트가 그림을 상자에 바로 넣었으면 감쌀 것을 하나 만든다 (svg 에는 offsetWidth 가 없다)
+      var wrap = document.createElement('div');
+      view.insertBefore(wrap, svg);
+      wrap.appendChild(svg);
+    }
+    return svg.parentElement;
+  }
+  function st(view) { return view._dg || (view._dg = { s: 1, x: 0, y: 0 }); }
+  function apply(view, anim) {
+    var stage = stageOf(view);
+    if (!stage) return;
+    var z = st(view), w = stage.offsetWidth, h = stage.offsetHeight;
+    z.s = Math.min(MAX, Math.max(1, z.s));
+    if (z.s === 1) { z.x = 0; z.y = 0; }
+    z.x = Math.min(0, Math.max(w - w * z.s, z.x));
+    z.y = Math.min(0, Math.max(h - h * z.s, z.y));
+    stage.style.transformOrigin = '0 0';
+    stage.classList.toggle('dg-anim', !!anim && !reduce.matches);
+    stage.style.transform = z.s === 1 ? '' : 'translate(' + z.x + 'px,' + z.y + 'px) scale(' + z.s + ')';
+    view.classList.toggle('zoomed', z.s > 1);
+    var tools = view.nextElementSibling;
+    if (tools && tools.classList.contains('dg-tools')) tools.querySelector('[data-dg="out"]').disabled = z.s === 1;
+  }
+  // 화면 좌표 → stage 의 원래 자리 기준 좌표. offsetLeft 는 transform 을 안 탄다
+  function local(view, cx, cy) {
+    var stage = stageOf(view), r = view.getBoundingClientRect();
+    return { x: cx - r.left - view.clientLeft - stage.offsetLeft, y: cy - r.top - view.clientTop - stage.offsetTop };
+  }
+  function center(view) { var s = stageOf(view); return { x: s.offsetWidth / 2, y: s.offsetHeight / 2 }; }
+  function zoomAt(view, p, s, anim) {
+    var z = st(view);
+    s = Math.min(MAX, Math.max(1, s));
+    z.x = p.x - (p.x - z.x) / z.s * s;
+    z.y = p.y - (p.y - z.y) / z.s * s;
+    z.s = s;
+    apply(view, anim);
+  }
+  function toggle(view, p) {
+    if (st(view).s > 1) { st(view).s = 1; apply(view, true); } else zoomAt(view, p, 2.5, true);
+  }
+
+  function bind(view) {
+    var g = null, tap = null, down = null;
+    function pt(t) { return local(view, t.clientX, t.clientY); }
+    function startPinch(t) {
+      var z = st(view), a = pt(t[0]), b = pt(t[1]);
+      var m = { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
+      g = { pinch: true, d0: Math.hypot(a.x - b.x, a.y - b.y) || 1, s0: z.s, cx: (m.x - z.x) / z.s, cy: (m.y - z.y) / z.s };
+    }
+    function startPan(t) {
+      var z = st(view);
+      g = { pan: true, p0: pt(t), x0: z.x, y0: z.y };
+      view.classList.add('dragging');
+    }
+    view.addEventListener('touchstart', function (e) {
+      if (!stageOf(view)) return;
+      var t = e.touches;
+      if (t.length >= 2) {
+        if (e.cancelable) e.preventDefault();
+        down = null;
+        startPinch(t);
+        return;
+      }
+      var p = pt(t[0]);
+      // 두 번 톡: 짧게 눌렀다 뗀 것 바로 뒤에 같은 자리를 또 누르면 확대·되돌림
+      if (tap && Date.now() - tap.at < 320 && Math.hypot(p.x - tap.x, p.y - tap.y) < 30) {
+        if (e.cancelable) e.preventDefault();
+        tap = null; g = null; down = null;
+        toggle(view, p);
+        return;
+      }
+      down = { x: t[0].clientX, y: t[0].clientY, at: Date.now() };
+      if (st(view).s > 1) { if (e.cancelable) e.preventDefault(); startPan(t[0]); } else g = null;
+    }, { passive: false });
+    view.addEventListener('touchmove', function (e) {
+      var t = e.touches;
+      if (down && t.length === 1 && Math.hypot(t[0].clientX - down.x, t[0].clientY - down.y) > 10) down = null;
+      if (!g) return;
+      if (e.cancelable) e.preventDefault();
+      var z = st(view);
+      if (g.pinch && t.length >= 2) {
+        var a = pt(t[0]), b = pt(t[1]);
+        var m = { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
+        z.s = Math.min(MAX, Math.max(1, g.s0 * Math.hypot(a.x - b.x, a.y - b.y) / g.d0));
+        z.x = m.x - g.cx * z.s;
+        z.y = m.y - g.cy * z.s;
+        apply(view);
+      } else if (g.pan && t.length === 1) {
+        var p = pt(t[0]);
+        z.x = g.x0 + p.x - g.p0.x;
+        z.y = g.y0 + p.y - g.p0.y;
+        apply(view);
+      }
+    }, { passive: false });
+    function end(e) {
+      var t = e.touches;
+      if (down && t.length === 0 && Date.now() - down.at < 250) {
+        var p = local(view, down.x, down.y);
+        tap = { x: p.x, y: p.y, at: Date.now() };
+      } else if (t.length === 0) tap = null;
+      down = null;
+      if (t.length === 1 && st(view).s > 1) startPan(t[0]);   // 핀치하다 한 손가락을 떼면 이어서 옮긴다
+      else if (t.length === 0) { g = null; view.classList.remove('dragging'); }
+    }
+    view.addEventListener('touchend', end);
+    view.addEventListener('touchcancel', end);
+    // iOS 사파리는 핀치를 gesture 이벤트로도 보내고, 이걸 안 막으면 페이지가 같이 커진다
+    view.addEventListener('gesturestart', function (e) { e.preventDefault(); });
+
+    view.addEventListener('mousedown', function (e) {
+      if (e.button !== 0 || st(view).s === 1 || !stageOf(view)) return;
+      e.preventDefault();
+      var z = st(view), x0 = z.x, y0 = z.y, cx = e.clientX, cy = e.clientY;
+      view.classList.add('dragging');
+      function mv(ev) { z.x = x0 + ev.clientX - cx; z.y = y0 + ev.clientY - cy; apply(view); }
+      function up() {
+        document.removeEventListener('mousemove', mv);
+        document.removeEventListener('mouseup', up);
+        view.classList.remove('dragging');
+      }
+      document.addEventListener('mousemove', mv);
+      document.addEventListener('mouseup', up);
+    });
+    // 트랙패드 핀치는 ctrl 이 붙은 휠로 온다. 페이지 안의 그림은 그냥 휠이면 페이지를 내린다
+    view.addEventListener('wheel', function (e) {
+      if (!stageOf(view) || (view !== full && !e.ctrlKey && !e.metaKey)) return;
+      e.preventDefault();
+      var k = e.deltaMode === 1 ? 0.05 : 0.002;
+      zoomAt(view, local(view, e.clientX, e.clientY), st(view).s * Math.exp(-e.deltaY * k));
+    }, { passive: false });
+    view.addEventListener('dblclick', function (e) {
+      if (stageOf(view)) toggle(view, local(view, e.clientX, e.clientY));
+    });
+  }
+
+  function openFull(view, btn) {
+    var svg = view.querySelector('svg');
+    if (!svg) return;
+    st(view).s = 1;
+    apply(view);
+    var holder = svg.parentElement;
+    holder.style.minHeight = holder.offsetHeight + 'px';   // 그림을 빼도 뒤 페이지가 줄어 밀리지 않게
+    home = { svg: svg, holder: holder, next: svg.nextSibling, btn: btn };
+    fstage.appendChild(svg);
+    over.hidden = false;
+    document.documentElement.classList.add('dg-lock');
+    st(full).s = 1;
+    apply(full);
+    closeBtn.focus();
+  }
+  function closeFull() {
+    if (!home) return;
+    home.holder.insertBefore(home.svg, home.next);
+    home.holder.style.minHeight = '';
+    over.hidden = true;
+    document.documentElement.classList.remove('dg-lock');
+    var btn = home.btn;
+    home = null;
+    btn.focus();
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll('.diagram'), bind);
+  bind(full);
+  closeBtn.addEventListener('click', closeFull);
+
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest ? e.target.closest('[data-dg]') : null;
+    if (!b) return;
+    var box = b.closest('.dg');
+    var view = over.contains(b) ? full : box && box.querySelector('.diagram');
+    if (!view) return;
+    var act = b.getAttribute('data-dg');
+    if (act === 'full') { openFull(view, b); return; }
+    if (!stageOf(view)) return;
+    if (act === 'fit') { st(view).s = 1; apply(view, true); return; }
+    zoomAt(view, center(view), st(view).s * (act === 'in' ? STEP : 1 / STEP), true);
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (!home) return;
+    if (e.key === 'Escape') { e.stopImmediatePropagation(); closeFull(); return; }
+    if (e.key === '+' || e.key === '=') zoomAt(full, center(full), st(full).s * STEP, true);
+    else if (e.key === '-') zoomAt(full, center(full), st(full).s / STEP, true);
+    else if (e.key === '0') { st(full).s = 1; apply(full, true); }
+    else if (e.key === 'Tab') {
+      // 창이 열려 있는 동안 포커스가 뒤 페이지로 새지 않게 돌린다
+      var bs = over.querySelectorAll('button'), first = bs[0], last = bs[bs.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  }, true);
+
+  window.addEventListener('resize', function () {
+    Array.prototype.forEach.call(document.querySelectorAll('.diagram.zoomed'), function (v) { apply(v); });
+    if (home) apply(full);
+  });
 })();
 </script>

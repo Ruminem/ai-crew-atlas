@@ -157,7 +157,7 @@ const stamp = `TOOLS.md ${date} · ${sha}${dirty}`;
 // 페이지 시각은 페이지를 바꾸는 파일(TOOLS.md · site/)의 마지막 커밋 시각이다. 빌드 시각을 쓰면 같은 입력에서도 산출물이 달라진다
 const pagedAt = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Asia/Seoul', dateStyle: 'short', timeStyle: 'short' })
   .format(new Date(git('log', '-1', '--format=%cI', '--', 'TOOLS.md', 'site')));
-const paged = `페이지 ${pagedAt}${git('status', '--porcelain', '--', 'site') ? ' · 커밋 안 된 수정 있음' : ''}`;
+const paged = `업데이트 ${pagedAt}${git('status', '--porcelain', '--', 'site') ? ' · 커밋 안 된 수정 있음' : ''}`;
 
 const fill = (s, key, val) => {
   if (!s.includes(key)) throw new Error(`틀에 ${key} 가 없음`);

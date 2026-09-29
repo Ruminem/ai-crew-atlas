@@ -13,6 +13,11 @@ const root = path.join(here, '..');
 const REPO_BLOB = 'https://github.com/Ruminem/ai-crew-atlas/blob/main/';
 const md = fs.readFileSync(path.join(root, 'TOOLS.md'), 'utf8');
 const tpl = fs.readFileSync(path.join(here, 'atlas.tpl.html'), 'utf8');
+// CHANGELOG.md 는 페이지 맨 끝에 `바뀐 것` 절로 붙인다. 파일의 # 제목을 ## 절로, 날짜 ## 를 ### 로 한 단계씩 내린다
+const CHANGES_ID = '바뀐-것';
+const changelog = fs.readFileSync(path.join(root, 'CHANGELOG.md'), 'utf8');
+if (!/^# 바뀐 것\n/.test(changelog)) throw new Error('CHANGELOG.md 첫 줄이 "# 바뀐 것" 이 아님');
+const src = `${md.trimEnd()}\n\n${changelog.replace(/^(#{1,3}) /gm, '#$1 ')}`;
 
 const ROLE_CLASS = { 기준선: 'claude', 범용: 'general', 조사: 'research', 수집: 'collect', 제작: 'create', 게시: 'publish', 기록: 'record' };
 
@@ -51,7 +56,7 @@ marked.use({
   },
 });
 
-const tokens = marked.lexer(md);
+const tokens = marked.lexer(src);
 const slugger = new GithubSlugger();
 const counters = [0, 0, 0, 0, 0];
 const toc = [];
@@ -96,11 +101,14 @@ for (const tok of tokens) {
 flush();
 while (open.length) { out.push('</div></section>\n'); open.pop(); }
 expect('관계도', diagrams, 3);
+expect('바뀐 것 절', toc.filter((t) => t.id === CHANGES_ID).length, 1);
 
 let html = out.join('');
 
 // 링크: 앵커는 사람이 읽는 글자로 되돌리고, 밖으로 나가는 것은 새 탭, 저장소 안 파일은 GitHub 로
 html = html.replace(/<a href="([^"]*)"/g, (_, href) => {
+  // TOOLS.md 목차의 CHANGELOG.md 링크는 GitHub 에서는 파일로, 페이지에서는 맨 끝 절로 간다
+  if (href === 'CHANGELOG.md') return `<a href="#${CHANGES_ID}"`;
   if (href.startsWith('#')) return `<a href="#${decodeURIComponent(href.slice(1))}"`;
   if (/^https?:/.test(href)) return `<a href="${href}" target="_blank" rel="noopener"`;
   return `<a href="${REPO_BLOB}${href}" target="_blank" rel="noopener"`;
@@ -151,13 +159,15 @@ function tocHtml(items) {
 }
 
 const git = (...args) => execFileSync('git', args, { cwd: root, encoding: 'utf8' }).trim();
-const [date, sha] = git('log', '-1', '--format=%cs %h', '--', 'TOOLS.md').split(' ');
-const dirty = git('status', '--porcelain', '--', 'TOOLS.md') ? ' · 커밋 안 된 수정 있음' : '';
-const stamp = `TOOLS.md ${date} · ${sha}${dirty}`;
-// 페이지 시각은 페이지를 바꾸는 파일(TOOLS.md · site/)의 마지막 커밋 시각이다. 빌드 시각을 쓰면 같은 입력에서도 산출물이 달라진다
-const pagedAt = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Asia/Seoul', dateStyle: 'short', timeStyle: 'short' })
-  .format(new Date(git('log', '-1', '--format=%cI', '--', 'TOOLS.md', 'site')));
-const paged = `업데이트 ${pagedAt}${git('status', '--porcelain', '--', 'site') ? ' · 커밋 안 된 수정 있음' : ''}`;
+// 조사 날짜는 한눈에 보기 표의 확인한 날짜 중 가장 최근 것이다. 오타만 고친 커밋이 조사 날짜를 끌어올리지 않게 커밋 날짜를 쓰지 않는다
+const checked = [...md.matchAll(/^\| \[.+\| (\d{4}-\d{2}-\d{2}) \|$/gm)].map((m) => m[1]);
+expect('한눈에 보기의 확인한 날짜', checked.length, 10);
+const stamp = `조사 ${checked.sort().at(-1)}`;
+// 업데이트 시각·해시는 페이지를 바꾸는 파일의 마지막 커밋이다. 빌드 시각을 쓰면 같은 입력에서도 산출물이 달라진다
+const PAGE_SRC = ['TOOLS.md', 'CHANGELOG.md', 'site'];
+const [pagedIso, pagedSha] = git('log', '-1', '--format=%cI %h', '--', ...PAGE_SRC).split(' ');
+const pagedAt = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Asia/Seoul', dateStyle: 'short', timeStyle: 'short' }).format(new Date(pagedIso));
+const paged = `업데이트 ${pagedAt} · ${pagedSha}${git('status', '--porcelain', '--', ...PAGE_SRC) ? ' · 커밋 안 된 수정 있음' : ''}`;
 
 const fill = (s, key, val) => {
   if (!s.includes(key)) throw new Error(`틀에 ${key} 가 없음`);
@@ -167,7 +177,8 @@ let page = tpl;
 page = fill(page, '<!--CONTENT-->', html);
 page = fill(page, '<!--TOC-->', tocHtml(toc));
 page = fill(page, '<!--STAMP-->', esc(stamp));
-page = fill(page, '<!--PAGED-->', esc(paged));
+// 폰 머리 띠에서는 연도를 숨겨야 한 줄에 들어간다(390 폭에서 28px 넘침). 연도는 조사 줄에도 있다
+page = fill(page, '<!--PAGED-->', esc(paged).replace(/ (\d{4}-)/, ' <span class="yr">$1</span>'));
 page = page.replace(/<!-- 틀:[\s\S]*?-->\n/, '<!-- 자동 생성: site 에서 npm run build 로 다시 만들 것. 고칠 때는 atlas.tpl.html 이나 ../TOOLS.md 를 고친다 -->\n');
 
 fs.writeFileSync(path.join(here, 'atlas.html'), page);

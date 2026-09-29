@@ -14,6 +14,7 @@
   - 제작: [Higgsfield](#higgsfield)
   - 게시: [Blotato](#blotato)
   - 기록: [Notion](#notion) · [Obsidian](#obsidian)
+- [바뀐 것](CHANGELOG.md)
 
 각 항목 제목 아래의 단추로 목차 · 한눈에 보기 · 앞뒤 도구로 넘어감. GitHub 파일 화면의 `Outline` 단추로 모든 제목을 펼쳐 볼 수도 있음.
 

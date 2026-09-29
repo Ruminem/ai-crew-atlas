@@ -22,6 +22,7 @@ GitHub Pages https://ruminem.github.io/ai-crew-atlas/ 가 본판이다. main 에
 - 제목 id 는 github-slugger 로 만든다. GitHub 에서 쓰는 `#앵커` 가 페이지에서도 그대로 걸린다
 - 관계도는 `<pre class="mermaid">` 로 내보낸다. 아티팩트는 호스트가 그리고, Pages 판은 `build.mjs` 의 `MERMAID` 주소(jsDelivr, 판 고정)에서 불러 그린다. 저장소에 mermaid 를 싣지 않는 것은 딸린 elkjs 가 EPL-2.0 이라 재배포를 피하려는 것이다. 로컬에서 `atlas.html` 을 열면 그림 대신 원문이 보이는 것이 정상이다
 - **관계도 확대는 페이지가 아니라 그림만 한다.** 그림 상자는 `touch-action: pan-y` 라 브라우저 핀치가 꺼지고, 틀 맨 끝 스크립트가 두 손가락·Ctrl+휠·두 번 누르기·단추를 받아 그림을 감싼 요소에 `transform` 을 준다. 전체 화면은 svg 를 `#dg-over` 로 옮겼다가 닫을 때 되돌린다. 단추 줄은 휴대폰의 떠 있는 ☰·↑·↓ 에 안 덮이게 왼쪽에 둔다
+- **칸이 셋 이상인 표는 640px 아래에서 행마다 카드가 된다.** `build.mjs` 가 그런 표에 `.cards` 를 달고 칸마다 머리글을 `data-label` 로 붙이며, 값은 `<div class="cv">` 로 감싼다 — 안 감싸면 굵은 글씨·링크가 격자 칸으로 흩어진다. 칸 둘짜리 표는 이미 화면에 들어가므로 표로 둔다. 표 꼴은 넓은 화면에서 그대로다
 - 주소에 `#앵커` 를 달고 열면 브라우저가 불러오기를 마친 뒤 한 번 더 그 자리로 스크롤한다. 제목이 머리 띠에 안 깔리는 것은 `html` 의 `scroll-padding-top` 덕이므로 띠 높이를 바꾸면 같이 고친다
 - **기본은 밝은 화면이다.** 시스템·호스트의 다크 설정(`prefers-color-scheme`, 호스트가 붙이는 `data-theme`)을 따라가지 않고 머리 띠의 단추가 `data-atlas-theme="dark"` 를 붙일 때만 어두워진다. 고른 것은 `localStorage` 의 `atlas-theme` 에 두고, 못 읽으면 밝게 둔다. 사용자가 정한 것이다
 - hover 모양은 `@media (hover: hover)` 안에만 둔다. 터치 기기는 탭한 뒤 hover 가 남아 단추가 눌린 채로 보인다

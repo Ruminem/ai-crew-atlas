@@ -204,6 +204,22 @@ th:first-child, td:first-child {
   border-right: 1px solid var(--line);
 }
 th:first-child { background: var(--surface-2); z-index: 2; }
+/* 칸이 셋 이상인 표(.cards)는 좁은 화면에서 행마다 카드로 그린다 — 옆으로 두 화면 넘게 밀던 것을 아래로 내린다.
+   칸 이름은 build.mjs 가 붙인 data-label 이고, 첫 칸이 카드 머리가 된다. 머리 줄은 화면에서만 숨기고 읽는 기계에는 남긴다 */
+@media (max-width: 640px) {
+  /* `Agreement(API·Business·Enterprise)가` 같은 띄어쓰기 없는 긴 조각이 칸을 밀어 표를 넘치게 한다 */
+  .table-wrap td { overflow-wrap: anywhere; }
+  .table-wrap.cards { overflow: visible; border: 0; border-radius: 0; background: none; }
+  .cards table, .cards tbody, .cards tr, .cards td { display: block; width: auto; }
+  .cards thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .cards tr { margin-bottom: 10px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); overflow: hidden; }
+  .cards tr:last-child { margin-bottom: 0; }
+  .cards td { display: grid; grid-template-columns: 5.4em minmax(0, 1fr); gap: 10px; min-width: 0; padding: 7px 12px; }
+  .cards td::before { content: attr(data-label); color: var(--muted); font-size: .76rem; line-height: 1.8; }
+  .cards td:first-child { position: static; display: block; border-right: 0; background: var(--surface-2); font-weight: 600; }
+  .cards td:first-child::before { content: none; }
+  .cards tr td:last-child { border-bottom: 0; }
+}
 
 /* 관계도: 어두운 화면에서도 밝은 판 위에 그린다 (그림 테마가 밝은 바탕 기준).
    그림은 늘 상자 폭에 맞춰 통째로 보이고, 확대는 페이지가 아니라 그림만 한다(아래 스크립트).

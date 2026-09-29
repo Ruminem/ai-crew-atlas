@@ -119,9 +119,23 @@ const hint = /<p>각 항목 제목 아래의 단추로[\s\S]*?<\/p>/;
 if (!hint.test(html)) throw new Error('목차 아래 안내 문장을 못 찾음');
 html = html.replace(hint, '<p class="hint">제목 앞 번호를 누르면 이 목차로 돌아오고, 제목을 누르면 그 절이 접히고 펴짐. 넓은 화면은 오른쪽, 좁은 화면은 오른쪽 아래 <b>☰</b> 단추에 전체 목차가 있음.</p>');
 
-html = html
-  .replace(/<table>/g, '<div class="table-wrap"><table>')
-  .replace(/<\/table>/g, '</table></div>');
+// 칸이 셋 이상인 표(.cards)는 좁은 화면에서 행마다 카드로 그린다. 칸마다 머리글을 data-label 로 달고,
+// 값은 한 겹 감싸 굵은 글씨·링크가 격자 칸으로 흩어지지 않게 한다. display 를 바꾸면 표 의미가 빠지므로 role 로 되살린다
+let cardTables = 0;
+html = html.replace(/<table>([\s\S]*?)<\/table>/g, (_, body) => {
+  const heads = [...body.matchAll(/<th>([\s\S]*?)<\/th>/g)].map((m) => m[1].replace(/<[^>]+>/g, '').trim());
+  if (heads.length < 3) return `<div class="table-wrap"><table>${body}</table></div>`;
+  cardTables++;
+  let col = 0;
+  body = body.replace(/<tr>|<th>|<td>([\s\S]*?)<\/td>/g, (m, cell) => {
+    if (m === '<tr>') { col = 0; return '<tr role="row">'; }
+    if (m === '<th>') return '<th role="columnheader">';
+    // 머리글은 marked 가 이미 escape 해 두었다
+    if (col >= heads.length) throw new Error(`표 칸이 머리글(${heads.length})보다 많음: ${heads.join(' | ')}`);
+    return `<td role="cell" data-label="${heads[col++]}"><div class="cv">${cell}</div></td>`;
+  });
+  return `<div class="table-wrap cards"><table role="table">${body}</table></div>`;
+});
 
 function tocHtml(items) {
   let h = '';
@@ -152,7 +166,7 @@ page = fill(page, '<!--STAMP-->', esc(stamp));
 page = page.replace(/<!-- 틀:[\s\S]*?-->\n/, '<!-- 자동 생성: site 에서 npm run build 로 다시 만들 것. 고칠 때는 atlas.tpl.html 이나 ../TOOLS.md 를 고친다 -->\n');
 
 fs.writeFileSync(path.join(here, 'atlas.html'), page);
-console.log(`atlas.html · 제목 ${toc.length}개 · 관계도 ${diagrams}개 · ${(page.length / 1024).toFixed(0)}KB · ${stamp}`);
+console.log(`atlas.html · 제목 ${toc.length}개 · 관계도 ${diagrams}개 · 카드 표 ${cardTables}개 · ${(page.length / 1024).toFixed(0)}KB · ${stamp}`);
 
 // GitHub Pages 판(dist/index.html). 아티팩트는 문서 뼈대와 mermaid 를 호스트가 대 주지만
 // Pages 는 맨 파일이라 뼈대를 두르고 mermaid 를 CDN 에서 부른다. 저장소에 싣지 않으므로

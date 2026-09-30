@@ -194,10 +194,10 @@ flowchart LR
 | 도구 | 역할 | 무료·유료 | 최저 유료가 (월) | 클로드와 잇는 법 | 라이선스 | 확인한 날짜 |
 |---|---|---|---|---|---|---|
 | [Claude](#claude) | 범용 · 기준선 | 부분 무료 · 개인·업무 모두 무료 등급 가능 · 생성물 상업 이용 가능 | Pro $20 (연 결제 $17) | 해당 없음 | 독점 | 2026-09-29 |
-| [ChatGPT](#chatgpt) | 범용 | 부분 무료 · 개인 무료 · 업무 이용은 개인용 약관 부록으로 받아들임(EU판 원문, ROW판 확인 못 함) · 생성물 상업 이용 가능(음성 출력 제외) | Go $8 | 공식 Claude Code 플러그인 | 독점 (Codex CLI·플러그인 Apache-2.0) | 2026-09-29 |
+| [ChatGPT](#chatgpt) | 범용 | 부분 무료 · 개인 무료 · 업무 이용은 개인용 약관 부록으로 받아들임(EU판 원문, ROW판 확인 못 함) · 생성물 상업 이용 가능(음성 출력 제외) | Go $8 | 공식 Claude Code 플러그인 | 독점 (Codex CLI·플러그인 Apache-2.0) | 2026-09-30 |
 | [Gemini](#gemini) | 범용 | 부분 무료 · 개인 무료 · 무료 등급 업무 이용을 약관이 막지 않음 · 생성물 상업 이용 가능(Google 이 소유권 주장 안 함) | AI Plus $4.99 | 커뮤니티 MCP · API 키 | 독점 (Gemini CLI Apache-2.0) | 2026-09-29 |
 | [Grok](#grok) | 범용 | 부분 무료 · 개인·업무 모두 무료 등급 가능(소비자 약관이 업무 이용을 막지 않음, 기업 이용은 기업 약관을 가리킴) · 생성물 소유는 사용자에게 남지만 "Created with Grok" 출처 표기 요구 · 학습 제외는 Business 부터 | SuperGrok $30 (Lite $10 는 검색 요약) | 커뮤니티 MCP · API 키 (공식 Docs MCP 는 문서 검색만) | 독점 (SDK Apache-2.0 · Grok-1 가중치 Apache-2.0) | 2026-09-30 |
-| [Perplexity](#perplexity) | 조사 | 부분 무료 · **개인 무료 + 상업 유료** — Free·Pro·Max 이미지는 비상업 전용(공식 도움말), 약관 전체가 비상업 전용이라는 것은 제3자 서술(약관 원문 403), 업무는 Enterprise | Pro $20 (학생 $10) | 공식 MCP · API 과금 | 독점 (MCP 서버 MIT) | 2026-09-29 |
+| [Perplexity](#perplexity) | 조사 | 부분 무료 · **개인 무료 + 상업 유료** — Free·Pro·Max 이미지는 비상업 전용(공식 도움말), 약관 5.1 도 등급 구분 없이 비상업 전용(2024 판 사본), 업무는 Enterprise | Pro $20 (학생 $10) | 공식 MCP · API 과금 | 독점 (MCP 서버 MIT) | 2026-09-30 |
 | [NotebookLM](#notebooklm-2026-07-16-부터-gemini-notebook) | 조사 | 부분 무료 · 개인 무료 · 업무 이용을 막는 약관 조항 없음 · 생성물 소유권 주장 안 함(상업 이용 명시 문구는 없음, 한국은 이미지·영상 워터마크 강제) | Google AI Plus $4.99 | 커뮤니티 MCP · 쿠키 | 독점 (커뮤니티 MCP MIT) | 2026-09-29 |
 | [Firecrawl](#firecrawl) | 수집 | 부분 무료 + 자체 호스팅 무료 · 자체 호스팅은 AGPL-3.0 조건으로 상업 이용 가능 · 클라우드 약관은 등급 구분 없이 "명시적 허락 없는 상업 이용" 금지 · 출력 권리 조항 없음 | Hobby $19 (연 결제 $16) | 공식 커넥터 + 공식 MCP | 본체 AGPL-3.0 · 클라우드 독점 · MCP 서버 MIT | 2026-09-29 |
 | [Higgsfield](#higgsfield) | 제작 | 부분 무료 · 가격표는 **Free 상업 이용 불포함**, 약관·도움말은 출력의 상업 이용을 제한 안 함(어긋남) · Free 는 워터마크 | Starter $19 (데스크톱·T1 지역 기준, 휴대폰 화면은 Basic $5) | 공식 MCP (Claude Code 는 CLI) · 유료 등급만 | 독점 (CLI·스킬 MIT) | 2026-09-29 |
@@ -275,7 +275,7 @@ flowchart LR
 - **역할**: 범용
 - **한 줄**: OpenAI 의 대화형 AI. 채팅·이미지 생성(ChatGPT Images)·음성·딥 리서치·에이전트 모드·코딩 에이전트(Codex)를 한 구독으로 씀
 - **클로드와 잇는 법**: 공식 Claude Code 플러그인 `openai/codex-plugin-cc` (설치: `/plugin marketplace add openai/codex-plugin-cc` → `/plugin install codex@openai-codex` → `/codex:setup`). `/codex:review`·`/codex:rescue` 등으로 Codex 에게 리뷰·작업을 넘김. 인증은 로컬 Codex CLI 로그인을 그대로 씀 — ChatGPT 계정(Free 포함) 또는 OpenAI API 키. 쓴 양은 Codex 사용 한도에서 빠짐. Codex CLI 를 MCP 서버로 띄우던 `codex mcp-server` 는 지금 `openai/codex` 소스에 없음(2026-09-29 main 에서 확인, 남은 것은 외부 MCP 서버를 관리하는 `codex mcp` 뿐). 없어진 버전·날짜는 2026-08-24 폐기 예고 후 Codex CLI 0.154.0(2026-09-09)이라는 제3자 서술임 — 그걸 쓰는 옛 글·커뮤니티 설정은 지금 안 돎. claude.ai 앱용 공식 커넥터는 확인 못 함 — 커넥터 디렉터리에서 찾아보지 않았음. API 키(`OPENAI_API_KEY`)로 모델을 부르는 커뮤니티 MCP 서버는 여럿 있음
-- **확인한 날짜**: 2026-09-29
+- **확인한 날짜**: 2026-09-30
 
 #### 무료·유료와 이용 조건
 
@@ -284,7 +284,7 @@ flowchart LR
 | 분류 | 부분 무료 |
 | 개인 이용 | Free 로 가능함 |
 | 상업·업무 이용 | 개인용 Terms of Use 와 기업용 Services Agreement(API·Business·Enterprise)가 나뉨. EU판 개인용 약관(2026-01-16판)은 "including personal, non-commercial use of our Services by consumers" 라고 적고, 끝에 **"Business use of the Services addendum"** 을 두어 "If you use our Services for commercial or business use, the following terms apply" 로 업무 이용을 받아들임(책임 한도·면책·준거법만 달라짐). 등급으로 가르는 문구는 없음 — 원문 열어 봄. 한국에 걸리는 ROW판(row-terms-of-use)에 같은 부록이 있는지는 확인 못 함 — openai.com 이 Cloudflare 봇 확인(403)으로 막혀 원문을 못 열었음 |
-| 생성물의 상업적 이용 | 가능함. 개인용 약관(EU판) "you (a) retain your ownership rights in Input and (b) own the Output. We hereby assign to you all our right, title, and interest, if any, in and to Output." — 원문 열어 봄, 등급 구분 없음. Business·Enterprise 는 Services Agreement 4.1 "Customer … owns all Output" — 원문 열어 봄. 예외로 **음성 출력은 비상업 용도로만**: Service Terms(2026-09-21판) "ChatGPT Voice Output is for non-commercial use only and may not be distributed or repackaged as a standalone audio recording … Any rights in Output assigned to you do not include ChatGPT Voice Output." — 원문 열어 봄 |
+| 생성물의 상업적 이용 | 가능함. 개인용 약관(EU판) "you (a) retain your ownership rights in Input and (b) own the Output. We hereby assign to you all our right, title, and interest, if any, in and to Output." — 원문 열어 봄, 등급 구분 없음. Business·Enterprise 는 Services Agreement 4.1 "Customer … owns all Output" — 원문 열어 봄. 예외로 **음성 출력은 비상업 용도로만**: Service Terms(2026-09-29판) "ChatGPT Voice Output is for non-commercial use only and may not be distributed or repackaged as a standalone audio recording … Any rights in Output assigned to you do not include ChatGPT Voice Output." — 원문 열어 봄 |
 
 - 특이점: 개인용 요금제는 끄지 않으면 대화가 학습에 쓰임 — 약관 "If you do not want us to use your Content to train our models, you have the option to opt out by updating your account settings". Business·Enterprise·API 는 Services Agreement 4.2 "will not use Customer Content to develop or improve the Services, unless Customer explicitly agrees" (둘 다 원문 열어 봄)
 - 약관 원문은 openai.com 이 막혀서 Open Terms Archive 가 공식 페이지에서 받아 둔 사본(2026-09-29 기준 최신)으로 읽었음. 그 수집기는 EU판만 받으므로 ROW판 문장은 이 사본으로 확인되지 않음
@@ -296,15 +296,16 @@ flowchart LR
 | Free | $0 | – | 일상 텍스트 채팅 무제한(2026 변경). 이미지 생성(ChatGPT Images 2.0)·파일 업로드·음성·데이터 분석은 따로 좁은 한도. 음성은 GPT-Live-1 mini. 일부 국가에서 광고 붙음 (검색 요약). Codex 는 GPT-6 Luna 로 짧은 코딩 작업만(데스크톱 앱, 순차 배포 — 원문 열어 봄). 정확한 횟수 한도는 확인 못 함 — chatgpt.com·help.openai.com 이 Cloudflare 봇 확인으로 막힘 |
 | Go | $8 (원문엔 지역 표기 없음) | 확인 못 함 — 가격표 원문이 막혀 있음. 검색 요약은 월 결제만이라고 함 | Free 대비 메시지·파일 업로드·이미지 생성 10배. 광고 붙음. 2025 년 인도에서 시작해 2026-01 에 전 세계로 풀림(제3자). Codex 는 GPT-6 Luna 로 가벼운 작업(원문 열어 봄) |
 | Plus | $20 | 확인 못 함 — 가격표 원문이 막혀 있음. 검색 요약은 월 결제만이라고 함 | 광고 없음. 상위 모델·추론, Thinking 이미지 생성, 확장된 메모리, 딥 리서치(제한), 에이전트 모드, Projects, 커스텀 GPT. 음성은 GPT-Live-1 (검색 요약). Codex 는 웹·CLI·IDE·iOS, 자동 코드 리뷰·Slack 연동, GPT-6 Sol·Luna, 한도를 넘으면 ChatGPT 크레딧을 사서 이어 씀(원문 열어 봄) |
-| Pro $100 (5x) | $100 | 확인 못 함 — 연 결제 언급을 못 찾음 | Plus 의 5배 Codex 사용량(원문 열어 봄 — "Choose 5x or 20x higher rate limits than Plus", "From $100/month"). 2026-09 신설 Codex 모델도 사용 한도 안에서 씀 |
-| Pro $200 (20x) | $200 (검색 요약 — 원문은 "From $100" 까지만 보임) | 확인 못 함 | Plus 의 20배 Codex 사용량(원문 열어 봄). 최상위 Pro 모델, 딥 리서치·에이전트 모드 최대 한도, 신기능 우선 (검색 요약). **2026-09-10 부터 신규 가입·업그레이드 일시 중단** (기존 구독자는 영향 없음, 제3자) |
+| Pro $100 | $100 | 확인 못 함 — 연 결제 언급을 못 찾음 | Pro 는 $100·$200·$500 세 단계(원문 열어 봄 — "Plans at $100, $200, or $500 USD per month"). Pro 는 Codex 5시간 한도가 없음(원문 열어 봄 — "Pro plans currently have no five-hour limit", 주간 한도는 붙을 수 있음). 단계별 사용량 배수(옛 5x·20x)는 가격 페이지에서 빠졌음 |
+| Pro $200 | $200 (원문 열어 봄) | 확인 못 함 | 최상위 Pro 모델, 딥 리서치·에이전트 모드 최대 한도, 신기능 우선 (검색 요약). **2026-09-10 부터 신규 가입·업그레이드 일시 중단** (기존 구독자는 영향 없음, 제3자) |
+| Pro $500 | $500 (원문 열어 봄) | 확인 못 함 | Pro 중 유일하게 GPT-6 Astra Ultrafast 를 씀(원문 열어 봄 — "Astra Ultrafast access on Pro $500", Enterprise·Edu 일부도 씀). 2026-09-29 출시·사용량이 가장 큼은 제3자 |
 | Business Standard 좌석 | $25/좌석 | $20/좌석/월 | 2좌석 이상, $20 은 연 결제가(원문 열어 봄 — "*2+ users, billed annually. $25 per user per month when billed monthly."). SAML SSO·MFA·관리 기능, 업무 데이터는 기본으로 학습에 안 씀(원문 열어 봄). Codex 한도는 Plus 와 같은 5시간당 어림표이고 주간 한도가 더 붙을 수 있음(원문 열어 봄) |
-| Business Premium 좌석 | 확인 못 함 — 검색 요약은 $125 | $100/좌석 로 적힌 것만 원문에 있음(연 결제가인지는 확인 못 함) | 2026-08 신설(검색 요약). 원문은 "Business ($100) uses the Pro 5x estimates" 한 줄뿐 — Codex 한도가 Pro 5x 와 같다는 것만 확인. 5시간 한도 없음·좌석 종류 섞어 배정은 검색 요약 |
+| Business Premium 좌석 | 확인 못 함 — 검색 요약은 $125 | 확인 못 함 — 검색 요약은 $100/좌석(연 결제) | 2026-08 신설(검색 요약). 2026-09-29 까지 가격 페이지에 있던 "Business ($100) uses the Pro 5x estimates" 줄이 2026-09-30 원문에서 빠져, 금액·한도 모두 원문으로 확인 못 함. 5시간 한도 없음·좌석 종류 섞어 배정은 검색 요약 |
 | Enterprise / Edu | 견적 ("Contact sales" — 원문 열어 봄) | 확인 못 함 — 검색 요약은 연 결제 | 맞춤 가격, SCIM·EKM·RBAC·감사 로그·데이터 보존·거주지 통제, 우선 처리(원문 열어 봄). flexible pricing 이면 고정 한도 없이 크레딧만큼 쓰고, 아니면 대부분 기능이 Plus 와 같은 좌석당 한도(원문 열어 봄) |
 
-- Codex 5시간당 로컬 메시지 어림(공식 Codex 가격 페이지, GPT-6 Sol 기준): Plus 15–150 · Pro 5x 70–700 · Pro 20x 300–3,000 · Business Standard 15–150. 고정 한도가 아니라 작업 크기에 따라 달라진다는 단서가 붙음. ChatGPT Work 는 Codex 와 같은 요금·크레딧·한도를 나눠 씀
-- 등급별 모델: Codex 쪽만 원문으로 확인했음 — Free·Go 는 GPT-6 Luna, Plus 이상은 GPT-6 Sol·Luna 에 어림표상 GPT-6 Astra·GPT-5.6 Sol·Terra·Luna 도 씀. GPT-5.5 는 2026-10-14 에 ChatGPT·Codex 모든 등급에서 은퇴. 채팅 쪽 등급별 모델은 확인 못 함 — 가격표 원문이 막혀 있음
-- Pro 등급은 제3자 글 중 "$200 하나"로 적은 2025 기준 글이 섞여 있음. 공식 Codex 가격 페이지가 "From $100", "5x or 20x" 두 단계라서 그쪽을 따름
+- Codex 5시간당 로컬 메시지 어림(공식 가격 페이지, Plus 와 Business Standard 가 같음): GPT-6 Astra 5–45 · GPT-6.1 Sol 15–160 · GPT-6 Sol 15–150 · GPT-6 Luna 350–3,000. Pro 는 5시간 한도가 없음(주간 한도는 붙을 수 있음). 고정 한도가 아니라 작업 크기에 따라 달라진다는 단서가 붙음. ChatGPT Work 는 Codex 와 같은 요금·크레딧·한도를 나눠 씀
+- 등급별 모델: Codex 쪽만 원문으로 확인했음 — Free·Go 는 GPT-6 Luna, Plus 이상은 GPT-6 Sol·Luna 에 어림표상 GPT-6 Astra·GPT-6.1 Sol(2026-09-29 추가)도 씀. GPT-5.6 Sol·Terra·Luna 는 크레딧 단가표에만 남음. Astra Ultrafast 는 Pro $500 과 일부 Enterprise·Edu 만. GPT-6 Sol·Luna 는 ChatGPT 의 Work·Codex 에만 있고 채팅(Chat)에는 없음(공식 changelog 2026-09-22). GPT-5.5 는 2026-10-14 에 ChatGPT·Work·Codex 모든 등급에서 은퇴(공식 Models 문서). 채팅 쪽 등급별 모델은 확인 못 함 — 가격표 원문이 막혀 있음 (2026-09-30)
+- Pro 등급은 제3자 글 중 "$200 하나"로 적은 2025 기준 글이 섞여 있음. 공식 가격 페이지가 $100·$200·$500 세 단계라서 그쪽을 따름
 
 **영상(Sora)**: 지금은 **어느 등급에서도 영상 생성이 안 됨.** Sora 앱·웹이 2026-04-26 에 닫혔고(검색 요약 — 공식 요약 "As of April 26, 2026, the Sora product is no longer available"), Videos API 와 `sora-2`·`sora-2-pro` 모델도 **2026-09-24 에 API 에서 제거됨**(2026-03-24 공지, 원문 열어 봄). ChatGPT 안의 영상 생성 버튼도 같이 빠졌다는 것은 제3자 글에서만 봤음. 예전 한도(Plus 480p 월 50개 등)는 Sora 1 시절 공식 글 기준이라 지금은 맞지 않음
 
@@ -319,8 +320,9 @@ flowchart LR
 - Codex CLI(`openai/codex`)와 Claude Code 플러그인(`openai/codex-plugin-cc`)은 둘 다 Apache-2.0 오픈소스임
 
 #### 출처
-네트워크가 열린 뒤에도 openai.com·chatgpt.com·help.openai.com 은 Cloudflare 봇 확인(HTTP 403, `cf-mitigated: challenge`)으로 막혀 원문을 못 열었음. 원문을 연 것은 developers.openai.com(Codex 가격·API 폐기 안내), 약관의 Open Terms Archive 사본, GitHub 저장소임. 아래 `공식(검색 요약)` 은 공식 페이지지만 원문을 읽지 못했다는 뜻임.
-- [Codex Pricing | OpenAI Developers](https://developers.openai.com/codex/pricing) — 공식(원문 열어 봄)
+네트워크가 열린 뒤에도 openai.com·chatgpt.com·help.openai.com 은 Cloudflare 봇 확인(HTTP 403, `cf-mitigated: challenge`)으로 막혀 원문을 못 열었음. 원문을 연 것은 learn.chatgpt.com(가격·모델·changelog, 2026-09-30 확인) · developers.openai.com(API 폐기 안내), 약관의 Open Terms Archive 사본, GitHub 저장소임. 아래 `공식(검색 요약)` 은 공식 페이지지만 원문을 읽지 못했다는 뜻임.
+- [Pricing | ChatGPT Learn](https://learn.chatgpt.com/docs/pricing) — 공식(원문 열어 봄, 옛 주소 developers.openai.com/codex/pricing 에서 308 로 옮겨짐)
+- [Models](https://learn.chatgpt.com/docs/models) · [Changelog](https://learn.chatgpt.com/docs/changelog) | ChatGPT Learn — 공식(원문 열어 봄)
 - [Deprecations | OpenAI API](https://developers.openai.com/api/docs/deprecations) — 공식(원문 열어 봄)
 - [Europe Terms of Use + Service Terms (Open Terms Archive 사본)](https://github.com/OpenTermsArchive/genai-versions/blob/main/ChatGPT/Terms%20of%20Service.md) — 공식(원문 열어 봄)
 - [OpenAI Services Agreement (Open Terms Archive 사본)](https://github.com/OpenTermsArchive/genai-versions/blob/main/ChatGPT/Commercial%20Terms.md) — 공식(원문 열어 봄)
@@ -538,7 +540,7 @@ x.ai 는 Cloudflare 봇 차단(403)이 걸려 있어 헤드리스 브라우저�
 - **역할**: 조사
 - **한 줄**: 질문마다 웹을 검색해 출처 번호가 달린 답을 내는 검색형 AI 서비스. 웹·앱·Comet 브라우저로 쓰고, 개발자용으로 Agent API·Search API·Embeddings API·Router API 를 팜(Sonar Chat Completions 는 2026-09-27 지원 종료)
 - **클로드와 잇는 법**: 공식 MCP 서버 — 원격 `https://api.perplexity.ai/mcp`(Streamable HTTP) 또는 로컬 npm `@perplexity-ai/mcp-server`(v1.3.0, 저장소 `perplexityai/modelcontextprotocol`). 인증은 API 키(`Authorization: Bearer` 헤더 또는 `PERPLEXITY_API_KEY`) 또는 원격 서버의 OAuth 로그인(OAuth 2.1 + PKCE). claude.ai 에는 공식 디렉터리 커넥터가 아니라 "사용자 지정 커넥터"로 URL 을 넣어 붙임(공식 MCP 문서, 원문 열어 봄. `claude.com/connectors` 목록 861개에 Perplexity 커넥터가 없고 `claude.com/connectors/perplexity` 는 404). 별도로 Perplexity Computer 용 MCP 서버도 있음(OAuth, 계정 크레딧 차감)
-- **확인한 날짜**: 2026-09-29
+- **확인한 날짜**: 2026-09-30
 
 #### 무료·유료와 이용 조건
 
@@ -546,11 +548,11 @@ x.ai 는 Cloudflare 봇 차단(403)이 걸려 있어 헤드리스 브라우저�
 |---|---|
 | 분류 | 부분 무료 |
 | 개인 이용 | Free 로 가능함 |
-| 상업·업무 이용 | **개인 무료 + 상업 유료(Enterprise) 구조**임. 공식 도움말이 Free·개인 Pro·Max 로 만든 이미지를 "personal, non-commercial use only" 로 묶고 Enterprise Pro·Max 만 상업 이용을 허용함(원문 열어 봄). 소비자 약관 전체가 "personal, non-commercial use only" 로 제한하고 **유료 Pro·Education Pro 에도 적용**되며 2026-01-23 개정으로 그렇게 바뀌었다는 것은 제3자·SNS 서술임. 약관 원문은 확인 못 함 — perplexity.ai 가 Cloudflare 403 을 내고 웹 아카이브·리더 프록시도 막힘 |
-| 생성물의 상업적 이용 | 이미지: Free·개인 Pro·Max 는 비상업 전용, Enterprise Pro·Enterprise Max 는 상업 이용 가능(공식 도움말, 원문 열어 봄). 글 답변: 소비자 등급은 상업적 이용 불가라는 서술임(제3자, 검색 요약). Enterprise·API 는 "Customer ... owns all Output" (공식, 검색 요약 — 약관 원문은 403) |
+| 상업·업무 이용 | **개인 무료 + 상업 유료(Enterprise) 구조**임. 공식 도움말이 Free·개인 Pro·Max 로 만든 이미지를 "personal, non-commercial use only" 로 묶고 Enterprise Pro·Max 만 상업 이용을 허용함(원문 열어 봄). 소비자 약관은 5.1 "We hereby permit you to use the Services for your personal, non-commercial use only" 로 등급 구분 없이 비상업 전용임 — Open Terms Archive 사본(2024-06-04판)에서 원문 열어 봄. 즉 이 조항은 **2024 판에 이미 있었음**. "2026-01-23 개정으로 그렇게 바뀌었다"는 제3자·SNS 서술은 이와 어긋남. 2026 판 원문은 확인 못 함 — perplexity.ai 가 Cloudflare 403 이고, 사본이 지금 최신판인지도 확인 못 함 (2026-09-30) |
+| 생성물의 상업적 이용 | 이미지: Free·개인 Pro·Max 는 비상업 전용, Enterprise Pro·Enterprise Max 는 상업 이용 가능(공식 도움말, 원문 열어 봄). 글 답변: 소비자 약관(2024-06-04판 사본)에는 Output 소유권을 사용자에게 넘기는 문구가 없고, 쓰는 것 자체가 5.1 의 비상업 조건에 묶임(원문 열어 봄). API 는 "Customer … owns all Output. Perplexity asserts no ownership rights in any Output"(API 약관 2025-05-23판 사본 2.3.1, 원문 열어 봄). Enterprise 는 확인 못 함 — 약관 403 이고 Open Terms Archive 가 추적 안 함 (2026-09-30) |
 
-- 특이점: 같은 개정에서 자동화·봇·스크래퍼 이용을 금지하고 공개 공유 시 출처 표기를 요구한다는 서술이 있음 (제3자, 검색 요약). MCP 서버는 API 약관(`perplexity-api-terms-of-service`) 쪽이라 이 제한과 별개인지는 확인 못 함 — API 약관도 perplexity.ai 에 있어 403
-- 이 절의 출처: [Generating images with Perplexity — 도움말](https://intercom.help/perplexity-ai/en/articles/10354781-generating-images-with-perplexity) — 공식 (원문 열어 봄) · [Terms of Service](https://www.perplexity.ai/hub/legal/terms-of-service) — 공식 (Cloudflare 403, 검색 요약) · [Enterprise Terms](https://www.perplexity.ai/hub/legal/enterprise-terms-of-service) — 공식 (Cloudflare 403, 검색 요약) · [Perplexity Just Nuked Alot of Goodwill — Jaglion Press, 2026-02-19](https://jaglionpress.com/2026/02/19/perplexity-just-nuked-alot-of-goodwill/) — 제3자(검색 요약) · [Perplexity Automation Ban — Geeky Gadgets](https://www.geeky-gadgets.com/perplexity-bot-scraper-ban/) — 제3자(검색 요약)
+- 특이점: 자동화·봇·스크래퍼 금지(5.2)와 공개 시 출처 표기(1.1 "without clearly citing the Services")도 2024-06-04판 사본에 이미 있음(원문 열어 봄). 제3자 글은 2026 개정에서 생겼다고 적음. 소비자 약관은 "These Terms do not govern use of the Company's APIs" 라고 스스로 적으므로, API 로 과금되는 MCP 서버는 소비자 약관이 아니라 API 약관을 따름(원문 열어 봄)
+- 이 절의 출처: [Generating images with Perplexity — 도움말](https://intercom.help/perplexity-ai/en/articles/10354781-generating-images-with-perplexity) — 공식 (원문 열어 봄) · [Terms of Service 2024-06-04판 (Open Terms Archive 사본)](https://github.com/OpenTermsArchive/genai-versions/blob/main/Perplexity/Terms%20of%20Service.md) — 공식 (원문 열어 봄) · [API Terms 2025-05-23판 (Open Terms Archive 사본)](https://github.com/OpenTermsArchive/genai-versions/blob/main/Perplexity/Developer%20Terms.md) — 공식 (원문 열어 봄) · [Terms of Service](https://www.perplexity.ai/hub/legal/terms-of-service) — 공식 (Cloudflare 403, 검색 요약) · [Enterprise Terms](https://www.perplexity.ai/hub/legal/enterprise-terms-of-service) — 공식 (Cloudflare 403, 검색 요약) · [Perplexity Just Nuked Alot of Goodwill — Jaglion Press, 2026-02-19](https://jaglionpress.com/2026/02/19/perplexity-just-nuked-alot-of-goodwill/) — 제3자(검색 요약) · [Perplexity Automation Ban — Geeky Gadgets](https://www.geeky-gadgets.com/perplexity-bot-scraper-ban/) — 제3자(검색 요약)
 
 #### 요금과 등급별 권한
 소비자 요금제 (`perplexity.ai/pricing` 은 Cloudflare 403 이라 못 열었음. 값은 공식 도움말 — `perplexity.ai/help-center` 가 403 이라 같은 글을 원본 도메인 `intercom.help/perplexity-ai` 에서 열었음 — 과 미국 App Store 인앱 목록으로 확인함)
@@ -559,13 +561,13 @@ x.ai 는 Cloudflare 봇 차단(403)이 걸려 있어 헤드리스 브라우저�
 |---|---|---|---|
 | Free | $0 | — | 기본 검색 사실상 무제한, Pro Search 하루 3회, Research 월 1회, 파일 업로드 기본(제한), 고급 모델·이미지 생성 없음(도움말, 원문 열어 봄). Comet 브라우저 무료(제3자) |
 | Education Pro | $10 | 확인 못 함 — 도움말이 월 요금만 적고 웹 가격표는 403 | SheerID 로 대학 이상 학생·교직원 인증. Pro 전부 + Learn Mode·Perplexity Academic·Research 확장. Pro 의 50% 할인이라고 적힘 (도움말, 원문 열어 봄) |
-| Pro | $20 | $200/년 | Pro Search 는 주간 한도, Research 는 월간 한도 — 정확한 숫자는 확인 못 함, 도움말이 "average use" 라고만 적음. GPT-5.4·Claude Sonnet 4.6·Gemini 3.1 Pro 등 외부 모델 선택(사용량 많은 주에는 고급 모델이 제한될 수 있음), 이미지·영상 생성(영상은 제한), 파일 업로드, Space 당 파일 50개, 파일·앱 만들기는 30일마다 제한된 수. Perplexity Computer 씀 — 월 크레딧 할당 없음, 가입 때 1회 보너스 4,000 크레딧(30일 뒤 만료), 그 뒤는 구매(100 크레딧 = $1). 2026-03-13 에 Computer 를 Pro 에도 엶(공식 changelog 제목). 요금은 App Store 인앱 목록 $20.00·$200.00 과 도움말의 "12개월 Pro = $200 value" 로 확인 |
-| Max | $200 | $2,000/년 (웹에서만) | Pro 전부 + 최고 수준 모델 접근, 파일·앱 만들기 한도 확장, Model Council, Comet Max Assistant(브라우저 에이전트 주간 한도 최고), Brain(연구 미리보기), 신기능 선공개, 우선 지원. Computer 크레딧 월 10,000 + 1회 보너스 35,000(30일 뒤 만료), 자동 충전은 잔액 2,500 에서 걸림(도움말, 원문 열어 봄). 크레딧 지출 한도 기본 $200, 최대 $2,000 까지 조정(제3자 — 도움말은 한도를 정할 수 있다고만 적음) |
+| Pro | $20 | $200/년 | Pro Search 는 주간 한도, Research 는 월간 한도 — 정확한 숫자는 확인 못 함, 도움말이 "average use" 라고만 적음. GPT-5.4·Claude Sonnet 4.6·Gemini 3.1 Pro 등 외부 모델 선택(사용량 많은 주에는 고급 모델이 제한될 수 있음), 이미지·영상 생성(영상은 제한), 파일 업로드, Space 당 파일 50개, 파일·앱 만들기는 30일마다 제한된 수. Perplexity Computer 씀 — 월 크레딧 할당 없음, 가입 때 1회 보너스 4,000 크레딧(30일 뒤 만료), 그 뒤는 구매(100 크레딧 = $1), 자동 충전은 잔액 500 에서 걸림(도움말, 원문 열어 봄). 2026-03-13 에 Computer 를 Pro 에도 엶(공식 changelog 제목). 요금은 App Store 인앱 목록 $20.00·$200.00 과 도움말의 "12개월 Pro = $200 value" 로 확인 |
+| Max | $200 | $2,000/년 (웹에서만) | Pro 전부 + 최고 수준 모델 접근, 파일·앱 만들기 한도 확장, Model Council, Comet Max Assistant(브라우저 에이전트 주간 한도 최고), Brain(연구 미리보기), 신기능 선공개, 우선 지원. Computer 크레딧 월 10,000 + 1회 보너스 35,000(30일 뒤 만료), 자동 충전은 잔액 2,500 에서 걸림(도움말, 원문 열어 봄). 크레딧 지출 한도 기본 $200, 최대 $5,000 까지 조정(도움말, 원문 열어 봄 — "The default is $200, and you can set it anywhere up to $5,000") |
 | Enterprise Pro | $40/석 | $400/석/년 | Pro 전부 + Pro Search 주 400회, Research 월 80회, 좌석 관리·관리자 청구, 팀 Spaces·사내 지식 검색, Trust center, 데이터를 학습에 안 씀, Computer 월 500 크레딧. API 사용량은 포함 안 됨. 250석 이상·학교·비영리·정부 할인은 문의(도움말에 숫자 없음). 제3자는 교육기관·비영리 $30/석/월($300/년)이라 함 |
 | Enterprise Max | $325/석 | $3,250/석/년 | Enterprise Pro 전부 + Pro Search 주 4,000회, Research 월 800회, 영상 월 15개(8초·16:9·소리 포함), 개인 파일 10,000개·Space 당 5,000개, Model Council, SCIM·감사 로그·보존 기간 설정·Insights(조직에 Enterprise Max 가 한 명만 있어도 조직 전체에 열림), Computer 월 15,000 크레딧 |
 
 부가 상품
-- **Comet 브라우저**: 무료. 2025-07 에 Max 전용($200/월)으로 나왔다가 2025-10-02 무료 전환(TechCrunch). "2026-03-18 에 유료벽을 내렸다"는 글도 있음 — 날짜가 기사와 안 맞아 TechCrunch 쪽이 더 믿을 만함. 공식 Comet 도움말(`comet-help.perplexity.ai`)은 403 이라 원문 확인 못 함
+- **Comet 브라우저**: 무료. 2025-07 에 Max 전용($200/월)으로 나왔다가 2025-10-02 무료 전환(TechCrunch). "2026-03-18 에 유료벽을 내렸다"는 글도 있음 — 날짜가 기사와 안 맞아 TechCrunch 쪽이 더 믿을 만함. 공식 Comet 도움말(`comet-help.perplexity.ai` → `www.perplexity.ai/help-center/comet/` 로 301)은 403 이라 원문 확인 못 함 (2026-09-30)
 - **Comet Plus**: $5/월, 언론사 기사 묶음, Pro·Max 에 포함(제3자). 확인 못 함 — 공식 도움말에 글이 없고 Comet 도움말은 403
 - **Pro 구독자 API 크레딧 월 $5**: 확인 못 함 — 공식 도움말 어디에도 없음. Pro 혜택 목록에 없고, API 결제 글은 구독 없이 API 를 쓸 수 있으며 API 크레딧은 Computer 크레딧과 별개라고만 적고, 요금제 비교는 API 칸에 "No complimentary API credits" 라고 적음. 없어진 쪽으로 보이지만(추정) 없앴다는 공지는 못 찾음
 

@@ -15,7 +15,7 @@ Everything lives in [`TOOLS.md`](TOOLS.md):
   - license of the service and of the connector parts (MCP servers, plugins)
   - sources, each graded as official, vendor marketing, or third party
 
-Current entries: Claude (the baseline), ChatGPT, Gemini, Perplexity, NotebookLM (now Gemini Notebook), Firecrawl, Higgsfield, Blotato, Notion, Obsidian.
+Current entries: Claude (the baseline), ChatGPT, Gemini, Grok, Perplexity, NotebookLM (now Gemini Notebook), Firecrawl, Higgsfield, Blotato, Notion, Obsidian, Jev.
 
 ## Web page
 The same content as a single wiki-style page — numbered headings you can fold, a table of contents that follows your scroll (on the right on wide screens, behind the ☰ button on phones), floating buttons to jump to the top or bottom, diagrams that fit the screen and zoom on their own (pinch, Ctrl+wheel or double-tap, without zooming the page) or open full screen, wide tables that turn into one card per row on phones, a dark mode switch in the header (off by default), and a change log at the end that the header's research date links to, tracking what changed in the researched plans, terms and features over time: **https://ruminem.github.io/ai-crew-atlas/**. It is built from `TOOLS.md` by the code in [`site/`](site/) and redeployed to GitHub Pages on every push to `main`; to build it yourself, run `npm ci && npm run build` there and open `site/dist/index.html`.
@@ -48,7 +48,7 @@ The text is [CC BY 4.0](LICENSE); the page code in `site/` is [Apache-2.0](site/
   - 서비스 자체와 연결 부품(MCP 서버·플러그인)의 라이선스
   - 출처 — 공식 · 자사 홍보 · 제3자로 등급을 붙임
 
-지금 있는 항목: Claude(기준선), ChatGPT, Gemini, Perplexity, NotebookLM(지금은 Gemini Notebook), Firecrawl, Higgsfield, Blotato, Notion, Obsidian.
+지금 있는 항목: Claude(기준선), ChatGPT, Gemini, Grok, Perplexity, NotebookLM(지금은 Gemini Notebook), Firecrawl, Higgsfield, Blotato, Notion, Obsidian, Jev.
 
 ### 웹 페이지
 같은 내용을 위키처럼 한 장으로 본 것임 — 접히는 번호 붙은 제목, 스크롤을 따라가는 목차(넓은 화면은 오른쪽, 휴대폰은 ☰ 단추 안), 맨 위·맨 아래로 가는 떠 있는 단추, 화면 폭에 맞춰 보이고 페이지가 아니라 그림만 커지는(두 손가락·Ctrl+휠·두 번 누르기) 관계도와 그 전체 화면 보기, 휴대폰에서는 행마다 카드로 바뀌는 넓은 표, 머리 띠의 다크 모드 단추(기본은 꺼짐), 머리 띠의 조사 날짜를 누르면 가는 맨 끝의 바뀐 것 절(요금·약관·기능이 날짜별로 어떻게 바뀌었는지 따라가는 곳)이 있음: **https://ruminem.github.io/ai-crew-atlas/**. [`site/`](site/) 의 코드가 `TOOLS.md` 로 만들고, `main` 에 푸시할 때마다 GitHub Pages 에 다시 올림. 직접 만들려면 거기서 `npm ci && npm run build` 를 돌리고 `site/dist/index.html` 을 열면 됨.

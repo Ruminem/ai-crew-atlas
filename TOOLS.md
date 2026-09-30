@@ -8,12 +8,13 @@
 - [한눈에 보기](#한눈에-보기)
 - [도구](#도구)
   - 기준선: [Claude](#claude)
-  - 범용: [ChatGPT](#chatgpt) · [Gemini](#gemini)
+  - 범용: [ChatGPT](#chatgpt) · [Gemini](#gemini) · [Grok](#grok)
   - 조사: [Perplexity](#perplexity) · [NotebookLM](#notebooklm-2026-07-16-부터-gemini-notebook)
   - 수집: [Firecrawl](#firecrawl)
   - 제작: [Higgsfield](#higgsfield)
   - 게시: [Blotato](#blotato)
   - 기록: [Notion](#notion) · [Obsidian](#obsidian)
+  - 판정: [Jev](#jev)
 - [바뀐 것](CHANGELOG.md)
 
 각 항목 제목 아래의 단추로 목차 · 한눈에 보기 · 앞뒤 도구로 넘어감. GitHub 파일 화면의 `Outline` 단추로 모든 제목을 펼쳐 볼 수도 있음.
@@ -31,7 +32,7 @@
 
 
 ### 클로드와 어떻게 잇나
-굵은 주황 선은 claude.ai 커넥터 디렉터리의 공식 커넥터, 회색 실선은 도구 회사가 낸 공식 MCP·플러그인(대개 "사용자 지정 커넥터"로 URL 을 넣음), 점선은 커뮤니티 부품이나 파일 직접 편집임. 칸 색은 세 관계도 모두 역할을 뜻함 — 파랑 범용 · 보라 조사 · 청록 수집 · 분홍 제작 · 노랑 게시 · 초록 기록.
+굵은 주황 선은 claude.ai 커넥터 디렉터리의 공식 커넥터, 회색 실선은 도구 회사가 낸 공식 MCP·플러그인(대개 "사용자 지정 커넥터"로 URL 을 넣음), 점선은 커뮤니티 부품이나 파일 직접 편집임. 칸 색은 세 관계도 모두 역할을 뜻함 — 파랑 범용 · 보라 조사 · 청록 수집 · 분홍 제작 · 노랑 게시 · 초록 기록 · 갈색 판정.
 
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {"fontSize": "15px", "primaryTextColor": "#1F2328", "textColor": "#1F2328", "lineColor": "#8C959F", "edgeLabelBackground": "#FFFFFF", "clusterBkg": "#F6F8FA", "clusterBorder": "#D0D7DE", "titleColor": "#57606A"}, "flowchart": {"curve": "basis", "nodeSpacing": 28, "rankSpacing": 70}}}%%
@@ -41,6 +42,7 @@ flowchart LR
     subgraph 범용
         GPT["ChatGPT"]
         GEM["Gemini"]
+        GRK["Grok"]
     end
     subgraph 조사
         PPX["Perplexity"]
@@ -59,6 +61,9 @@ flowchart LR
         NO["Notion"]
         OB["Obsidian"]
     end
+    subgraph 판정
+        JEV["Jev"]
+    end
 
     C ==>|"공식 커넥터 · OAuth"| FC
     C ==>|"공식 커넥터 · OAuth"| NO
@@ -66,7 +71,9 @@ flowchart LR
     C -->|"공식 MCP · 유료 등급만"| HF
     C -->|"공식 MCP · 유료 등급만"| BL
     C -->|"공식 Claude Code 플러그인"| GPT
+    C -->|"공식 Claude Code 플러그인(스킬) · API 키"| JEV
     C -.->|"커뮤니티 MCP · API 키"| GEM
+    C -.->|"커뮤니티 MCP · API 키"| GRK
     C -.->|"커뮤니티 MCP · 쿠키"| NLM
     C -.->|"커뮤니티 플러그인 MCP · 공식 CLI · 파일"| OB
 
@@ -77,20 +84,22 @@ flowchart LR
     classDef create fill:#FBE0EC,stroke:#D6508A,color:#571B35
     classDef publish fill:#FCEFD2,stroke:#D29A2E,color:#573F0F
     classDef record fill:#E2F2D9,stroke:#5AA44A,color:#1F3D17
+    classDef judge fill:#EFE3D6,stroke:#9A6B3F,color:#3D2A17
     class C claude
-    class GPT,GEM general
+    class GPT,GEM,GRK general
     class PPX,NLM research
     class FC collect
     class HF create
     class BL publish
     class NO,OB record
+    class JEV judge
     linkStyle 0,1 stroke:#D9774A,stroke-width:3px
-    linkStyle 2,3,4,5 stroke:#6E7781,stroke-width:1.5px
-    linkStyle 6,7,8 stroke:#8C959F,stroke-width:1.5px
+    linkStyle 2,3,4,5,6 stroke:#6E7781,stroke-width:1.5px
+    linkStyle 7,8,9,10 stroke:#8C959F,stroke-width:1.5px
 ```
 
 ### 클로드의 빈자리를 누가 메우나
-왼쪽은 `Claude` 항목의 기준선에서 뽑은 "클로드가 직접 못 하는 것"이고, 오른쪽은 그걸 하는 도구임. 실시간 웹 검색은 클로드도 하므로 여기 없음.
+왼쪽은 `Claude` 항목의 기준선에서 뽑은 "클로드가 직접 못 하는 것"이고, 오른쪽은 그걸 하는 도구임. 실시간 웹 검색은 클로드도 하므로 여기 없음. X 게시물 실시간 검색은 검색 엔진에 잡힌 페이지가 아니라 X 쪽 데이터를 직접 뒤지는 것이라 따로 둠.
 
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {"fontSize": "15px", "primaryTextColor": "#1F2328", "textColor": "#1F2328", "lineColor": "#8C959F", "edgeLabelBackground": "#FFFFFF", "clusterBkg": "#F6F8FA", "clusterBorder": "#D0D7DE", "titleColor": "#57606A"}, "flowchart": {"curve": "basis", "nodeSpacing": 28, "rankSpacing": 70}}}%%
@@ -104,13 +113,16 @@ flowchart LR
         EVT["이벤트로 스스로 도는 에이전트"]
         LOCAL["로컬 노트 그래프·링크 자동 갱신"]
         MULTI["여러 회사 모델 동시 비교"]
+        XS["X 게시물 실시간 검색"]
     end
 
     IMG --> GPT["ChatGPT"]
     IMG --> GEM["Gemini"]
+    IMG --> GRK["Grok"]
     IMG --> HF["Higgsfield"]
     IMG --> BL["Blotato"]
     VID --> GEM
+    VID --> GRK
     VID --> HF
     VID --> BL
     AUD --> NLM["NotebookLM"]
@@ -119,6 +131,7 @@ flowchart LR
     EVT --> NO["Notion"]
     LOCAL --> OB["Obsidian"]
     MULTI --> PPX["Perplexity"]
+    XS --> GRK
 
     classDef gap fill:#FFFFFF,stroke:#8C959F,stroke-dasharray:4 3,color:#24292F
     classDef general fill:#DDE8FB,stroke:#4C7BD9,color:#1B2E57
@@ -127,8 +140,8 @@ flowchart LR
     classDef create fill:#FBE0EC,stroke:#D6508A,color:#571B35
     classDef publish fill:#FCEFD2,stroke:#D29A2E,color:#573F0F
     classDef record fill:#E2F2D9,stroke:#5AA44A,color:#1F3D17
-    class IMG,VID,AUD,CRAWL,SNS,EVT,LOCAL,MULTI gap
-    class GPT,GEM general
+    class IMG,VID,AUD,CRAWL,SNS,EVT,LOCAL,MULTI,XS gap
+    class GPT,GEM,GRK general
     class PPX,NLM research
     class FC collect
     class HF create
@@ -183,6 +196,7 @@ flowchart LR
 | [Claude](#claude) | 범용 · 기준선 | 부분 무료 · 개인·업무 모두 무료 등급 가능 · 생성물 상업 이용 가능 | Pro $20 (연 결제 $17) | 해당 없음 | 독점 | 2026-09-29 |
 | [ChatGPT](#chatgpt) | 범용 | 부분 무료 · 개인 무료 · 업무 이용은 개인용 약관 부록으로 받아들임(EU판 원문, ROW판 확인 못 함) · 생성물 상업 이용 가능(음성 출력 제외) | Go $8 | 공식 Claude Code 플러그인 | 독점 (Codex CLI·플러그인 Apache-2.0) | 2026-09-29 |
 | [Gemini](#gemini) | 범용 | 부분 무료 · 개인 무료 · 무료 등급 업무 이용을 약관이 막지 않음 · 생성물 상업 이용 가능(Google 이 소유권 주장 안 함) | AI Plus $4.99 | 커뮤니티 MCP · API 키 | 독점 (Gemini CLI Apache-2.0) | 2026-09-29 |
+| [Grok](#grok) | 범용 | 부분 무료 · 개인·업무 모두 무료 등급 가능(소비자 약관이 업무 이용을 막지 않음, 기업 이용은 기업 약관을 가리킴) · 생성물 소유는 사용자에게 남지만 "Created with Grok" 출처 표기 요구 · 학습 제외는 Business 부터 | SuperGrok $30 (Lite $10 는 검색 요약) | 커뮤니티 MCP · API 키 (공식 Docs MCP 는 문서 검색만) | 독점 (SDK Apache-2.0 · Grok-1 가중치 Apache-2.0) | 2026-09-30 |
 | [Perplexity](#perplexity) | 조사 | 부분 무료 · **개인 무료 + 상업 유료** — Free·Pro·Max 이미지는 비상업 전용(공식 도움말), 약관 전체가 비상업 전용이라는 것은 제3자 서술(약관 원문 403), 업무는 Enterprise | Pro $20 (학생 $10) | 공식 MCP · API 과금 | 독점 (MCP 서버 MIT) | 2026-09-29 |
 | [NotebookLM](#notebooklm-2026-07-16-부터-gemini-notebook) | 조사 | 부분 무료 · 개인 무료 · 업무 이용을 막는 약관 조항 없음 · 생성물 소유권 주장 안 함(상업 이용 명시 문구는 없음, 한국은 이미지·영상 워터마크 강제) | Google AI Plus $4.99 | 커뮤니티 MCP · 쿠키 | 독점 (커뮤니티 MCP MIT) | 2026-09-29 |
 | [Firecrawl](#firecrawl) | 수집 | 부분 무료 + 자체 호스팅 무료 · 자체 호스팅은 AGPL-3.0 조건으로 상업 이용 가능 · 클라우드 약관은 등급 구분 없이 "명시적 허락 없는 상업 이용" 금지 · 출력 권리 조항 없음 | Hobby $19 (연 결제 $16) | 공식 커넥터 + 공식 MCP | 본체 AGPL-3.0 · 클라우드 독점 · MCP 서버 MIT | 2026-09-29 |
@@ -190,6 +204,7 @@ flowchart LR
 | [Blotato](#blotato) | 게시 | 체험만 무료(7일) · 업무 이용은 유료 등급 · 생성물 권리 확인 못 함 | Starter $29 (연 결제 약 17% 할인, 금액 표기 없음) | 공식 MCP · OAuth/API 키 · 유료 등급만 | 독점 | 2026-09-29 |
 | [Notion](#notion) | 기록 | 부분 무료 · 개인 무료 · 업무는 조직용 약관(MSA), Free 업무 이용을 막는 조항 없음 | Plus $12/멤버 (연 결제 $10) | 공식 커넥터 · OAuth | 독점 (로컬 MCP 서버 MIT) | 2026-09-29 |
 | [Obsidian](#obsidian) | 기록 | 부분 무료 · 앱은 개인·업무 모두 무료(2025-02-20 부터) · Sync·Publish 만 유료 | Sync Standard $5 (연 결제 $4) — 앱은 무료 | 커뮤니티 플러그인 MCP · 공식 CLI · 파일 | 독점 소프트웨어 (플러그인 MIT) | 2026-09-29 |
+| [Jev](#jev) | 판정 | 유료 · 무료 등급 없음(새 가입자 $5 크레딧은 2026-09-27 께 멈춤, 검색 요약) · 개인·업무 모두 같은 약관(MCA)으로 가능, 단독 재판매·증류 금지 · 출력 권리는 고객에게 양도 | 종량제 — 입력 100만 토큰당 $0.042, 출력 무료 (월 요금 없음) | 공식 Claude Code 플러그인(스킬) · 커뮤니티 MCP · API 키 | 독점 (SDK·스킬 MIT, 커뮤니티 MCP MIT) | 2026-09-30 |
 
 ## 도구
 [<kbd>↑ 목차</kbd>](#목차)
@@ -329,7 +344,7 @@ flowchart LR
 - [trailofbits/skills issue #301 — codex mcp-server removed in 0.154.0](https://github.com/trailofbits/skills/issues/301) — 제3자(Codex 릴리스 노트 인용)
 
 ### Gemini
-[<kbd>↑ 목차</kbd>](#목차) [<kbd>☰ 한눈에 보기</kbd>](#한눈에-보기) [<kbd>← ChatGPT</kbd>](#chatgpt) [<kbd>Perplexity →</kbd>](#perplexity)
+[<kbd>↑ 목차</kbd>](#목차) [<kbd>☰ 한눈에 보기</kbd>](#한눈에-보기) [<kbd>← ChatGPT</kbd>](#chatgpt) [<kbd>Grok →</kbd>](#grok)
 
 - **역할**: 범용
 - **한 줄**: Google 의 대화형 AI. Gemini 앱과 Gmail·Docs·Sheets 안의 Gemini, 이미지(Nano Banana)·영상(Gemini Omni·Veo·Flow)·음악(Lyria) 생성, 딥 리서치, 상시 에이전트(Gemini Spark)를 Google AI 요금제(Google One)로 묶어 팜
@@ -397,8 +412,128 @@ flowchart LR
 - [google-antigravity/antigravity-cli](https://github.com/google-antigravity/antigravity-cli) — 공식(README 원문 열어 봄)
 - [Google Antigravity Terms of Service](https://antigravity.google/terms) — 공식(원문 열어 봄)
 
+### Grok
+[<kbd>↑ 목차</kbd>](#목차) [<kbd>☰ 한눈에 보기</kbd>](#한눈에-보기) [<kbd>← Gemini</kbd>](#gemini) [<kbd>Perplexity →</kbd>](#perplexity)
+
+- **역할**: 범용
+- **한 줄**: SpaceXAI(옛 xAI)의 대화형 AI. grok.com·iOS·Android 앱과 X 앱 안에서 쓰고, X 게시물 실시간 검색, 이미지·소리 붙은 영상 생성(Grok Imagine), 음성, 코딩 에이전트(Grok Build), 클라우드 컴퓨터 위 상시 에이전트(Grok Bot)를 SuperGrok 요금제로 묶어 팜. 2026-06 부터 유료 등급은 제품 구분 없는 주간 공용 사용량 풀을 씀. 이 사전에서 쓸모가 갈리는 지점은 **X 게시물 실시간 검색**임
+- **클로드와 잇는 법**: 공식 커넥터는 없음 — Claude 커넥터 디렉터리 주소(`claude.com/connectors/grok`·`xai`·`x-ai`·`spacexai`)가 모두 404 로 끝남(같은 방식으로 연 `firecrawl` 은 200, 2026-09-30 확인). 공식 MCP 는 **Docs MCP**(`https://docs.x.ai/api/mcp`, 원격 HTTP, 인증 없음)뿐이고 xAI 문서 검색용이라 Grok 모델을 부르지 않음. 모델·X 검색·Imagine 을 부르려면 **커뮤니티 MCP 서버**(`merterbak/Grok-MCP`·`libraz/grok-mcp` 등, 전부 MIT, `XAI_API_KEY` API 키 인증, API 단가로 과금)를 씀. X 검색만 필요하면 `guzus/grok-mcp` 같은 X 검색 전용 서버도 있음
+- **확인한 날짜**: 2026-09-30
+
+#### 무료·유료와 이용 조건
+
+| 구분 | 조건 |
+|---|---|
+| 분류 | 부분 무료 |
+| 개인 이용 | Free 로 가능함. 가격표의 Free 칸: "Get to know Grok and its capabilities for free within generous limits." 소비자 약관 최소 나이는 13세(13–17세는 보호자 동의) — 원문 열어 봄 |
+| 상업·업무 이용 | 소비자 약관(2026-09-11 갱신판)에 업무·영리 이용을 막거나 "personal, non-commercial" 로 좁히는 문장은 없음. 다만 서문이 "Our Enterprise Terms of Service govern the use of our Services for developers and businesses, including SpaceXAI APIs and PromptIDE." 라고 써서 기업·개발자 이용은 기업 약관(2026-08-14 갱신판) 쪽에 둠. 회사 메일로 가입하면 "your account may be linked to that organization’s Grok Enterprise subscription" 이고 관리자가 계정을 보고 관리할 수 있음(Business Domains 조항). 조직 명의로 쓰면 그 조직을 대신해 동의할 권한이 있어야 함 — 원문 열어 봄. 조직 계약·관리 기능이 필요하면 Business($30)·Enterprise(견적)로 감 |
+| 생성물의 상업적 이용 | **소비자 등급(Free·SuperGrok 계열)**: 소유권은 사용자에게 남지만 명시적 양도 문구는 없음. 원문: "To the extent permitted by applicable law, and as between you and SpaceXAI, you retain your ownership rights to the User Content." (User Content = Input + Output). 같은 절이 "When using Output or SpaceXAI’s name, logos, trademarks, or other brand elements, you are required to obtain our permission and attribute your generation of the Output to the Service, as detailed in our Brand Guidelines." 라고 해서 **출처 표기를 요구함** — 브랜드 가이드(2025-02-14)는 생성물을 싣는 곳에 "Written with Grok" 또는 "Created with Grok" 를 눈에 띄게 적으라고 함. AI 생성 표시도 사용자가 붙이거나 SpaceXAI 가 붙일 수 있음("AI-Generated Disclosures"). 등급으로 가르는 문구는 없음. **Business·Enterprise(기업 약관)**: "Customer … owns all right, title, and interest in the Output in perpetuity and … SpaceXAI hereby assigns to Customer all of its right, title, and interest in such Output" — 명시적 양도가 있음. **공통 금지(AUP, 2026-08-14 시행)**: "Using the Service or any Output to develop (or assist anyone in developing) machine learning models or any products or services that compete with SpaceXAI", "Scraping, harvesting or reselling any Input or Output", 워터마크·출처 메타데이터 제거 금지. Imagine 이미지·영상에는 지울 수 없는 Grok 워터마크가 붙음(FAQ: "There is no setting to remove the watermark") — 전부 원문 열어 봄 |
+
+- 특이점: 소비자 약관은 입력물에 대해 SpaceXAI 에 "irrevocable, perpetual, transferable, sublicensable, royalty-free, and worldwide right" 를 주게 하고, 용도에 제품 개선·"other business purposes" 를 넣음. 로그인 상태에서는 학습 사용 여부를 고를 수 있음("you can select whether or not you want us to use your User Content to improve our products and services and train our models"). **로그인하지 않고 쓰면 학습에 쓰는 권리를 통째로 줌**("you grant us full rights to use any data you provide … for product development and model training purposes"). 가격표 비교표의 "No training" 은 Business·Enterprise 에만 체크돼 있음 — 원문 열어 봄
+- 특이점: **X 안의 Grok(Grok on X)은 이 약관이 아니라 X 서비스 약관을 따름** — 원문: "Use of Grok on the X platform is not governed by these Terms. To access Grok on X, you must agree to the X Terms of Service." X 약관의 생성물 조항은 확인 못 함 — help.x.com·x.com 이 봇 차단
+- 특이점: 운영사 이름이 약관·가격표·문서 모두 **SpaceXAI LLC**(네바다 법인, 텍사스 오스틴)로 바뀌어 있음. 문서 도메인과 API 는 그대로 x.ai 임. 언제 바뀌었는지는 확인 못 함 — 공식 공지를 찾지 않았음
+- 이 절의 출처: [Terms of Service - Consumer](https://x.ai/legal/terms-of-service) — 공식(원문 열어 봄, 2026-09-11 갱신) · [Terms of Service - Enterprise](https://x.ai/legal/terms-of-service-enterprise) — 공식(원문 열어 봄, 2026-08-14 갱신) · [Acceptable Use Policy](https://x.ai/legal/acceptable-use-policy) — 공식(원문 열어 봄, 2026-08-14 시행) · [Brand Guidelines](https://x.ai/legal/brand-guidelines) — 공식(원문 열어 봄, 2025-02-14) · [FAQ - Grok Website / Apps](https://docs.x.ai/grok/faq) — 공식(원문 열어 봄)
+
+#### 요금과 등급별 권한
+| 등급 | 월 요금 | 연 결제 시 | 할 수 있는 것 · 한도 |
+|---|---|---|---|
+| Free | $0 | – | 웹·iOS·Android 앱, 이미지 생성(Imagine), Grok Build, 커넥터, 음성 모드. 실시간 웹·X 검색은 비교표에 **"Limited"**. 영상 생성·Grok Bot·Expert 는 없음. Chat·Voice 무료 한도는 유료 주간 풀과 따로 차고 따로 재설정됨(FAQ). 정확한 횟수는 확인 못 함 — 공식 문서가 숫자를 적지 않음 |
+| SuperGrok Lite | 확인 못 함 — 가격표는 비교표 열 이름만 싣고 금액을 안 보여 줌. 검색 요약은 $10 (2026-03 말 출시라고 함, 글 날짜 확인 못 함) | 확인 못 함 — 검색 요약은 $100/년 | 비교표 기준: Free 전부 + 영상 생성, 실시간 웹·X 검색 제한 없음, Expert. Grok Bot 없음. 검색 요약은 "480p·6초 영상 하루 몇 개, 2배 긴 대화" 라고 함 |
+| SuperGrok | $30 | 확인 못 함 — 가격표에 연 결제 토글이 없음. 검색 요약은 $300/년 | 카드 문구: "Grok 4.6 model", "Grok Bot access", "Connectors", "Higher rate limits across all features", "Expert", "Image and video generation". 가격표 첫 문장 "higher rate limits and access to frontier models" |
+| SuperGrok Plus | $100 | 확인 못 함 — 검색 요약은 $1,000/년 | SuperGrok 전부 + "Create 1080p videos", "Significantly higher usage across Chat, Imagine, Voice & Build", "Lightning-fast replies", "Priority access at peak times", "Early access to new features". 신설 시기는 제3자 기사 제목 날짜가 2026-08-02 임 |
+| SuperGrok Heavy | 확인 못 함 — 가격표는 열 이름만 있음. 검색 요약은 $300 | 확인 못 함 — 공식 FAQ 가 "SuperGrok Heavy yearly subscription" 이 있다는 것만 적음. 검색 요약은 $3,000/년 | 비교표 기준: SuperGrok 기능 전부 + **Priority support**(개인 등급 중 Heavy 만 체크). 검색 요약: "a larger team of agents collaborating on each answer", **X Premium+ 포함**(X 공식 계정 @premium 게시물, 검색 요약). 3개월 $99 할인이 있다는 검색 요약이 있으나 grok.com 원본 HTML 의 설정값이 `temp_supergrok_heavy_discount_enabled:false` 라서 지금 할인이 켜져 있는지는 확인 못 함 |
+| Business | $30/사용자/월 (Business 페이지: "$30 / month per user") | 확인 못 함 — 영업 문의 양식에 Monthly·Annual 선택지만 있음 | 기업 약관이 적용됨. Grok 4.6·Imagine·Voice·Grok Build·커넥터, 좌석 관리, 통합 결제, RBAC, 도메인 확인, 사용자 분석, 맞춤 데이터 보존, 고급 감사 통제, **No training**, SOC 2. 비교표상 **Grok Bot 없음** |
+| Enterprise | 견적 ("Contact Sales") | 견적 | Business 전부 + SSO·SCIM, 맞춤 RBAC, 고객 관리 암호화 키, 전용 데이터 플레인, 전담 온보딩. 기업 약관의 기본 계약 기간은 1년 자동 갱신 |
+
+- **주간 사용량 풀(2026-06 도입)**: 유료 등급은 Chat·Imagine·Voice·Build·API 를 따로 세지 않고 **한 주 단위 공용 풀**에서 씀. 원문: "Instead of separate daily limits for each product (like Chat, Imagine, Voice, or Build), you get one shared weekly usage pool". 풀이 차면 유료 기능이 멈추고 Free 의 Chat·Voice 한도만 남음. **Extra Usage Credits** 로 이어 쓸 수 있음 — 웹에서만 사고 최소 $5, 1년 뒤 만료, 정가라 포함 사용량보다 비쌈, Auto Top Up 가능(FAQ 원문 열어 봄). 등급별 풀 크기는 확인 못 함 — 공식 문서가 숫자를 안 적음
+- **등급 이름**: 공식 가격표 비교표 열은 Free · SuperGrok Lite · SuperGrok · SuperGrok Plus · SuperGrok Heavy · Business · Enterprise 임. 가격표 위 카드에는 Free·SuperGrok·SuperGrok Plus 셋만 금액이 나옴. Lite·Heavy 금액이 가격표에 없는 것은 원문에서 확인한 사실이고, 금액은 전부 검색 요약임 — 원문을 열 수 있는 제3자 글은 프록시가 막아서 날짜를 못 봄. 참고로 grok.com 원본 HTML 의 구독 상품 ID 가 `grok.pro.monthly.30`·`supergrok.pro.monthly.300` 이라 $30·$300 과 맞아떨어지지만 ID 는 금액 근거가 아님
+- **세금·앱 결제**: 약관 "We will charge tax or other applicable fees when required". 앱스토어 결제가는 확인 못 함 — apps.apple.com 이 프록시 정책으로 막힘. 환불은 웹·Google Play 결제는 xAI, App Store 결제는 Apple 이 처리함(FAQ)
+- **X Premium 경로**: X 앱 안의 Grok 은 X 구독(Premium·Premium+)으로 한도가 늘고, **X 약관**을 따름(소비자 약관 8절). X 계정을 grok.com 계정에 연결하면 "xAI will be able to retrieve your X subscription status and grant relevant benefits"(FAQ 원문). X Premium 환불은 X 가 처리함. 금액은 확인 못 함 — help.x.com 은 봇 확인, x.com 은 프록시 차단. 검색 요약: X Premium $8/월, **X Premium+ $40/월 · $395/년(웹)이고 SuperGrok 접근과 Grok Bot 을 포함**한다고 함(글 날짜 확인 못 함)
+- **Grok Bot 은 Cursor 요금제로도 씀**: "included with every paid individual Cursor plan and with the Cursor Teams plan. You can also link an individual SuperGrok, SuperGrok Plus, or SuperGrok Heavy subscription."(docs 원문). 둘 다 있으면 사용량이 더 많은 쪽을 씀
+- 가격표 비교표와 grok.com 원본의 설정값이 어긋나는 곳: 비교표는 Grok Build 를 Free 포함 모든 등급에 체크하는데, grok.com 원본 HTML 의 설정값에 `grok_build_access_gate_web … "SuperGrok Heavy subscription required"` 가 있음. 웹판 Build 만 Heavy 로 막은 것인지는 확인 못 함 — 로그인해 봐야 갈림. 가격표 쪽을 적었음
+
+**API 단가 (USD, 1M 토큰당, 공식 가격 문서 원문 열어 봄)** — 프롬프트가 200k 토큰을 넘으면 그 요청 전체가 높은 단가로 매겨짐
+
+| 모델 | 컨텍스트 | 입력 | 캐시 입력 | 출력 |
+|---|---|---|---|---|
+| grok-4.7 (2026-09 출시, 최신 권장) | 500k | $2.00 (200k 이상 $4.00) | $0.50 ($1.00) | $6.00 ($12.00) |
+| grok-4.6 | 500k | $2.00 ($4.00) | $0.50 ($1.00) | $6.00 ($12.00) |
+| grok-4.5 | 500k | $2.00 ($4.00) | $0.30 ($0.60) | $6.00 ($12.00) |
+| grok-4.3 | 1M | $1.25 ($2.50) | $0.20 ($0.40) | $2.50 ($5.00) |
+| grok-4.20-0309-reasoning · non-reasoning · multi-agent | 1M | $1.25 ($2.50) | $0.20 ($0.40) | $2.50 ($5.00) |
+| grok-build-0.1 | 256k | $1.00 ($2.00) | $0.20 ($0.40) | $2.00 ($4.00) |
+
+- 이미지: grok-imagine-image $0.02/장 · grok-imagine-image-2.0 $0.04/장 · grok-imagine-image-quality $0.05/장(2026-11-02 은퇴 예정, image-2.0 으로 넘어감). 영상: grok-imagine-video $0.050/초 · grok-imagine-video-1.5 $0.080/초. 음성: Speech to Speech $0.08/분($4.80/시간) + 텍스트 입력 $0.004, Speech to Text $0.10/시간(REST)·$0.20/시간(스트리밍), Text to Speech $15.00/1M자
+- 서버 도구 호출: Web Search $5/1k 호출, **X Search $5/1k 게시물 · $10/1k 프로필**(호출이 아니라 가져온 항목 수로 매김), Code Execution $5/1k, 첨부 검색 $5/1k, Collections Search $2.50/1k, 원격 MCP 도구는 호출료 없이 토큰만
+- 할인·할증: Batch API 20% 할인(grok-4.3·4.20 계열만, 4.5 이상은 할인 없음), Priority Processing 2배, 미국 리전 엔드포인트 1.1배. Grok 4.7 Fast 는 공개 API 에 없고 Cursor·Grok Build 에서만 2배 단가로 씀. 이용 지침 위반 요청은 생성 전 차단돼도 건당 $0.05
+- API 크레딧은 환불 안 됨(FAQ). 가입 시 무료 API 크레딧이 있는지는 확인 못 함 — 공식 문서에서 문구를 못 찾음
+
+#### 클로드로는 못 하는 것
+- **X(옛 트위터) 게시물을 1차 데이터로 실시간 검색**: 클로드의 웹 검색은 검색 엔진에 잡힌 웹 페이지를 보는 것이고, Grok 은 X 게시물·프로필·스레드를 X 쪽 데이터로 직접 뒤짐. 공식 원문: "The X Search tool enables Grok to perform keyword search, semantic search, user search, and thread fetch on X". 특정 계정만 보거나 빼기(`allowed_x_handles`·`excluded_x_handles`, 각각 최대 20개), 날짜 범위(`from_date`·`to_date`), 게시물 안 이미지·**영상 분석**(`enable_video_understanding`)을 켤 수 있음. 앱에서는 Free 도 되지만 비교표에 "Limited" 로 적혀 있고, API 에서는 가져온 게시물 1k 개당 $5 임
+- **X 앱 안에서 부르는 AI(Grok on X)**: X 게시물 흐름 안에서 바로 Grok 을 부름. X 약관을 따르는 별도 서비스임(소비자 약관 8절). 클로드는 X 안에 들어가 있지 않음
+- **이미지 생성·편집(Grok Imagine)**: 대화 안에서 글·참고 사진으로 이미지를 만들고 고침, 한 요청에 최대 10장, 여러 장 참고 편집(최대 5장). Free 에도 이미지 생성이 체크돼 있음. 랜딩 문구는 "Up to 2K resolution" — 자사 홍보. 클로드는 이미지를 만들지 못하고 SVG·HTML 도표만 그림
+- **영상 생성(Grok Imagine)**: 글→영상, 이미지→영상, 참고→영상, 영상 편집·연장. 최대 15초, **기본으로 소리(오디오 트랙)가 붙음**("Generated videos include an audio track by default"), 프리셋 목소리를 넣을 수 있음. 앱에서는 SuperGrok Lite 부터이고 1080p 는 SuperGrok Plus 부터(가격표). 클로드는 영상을 만들지 못함
+- **음성 파일 생성·목소리 복제(API)**: Text to Speech 로 웃음·속삭임 같은 태그가 든 음성을 MP3 등으로 뽑고, 120초 이하 참고 음성으로 **맞춤 목소리(Custom Voices)** 를 만들어 TTS·실시간 음성에 씀. 전화(SIP) 연결 음성 에이전트도 문서에 있음. 클로드는 음성 모드로 대화는 하지만 오디오 파일을 만들지는 못함(기준선에서도 소리 생성은 확인 못 함)
+- **Companions**: 캐릭터와 음성으로 대화하는 기능, **iOS 앱에만** 있음(FAQ "Companions are available on the iOS app only")
+- 음성 대화·웹 검색·딥 리서치류·파일 분석·코딩 에이전트(Grok Build)·상시 에이전트(Grok Bot)·커넥터는 클로드에도 해당 기능(음성 모드·웹 검색·Research·Claude Code·Cowork·커넥터)이 있어 이 칸에서 뺐음. 여러 에이전트가 한 답을 나눠 푸는 Multi-agent·Heavy 모드도 클로드의 Research 와 겹쳐 뺐음 — 성능 차이는 자사 홍보만 있음
+
+#### 라이선스
+**서비스 자체**
+- Grok(grok.com·앱·Grok on X)·API·Grok Bot 은 독점 서비스임. 소비자 약관: "We and our affiliates own all rights, title, and interest in and to the Service." AUP 가 모델·시스템의 복제·재판매·증류·역공학을 막음
+
+**클로드에 붙일 때 쓰는 부품**
+- **공식 Docs MCP 서버** (`https://docs.x.ai/api/mcp`, Streamable HTTP, 인증 없음): SpaceXAI 가 호스팅하는 서비스라 코드 라이선스가 없음. **xAI 문서를 찾아 주는 것뿐이고 Grok 모델을 부르지 않음**(docs 원문: "gives AI assistants and agents direct access to the SpaceXAI documentation")
+- **공식 SDK**: `xai-sdk`(Python) Apache-2.0 — PyPI 메타데이터와 GitHub `xai-org/xai-sdk-python` 의 LICENSE 원문 둘 다 확인. Vercel AI SDK 의 `@ai-sdk/xai` 도 Apache-2.0(npm 메타데이터, Vercel 제작이라 xAI 공식 아님). API 는 OpenAI 호환이라 OpenAI SDK 로도 부름
+- **Grok Build CLI** (`@xai-official/grok`, npm 1.0.44): 설치 래퍼의 package.json 이 `"license": "Apache-2.0"` 라고 적지만 패키지 안에 LICENSE 파일이 없고 소스 저장소 링크도 없음. 실제 실행 파일은 플랫폼별 하위 패키지(`@xai-official/grok-linux-x64` 등)로 따로 받음. **소스가 공개된 오픈소스인지는 확인 못 함** — 공개 저장소를 못 찾음
+- **커뮤니티 MCP 서버**(xAI 와 무관, `XAI_API_KEY` API 키 인증): LICENSE 원문을 직접 연 넷은 모두 **MIT** — `merterbak/Grok-MCP`, `libraz/grok-mcp`, `guzus/grok-mcp`(X 검색 전용), `wynandw87/claude-code-grok-mcp`. 이 서버들은 xAI API 키로 부르므로 콘솔의 API 단가로 과금됨. 한편 FAQ 는 SuperGrok 주간 풀의 사용처에 "API" 를 넣고 있어("A percentage breakdown by product (API, Build, Chat, Imagine, Voice)") 구독 풀로 API 를 쓰는 길이 있을 수 있음 — 어떤 조건인지는 확인 못 함, 해당 문서를 못 찾음
+
+**오픈 웨이트 모델**
+- **Grok-1** (314B 파라미터, 전문가 8개 MoE — README 원문. 공개 시기는 README 에 없어 확인 못 함): 코드와 가중치 모두 **Apache-2.0**. README 원문: "The code and associated Grok-1 weights in this release are licensed under the Apache 2.0 license."(원문 열어 봄)
+- **Grok-2**(xAI 는 Grok 2.5 라고 부름, 2025-08-24 Hugging Face 공개): **오픈소스 라이선스가 아니라 자체 커뮤니티 라이선스**. 지금 소비자 약관은 이것을 "SpaceXAI Community License Agreement (https://huggingface.co/xai-org/grok-2/blob/main/LICENSE)" 로 부름(원문 열어 봄). 조건 — 다른 AI 모델의 학습·개선에 쓰지 못함, 상업적 이용은 xAI 지침을 따라야 하고 연 매출 $1M 넘는 회사는 따로 계약 — 은 검색 요약임(LICENSE 원문은 huggingface.co 가 프록시에서 막혀 못 열었음)
+- **Grok 3 오픈 웨이트**: 확인 못 함 — 2025-08 에 "약 6개월 뒤" 공개하겠다 했고 2026-02-10 기사가 공개를 다시 확인했다고 하지만(검색 요약), 실제로 가중치가 올라왔는지는 Hugging Face 가 막혀 못 봄
+
+#### 출처
+x.ai 는 Cloudflare 봇 차단(403)이 걸려 있어 헤드리스 브라우저로 원문을 열었음. grok.com/plans 는 브라우저에서도 빈 화면이라 원본 HTML 의 설정값만 봤음. help.x.com·x.com·apps.apple.com·huggingface.co·cursor.com 과 제3자 글은 조사 환경에서 열리지 않아 검색 요약으로만 봤음 — 그래서 제3자 글 날짜를 하나도 확인하지 못했음.
+- [Pricing: Compare Grok Plans](https://x.ai/pricing) — 공식 (원문 열어 봄, 비교표는 스크린숏으로 읽음)
+- [SpaceXAI for Business](https://x.ai/grok/business) — 공식 (원문 열어 봄)
+- [Grok](https://x.ai/grok) — 자사 홍보 (원문 열어 봄)
+- [Terms of Service - Consumer](https://x.ai/legal/terms-of-service) — 공식 (원문 열어 봄, 2026-09-11 갱신)
+- [Terms of Service - Enterprise](https://x.ai/legal/terms-of-service-enterprise) — 공식 (원문 열어 봄, 2026-08-14 갱신)
+- [Acceptable Use Policy](https://x.ai/legal/acceptable-use-policy) — 공식 (원문 열어 봄, 2026-08-14 시행)
+- [Brand Guidelines](https://x.ai/legal/brand-guidelines) — 공식 (원문 열어 봄, 2025-02-14)
+- [Welcome to Grok](https://docs.x.ai/grok/overview) — 공식 (원문 열어 봄)
+- [FAQ - Grok Website / Apps](https://docs.x.ai/grok/faq) — 공식 (원문 열어 봄)
+- [License & User Management](https://docs.x.ai/grok/management) — 공식 (원문 열어 봄)
+- [Grok Bot](https://docs.x.ai/grok-bot/overview) · [Grok Bot FAQ](https://docs.x.ai/grok-bot/faq) — 공식 (원문 열어 봄)
+- [Pricing | xAI Docs](https://docs.x.ai/developers/pricing) — 공식 (원문 열어 봄)
+- [Models | xAI Docs](https://docs.x.ai/developers/models) — 공식 (원문 열어 봄)
+- [Release Notes | xAI Docs](https://docs.x.ai/developers/release-notes) — 공식 (원문 열어 봄)
+- [Grok 4.7 | xAI Docs](https://docs.x.ai/developers/grok-4-7) — 공식 (원문 열어 봄)
+- [X Search | xAI Docs](https://docs.x.ai/developers/tools/x-search) — 공식 (원문 열어 봄)
+- [Imagine](https://docs.x.ai/developers/model-capabilities/imagine) · [Video Generation](https://docs.x.ai/developers/model-capabilities/video/generation) — 공식 (원문 열어 봄)
+- [Voice | xAI Docs](https://docs.x.ai/developers/model-capabilities/audio/voice) — 공식 (원문 열어 봄)
+- [Docs MCP Server](https://docs.x.ai/developers/docs-mcp) — 공식 (원문 열어 봄)
+- [grok.com/plans 원본 HTML](https://grok.com/plans) — 공식 (원문 열어 봄, 요금은 스크립트로 그려져 없음. 설정값만 봄)
+- [xai-org/grok-1 README·LICENSE](https://github.com/xai-org/grok-1) — 공식 (원문 열어 봄)
+- [xai-org/xai-sdk-python LICENSE](https://github.com/xai-org/xai-sdk-python) — 공식 (원문 열어 봄)
+- [xai-sdk | PyPI](https://pypi.org/project/xai-sdk/) — 공식 (원문 열어 봄)
+- [@xai-official/grok | npm](https://www.npmjs.com/package/@xai-official/grok) — 공식 (패키지를 받아 package.json 열어 봄)
+- [@ai-sdk/xai | npm](https://www.npmjs.com/package/@ai-sdk/xai) — 제3자 (레지스트리 메타데이터 열어 봄)
+- [merterbak/Grok-MCP](https://github.com/merterbak/Grok-MCP) · [libraz/grok-mcp](https://github.com/libraz/grok-mcp) · [guzus/grok-mcp](https://github.com/guzus/grok-mcp) · [wynandw87/claude-code-grok-mcp](https://github.com/wynandw87/claude-code-grok-mcp) — 제3자 (LICENSE 원문 열어 봄)
+- [xai-org/grok-2 · Hugging Face](https://huggingface.co/xai-org/grok-2) — 공식 (검색 요약, 원문 차단)
+- [Premium on X: "SuperGrok Heavy now includes X Premium+ …"](https://x.com/premium/status/2077820074015293774) — 공식 (검색 요약, 원문 차단)
+- [Grok on X: "SuperGrok Lite is xAI's new $10/month entry tier …"](https://x.com/grok/status/2036955441565979113) — 공식 (검색 요약, 원문 차단)
+- [xAI added a $100/month "SuperGrok Plus" tier | Enterprise DNA](https://enterprisedna.co/resources/ai-pulse/ai-pulse-2026-08-02-xai-added-a-100-month-supergrok-plus-tier/) — 제3자 (검색 요약, 주소의 날짜 2026-08-02)
+- [SuperGrok price in 2026 | Techraisal](https://www.techraisal.com/blog/supergrok-price-in-2026/) — 제3자 (검색 요약, 원문 차단·날짜 확인 못 함)
+- [Grok Pricing 2026: Plans, SuperGrok $10 to $300, API Costs | AI Toolbox](https://www.ai-toolbox.co/grok-models/grok-pricing-plans-api-2026) — 제3자 (검색 요약, 날짜 확인 못 함)
+- [SuperGrok in 2026: $30 plan, SuperGrok Plus $100 … | DataStudios](https://www.datastudios.org/post/grok-supergrok-paid-features-grok-4-5-access-higher-weekly-limits-multi-agent-reasoning-media-g) — 제3자 (검색 요약, 날짜 확인 못 함)
+- [Grok Pricing 2026: SuperGrok, X Premium+ & API Costs Explained | DIYAI](https://diyai.io/ai-tools/text-generation/grok-pricing/) — 제3자 (검색 요약, 날짜 확인 못 함, X Premium·Premium+ 금액 출처)
+- [SuperGrok Pricing: The Heavy Price x.ai's Pricing Page Leaves Out](https://justinmckelvey.com/blog/supergrok-pricing) — 제3자 (검색 요약, 가격표에 Heavy 금액이 없다는 관찰과 맞음)
+- [Elon Musk says xAI has open sourced Grok 2.5 | TechCrunch](https://techcrunch.com/2025/08/24/elon-musk-says-xai-has-open-sourced-grok-2-5/) — 제3자 (검색 요약, 2025-08-24)
+- [Musk Confirms: XAI To Open-source Grok 3 | Dataconomy](https://dataconomy.com/2026/02/10/musk-confirms-xai-to-open-source-grok-3/) — 제3자 (검색 요약, 2026-02-10)
+
 ### Perplexity
-[<kbd>↑ 목차</kbd>](#목차) [<kbd>☰ 한눈에 보기</kbd>](#한눈에-보기) [<kbd>← Gemini</kbd>](#gemini) [<kbd>NotebookLM →</kbd>](#notebooklm-2026-07-16-부터-gemini-notebook)
+[<kbd>↑ 목차</kbd>](#목차) [<kbd>☰ 한눈에 보기</kbd>](#한눈에-보기) [<kbd>← Grok</kbd>](#grok) [<kbd>NotebookLM →</kbd>](#notebooklm-2026-07-16-부터-gemini-notebook)
 
 - **역할**: 조사
 - **한 줄**: 질문마다 웹을 검색해 출처 번호가 달린 답을 내는 검색형 AI 서비스. 웹·앱·Comet 브라우저로 쓰고, 개발자용으로 Agent API·Search API·Embeddings API·Router API 를 팜(Sonar Chat Completions 는 2026-09-27 지원 종료)
@@ -878,7 +1013,7 @@ MCP·커넥터가 무엇으로 과금되는지
 - [What Happened to the Notion AI Add-On? — usecarly](https://www.usecarly.com/blog/notion-ai-pricing-change/) · [Notion AI Pricing 2026 — felloai](https://felloai.com/notion-ai-pricing/) — 제3자 (검색 요약: 2025-05-13 애드온 판매 중단, 기존 가입자 유지, Business $15 → $20)
 
 ### Obsidian
-[<kbd>↑ 목차</kbd>](#목차) [<kbd>☰ 한눈에 보기</kbd>](#한눈에-보기) [<kbd>← Notion</kbd>](#notion)
+[<kbd>↑ 목차</kbd>](#목차) [<kbd>☰ 한눈에 보기</kbd>](#한눈에-보기) [<kbd>← Notion</kbd>](#notion) [<kbd>Jev →</kbd>](#jev)
 
 - **역할**: 기록
 - **한 줄**: 내 컴퓨터 폴더(볼트)에 든 마크다운 파일을 링크·그래프·플러그인으로 엮어 쓰는 로컬 우선 노트 앱. 동기화(Sync)와 웹 게시(Publish)는 유료 부가 서비스임
@@ -951,3 +1086,115 @@ MCP·커넥터가 무엇으로 과금되는지
 - [obsidian-headless — npm 레지스트리](https://registry.npmjs.org/obsidian-headless) — 공식 (원문 열어 봄 — 0.0.14, `UNLICENSED`, Node.js 22+)
 - [coddingtonbear/obsidian-local-rest-api README · manifest.json · LICENSE](https://github.com/coddingtonbear/obsidian-local-rest-api) — 제3자 (커뮤니티 플러그인 원문)
 - [MarkusPfundstein/mcp-obsidian README · LICENSE](https://github.com/MarkusPfundstein/mcp-obsidian) — 제3자 (커뮤니티 원문)
+
+### Jev
+[<kbd>↑ 목차</kbd>](#목차) [<kbd>☰ 한눈에 보기</kbd>](#한눈에-보기) [<kbd>← Obsidian</kbd>](#obsidian)
+
+- **역할**: 판정
+- **한 줄**: TypeSafe AI, Inc.(샌프란시스코)의 첫 모델로, 글을 쓰지 않고 판정만 하는 API 임. 글·JSON 상태와 질문(선택지 고르기·등급 매기기·참일 확률)을 보내면 형이 정해진 답과 선택지별 확률·confidence 를 돌려주고, 질문 여러 개를 한 요청에서 병렬로 평가함. 분류·라우팅·가드레일처럼 코드 안에서 대량으로 도는 판정용이며 대화·글쓰기·코드 작성은 못 함. 2026-09-15 발표. Scala 쪽 Typesafe(현 Lightbend)와는 다른 회사임
+- **클로드와 잇는 법**: 공식 커넥터·공식 MCP 는 없음(Claude 디렉터리 주소 404, 공식 문서에 MCP 언급 없음). **공식 Claude Code 플러그인(에이전트 스킬)** 이 있음 — `claude plugin marketplace add typesafe-ai/skills` 뒤 `claude plugin install typesafe@typesafe-ai`. 이 플러그인은 API 를 부르지 않고 클로드에게 Jev 로 코드를 짜는 법을 가르치는 스킬임 — 실제 호출은 클로드가 짠 코드가 **API 키**(`Authorization: Bearer $TYPESAFE_API_KEY`, `console.typesafe.ai/keys` 에서 발급)로 함. 대화 중에 클로드가 직접 부르려면 **커뮤니티 MCP**(npm `jev-mcp`·`@jkudish/jev-mcp`, GitHub `typesafe-mcp` 등, 모두 MIT, `TYPESAFE_API_KEY` 환경 변수)를 씀. OAuth 는 없음
+- **확인한 날짜**: 2026-09-30
+
+#### 무료·유료와 이용 조건
+
+| 구분 | 조건 |
+|---|---|
+| 분류 | 유료 — 2026-09-30 새 가입자 기준. 크레딧을 사서 입력 토큰만큼 빠지는 선불 종량제이고 무료 등급은 없음. 2026-09-20 전체 가입을 열 때 새 계정에 $5 크레딧을 줬다가(그때는 체험만 무료) 2026-09-27 께 새 가입자 몫을 멈췄다는 것은 **검색 요약**임(아래) |
+| 개인 이용 | 됨 — 무료는 아님. MCA(Master Customer Agreement, 2026-09-23 개정) 머리가 개인 명의 가입을 전제함: "YOU: (A) AGREE TO THE AGREEMENT ON BEHALF OF YOURSELF AS AN INDIVIDUAL, UNLESS YOU ARE USING THE SERVICES ON BEHALF OF AN ORGANIZATION…". 분쟁 조항도 "if Customer is an individual … consumer disputes" 와 "if Customer is a business" 를 나눠 둠 (공식, 원문 열어 봄) |
+| 상업·업무 이용 | 됨 — 등급 구분 없이 같은 약관임. MCA 2.2조가 API 를 자기 앱에 넣어 **최종 사용자에게 서비스하는 것**을 허락함: "the right to include the API into one or more software applications developed and operated by Customer for the benefit of Customer's end users". 막는 것은 2.3조 — API 를 단독 서비스로 되팔기("make the Services available as a standalone service"), 출력으로 모델 증류·모방 학습·경쟁 제품 개발("to perform model distillation, train a model to imitate the output of the Services, or develop … a similar or competing product"), 역공학, 사용량 한도 초과. 웹 콘솔은 고객의 직원·계약자만 쓸 수 있음(2.4조) (공식, 원문 열어 봄) |
+| 생성물의 상업적 이용 | 됨 — MCA 4.2조: "TypeSafe does not claim ownership of Input and TypeSafe disclaims ownership of Output. TypeSafe hereby assigns to Customer all of its right, title, and interest, if any, in Output." 다만 Jev 의 출력은 글·이미지가 아니라 **선택지·점수·확률 같은 판정 값**이라 저작물 권리가 문제 될 일이 적음. 9.3조는 출력이 틀릴 수 있고 다른 사용자도 같은 출력을 받을 수 있다고 적음 (공식, 원문 열어 봄) |
+
+- **무료 크레딧 변천(전부 검색 요약·제3자)**: 2026-09-15 발표 때는 대기열(waitlist)·조기 접근(early access)이었음(발표 글·홈페이지 "Try … Jev, in early access", 공식). 2026-09-20 `console.typesafe.ai` 가입을 모두에게 열고 $5 크레딧(회사 추산 약 1억 2천만 토큰)을 줌 → 2026-09-22 수요 때문에 새 가입 중단, 기존 계정은 계속 됨 (Firecrawl 블로그 2026-09-23 갱신본, 원문 열어 봄 — 제3자). 2026-09-28 께 가입을 다시 열었고 $5 무료 크레딧은 "악용(a few bad actors)" 때문에 새 가입자에게 잠시 멈췄다고 함(창업자 Diogo Almeida 의 2026-09-27 발언으로 인용됨, 검색 요약 — 원 기사 aifront-page.com 은 막혀 못 엶). 회사 공식 문서·약관에서 $5 라는 숫자는 못 찾음 — **확인 못 함 — 공식 발표는 X(x.com)·콘솔 쪽에 있을 것으로 보이나 두 도메인 모두 막힘**
+- **약관 쪽 근거**: MCA 8.2조가 크레딧을 두 가지로 둠 — 산 크레딧(Purchased Credits)과 회사 재량으로 주는 프로모션 크레딧(Promotional Credits, "TypeSafe may, but has no obligation to, issue Promotional Credits"). 프로모션 크레딧을 더 받으려고 계정을 여럿 만드는 것을 금지함. 그러니 무료 크레딧은 약관상 보장된 등급이 아니라 회사가 줄 수도 안 줄 수도 있는 것임 (공식, 원문 열어 봄)
+- **크레딧 조건**(MCA 8.2(a), 공식): 산 크레딧은 계약 기간 끝이나 **산 날부터 12개월** 중 먼저 오는 날 소멸함. 환불·양도 안 됨("not redeemable, refundable, transferable"). 잔액이 0 이 되면 자동 충전을 켠 경우 고른 금액만큼 채우고, 안 켰으면 요청을 거절할 수 있음. 해지해도 안 쓴 선불금은 돌려주지 않음(10.3조). 요금은 세금 별도(8.4조)
+- **데이터**: MCA 4.1조 — 고객 데이터를 모델 가중치 학습에 "prior consent" 없이 넣지 않음. 개인정보처리방침(2025-11-19 개정)은 조건 없이 "We will not train or fine tune any artificial intelligence or machine learning models on your prompts or other Input" 이라고 적음 — 약관은 동의하면 학습할 여지를 두고 방침은 안 둠, 두 문서가 어긋남. 다만 로그·통계 같은 Telemetry 는 제한 없이 씀(4.3조). ZDR(데이터 무보존)은 엔터프라이즈 고객만 영업 문의로 (공식 문서 Legal·Models, 원문 열어 봄)
+- **지역**: 사이트 이용 약관(Terms of Use, 2026-09-19)은 "The Site is intended for visitors located within the United States" 라고 적음. 이것은 **웹사이트** 약관이고, 제품(API·콘솔)은 MCA 가 정함("If you enter into a separate agreement … the terms of that separate agreement will govern"). MCA 에는 거주 국가 제한 없이 미국 수출 통제·금수국 조항(16.12조)만 있음 — 한국에서 쓰는 것을 막는 문구는 없음. 준거법은 MCA 캘리포니아주, 개별 중재(JAMS)
+- **공개 표기**: MCA 16.4조 — TypeSafe 가 고객 이름·로고를 고객 목록·홍보물에 쓸 수 있음(서면 요청하면 멈춤)
+- 이 절의 출처: [Master Customer Agreement](https://typesafe.ai/legal/mca) — 공식 (원문 열어 봄, 2026-09-23 개정판) · [Terms of Use](https://typesafe.ai/legal/terms) — 공식 (원문 열어 봄, 2026-09-19 개정판) · [Acceptable Use Policy](https://typesafe.ai/legal/acceptable-use-policy) — 공식 (원문 열어 봄, 2026-09-23 개정판) · [Legal — TypeSafe docs](https://docs.typesafe.ai/legal) — 공식 (원문 열어 봄) · [What Is Jev? — Firecrawl 블로그](https://www.firecrawl.dev/blog/what-is-jev) — 제3자 (원문 열어 봄, 2026-09-23 갱신) · [TypeSafe AI Reopens Jev Sign-Ups, Suspends Free $5 Credit — aifront-page.com](https://aifront-page.com/typesafe-ai-reopens-jev-sign-ups-free-credit-suspended/) — 제3자 (검색 요약, 날짜 미상 · 2026-09-28 이후로 보임)
+
+#### 요금과 등급별 권한
+구독 등급이 없는 **API 종량제**임. 공식 가격표 페이지는 없고(`typesafe.ai/pricing` 은 404), 단가는 공식 문서 [Models](https://docs.typesafe.ai/models) 표와 홈페이지·발표 글에 있음(원문 열어 봄, USD).
+
+| 등급 | 월 요금 | 연 결제 시 | 할 수 있는 것 · 한도 |
+|---|---|---|---|
+| 셀프서브(콘솔에서 크레딧 선불 구매) | 없음 — 쓴 만큼 | 없음 | 모델 `jev-1.13.0`(별칭 `jev-latest`·`jev-preview` 가 지금 둘 다 이것을 가리킴). 초당 10만 토큰 · 초당 40요청, 넘으면 `429`. 요청당 64k 토큰(`state` + 모든 질문), 그중 `state` + 가장 긴 질문 32k. 입력은 텍스트만(문자열·JSON 객체·텍스트 배열) — 이미지·오디오·영상 안 받음. 최소 충전 금액은 **확인 못 함 — 콘솔(`console.typesafe.ai`)이 막혔고 공식 문서·약관에 금액이 없음** |
+| 맞춤·엔터프라이즈 | 협의 | 협의 | 더 높은 호출 한도("Higher limits are available on custom and enterprise plans"), ZDR(데이터 무보존). 문의 sales@typesafe.ai. 금액은 공개 안 됨 |
+
+단가 (공식 문서 Models, 원문 열어 봄)
+- **입력 토큰 100만 개당 $0.042 (10억 개당 $42). 출력 토큰은 무료** — 원문: "Charged per input token. Output tokens are free." 발표 글도 "Output tokens: FREE (too cheap to meter)" 라고 씀
+- 응답의 `usage` 에 `input_tokens`·`output_tokens` 가 찍힘. 한 요청 안의 질문은 같은 `state` 를 한 번만 읽으므로 질문을 한 요청에 몰면 쌈 — 공식 쿡북이 "13개 질문을 한 번에 보내면 12.2배 싸고 10.0배 빠르고 답은 같음"이라고 적음(공식 문서지만 자사 측정)
+- 크레딧 소모 속도는 "account settings, including the model used" 에 따라 다를 수 있다고 MCA 8.2조가 적음. 지금 모델은 하나뿐임
+- 가격 지속성: 발표 글이 "We can't prove it isn't subsidized; we'll need the long-term to prove the sustainability of our pricing (which we expect to go down, not up)" 라고 적음 — 보조금 가격일 가능성을 회사가 부정하지 않음 (공식 블로그, 원문 열어 봄). 홈페이지 FAQ "Are these prices temporary or subsidized?" 의 답은 **확인 못 함 — 답이 `framerusercontent.com` 에서 불러오는 모듈에 있고 그 도메인이 막힘**
+- 호출 한도는 고정이 아님: 원문 "Rate limits are adjusting dynamically … the limits above can change without notice" (공식 문서 Models)
+- 무료 크레딧: 등급이 아니라 프로모션임 — 위 `무료·유료와 이용 조건` 절 참고. 2026-09-20 가입자에게 준 $5 는 회사 추산 약 1억 2천만 토큰(제3자 글이 인용한 회사 추산, 검색 요약·Firecrawl 블로그 2026-09-23). 단가로 되짚으면 $5 ÷ $0.042 × 100만 ≈ 1억 1,900만 토큰이라 맞아떨어짐
+- 산 크레딧은 12개월 뒤 소멸, 환불 안 됨, 자동 충전은 선택 (MCA 8.2(a), 공식)
+
+다른 경로의 단가 (전부 검색 요약)
+- **OpenRouter**: `typesafe/jev-latest`·`typesafe/jev-1.13` 이 입력 100만 토큰당 $0.042 · 출력 $0 로 올라와 있다고 함(검색 요약, 날짜 미상 — openrouter.ai 가 막혀 못 엶). 공식 단가와 같음
+- **Vercel AI Gateway**: 2026-09-16 부터 `typesafe-ai/jev` 로 부를 수 있고 대기열 없음·ZDR 선택 가능이라고 함(Firecrawl 블로그 2026-09-23, 제3자). 게이트웨이 쪽 단가는 확인 못 함 — vercel.com 이 막힘
+- 두 경로는 TypeSafe 가입이 필요 없다고 제3자 글이 적음. TypeSafe 공식 문서에는 이 두 경로 언급이 없음
+
+#### 클로드로는 못 하는 것
+Jev 는 클로드 같은 대화·글쓰기 모델이 **아님**. 공식 문서 원문: "It does not generate text, write code, or hold a conversation." 클로드가 하는 일(글·코드 작성, 대화, 도구 호출, 웹 검색)을 대신하지 못하고, 클로드가 **짜는 프로그램 안에서** 판정 한 칸을 맡는 부품임. 그래서 이 칸은 "클로드 대화창에서 못 하는 것"이 아니라 "클로드로 같은 판정을 돌릴 때와 무엇이 다른지"로 적음.
+
+- **글이 아니라 형이 정해진 값을 돌려줌 — 형 오류가 구조적으로 없음.** 질문마다 답의 모양을 미리 정함: Choice(정해 둔 선택지 중 하나, 최대 255개), Score(정해 둔 등급 척도 위의 값), Noul(참일 확률 0–1). 응답은 `choice`·`score`·`noul` 값이고 파싱할 글이 없음. 클로드는 대화 안에서 분류·점수를 **글로** 답하고, 그 답을 프로그램이 쓰려면 글을 해석하고 검증해야 함. "형 오류가 수학적으로 불가능"은 발표 글 주장이고(자사 홍보), 출력 모양이 스키마로 묶인다는 것 자체는 API 문서로 확인됨(공식)
+- **선택지마다 확률과 confidence 를 같이 줌.** Choice·Score 는 선택지·등급별 `probabilities` 와 그 분포가 얼마나 한쪽으로 몰렸는지로 계산한 `confidence`(0–1)를 함께 돌려줌. 이 값으로 "자신 있으면 자동 처리, 아니면 사람·큰 모델로 넘김"을 코드에서 가름(공식 문서 Confidence·Patterns). 클로드는 확률을 물으면 글로 짐작해 말할 뿐 선택지별 분포를 값으로 내놓지 않음 — "보정된(calibrated) 확률이라 믿을 만하다"는 부분은 회사가 RLCD 라는 자체 학습법으로 만들었다는 **자사 홍보** 주장이고, 문서도 "Calibration is measured across groups of predictions; it does not guarantee that an individual answer is correct" 라고 선을 그음
+- **질문 여러 개를 한 요청에서 병렬로 평가함.** 같은 `state` 에 질문 수십 개를 한 번에 보내면 각 질문을 서로 안 보게 따로 평가해 한 응답으로 돌려줌 — "Adding questions barely changes the response time" (공식 문서). 클로드는 한 대화에서 여러 질문을 한 번에 답해도 앞 답이 뒤 답에 섞임
+- **속도와 값.** 응답 70–500ms, LLM 보다 40–200배 빠르다는 것과 홈페이지의 "193.6x Faster, 444.6x Cheaper", "238x Lower input price than Claude Fable 5.1", "Zero Hallucinations" 는 **자사 홍보**임(회사 워크플로 평가 기준이고, 발표 글이 "these are on the higher end of real world gains"·"some bias could exist" 라고 스스로 단서를 붙임). 단가 자체(입력 100만 토큰당 $0.042, 출력 무료)는 공식 문서 값임. 클로드 구독은 이런 대량 판정을 API 로 돌리는 용도가 아님 — Pro 에는 API 사용이 포함 안 됨(기준선 항목)
+- **대량·실시간 판정용**: 분류·라우팅·등급 매기기·가드레일(LLM 입출력 검사)·RAG 문단 거르기·인용 검증·중복 판정 같은 "코드 속 if 문 한 줄" 을 초당 수십 번 돌리는 자리(공식 쿡북 목록). 발표 글의 둠(Doom) 데모는 초당 10회 호출에 시간당 약 $7 이라고 함(자사 홍보)
+
+반대로 Jev 가 못 하는 것 (공식 문서 Jev 1.13 jaggedness·Models, 원문 열어 봄) — 클로드 대신 쓸 수 없는 이유
+- 글 생성·요약·답장·코드 작성·설명 못 함("If you really need to generate text... there are other models for that")
+- 텍스트만 받음 — 이미지·오디오·영상 입력 안 됨
+- 세기(counting)·숫자 계산·날짜 비교·여러 단계 추론에 약함 — 문서가 "코드에서 하라"고 권함
+- `state` 가 길고 상관없는 내용이 많으면 정확도가 떨어짐("Jev suffers from context rot"). 요청당 64k 토큰
+- 영어가 주 학습 언어이고 한국어 등 CJK 는 "handled but not equally well" — 한국어 데이터면 먼저 시험해 보라고 문서가 적음
+- 코딩 에이전트의 두뇌로 못 씀: "Jev is **not** a drop-in replacement for the LLM behind Claude Code…"
+
+#### 라이선스
+서비스 자체
+- **독점 SaaS(호스팅 API)임.** 모델 가중치·서버는 공개되지 않고, MCA 2.3조가 역공학·소스 추출·파생물·증류를 금지함. 약관 11조: "TypeSafe and its licensors retain all intellectual property rights … in and to the Services". 자체 호스팅할 길은 없음 (공식, 원문 열어 봄)
+- 문서에 모델을 고객 데이터로 미세조정하지 않고 모든 계정이 같은 가중치를 쓴다고 적힘("the same weights serve every account", 공식 문서 Models)
+
+클로드에 붙일 때 쓰는 부품 (공식 = `typesafe-ai` GitHub 조직)
+- **Claude Code 플러그인·에이전트 스킬** `typesafe-ai/skills` (플러그인 이름 `typesafe`, 마켓플레이스 `typesafe-ai`, plugin.json v0.5.7): **MIT** — LICENSE 원문 "MIT License / Copyright (c) 2026 TypeSafe AI" 와 `.claude-plugin/plugin.json` 의 `"license": "MIT"` 로 확인 (raw.githubusercontent.com 으로 원문 열어 봄). 이 스킬은 API 를 부르는 도구가 아니라 코딩 에이전트에게 Jev API 쓰는 법을 가르치는 문서 묶음임
+- **Python SDK** `typesafe-sdk`(PyPI v0.7.2, 저장소 `typesafe-ai/typesafe-sdk-python`): **MIT** — PyPI `license_expression: MIT`. 단, 저장소 LICENSE 원문의 저작권 줄이 "Copyright (c) [year] [fullname]" 로 **틀 문구가 그대로 남아 있음**(원문 열어 봄). 라이선스 종류는 MIT 로 분명하나 저작권자 표기가 비어 있는 셈임
+- **JavaScript SDK** `@typesafe-ai/sdk`(npm v0.6.0, 2026-09-15 게시, 저장소 `typesafe-ai/typesafe-sdk-js`): **MIT** — npm `license` 필드와 LICENSE 원문 "Copyright (c) 2026 TypeSafe" 로 확인
+- **공식 MCP 서버는 없음** — 공식 문서 목차(llms.txt 전체)와 에이전트 스킬 문서에 MCP 언급이 없음. Claude 디렉터리에도 없음 — `claude.com/connectors/typesafe`·`/connectors/jev`·`/plugins/typesafe` 가 모두 404 로 끝남(같은 방식으로 연 `/connectors/firecrawl` 은 200 이라 주소 규칙은 맞음, 2026-09-30 확인). 플러그인은 디렉터리가 아니라 `typesafe-ai/skills` 자체 마켓플레이스로 깖
+
+커뮤니티·제3자 부품 (공식 아님)
+- **커뮤니티 MCP 서버**: 발표 뒤 며칠 사이 여럿 나옴. 라이선스는 본 것 모두 **MIT** — npm `jev-mcp`(rashedInt32, v0.5.1, 2026-09-17 생성) · `@jkudish/jev-mcp`(v0.11.0, 2026-09-17) · `typesafe-jev-mcp`(anasbekheit, v0.1.2, 2026-09-20)는 npm 레지스트리 `license` 필드로, GitHub `parksjr/typesafe-mcp` · `racecraft-lab/typesafe-mcp`(포크) · `codaaiteam/jev-mcp` · `BYK/jev-mcp` 는 LICENSE 원문 첫 줄로 확인. 모두 사용자의 `TYPESAFE_API_KEY` 를 환경 변수로 받는 방식이라고 검색 요약이 적음
+- **Vercel AI SDK 제공자** `@ai-sdk/typesafe-ai`(npm v3.0.11, 2026-09-16 생성, `vercel/ai` 저장소): **Apache-2.0** (npm 레지스트리로 확인). Vercel AI Gateway 로 부를 때 씀
+
+#### 출처
+- [TypeSafe AI 홈페이지](https://typesafe.ai/) — 자사 홍보 (원문 열어 봄 — 단, FAQ 답은 `framerusercontent.com` 모듈이라 못 봄)
+- [Introducing System One Models & Jev — TypeSafe 블로그, 2026-09-15](https://typesafe.ai/blog/introducing-system-one-models-and-jev) — 자사 홍보 (원문 열어 봄)
+- [Master Customer Agreement](https://typesafe.ai/legal/mca) — 공식 (원문 열어 봄, 2026-09-23 개정판)
+- [Terms of Use](https://typesafe.ai/legal/terms) — 공식 (원문 열어 봄, 2026-09-19 개정판, 웹사이트 전용)
+- [Acceptable Use Policy](https://typesafe.ai/legal/acceptable-use-policy) — 공식 (원문 열어 봄, 2026-09-23 개정판)
+- [Privacy Policy](https://typesafe.ai/legal/privacy-policy) — 공식 (원문 열어 봄, 2025-11-19 개정판 — 학습 비사용 문구만 대조)
+- [Introduction — TypeSafe docs](https://docs.typesafe.ai/introduction) — 공식 (원문 열어 봄)
+- [Quick start — TypeSafe docs](https://docs.typesafe.ai/introduction/quickstart) — 공식 (원문 열어 봄)
+- [Models — TypeSafe docs](https://docs.typesafe.ai/models) — 공식 (원문 열어 봄 — 단가·호출 한도·컨텍스트)
+- [API reference — TypeSafe docs](https://docs.typesafe.ai/api) — 공식 (원문 열어 봄)
+- [Jev with coding agents — TypeSafe docs](https://docs.typesafe.ai/introduction/coding-agents) — 공식 (원문 열어 봄)
+- [System One — TypeSafe docs](https://docs.typesafe.ai/concepts/system-one) — 공식 (원문 열어 봄)
+- [Choice — TypeSafe docs](https://docs.typesafe.ai/primitives/choice) — 공식 (원문 열어 봄 — 선택지 255개)
+- [Confidence — TypeSafe docs](https://docs.typesafe.ai/confidence) — 공식 (원문 열어 봄)
+- [Jev 1.13 jaggedness — TypeSafe docs](https://docs.typesafe.ai/model-jaggedness/jev-1.13) — 공식 (원문 열어 봄)
+- [Agent skill — TypeSafe docs](https://docs.typesafe.ai/agent-skill) — 공식 (원문 열어 봄)
+- [Legal — TypeSafe docs](https://docs.typesafe.ai/legal) — 공식 (원문 열어 봄)
+- [llms.txt — TypeSafe docs 목차](https://docs.typesafe.ai/llms.txt) — 공식 (원문 열어 봄)
+- [typesafe-ai/skills LICENSE · plugin.json · marketplace.json](https://github.com/typesafe-ai/skills) — 공식 (raw.githubusercontent.com 으로 원문 열어 봄 — github.com 페이지는 막힘)
+- [typesafe-ai/typesafe-sdk-python LICENSE](https://github.com/typesafe-ai/typesafe-sdk-python) — 공식 (raw 로 원문 열어 봄)
+- [typesafe-ai/typesafe-sdk-js LICENSE](https://github.com/typesafe-ai/typesafe-sdk-js) — 공식 (raw 로 원문 열어 봄)
+- [PyPI typesafe-sdk](https://pypi.org/project/typesafe-sdk/) — 공식 (레지스트리 JSON 으로 버전·라이선스 확인)
+- [npm @typesafe-ai/sdk](https://www.npmjs.com/package/@typesafe-ai/sdk) — 공식 (레지스트리로 버전·라이선스 확인)
+- [npm @ai-sdk/typesafe-ai](https://www.npmjs.com/package/@ai-sdk/typesafe-ai) — 제3자 (Vercel, 레지스트리로 라이선스 확인)
+- [npm jev-mcp](https://www.npmjs.com/package/jev-mcp) · [@jkudish/jev-mcp](https://www.npmjs.com/package/@jkudish/jev-mcp) · [typesafe-jev-mcp](https://www.npmjs.com/package/typesafe-jev-mcp) — 제3자 (레지스트리로 라이선스 확인)
+- [parksjr/typesafe-mcp](https://github.com/parksjr/typesafe-mcp) · [racecraft-lab/typesafe-mcp](https://github.com/racecraft-lab/typesafe-mcp) · [codaaiteam/jev-mcp](https://github.com/codaaiteam/jev-mcp) · [BYK/jev-mcp](https://github.com/BYK/jev-mcp) — 제3자 (raw 로 LICENSE 첫 줄 확인)
+- [What Is Jev? Inside TypeSafe's Decision-Only AI Model — Firecrawl 블로그, 2026-09-23 갱신](https://www.firecrawl.dev/blog/what-is-jev) — 제3자 (원문 열어 봄 — 가입·$5 크레딧·Vercel·OpenRouter 경로)
+- [TypeSafe AI Reopens Jev Sign-Ups, Suspends Free $5 Credit — aifront-page.com](https://aifront-page.com/typesafe-ai-reopens-jev-sign-ups-free-credit-suspended/) — 제3자 (검색 요약, 도메인 막힘)
+- [Is Jev Free? — layer3labs.io](https://www.layer3labs.io/guides/is-jev-free) — 제3자 (검색 요약)
+- [Jev Latest — OpenRouter](https://openrouter.ai/~typesafe/jev-latest) — 제3자 (검색 요약, 도메인 막힘)
+

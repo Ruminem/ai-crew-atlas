@@ -19,7 +19,7 @@ const changelog = fs.readFileSync(path.join(root, 'CHANGELOG.md'), 'utf8');
 if (!/^# 바뀐 것\n/.test(changelog)) throw new Error('CHANGELOG.md 첫 줄이 "# 바뀐 것" 이 아님');
 const src = `${md.trimEnd()}\n\n${changelog.replace(/^(#{1,3}) /gm, '#$1 ')}`;
 
-const ROLE_CLASS = { 기준선: 'claude', 범용: 'general', 조사: 'research', 수집: 'collect', 제작: 'create', 게시: 'publish', 기록: 'record' };
+const ROLE_CLASS = { 기준선: 'claude', 범용: 'general', 조사: 'research', 수집: 'collect', 제작: 'create', 게시: 'publish', 기록: 'record', 판정: 'judge' };
 
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 // GitHub 가 앵커를 만들 때 보는 글자만 남긴다 (scratchpad 의 check_anchors 와 같은 규칙)
@@ -35,7 +35,7 @@ for (const m of md.matchAll(/^ {2}- (\S+): (.+)$/gm)) {
   if (!ROLE_CLASS[m[1]]) continue;
   for (const a of m[2].matchAll(/\]\(#([^)]+)\)/g)) roleOf[a[1]] = m[1];
 }
-expect('목차에서 읽은 도구', Object.keys(roleOf).length, 10);
+expect('목차에서 읽은 도구', Object.keys(roleOf).length, 12);
 
 const icon = (d) => `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${d}"/></svg>`;
 const DG_TOOLS = '<div class="dg-tools">' +
@@ -119,7 +119,7 @@ const solo = '<p><a href="#목차"><kbd>↑ 목차</kbd></a></p>\n';
 expect('절 머리 ↑ 목차 줄', html.split(solo).length - 1, 4);
 html = html.split(solo).join('');
 const navHead = '<p><a href="#목차"><kbd>↑ 목차</kbd></a> ';
-expect('도구 단추 줄', html.split(navHead).length - 1, 10);
+expect('도구 단추 줄', html.split(navHead).length - 1, 12);
 html = html.split(navHead).join('<p class="navrow"><a href="#목차"><kbd>↑ 목차</kbd></a> ');
 
 // GitHub 화면을 두고 쓴 안내 문장을 이 페이지의 쓰는 법으로 바꾼다
@@ -161,7 +161,7 @@ function tocHtml(items) {
 const git = (...args) => execFileSync('git', args, { cwd: root, encoding: 'utf8' }).trim();
 // 조사 날짜는 한눈에 보기 표의 확인한 날짜 중 가장 최근 것이다. 오타만 고친 커밋이 조사 날짜를 끌어올리지 않게 커밋 날짜를 쓰지 않는다
 const checked = [...md.matchAll(/^\| \[.+\| (\d{4}-\d{2}-\d{2}) \|$/gm)].map((m) => m[1]);
-expect('한눈에 보기의 확인한 날짜', checked.length, 10);
+expect('한눈에 보기의 확인한 날짜', checked.length, 12);
 const stamp = `조사 ${checked.sort().at(-1)}`;
 // 업데이트 시각·해시는 페이지를 바꾸는 파일의 마지막 커밋이다. 빌드 시각을 쓰면 같은 입력에서도 산출물이 달라진다
 const PAGE_SRC = ['TOOLS.md', 'CHANGELOG.md', 'site'];

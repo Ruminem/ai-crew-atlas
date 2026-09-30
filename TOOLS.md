@@ -195,7 +195,7 @@ flowchart LR
 |---|---|---|---|---|---|---|
 | [Claude](#claude) | 범용 · 기준선 | 부분 무료 · 개인·업무 모두 무료 등급 가능 · 생성물 상업 이용 가능 | Pro $20 (연 결제 $17) | 해당 없음 | 독점 | 2026-09-29 |
 | [ChatGPT](#chatgpt) | 범용 | 부분 무료 · 개인 무료 · 업무 이용은 개인용 약관 부록으로 받아들임(EU판 원문, ROW판 확인 못 함) · 생성물 상업 이용 가능(음성 출력 제외) | Go $8 | 공식 Claude Code 플러그인 | 독점 (Codex CLI·플러그인 Apache-2.0) | 2026-09-30 |
-| [Gemini](#gemini) | 범용 | 부분 무료 · 개인 무료 · 무료 등급 업무 이용을 약관이 막지 않음 · 생성물 상업 이용 가능(Google 이 소유권 주장 안 함) | AI Plus $4.99 | 커뮤니티 MCP · API 키 | 독점 (Gemini CLI Apache-2.0) | 2026-09-29 |
+| [Gemini](#gemini) | 범용 | 부분 무료 · 개인 무료 · 무료 등급 업무 이용을 약관이 막지 않음 · 생성물 상업 이용 가능(Google 이 소유권 주장 안 함) | AI Plus $4.99 | 커뮤니티 MCP · API 키 | 독점 (Gemini CLI Apache-2.0) | 2026-10-01 |
 | [Grok](#grok) | 범용 | 부분 무료 · 개인·업무 모두 무료 등급 가능(소비자 약관이 업무 이용을 막지 않음, 기업 이용은 기업 약관을 가리킴) · 생성물 소유는 사용자에게 남지만 "Created with Grok" 출처 표기 요구 · 학습 제외는 Business 부터 | SuperGrok $30 (Lite $10 는 검색 요약) | 커뮤니티 MCP · API 키 (공식 Docs MCP 는 문서 검색만) | 독점 (SDK Apache-2.0 · Grok-1 가중치 Apache-2.0) | 2026-09-30 |
 | [Perplexity](#perplexity) | 조사 | 부분 무료 · **개인 무료 + 상업 유료** — Free·Pro·Max 이미지는 비상업 전용(공식 도움말), 약관 5.1 도 등급 구분 없이 비상업 전용(2024 판 사본), 업무는 Enterprise | Pro $20 (학생 $10) | 공식 MCP · API 과금 | 독점 (MCP 서버 MIT) | 2026-09-30 |
 | [NotebookLM](#notebooklm-2026-07-16-부터-gemini-notebook) | 조사 | 부분 무료 · 개인 무료 · 업무 이용을 막는 약관 조항 없음 · 생성물 소유권 주장 안 함(상업 이용 명시 문구는 없음, 한국은 이미지·영상 워터마크 강제) | Google AI Plus $4.99 | 커뮤니티 MCP · 쿠키 | 독점 (커뮤니티 MCP MIT) | 2026-09-29 |
@@ -351,7 +351,7 @@ flowchart LR
 - **역할**: 범용
 - **한 줄**: Google 의 대화형 AI. Gemini 앱과 Gmail·Docs·Sheets 안의 Gemini, 이미지(Nano Banana)·영상(Gemini Omni·Veo·Flow)·음악(Lyria) 생성, 딥 리서치, 상시 에이전트(Gemini Spark)를 Google AI 요금제(Google One)로 묶어 팜
 - **클로드와 잇는 법**: 모델을 부르는 공식 MCP 서버·커넥터는 확인 못 함. 공식으로 있는 것은 **Gemini API Docs MCP** (`https://gemini-api-docs-mcp.dev`, 원격 HTTP, `npx add-mcp "https://gemini-api-docs-mcp.dev"` 로 붙임)와 공식 Gemini API 스킬(`google-gemini/gemini-skills`)인데 **둘 다 Gemini 문서·SDK 사용법을 알려 주는 것뿐이고 Gemini 모델을 부르지는 않음**. 공식 문서는 이 MCP 를 "public MCP server" 라고만 하고 인증 절차는 적지 않음(원문 열어 봄). 모델을 부르려면 커뮤니티 MCP 서버(`GEMINI_API_KEY` API 키 인증)나 커뮤니티 Claude Code 플러그인(`gemini-plugin-cc` 류, Google 과 무관하다고 스스로 밝힘)을 씀. 주의: Gemini CLI 는 **2026-06-18 에 AI Pro·Ultra 구독과 무료 Code Assist 개인용 요청을 끊었고**, 그 뒤로는 **유료** Gemini API 키나 Code Assist Standard·Enterprise 라이선스로만 돎. 구독자는 Antigravity CLI(Google 계정 로그인)로 옮겨 감 — Gemini CLI 를 감싼 옛 플러그인은 유료 API 키가 있어야 돎(원문 열어 봄). 참고로 클로드의 Google Workspace 커넥터(Gmail·Calendar·Drive, OAuth)는 Google 앱에 붙는 것이지 Gemini 에 붙는 것이 아님
-- **확인한 날짜**: 2026-09-29
+- **확인한 날짜**: 2026-10-01
 
 #### 무료·유료와 이용 조건
 
@@ -370,13 +370,13 @@ flowchart LR
 |---|---|---|---|
 | 무료 | $0 | – | 연산량 기준 한도가 5시간마다 차오르고 주간 상한이 있음(2026-05-17 부터). 3.6 Flash, 3.1 Pro 는 들쭉날쭉한 접근. 컨텍스트 32k 토큰. 딥 리서치 되지만 붐비면 무료 사용자가 먼저 막힐 수 있음. 이미지는 Nano Banana 2(내려받기 1K), Gemini 앱 안 영상 생성은 안 됨. Flow 는 구독과 상관없이 하루 50크레딧, Nano Banana Pro 제한 접근, 붐비는 시간(UTC 14–17시)엔 영상 생성이 막힐 수 있음. 저장공간 15GB |
 | AI Plus | $4.99 (2026-06-08 인하, 다음 갱신부터) — 전에는 $7.99 | 확인 못 함 — 공식 가격표에 연 결제가가 없음 | 무료의 2배 한도, 컨텍스트 128k 토큰, 영상 생성(Gemini Omni)·Daily Brief(미국)·예약 작업, Nano Banana Pro 로 다시 그리기, Gmail 교정 등 Gmail·Vids 안의 Gemini, Flow 월 200크레딧 추가, 400GB 저장공간(전 200GB, 가족 5명 공유). 한도를 넘으면 AI 크레딧을 사서 늘릴 수 있음 |
-| AI Pro | $19.99 | 확인 못 함 — 공식 가격표에 연 결제가가 없음. 2025 제3자 글은 옛 2TB 요금제가 $199.99/년이라고 했음 | 무료의 4배 한도, 컨텍스트 100만 토큰, Gemini 3.1 Pro·딥 리서치 확장, **Gmail·Docs·Sheets 안의 Gemini**, Gemini Spark, Gemini Notebook(옛 NotebookLM) 상향 한도, Veo 3.1 Lite 제한 체험, Flow 월 1,000크레딧 추가, Antigravity 입문 한도, Google Cloud 크레딧 월 $10, 저장공간 5TB(가입 요금제에 따라 10TB), YouTube Premium Lite 포함(일부 국가, 체험 중엔 안 켜지고 가족 공유 안 됨). Workspace 안 Google Pics(포스터·SNS 이미지)도 됨 |
-| AI Ultra (5x) | $99.99 | 확인 못 함 — 공식 가격표에 연 결제가가 없음. 2025 제3자 글은 Ultra 가 월 결제만 된다고 했음 | 2026-05 I/O 신설. AI Pro 의 5배 Gemini·Antigravity 한도, Deep Think(Ultra 전용), Flow 월 10,000크레딧 추가, 20TB 저장공간, YouTube Premium(40여 개국), Google Cloud 크레딧 월 $40 |
-| AI Ultra (20x) | $199.99 (2026-05-19 I/O 에 $249.99 에서 인하) | 확인 못 함 — 공식 가격표에 연 결제가가 없음 | AI Pro 의 20배 한도, Deep Think, 신기능 먼저, Antigravity 에이전트 최고 한도, Veo 3.1 최고 접근, Project Genie(I/O 블로그는 $200 등급 전용이라 하고 Google One 가격표는 "Ultra 전용"이라고만 함), Flow 월 25,000크레딧 추가, 30TB 저장공간, Google Cloud 크레딧 월 $100 |
+| AI Pro | $19.99 | $199.99/년 (Google One 가격표 계산기) | 무료의 4배 한도, 컨텍스트 100만 토큰, Gemini 3.1 Pro·딥 리서치 확장, **Gmail·Docs·Sheets 안의 Gemini**, Gemini Spark, Gemini Notebook(옛 NotebookLM) 상향 한도, Veo 3.1 Lite 제한 체험, Flow 월 1,000크레딧 추가, Antigravity 입문 한도, Google Cloud 크레딧 월 $10, 저장공간 5TB(가입 요금제에 따라 10TB), YouTube Premium Lite 포함(일부 국가, 체험 중엔 안 켜지고 가족 공유 안 됨). Workspace 안 Google Pics(포스터·SNS 이미지)도 됨. Google Health Premium(기기 필요, 일부 국가)·Google Home Premium Standard 포함, Jules 상향 한도 |
+| AI Ultra (5x) | $99.99 | 없음 — 월 결제만 됨 (Google One 가격표) | 2026-05 I/O 신설. AI Pro 의 5배 Gemini·Antigravity 한도, Deep Think(Ultra 전용), Flow 월 10,000크레딧 추가, 20TB 저장공간, YouTube Premium(40여 개국), Google Cloud 크레딧 월 $40. Google Home Premium Advanced·Google Health Premium 포함, Gemini Agent(미국·영어) |
+| AI Ultra (20x) | $199.99 (2026-05-19 I/O 에 $249.99 에서 인하) | 없음 — 월 결제만 됨 (Google One 가격표) | AI Pro 의 20배 한도, Deep Think, 신기능 먼저, Antigravity 에이전트 최고 한도, Veo 3.1 최고 접근, Project Genie(I/O 블로그는 $200 등급 전용이라 하고 Google One 가격표는 "Ultra 전용"이라고만 함), Flow 월 25,000크레딧 추가, 30TB 저장공간, Google Cloud 크레딧 월 $100. Google Home Premium Advanced·Google Health Premium 포함, Gemini Agent(미국·영어) |
 
-- 이 표의 값은 따로 적지 않은 것은 모두 공식 가격표·도움말 원문으로 확인함. 연 결제가만 못 찾았음 — gemini.google 가격표는 월 요금만 싣고, one.google.com 은 가격이 스크립트로 그려져 원문 HTML 에 값이 없음
+- 이 표의 값은 따로 적지 않은 것은 모두 공식 가격표·도움말 원문으로 확인함. 연 결제가는 Pro 만 있음($199.99), Ultra 는 월 결제만 됨, Plus 는 확인 못 함 — gemini.google 가격표는 월 요금만 싣고, one.google.com 은 가격이 스크립트로 그려져 헤드리스 브라우저로 그려 확인함(2026-10-01)
 - **Gemini Spark 는 AI Pro·Ultra, 18세 이상** (기능 표·Spark 페이지·Google One 가격표가 같음). 국가는 공식 원문 둘이 갈림: Gemini 도움말은 "Gemini 앱이 되는 곳 전부, EEA·나이지리아·스위스·영국 제외", Google One 의 AI Pro 혜택 도움말은 "미국만·영어만". 첫 조사의 "Ultra 전용·미국 베타"는 I/O 당시(2026-05) 계획이었음
-- **Workspace(회사 계정)**: Workspace 가격표는 Gemini 앱을 모든 Business 요금제에 넣어 둠(Starter 는 기본 접근, Standard 부터 확장 접근). 다만 Google One FAQ 는 아직 "Workspace 고객은 Gemini 애드온을 산다" 고 적어 공식 두 곳이 갈림. 요금제 금액은 확인 못 함 — 가격이 스크립트로 그려져 원문 HTML 에 값이 없음(연 약정 16% 할인 문구만 있음). 회사용 Gemini 앱인 **Gemini Enterprise** 는 Business 판 $21/좌석/월부터(300좌석까지), Standard·Plus 판 $30/좌석/월부터이고 회사 데이터로 학습하지 않음
+- **Workspace(회사 계정)**: Workspace 가격표는 Gemini 앱을 모든 Business 요금제에 넣어 둠(Starter 는 기본 접근, Standard 부터 확장 접근). 다만 Google One FAQ 는 아직 "Workspace 고객은 Gemini 애드온을 산다" 고 적어 공식 두 곳이 갈림. 요금제 금액은 확인 못 함 — 가격표가 접속 국가별로 값을 내려 주는데 조사 환경이 국가 미상(ZZ)으로 잡혀 금액이 안 옴(연 약정 16% 할인 문구만 있음) (2026-10-01). 회사용 Gemini 앱인 **Gemini Enterprise** 는 Business 판 $21/좌석/월부터(300좌석까지), Standard·Plus 판 $30/좌석/월부터이고 회사 데이터로 학습하지 않음
 - **2026 가을 업데이트(2026-09-09)**: 음성으로 초안 쓰기(Gmail·Keep 은 Plus 부터, Docs 는 Pro 부터), Sheets canvas(스프레드시트를 작은 앱으로, Pro·Ultra), Spark 가 Chrome·Google Photos 와 연결됨(Pro·Ultra, 미국)
 
 #### 클로드로는 못 하는 것
@@ -392,12 +392,12 @@ flowchart LR
 - Antigravity CLI 는 오픈소스 라이선스가 없음 — 배포 저장소(`google-antigravity/antigravity-cli`)에 LICENSE 파일이 없고, README 가 Google 서비스 약관과 Antigravity 추가 약관을 따른다고 함
 
 #### 출처
-2026-09-29 재조사에서 아래 공식 원문을 모두 직접 열어 대조했음. 연 결제가와 Workspace 요금제 금액은 가격표가 스크립트로 그려져 원문에서도 값을 못 찾았음.
+2026-10-01 재확인에서 아래 공식 원문을 모두 다시 열어 대조했음. Plus 연 결제가와 Workspace 요금제 금액은 원문에서도 값을 못 찾았음.
 - [Everything new in our Google AI subscriptions, fresh from I/O 2026](https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/) — 공식(원문 열어 봄, 2026-05-19)
 - [Get more done with the latest Google AI plan updates (fall 2026)](https://blog.google/products-and-platforms/products/google-one/fall-2026-ai-plan-updates/) — 자사 홍보(원문 열어 봄, 2026-09-09)
 - [Google AI Plus is now available … including the U.S.](https://blog.google/products-and-platforms/products/google-one/google-ai-plus-availability/) — 공식(원문 열어 봄, 2026-01-27, $7.99·200GB 시절 글)
 - [Google AI Pro & Ultra | gemini.google](https://gemini.google/subscriptions/) — 공식(원문 열어 봄)
-- [Google AI plans | Google One](https://one.google.com/about/google-ai-plans/) — 공식(원문 열어 봄, 가격은 스크립트로 그려져 없음)
+- [Google AI plans | Google One](https://one.google.com/about/google-ai-plans/) — 공식(원문 열어 봄, 가격은 스크립트로 그려져 헤드리스 렌더링으로 확인)
 - [Gemini Apps limits & upgrades for Google AI subscribers](https://support.google.com/gemini/answer/16275805?hl=en) — 공식(원문 열어 봄)
 - [Generate & edit images with Gemini Apps](https://support.google.com/gemini/answer/14286560?hl=en) — 공식(원문 열어 봄)
 - [Manage your Google Flow credits](https://support.google.com/flow/answer/16526234?hl=en) — 공식(원문 열어 봄)
@@ -408,7 +408,6 @@ flowchart LR
 - [Set up your coding assistant with Gemini MCP and Skills](https://ai.google.dev/gemini-api/docs/coding-agents) — 공식(원문 열어 봄)
 - [Compare Flexible Pricing Plan Options | Google Workspace](https://workspace.google.com/pricing) — 공식(원문 열어 봄, 금액은 스크립트로 그려져 없음)
 - [Google AI Plus gets price drop to $4.99 | 9to5Google](https://9to5google.com/2026/06/08/google-ai-plus-price-drop/) — 제3자(원문 열어 봄, 2026-06-08)
-- [Google AI Pro annual billing | Android Authority](https://www.androidauthority.com/google-ai-pro-annual-billing-3571224/) — 제3자(원문 열어 봄, 2025 글)
 - [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) — 공식
 - [google-gemini/gemini-skills](https://github.com/google-gemini/gemini-skills) — 공식
 - [google-antigravity/antigravity-cli](https://github.com/google-antigravity/antigravity-cli) — 공식(README 원문 열어 봄)

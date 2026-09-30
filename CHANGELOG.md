@@ -2,6 +2,13 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-10-01
+
+**매일 재확인 — Higgsfield · Gemini**
+
+- Gemini: AI Pro 연 결제가를 공식 가격표로 처음 확인함 — 확인 못 함 → $199.99/년. AI Ultra(5x·20x)는 연 결제가 없고 월 결제만 됨. AI Pro 에 Google Health Premium·Google Home Premium Standard·Jules 상향 한도가, Ultra 에 Google Home Premium Advanced·Google Health Premium·Gemini Agent(미국·영어)가 혜택으로 실림
+- Higgsfield: 2026-09-16 에 개발자용 Higgsfield API(모델별 건당 과금, 구독 크레딧과 별개)가 나옴. Plus·Ultra 카드에 Genjutsu 720p 무료 생성 3회(웹에서만)가 있음. Scale 월 결제 $169.01 은 첫 달 행사가가 아니라 기간 제한 없는 22% 할인으로 요금 API 에 들어 있음. 크레딧 팩 환불에 수수료 최대 6% 가 붙음
+
 ## 2026-09-30
 
 **매일 재확인 — ChatGPT · Perplexity**

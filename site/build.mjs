@@ -162,6 +162,19 @@ const git = (...args) => execFileSync('git', args, { cwd: root, encoding: 'utf8'
 // 조사 날짜는 한눈에 보기 표의 확인한 날짜 중 가장 최근 것이다. 오타만 고친 커밋이 조사 날짜를 끌어올리지 않게 커밋 날짜를 쓰지 않는다
 const checked = [...md.matchAll(/^\| \[.+\| (\d{4}-\d{2}-\d{2}) \|$/gm)].map((m) => m[1]);
 expect('한눈에 보기의 확인한 날짜', checked.length, 12);
+// 한눈에 보기의 유료 요금 칸은 항목 요금 표를 옮긴 것이다. 칸의 금액이 그 항목 어디에도 없으면 한쪽만 고친 것이다
+// 금액이 항목에 '있는지' 만 본다 — 등급과 짝이 맞는지는 못 본다
+const money = (s) => s.match(/\$\d[\d,]*(?:\.\d+)?/g) ?? [];
+const sections = md.slice(md.indexOf('\n## 도구\n')).split(/\n(?=### )/).slice(1);
+const priced = [...md.matchAll(/^\| \[([^\]]+)\]\(#[^)]+\) \|[^|]*\|[^|]*\| ([^|]*) \|/gm)];
+expect('한눈에 보기의 유료 요금 칸', priced.length, 12);
+for (const [, name, cell] of priced) {
+  const sec = sections.find((s) => s.startsWith(`### ${name}`));
+  if (!sec) throw new Error(`한눈에 보기의 ${name} 에 맞는 항목이 없음`);
+  const have = new Set(money(sec.slice(sec.indexOf('\n'))));
+  const lost = money(cell).filter((m) => !have.has(m));
+  if (lost.length) throw new Error(`한눈에 보기의 ${name} 요금 ${lost.join(' ')} 이 항목에 없음`);
+}
 const stamp = `조사 ${checked.sort().at(-1)}`;
 // 업데이트 시각·해시는 페이지를 바꾸는 파일의 마지막 커밋이다. 빌드 시각을 쓰면 같은 입력에서도 산출물이 달라진다
 const PAGE_SRC = ['TOOLS.md', 'CHANGELOG.md', 'site'];

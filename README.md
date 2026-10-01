@@ -7,7 +7,7 @@ A dictionary of AI services and tools that fill the gaps around Claude — the t
 ## What's in it
 Everything lives in [`TOOLS.md`](TOOLS.md):
 - **Diagrams** (Mermaid) — how each tool connects to Claude, which gap each tool fills, and an example "Claude + 5 tools = marketing team" workflow
-- **At a glance** — one table with role, free/paid status, cheapest paid tier, how it connects to Claude, and license
+- **At a glance** — one table with role, free/paid status, every paid tier, how it connects to Claude, and license
 - **One entry per tool**, each with:
   - free/paid status, split into personal use, commercial/work use, and commercial use of generated output
   - price per tier (monthly and annual) and what each tier allows
@@ -40,7 +40,7 @@ The text is [CC BY 4.0](LICENSE); the page code in `site/` is [Apache-2.0](site/
 ### 무엇이 들어 있나
 전부 [`TOOLS.md`](TOOLS.md) 에 있음.
 - **관계도**(Mermaid) — 도구마다 클로드와 어떻게 잇는지, 어느 빈자리를 메우는지, 그리고 "클로드 + 5개 = 마케팅팀" 조합 예
-- **한눈에 보기** — 역할 · 무료·유료 · 최저 유료가 · 클로드와 잇는 법 · 라이선스를 표 하나로
+- **한눈에 보기** — 역할 · 무료·유료 · 유료 요금 · 클로드와 잇는 법 · 라이선스를 표 하나로
 - **도구마다 항목 하나**, 항목마다 들어 있는 것:
   - 무료·유료 여부 — 개인 이용, 상업·업무 이용, 생성물의 상업적 이용으로 나눠 적음
   - 등급별 요금(월·연 결제)과 그 등급에서 할 수 있는 것

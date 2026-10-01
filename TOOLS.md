@@ -191,20 +191,20 @@ flowchart LR
 ## 한눈에 보기
 [<kbd>↑ 목차</kbd>](#목차)
 
-| 도구 | 역할 | 무료·유료 | 최저 유료가 (월) | 클로드와 잇는 법 | 라이선스 | 확인한 날짜 |
+| 도구 | 역할 | 무료·유료 | 유료 요금 (월) | 클로드와 잇는 법 | 라이선스 | 확인한 날짜 |
 |---|---|---|---|---|---|---|
-| [Claude](#claude) | 범용 · 기준선 | 부분 무료 · 개인·업무 모두 무료 등급 가능 · 생성물 상업 이용 가능 | Pro $20 (연 결제 $17) | 해당 없음 | 독점 | 2026-09-29 |
-| [ChatGPT](#chatgpt) | 범용 | 부분 무료 · 개인 무료 · 업무 이용은 개인용 약관 부록으로 받아들임(EU판 원문, ROW판 확인 못 함) · 생성물 상업 이용 가능(음성 출력 제외) | Go $8 | 공식 Claude Code 플러그인 | 독점 (Codex CLI·플러그인 Apache-2.0) | 2026-09-30 |
-| [Gemini](#gemini) | 범용 | 부분 무료 · 개인 무료 · 무료 등급 업무 이용을 약관이 막지 않음 · 생성물 상업 이용 가능(Google 이 소유권 주장 안 함) | AI Plus $4.99 | 커뮤니티 MCP · API 키 | 독점 (Gemini CLI Apache-2.0) | 2026-10-01 |
-| [Grok](#grok) | 범용 | 부분 무료 · 개인·업무 모두 무료 등급 가능(소비자 약관이 업무 이용을 막지 않음, 기업 이용은 기업 약관을 가리킴) · 생성물 소유는 사용자에게 남지만 "Created with Grok" 출처 표기 요구 · 학습 제외는 Business 부터 | SuperGrok $30 (Lite $10 는 검색 요약) | 커뮤니티 MCP · API 키 (공식 Docs MCP 는 문서 검색만) | 독점 (SDK Apache-2.0 · Grok-1 가중치 Apache-2.0) | 2026-09-30 |
-| [Perplexity](#perplexity) | 조사 | 부분 무료 · **개인 무료 + 상업 유료** — Free·Pro·Max 이미지는 비상업 전용(공식 도움말), 약관 5.1 도 등급 구분 없이 비상업 전용(2024 판 사본), 업무는 Enterprise | Pro $20 (학생 $10) | 공식 MCP · API 과금 | 독점 (MCP 서버 MIT) | 2026-09-30 |
-| [NotebookLM](#notebooklm-2026-07-16-부터-gemini-notebook) | 조사 | 부분 무료 · 개인 무료 · 업무 이용을 막는 약관 조항 없음 · 생성물 소유권 주장 안 함(상업 이용 명시 문구는 없음, 한국은 이미지·영상 워터마크 강제) | Google AI Plus $4.99 | 커뮤니티 MCP · 쿠키 | 독점 (커뮤니티 MCP MIT) | 2026-10-02 |
-| [Firecrawl](#firecrawl) | 수집 | 부분 무료 + 자체 호스팅 무료 · 자체 호스팅은 AGPL-3.0 조건으로 상업 이용 가능 · 클라우드 약관은 등급 구분 없이 "명시적 허락 없는 상업 이용" 금지 · 출력 권리 조항 없음 | Hobby $19 (연 결제 $16) | 공식 커넥터 + 공식 MCP | 본체 AGPL-3.0 · 클라우드 독점 · MCP 서버 MIT | 2026-09-29 |
-| [Higgsfield](#higgsfield) | 제작 | 부분 무료 · 가격표는 **Free 상업 이용 불포함**, 약관·도움말은 출력의 상업 이용을 제한 안 함(어긋남) · Free 는 워터마크 | Starter $19 (데스크톱·T1 지역 기준, 휴대폰 화면은 Basic $5) | 공식 MCP (Claude Code 는 CLI) · 유료 등급만 | 독점 (CLI·스킬 MIT) | 2026-10-01 |
-| [Blotato](#blotato) | 게시 | 체험만 무료(7일) · 업무 이용은 유료 등급 · 생성물 권리 확인 못 함 | Starter $29 (연 결제 약 17% 할인, 금액 표기 없음) | 공식 MCP · OAuth/API 키 · 유료 등급만 | 독점 | 2026-10-02 |
-| [Notion](#notion) | 기록 | 부분 무료 · 개인 무료 · 업무는 조직용 약관(MSA), Free 업무 이용을 막는 조항 없음 | Plus $12/멤버 (연 결제 $10) | 공식 커넥터 · OAuth | 독점 (로컬 MCP 서버 MIT) | 2026-09-29 |
-| [Obsidian](#obsidian) | 기록 | 부분 무료 · 앱은 개인·업무 모두 무료(2025-02-20 부터) · Sync·Publish 만 유료 | Sync Standard $5 (연 결제 $4) — 앱은 무료 | 커뮤니티 플러그인 MCP · 공식 CLI · 파일 | 독점 소프트웨어 (플러그인 MIT) | 2026-09-29 |
-| [Jev](#jev) | 판정 | 유료 · 무료 등급 없음(새 가입자 $5 크레딧은 2026-09-27 께 멈춤, 검색 요약) · 개인·업무 모두 같은 약관(MCA)으로 가능, 단독 재판매·증류 금지 · 출력 권리는 고객에게 양도 | 종량제 — 입력 100만 토큰당 $0.042, 출력 무료 (월 요금 없음) | 공식 Claude Code 플러그인(스킬) · 커뮤니티 MCP · API 키 | 독점 (SDK·스킬 MIT, 커뮤니티 MCP MIT) | 2026-09-30 |
+| [Claude](#claude) | 범용 · 기준선 | 부분 무료 · 개인·업무 모두 무료 등급 가능 · 생성물 상업 이용 가능 | Pro $20 (연 결제 $17)<br>Max 5x $100<br>Max 20x $200<br>Team Standard $25/좌석 (연 결제 $20)<br>Team Premium $125/좌석 (연 결제 $100)<br>Enterprise $20/좌석 + 사용량 과금 (연 결제만) | 해당 없음 | 독점 | 2026-09-29 |
+| [ChatGPT](#chatgpt) | 범용 | 부분 무료 · 개인 무료 · 업무 이용은 개인용 약관 부록으로 받아들임(EU판 원문, ROW판 확인 못 함) · 생성물 상업 이용 가능(음성 출력 제외) | Go $8<br>Plus $20<br>Pro $100 · $200 · $500<br>Business Standard $25/좌석 (연 결제 $20)<br>Business Premium 확인 못 함 (검색 요약 $125)<br>Enterprise·Edu 견적 | 공식 Claude Code 플러그인 | 독점 (Codex CLI·플러그인 Apache-2.0) | 2026-09-30 |
+| [Gemini](#gemini) | 범용 | 부분 무료 · 개인 무료 · 무료 등급 업무 이용을 약관이 막지 않음 · 생성물 상업 이용 가능(Google 이 소유권 주장 안 함) | AI Plus $4.99<br>AI Pro $19.99 (연 결제 $199.99/년)<br>AI Ultra 5x $99.99<br>AI Ultra 20x $199.99 | 커뮤니티 MCP · API 키 | 독점 (Gemini CLI Apache-2.0) | 2026-10-01 |
+| [Grok](#grok) | 범용 | 부분 무료 · 개인·업무 모두 무료 등급 가능(소비자 약관이 업무 이용을 막지 않음, 기업 이용은 기업 약관을 가리킴) · 생성물 소유는 사용자에게 남지만 "Created with Grok" 출처 표기 요구 · 학습 제외는 Business 부터 | SuperGrok Lite $10 (검색 요약)<br>SuperGrok $30<br>SuperGrok Plus $100<br>SuperGrok Heavy $300 (검색 요약)<br>Business $30/사용자<br>Enterprise 견적 | 커뮤니티 MCP · API 키 (공식 Docs MCP 는 문서 검색만) | 독점 (SDK Apache-2.0 · Grok-1 가중치 Apache-2.0) | 2026-09-30 |
+| [Perplexity](#perplexity) | 조사 | 부분 무료 · **개인 무료 + 상업 유료** — Free·Pro·Max 이미지는 비상업 전용(공식 도움말), 약관 5.1 도 등급 구분 없이 비상업 전용(2024 판 사본), 업무는 Enterprise | Education Pro $10<br>Pro $20 (연 결제 $200/년)<br>Max $200 (연 결제 $2,000/년, 웹에서만)<br>Enterprise Pro $40/석 (연 결제 $400/석/년)<br>Enterprise Max $325/석 (연 결제 $3,250/석/년)<br>API 는 종량제 | 공식 MCP · API 과금 | 독점 (MCP 서버 MIT) | 2026-09-30 |
+| [NotebookLM](#notebooklm-2026-07-16-부터-gemini-notebook) | 조사 | 부분 무료 · 개인 무료 · 업무 이용을 막는 약관 조항 없음 · 생성물 소유권 주장 안 함(상업 이용 명시 문구는 없음, 한국은 이미지·영상 워터마크 강제) | Google AI Plus $4.99<br>Google AI Pro $19.99 (연 결제 $199.99/년)<br>Google AI Ultra 5× $99.99<br>Google AI Ultra 20× $199.99<br>Gemini Notebook Enterprise $9/라이선스 (최소 15개)<br>Workspace 는 그 요금에 포함 | 커뮤니티 MCP · 쿠키 | 독점 (커뮤니티 MCP MIT) | 2026-10-02 |
+| [Firecrawl](#firecrawl) | 수집 | 부분 무료 + 자체 호스팅 무료 · 자체 호스팅은 AGPL-3.0 조건으로 상업 이용 가능 · 클라우드 약관은 등급 구분 없이 "명시적 허락 없는 상업 이용" 금지 · 출력 권리 조항 없음 | Hobby $19 (연 결제 $16)<br>Standard $99 (연 결제 $83)<br>Growth $399 (연 결제 $333)<br>Scale $749 (연 결제 $599)<br>Enterprise 협의 | 공식 커넥터 + 공식 MCP | 본체 AGPL-3.0 · 클라우드 독점 · MCP 서버 MIT | 2026-09-29 |
+| [Higgsfield](#higgsfield) | 제작 | 부분 무료 · 가격표는 **Free 상업 이용 불포함**, 약관·도움말은 출력의 상업 이용을 제한 안 함(어긋남) · Free 는 워터마크 | Starter $19<br>Plus $59 (연 결제 $47)<br>Ultra $129 (연 결제 $99)<br>Team $79/좌석 (연 결제 $65)<br>Scale $215/좌석 (연 결제 $150)<br>Enterprise 영업 문의<br>위는 데스크톱·T1 지역 기준, 휴대폰 화면은 Basic $5 · Pro $29 · Max $79 | 공식 MCP (Claude Code 는 CLI) · 유료 등급만 | 독점 (CLI·스킬 MIT) | 2026-10-01 |
+| [Blotato](#blotato) | 게시 | 체험만 무료(7일) · 업무 이용은 유료 등급 · 생성물 권리 확인 못 함 | Starter $29<br>Creator $97<br>Agency $499<br>연 결제는 약 17% 할인 (금액 표기 없음) | 공식 MCP · OAuth/API 키 · 유료 등급만 | 독점 | 2026-10-02 |
+| [Notion](#notion) | 기록 | 부분 무료 · 개인 무료 · 업무는 조직용 약관(MSA), Free 업무 이용을 막는 조항 없음 | Plus $12/멤버 (연 결제 $10)<br>Business $24/멤버 (연 결제 $20)<br>Enterprise 문의 | 공식 커넥터 · OAuth | 독점 (로컬 MCP 서버 MIT) | 2026-09-29 |
+| [Obsidian](#obsidian) | 기록 | 부분 무료 · 앱은 개인·업무 모두 무료(2025-02-20 부터) · Sync·Publish 만 유료 | 앱은 무료<br>Sync Standard $5 (연 결제 $4)<br>Sync Plus $10 (연 결제 $8)<br>Publish $10/사이트 (연 결제 $8)<br>Commercial license $50/사용자/년 (선택)<br>Catalyst 일회 $25 · $50 · $100 (선택 후원) | 커뮤니티 플러그인 MCP · 공식 CLI · 파일 | 독점 소프트웨어 (플러그인 MIT) | 2026-09-29 |
+| [Jev](#jev) | 판정 | 유료 · 무료 등급 없음(새 가입자 $5 크레딧은 2026-09-27 께 멈춤, 검색 요약) · 개인·업무 모두 같은 약관(MCA)으로 가능, 단독 재판매·증류 금지 · 출력 권리는 고객에게 양도 | 종량제 — 입력 100만 토큰당 $0.042, 출력 무료 (월 요금 없음)<br>맞춤·엔터프라이즈 협의 | 공식 Claude Code 플러그인(스킬) · 커뮤니티 MCP · API 키 | 독점 (SDK·스킬 MIT, 커뮤니티 MCP MIT) | 2026-09-30 |
 
 ## 도구
 [<kbd>↑ 목차</kbd>](#목차)

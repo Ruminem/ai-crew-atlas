@@ -198,7 +198,7 @@ flowchart LR
 | [Gemini](#gemini) | 범용 | 부분 무료 · 개인 무료 · 무료 등급 업무 이용을 약관이 막지 않음 · 생성물 상업 이용 가능(Google 이 소유권 주장 안 함) | AI Plus $4.99 | 커뮤니티 MCP · API 키 | 독점 (Gemini CLI Apache-2.0) | 2026-10-01 |
 | [Grok](#grok) | 범용 | 부분 무료 · 개인·업무 모두 무료 등급 가능(소비자 약관이 업무 이용을 막지 않음, 기업 이용은 기업 약관을 가리킴) · 생성물 소유는 사용자에게 남지만 "Created with Grok" 출처 표기 요구 · 학습 제외는 Business 부터 | SuperGrok $30 (Lite $10 는 검색 요약) | 커뮤니티 MCP · API 키 (공식 Docs MCP 는 문서 검색만) | 독점 (SDK Apache-2.0 · Grok-1 가중치 Apache-2.0) | 2026-09-30 |
 | [Perplexity](#perplexity) | 조사 | 부분 무료 · **개인 무료 + 상업 유료** — Free·Pro·Max 이미지는 비상업 전용(공식 도움말), 약관 5.1 도 등급 구분 없이 비상업 전용(2024 판 사본), 업무는 Enterprise | Pro $20 (학생 $10) | 공식 MCP · API 과금 | 독점 (MCP 서버 MIT) | 2026-09-30 |
-| [NotebookLM](#notebooklm-2026-07-16-부터-gemini-notebook) | 조사 | 부분 무료 · 개인 무료 · 업무 이용을 막는 약관 조항 없음 · 생성물 소유권 주장 안 함(상업 이용 명시 문구는 없음, 한국은 이미지·영상 워터마크 강제) | Google AI Plus $4.99 | 커뮤니티 MCP · 쿠키 | 독점 (커뮤니티 MCP MIT) | 2026-09-29 |
+| [NotebookLM](#notebooklm-2026-07-16-부터-gemini-notebook) | 조사 | 부분 무료 · 개인 무료 · 업무 이용을 막는 약관 조항 없음 · 생성물 소유권 주장 안 함(상업 이용 명시 문구는 없음, 한국은 이미지·영상 워터마크 강제) | Google AI Plus $4.99 | 커뮤니티 MCP · 쿠키 | 독점 (커뮤니티 MCP MIT) | 2026-10-02 |
 | [Firecrawl](#firecrawl) | 수집 | 부분 무료 + 자체 호스팅 무료 · 자체 호스팅은 AGPL-3.0 조건으로 상업 이용 가능 · 클라우드 약관은 등급 구분 없이 "명시적 허락 없는 상업 이용" 금지 · 출력 권리 조항 없음 | Hobby $19 (연 결제 $16) | 공식 커넥터 + 공식 MCP | 본체 AGPL-3.0 · 클라우드 독점 · MCP 서버 MIT | 2026-09-29 |
 | [Higgsfield](#higgsfield) | 제작 | 부분 무료 · 가격표는 **Free 상업 이용 불포함**, 약관·도움말은 출력의 상업 이용을 제한 안 함(어긋남) · Free 는 워터마크 | Starter $19 (데스크톱·T1 지역 기준, 휴대폰 화면은 Basic $5) | 공식 MCP (Claude Code 는 CLI) · 유료 등급만 | 독점 (CLI·스킬 MIT) | 2026-10-01 |
 | [Blotato](#blotato) | 게시 | 체험만 무료(7일) · 업무 이용은 유료 등급 · 생성물 권리 확인 못 함 | Starter $29 (연 결제 약 17% 할인, 금액 표기 없음) | 공식 MCP · OAuth/API 키 · 유료 등급만 | 독점 | 2026-10-02 |
@@ -630,8 +630,8 @@ MCP 서버가 무엇으로 과금되는지
 - **역할**: 조사
 - **한 줄**: 사용자가 넣은 자료(PDF·웹페이지·유튜브·구글 문서 등)만 근거로 답하고, 그 자료로 오디오·비디오 개요·마인드맵·슬라이드·퀴즈 등을 만들어 주는 구글의 노트북형 AI 서비스
 - **이름**: 2026-07-16 Google 공식 블로그 "NotebookLM is now Gemini Notebook" 으로 이름이 바뀜. 같은 단독 제품이고 공유 노트북·링크는 자동 리디렉트됨(Workspace Updates). 개인 계정·Workspace 모두 해당. 도움말 주소도 `support.google.com/gemininotebook` 으로 옮겨졌고, 기업판도 "Gemini Notebook Enterprise" 로 바뀌었으나 API 엔드포인트는 그대로임(Google Cloud 문서). 이름 변경과 함께 노트북마다 코드를 쓰고 돌리는 "secure cloud computer" 가 붙기 시작함 — 개명 당일에는 AI Ultra 와 Workspace 의 AI Ultra Access·AI Expanded Access 에만 있고, Pro 웹은 몇 주 안에 풀린다고 적음 (원문 열어 봄)
-- **클로드와 잇는 법**: 공식 커넥터 없음(`claude.com/connectors/notebooklm`·`/gemini-notebook` 둘 다 404), 공식 MCP 서버 없음(`google/mcp` 저장소에 "Official NotebookLM MCP Server" 요청 이슈 #19 가 열려 있다는 검색 결과까지만 봄 — 이슈 페이지는 확인 못 함). 커뮤니티 MCP 가 여럿 있음 — `PleasePrompto/notebooklm-mcp`(npm `notebooklm-mcp`, MIT): Patchright 로 실제 Chrome 을 띄워 구글 계정에 한 번 로그인하고 쿠키를 로컬 Chrome 프로필에 저장함. `jacob-bd/notebooklm-mcp-cli`(PyPI `notebooklm-mcp-cli`, MIT, `nlm login`): 브라우저 쿠키를 뽑아 **문서화 안 된 내부 API** 를 부름 — README 가 "언제든 바뀔 수 있으니 개인·실험용으로만"이라고 적음. 인증은 둘 다 구글 계정 쿠키이고 API 키·OAuth 가 아님. 공식 프로그램 접근은 Google Cloud 의 **Gemini Notebook Enterprise API**(`discoveryengine.googleapis.com` v1alpha, `notebooks.create`·`audioOverviews.create` 등, Google Cloud 인증)뿐임 (원문 열어 봄)
-- **확인한 날짜**: 2026-09-29
+- **클로드와 잇는 법**: 공식 커넥터 없음(`claude.com/connectors/notebooklm`·`/gemini-notebook` 둘 다 404), 공식 MCP 서버 없음(`google/mcp` 저장소의 "Official NotebookLM MCP Server" 요청 이슈 #19 가 2026-10-02 에도 열려 있음, Google Cloud 공식 MCP 지원 목록에도 없음). 커뮤니티 MCP 가 여럿 있음 — `PleasePrompto/notebooklm-mcp`(npm `notebooklm-mcp`, MIT): Patchright 로 실제 Chrome 을 띄워 구글 계정에 한 번 로그인하고 쿠키를 로컬 Chrome 프로필에 저장함. `jacob-bd/notebooklm-mcp-cli`(PyPI `notebooklm-mcp-cli`, MIT, `nlm login`): 브라우저 쿠키를 뽑아 **문서화 안 된 내부 API** 를 부름 — README 가 "언제든 바뀔 수 있으니 개인·실험용으로만"이라고 적음. 인증은 둘 다 구글 계정 쿠키이고 API 키·OAuth 가 아님. 공식 프로그램 접근은 Google Cloud 의 **Gemini Notebook Enterprise API**(`discoveryengine.googleapis.com` v1alpha, `notebooks.create`·`audioOverviews.create` 등, Google Cloud 인증)뿐임 (원문 열어 봄)
+- **확인한 날짜**: 2026-10-02
 
 #### 무료·유료와 이용 조건
 
@@ -653,22 +653,22 @@ NotebookLM 은 따로 파는 요금제가 없고 Google AI 구독(Google One)에
 | 등급 | 월 요금 | 연 결제 시 | 할 수 있는 것 · 한도 |
 |---|---|---|---|
 | 무료 (Standard) | $0 | — | 노트북 100개, 노트북당 소스 50개. 소스 하나당 500,000 단어 또는 업로드 200MB(쪽수 제한 없음). 오디오·비디오 개요·Deep Research·슬라이드 등 Studio 기능은 무료에도 한도를 두고 있음 |
-| Google AI Plus | $4.99 (400GB. 2026-06-08 인하, 그 전 $7.99·200GB — 기사) | 확인 못 함 — 가격표 원문에 월 요금만 있고, Google One 비교표 값은 스크립트로 채워져 HTML 에 없음 | 노트북 200개, 노트북당 소스 100개 |
+| Google AI Plus | $4.99 (400GB. 2026-06-08 인하, 그 전 $7.99·200GB — 기사) | 확인 못 함 — 가격표 원문에 월 요금만 있고, Google One 비교표 값은 스크립트로 채워져 HTML 에 없음 (2026-10-02) | 노트북 200개, 노트북당 소스 100개 |
 | Google AI Pro | $19.99 (5TB) | $199.99/년 | 노트북 500개, 노트북당 소스 300개. 보이는 워터마크를 끌 수 있음(한국 제외) |
 | Google AI Ultra (5×) | $99.99 (20TB. I/O 2026 신설) | 없음 — "Ultra 는 월 결제만" | 노트북 500개, 노트북당 소스 500개 (도움말의 "Ultra (20 TB Plan)" 칸) |
 | Google AI Ultra (20×) | $199.99 (30TB. I/O 2026 에 $250 에서 인하) | 없음 — "Ultra 는 월 결제만" | 노트북 500개, 노트북당 소스 600개 (도움말의 "Ultra (30 TB Plan)" 칸) |
-| Gemini Notebook Enterprise | $9/라이선스 (최소 15개) | 1년 구독 가능, 금액은 확인 못 함 — 제품 페이지는 월 요금만 적음 | Google Cloud 콘솔로 구입, 구독당 15–5,000 라이선스. 무료 체험은 제품 페이지 "30일", 라이선스 문서 "14일 · 5,000 라이선스"로 공식끼리 어긋남. 산출물 한도 "5배 이상"(무엇 대비인지 안 적음), VPC-SC·IAM, 사람 검토·학습 없음. 공식 API 는 이 판에만 있음. Gemini Enterprise Standard·Plus·Frontline 에도 들어 있음 |
+| Gemini Notebook Enterprise | $9/라이선스 (최소 15개) | 1년 구독 가능, 금액은 확인 못 함 — 제품 페이지는 월 요금만 적고 Gemini Enterprise 가격 페이지는 본문이 404 (2026-10-02) | Google Cloud 콘솔로 구입, 구독당 15–5,000 라이선스. 무료 체험은 제품 페이지 "30일", 라이선스 문서 "14일 · 5,000 라이선스"로 공식끼리 어긋남. 산출물 한도 "5배 이상"(무엇 대비인지 안 적음), VPC-SC·IAM, 사람 검토·학습 없음. 공식 API 는 이 판에만 있음. Gemini Enterprise Standard·Plus·Frontline 에도 들어 있음 |
 | Workspace 포함분 | Workspace 요금에 포함, 따로 없음 | — | Business Starter·Enterprise Essentials·Frontline·Nonprofits·Education Fundamentals/Standard 는 핵심 서비스로 표준 한도, Education Plus 는 한 단계 위, Business Standard/Plus·Enterprise Standard/Plus·Google AI Pro for Education 은 그 위, AI Expanded Access·AI Ultra Access 애드온이 맨 위. 모두 사람 검토·학습 없음 |
 
 사용량 한도 (2026-09-02 부터 바뀜)
 - **2026-09-02 이전**: 하루 고정 한도(24시간마다 초기화). 무료·Plus·Pro·Ultra 5×·Ultra 20× 순으로 채팅 50·200·500·2.5K·5K, 오디오 개요 3·6·20·100·200, 비디오 개요도 같은 수(시네마틱은 Pro 2·Ultra 10·20), 보고서·플래시카드·퀴즈·마인드맵 10·20·100·500·1K, Deep Research 무료 월 10·Plus 3·Pro 20·Ultra 75·200. 도움말 "Upgrade" 표는 9-02 공지를 달고도 이 숫자를 그대로 두고 있음 (원문 열어 봄)
 - **2026-09-02 이후**: 개인 계정(웹·모바일)은 계산량 기준 한도로 바뀜. 질문 난이도·모델·기능·대화 길이·소스 수에 따라 깎이고, **5시간마다 차오르되 주간 상한**이 있음. 한도에 닿으면 비디오 개요·슬라이드 등을 "나중에 생성"으로 미뤄 둘 수 있음(웹만) (원문 열어 봄)
-- 등급별 배수는 도움말에 있음: 무료 standard · Plus 2배 · Pro 4배 · Ultra 는 **Pro 의** 5배 또는 20배(구독에 따라). 새 체계에서 오디오·비디오 개요를 하루 몇 개 만들 수 있는지는 확인 못 함 — 공식이 숫자를 안 냄
+- 등급별 배수는 도움말에 있음: 무료 standard · Plus 2배 · Pro 4배 · Ultra 는 **Pro 의** 5배 또는 20배(구독에 따라). 새 체계에서 오디오·비디오 개요를 하루 몇 개 만들 수 있는지는 확인 못 함 — 공식이 숫자를 안 냄 (2026-10-02)
 
 #### 클로드로는 못 하는 것
 - **오디오 개요**: 넣은 자료를 두 진행자가 대화하는 팟캐스트 형식 음성으로 만들고, 중간에 끼어들어 질문하는 대화형 모드가 있음. 클로드는 음성 파일을 만들지 않음
 - **비디오 개요**: 자료로 내레이션이 붙은 슬라이드 영상(시네마틱 비디오 개요 포함)을 만들어 줌. 클로드는 영상을 만들지 않음
-- **노트북 단위 공유와 동기화**: 노트북을 링크로 남과 공유하고, Gemini 앱의 노트북과 양방향 동기화함(Google 검색 AI 모드는 "곧"이라고 적음). 구글 문서·슬라이드 소스를 넣으면 원본과 다시 맞출 수 있음
+- **노트북 단위 공유와 동기화**: 노트북을 링크로 남과 공유하고, Gemini 앱의 노트북과 양방향 동기화함. Google 검색 AI 모드에도 노트북이 저절로 뜸 — 영어만, EEA 제외, AI 모드 채팅은 다른 앱과 동기화 안 되고 AI 모드에서는 Studio 산출물을 못 만듦(도움말, 원문 열어 봄. 풀린 날짜는 안 적힘). 구글 문서·슬라이드 소스를 넣으면 원본과 다시 맞출 수 있음
 - **유튜브 영상을 소스로 바로 넣기**: 링크만 주면 영상 내용을 근거로 답함. 클로드는 유튜브 링크의 영상 내용을 직접 읽지 못함
 - **노트북당 최대 300–600개 소스를 한꺼번에 근거로 삼기**: 소스 하나 500,000 단어까지. 클로드 프로젝트는 컨텍스트 창에 들어가는 만큼(넘으면 검색 방식) 다룸
 - 참고: 마인드맵·퀴즈·플래시카드·보고서는 클로드도 글이나 아티팩트로 만들 수 있으므로 "못 하는 것"이 아니라 "버튼 하나로 되는 것" 차이임
@@ -681,6 +681,7 @@ NotebookLM 은 따로 파는 요금제가 없고 Google AI 구독(Google One)에
 - [NotebookLM is now Gemini Notebook — Google 블로그, 2026-07-16](https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/) — 공식 (원문 열어 봄)
 - [Google Workspace Updates: NotebookLM is now Gemini Notebook (2026-07)](https://workspaceupdates.googleblog.com/2026/07/notebooklm-now-gemini-notebook.html) — 공식 (원문 열어 봄)
 - [We're introducing flexible usage limits for Gemini Notebook — Google 블로그, 2026-08-28](https://blog.google/innovation-and-ai/products/gemini-notebook/new-flexible-usage-limits/) — 공식 (원문 열어 봄)
+- [Use Gemini Notebook in AI Mode — 도움말](https://support.google.com/gemininotebook/answer/17513891?hl=en) — 공식 (원문 열어 봄)
 - [Manage your Gemini Notebook usage limits — 도움말](https://support.google.com/gemininotebook/answer/17670842?hl=en) — 공식 (원문 열어 봄)
 - [Upgrade Gemini Notebook — 도움말](https://support.google.com/gemininotebook/answer/16213268?hl=en) — 공식 (원문 열어 봄)
 - [Use Gemini Notebook with a work or school Google account — 도움말](https://support.google.com/gemininotebook/answer/16337734?hl=en) — 공식 (원문 열어 봄)
@@ -694,7 +695,8 @@ NotebookLM 은 따로 파는 요금제가 없고 Google AI 구독(Google One)에
 - [Gemini Notebook for enterprise — Google Cloud](https://cloud.google.com/gemini-enterprise/gemini-notebook) — 공식 (원문 열어 봄)
 - [Get licenses for Gemini Notebook Enterprise — Google Cloud 문서](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing) — 공식 (원문 열어 봄)
 - [Create and manage notebooks (API) — Gemini Notebook Enterprise](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks) — 공식 (원문 열어 봄)
-- [Official NotebookLM MCP Server · Issue #19 · google/mcp](https://github.com/google/mcp/issues/19) — 제3자 (요청 이슈, 검색 결과의 제목만 봄. 페이지는 확인 못 함 — 프록시가 403)
+- [Supported products — Google Cloud MCP (2026-09-30 갱신)](https://docs.cloud.google.com/mcp/supported-products) — 공식 (원문 열어 봄. Gemini Notebook 서버 없음)
+- [Official NotebookLM MCP Server · Issue #19 · google/mcp](https://github.com/google/mcp/issues/19) — 제3자 (요청 이슈. 2026-10-02 에 Open, 2026-02-02 에 열렸고 관리자 답 없음 — curl 은 403 이라 WebFetch 요약으로 봄)
 - [PleasePrompto/notebooklm-mcp](https://github.com/PleasePrompto/notebooklm-mcp) — 제3자 (README·LICENSE 원문 봄)
 - [jacob-bd/notebooklm-mcp-cli](https://github.com/jacob-bd/notebooklm-mcp-cli) — 제3자 (README·LICENSE 원문 봄)
 - [Google AI Plus gets price drop to $4.99 — 9to5Google, 2026-06-08](https://9to5google.com/2026/06/08/google-ai-plus-price-drop/) — 제3자 (원문 열어 봄. 인하 전 $7.99·200GB 의 출처)

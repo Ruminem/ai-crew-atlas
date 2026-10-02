@@ -973,7 +973,7 @@ MCP·커넥터가 무엇으로 과금되는지
 | 분류 | 부분 무료 |
 | 개인 이용 | Free 로 가능함 |
 | 상업·업무 이용 | 개인용 약관(Personal Use Terms)은 개인 이용에만 걸리고, **조직·회사를 대신해 쓰거나 Plus·Business·Enterprise 구독이면 Master Subscription Agreement(MSA)** 만 걸림. MSA 에 Free 등급을 업무에 못 쓴다는 문장은 없음 — 업무에 Free 를 써도 약관 위반은 아님. 다만 가격표는 Free 를 "개인용"으로 소개하고, 멤버가 둘 이상인 Free 워크스페이스는 1,000 블록에서 막힘. MSA 는 2026-08-17 개정본 |
-| 생성물의 상업적 이용 | Notion AI 의 입력·출력은 고객의 Customer Data 이고(Notion AI 보충 약관), Customer Data 의 소유권은 고객에게 있음(MSA 3.1). 개인 약관도 출력을 User Content 에 넣고 소유권을 주장하지 않음. 출력이 유일하지 않아 다른 사람과 같거나 비슷할 수 있다는 단서가 붙음. Notion AI 전체는 Business 이상에만 있음 |
+| 생성물의 상업적 이용 | Notion AI 의 입력·출력은 고객의 Customer Data 이고(Notion AI 보충 약관), Customer Data 의 소유권은 고객에게 있음(MSA 3.1). 개인 약관도 출력을 User Content 에 넣고 소유권을 주장하지 않음. 출력이 유일하지 않아 다른 사람과 같거나 비슷할 수 있다는 단서가 붙음. 같은 보충 약관(2026-07-27 개정)이 Notion AI 와 출력의 쓰임을 막는 조항을 둠 — Notion 과 경쟁하는 기반 모델 개발, 출력을 사람이 다 쓴 것처럼 속이기, 스팸·선거 운동물 만들기("to develop foundation models or other large scale models that compete with Notion or Notion AI; (ii) to mislead any person that Output from the Services was solely human generated; (iii) to generate spam or content for dissemination in electoral campaigns"). 등급으로 나누는 문구는 없음. Notion AI 전체는 Business 이상에만 있음 |
 
 - 이 절의 출처: [Personal Use Terms of Service](https://www.notion.so/Personal-Use-Terms-of-Service-00e4e5d0f2b9411cbee6493f15779500) — 공식(원문 열어 봄) · [Master Subscription Agreement](https://www.notion.so/Master-Subscription-Agreement-4e1c5dd3e3de45dfa4a8ed60f1a43da0) — 공식(원문 열어 봄) · [Notion AI and Notion Credit Supplementary Terms](https://www.notion.so/fa9034c8b5a04818a6baf3eac2adddbb) — 공식(원문 열어 봄)
 

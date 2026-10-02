@@ -193,7 +193,7 @@ flowchart LR
 
 | 도구 | 역할 | 무료·유료 | 유료 요금 (월) | 클로드와 잇는 법 | 라이선스 | 확인한 날짜 |
 |---|---|---|---|---|---|---|
-| [Claude](#claude) | 범용 · 기준선 | 부분 무료 · 개인·업무 모두 무료 등급 가능 · 생성물 상업 이용 가능 | Pro $20 (연 결제 $17)<br>Max 5x $100<br>Max 20x $200<br>Team Standard $25/좌석 (연 결제 $20)<br>Team Premium $125/좌석 (연 결제 $100)<br>Enterprise $20/좌석 + 사용량 과금 (연 결제만) | 해당 없음 | 독점 | 2026-09-29 |
+| [Claude](#claude) | 범용 · 기준선 | 부분 무료 · 개인·업무 모두 무료 등급 가능 · 생성물 상업 이용 가능 | Pro $20 (연 결제 $17)<br>Max 5x $100<br>Max 20x $200<br>Team Standard $25/좌석 (연 결제 $20)<br>Team Premium $125/좌석 (연 결제 $100)<br>Enterprise $20/좌석 + 사용량 과금 (연 결제만) | 해당 없음 | 독점 | 2026-10-03 |
 | [ChatGPT](#chatgpt) | 범용 | 부분 무료 · 개인 무료 · 업무 이용은 개인용 약관 부록으로 받아들임(EU판 원문, ROW판 확인 못 함) · 생성물 상업 이용 가능(음성 출력 제외) | Go $8<br>Plus $20<br>Pro $100 · $200 · $500<br>Business Standard $25/좌석 (연 결제 $20)<br>Business Premium 확인 못 함 (검색 요약 $125)<br>Enterprise·Edu 견적 | 공식 Claude Code 플러그인 | 독점 (Codex CLI·플러그인 Apache-2.0) | 2026-09-30 |
 | [Gemini](#gemini) | 범용 | 부분 무료 · 개인 무료 · 무료 등급 업무 이용을 약관이 막지 않음 · 생성물 상업 이용 가능(Google 이 소유권 주장 안 함) | AI Plus $4.99<br>AI Pro $19.99 (연 결제 $199.99/년)<br>AI Ultra 5x $99.99<br>AI Ultra 20x $199.99 | 커뮤니티 MCP · API 키 | 독점 (Gemini CLI Apache-2.0) | 2026-10-01 |
 | [Grok](#grok) | 범용 | 부분 무료 · 개인·업무 모두 무료 등급 가능(소비자 약관이 업무 이용을 막지 않음, 기업 이용은 기업 약관을 가리킴) · 생성물 소유는 사용자에게 남지만 "Created with Grok" 출처 표기 요구 · 학습 제외는 Business 부터 | SuperGrok Lite $10 (검색 요약)<br>SuperGrok $30<br>SuperGrok Plus $100<br>SuperGrok Heavy $300 (검색 요약)<br>Business $30/사용자<br>Enterprise 견적 | 커뮤니티 MCP · API 키 (공식 Docs MCP 는 문서 검색만) | 독점 (SDK Apache-2.0 · Grok-1 가중치 Apache-2.0) | 2026-09-30 |
@@ -216,7 +216,7 @@ flowchart LR
 - **역할**: 범용
 - **한 줄**: Anthropic 의 대화형 AI. 웹·데스크톱·모바일 앱(claude.ai), 터미널·IDE 코딩 에이전트(Claude Code), 작업 위임(Cowork)을 한 구독으로 씀. 2026-09-16 부터 Pro·Max 에서 Cowork 가 따로 고르는 모드가 아니라 모든 대화 안으로 합쳐지는 중임
 - **클로드와 잇는 법**: 해당 없음 — 기준선 항목임. 밖의 도구는 클로드 쪽에서 커넥터(원격 MCP, OAuth)와 Claude Code 의 MCP 서버·플러그인으로 붙임
-- **확인한 날짜**: 2026-09-29
+- **확인한 날짜**: 2026-10-03
 
 #### 무료·유료와 이용 조건
 
@@ -245,6 +245,7 @@ flowchart LR
 - Max 는 가격표에 "From $100" 로만 나오고 등급별 가격은 Max 도움말(5x $100 · 20x $200, "available as a monthly subscription only")에 있음. 두 출처가 서로 어긋나지는 않음
 - 유료 등급은 한도를 넘으면 사용량 크레딧을 켜서 API 표준 요금으로 이어 쓸 수 있음. Anthropic 은 주간·월간 상한 같은 다른 제한을 재량으로 걸 수 있다고 적음
 - 어긋나는 값: 혼잡 시간 우선 접근을 가격표 비교표는 Pro "No"·Max "Yes" 로 적고, Pro 도움말은 Pro 혜택에 "Priority access to Claude during high-traffic periods" 를 넣음. 가격표가 등급을 나란히 비교한 표라 그쪽을 기준으로 적었음
+- 어긋나는 값: Claude Design·Slides·Docs 를 가격표 비교표는 Free "No" 로 적고, 릴리스 노트 2026-09-16 은 "Artifacts, including Claude Design, Claude Slides, and Claude Docs, are available on every plan, including Free." 라고 씀(Enterprise 는 베타·기본 꺼짐). 위 등급 표는 가격표를 따라 Pro 부터 적었음 (2026-10-03 확인)
 
 #### 기준선 — 클로드가 직접 못 하는 것
 - **이미지 생성·편집 못 함.** 도움말 원문: "Claude doesn't generate photos or illustrations the way image-generation tools do." 대신 HTML·SVG 로 도표·차트·인터랙티브 시각물을 대화 안에 만들고(웹·데스크톱 베타), 올린 이미지를 읽고 분석함

@@ -8,6 +8,13 @@
 
 - Firecrawl: 데이터 제공자 카탈로그 없음 → Alexandria(2026-09-22). 100여 제공자(SEC EDGAR·FRED·Yahoo Finance 등)의 데이터를 Firecrawl 크레딧으로 불러오고, 찾기는 무료·실행은 도구마다 붙은 가격. 2026-10-01 부터 Apollo·FullEnrich·Data Legion 의 인물·회사 정보 보강도 됨. 요금·등급·약관은 그대로임
 
+## 2026-10-03
+
+**매일 재확인 — Claude · Notion**
+
+- Notion: 생성물 이용 조건이 "소유권은 고객" 뿐 → AI 보충 약관(2026-07-27 판)의 출력 사용 제한을 더함. Notion 과 경쟁하는 기반 모델 개발, 출력을 사람이 다 쓴 것처럼 속이기, 스팸·선거 운동물 만들기를 등급 구분 없이 막음. 원격 MCP 는 기본 주소 말고 SSE 대체 주소 `mcp.notion.com/sse` 도 안내됨(Streamable HTTP 를 못 쓰는 클라이언트용). 요금·등급은 그대로임
+- Claude: Claude Design·Slides·Docs 를 릴리스 노트(2026-09-16)는 "Free 포함 모든 요금제"로, 가격표 비교표는 Free 제외로 적어 공식 출처끼리 어긋남. 요금·등급·약관은 그대로임
+
 ## 2026-10-02
 
 **매일 재확인 — NotebookLM · Blotato**

@@ -318,7 +318,12 @@ html.dg-lock, html.dg-lock body { overflow: hidden; }
 .toc-head { display: flex; align-items: center; justify-content: space-between; padding: 0 10px 8px; }
 .toc-head strong { font: 700 .95rem/1 var(--f-head); }
 .toc-acts { margin-left: auto; display: flex; gap: 6px; }
-.toc-acts button {
+.topics { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 4px 0 20px; }
+.topics span { font: 500 .78rem/1 var(--f-body); color: var(--muted); margin-right: 2px; }
+.topics button::before { content: '▾ '; }
+.topics button[aria-pressed="false"]::before { content: '▸ '; }
+.topics button[aria-pressed="true"] { color: var(--ink); }
+.toc-acts button, .topics button {
   min-height: 32px; padding: 0 10px;
   border: 1px solid var(--line); border-radius: 999px;
   background: var(--surface); color: var(--muted);
@@ -371,7 +376,7 @@ html.dg-lock, html.dg-lock body { overflow: hidden; }
   .toc.open { transform: none; visibility: visible; transition: transform .28s cubic-bezier(.2, .8, .2, 1); }
   .grab { display: block; width: 40px; height: 4px; border-radius: 2px; background: var(--line); margin: 2px auto 6px; }
   .toc-x { display: inline-flex; }
-  .toc-acts button { min-height: 44px; padding: 0 14px; font-size: .85rem; }
+  .toc-acts button, .topics button { min-height: 44px; padding: 0 14px; font-size: .85rem; }
   .toc-list { overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; padding: 0 4px 16px; }
   .toc a { padding: 10px 12px; font-size: .95rem; }
   .scrim {
@@ -419,7 +424,7 @@ html.dg-lock, html.dg-lock body { overflow: hidden; }
 /* 터치 기기는 탭한 뒤 hover 가 남아 단추가 눌린 채로 보이므로 마우스가 있을 때만 켠다 */
 @media (hover: hover) {
   .theme-btn:hover, .read-btn:hover { background: var(--surface-2); color: var(--ink); }
-  .toc-acts button:hover { color: var(--accent); border-color: var(--accent); }
+  .toc-acts button:hover, .topics button:hover { color: var(--accent); border-color: var(--accent); }
   a:hover > kbd { border-color: var(--accent); color: var(--accent); }
   .toc a:not(.active):hover { background: var(--surface-2); color: var(--ink); }
   .toc-x:hover { background: var(--surface-2); }
@@ -545,6 +550,7 @@ html.dg-lock, html.dg-lock body { overflow: hidden; }
     var el = document.getElementById(id);
     if (!el) return false;
     unfoldTo(el);
+    syncTopics();
     closeToc(false);
     var y = el.getBoundingClientRect().top + window.pageYOffset - headerBottom() - 12;
     window.scrollTo({ top: Math.max(0, y), behavior: how === 'load' ? 'auto' : behavior() });
@@ -583,6 +589,7 @@ html.dg-lock, html.dg-lock body { overflow: hidden; }
     if (ht) {
       var s = ht.closest('.s');
       setFold(s, !s.classList.contains('folded'));
+      syncTopics();
       queue();
     }
   });
@@ -611,31 +618,56 @@ html.dg-lock, html.dg-lock body { overflow: hidden; }
     try { localStorage.setItem('atlas-read', read ? 'on' : 'off'); } catch (e) {}
     queue();
   });
-  // 모두 펼치기·접기. 페이지 길이가 확 바뀌어도 읽던 자리를 붙들어 둔다.
-  // 접을 때는 읽던 제목이 든 맨 바깥 절을 헤더 아래로(안쪽을 읽고 있었으면 그 제목은 이미 화면 위로 지나가 있다),
-  // 펼칠 때는 화면 맨 위에 보이는 제목을 그 높이에 둔다 — 다 접힌 짧은 페이지에서는 스파이가 바닥 절을 고르므로 current 를 믿지 않는다
+  // 화면 맨 위에 보이는 절 제목. 한꺼번에 접고 펼 때 이것을 같은 높이에 붙들어 읽던 자리가 튀지 않게 한다
+  function topHeading() {
+    var line = headerBottom(), hs = document.querySelectorAll('#doc .s > :first-child');
+    for (var i = 0; i < hs.length; i++) if (hs[i].offsetParent && hs[i].getBoundingClientRect().top >= line) return hs[i];
+    return null;
+  }
+  // 모두 펼치기·접기. 접을 때는 읽던 제목이 든 맨 바깥 절을 헤더 아래로(안쪽을 읽고 있었으면 그 제목은 이미 화면 위로 지나가 있다),
+  // 펼칠 때는 화면 맨 위 제목을 그 높이에 둔다 — 다 접힌 짧은 페이지에서는 스파이가 바닥 절을 고르므로 current 를 믿지 않는다
   function foldAll(fold) {
-    var line = headerBottom(), keep = null, i;
+    var line = headerBottom(), keep = null;
     if (fold) {
-      for (i = 0; i < entries.length; i++) if (entries[i][1] === current) keep = entries[i][0];
+      for (var i = 0; i < entries.length; i++) if (entries[i][1] === current) keep = entries[i][0];
       var s = keep && keep.closest('.s'), up;
       while (s && (up = s.parentElement && s.parentElement.closest('.s'))) s = up;
       if (s) keep = s.firstElementChild;
-    } else {
-      for (i = 0; i < entries.length && !keep; i++) {
-        var h = entries[i][0];
-        if (h.offsetParent && h.getBoundingClientRect().top >= line) keep = h;
-      }
-    }
+    } else keep = topHeading();
     var to = keep && keep.getBoundingClientRect().top;
     if (fold && keep) to = Math.max(to, line + 12);
     Array.prototype.forEach.call(document.querySelectorAll('#doc .s:not(.s-toc)'), function (s) { setFold(s, fold); });
     if (keep) window.scrollBy(0, keep.getBoundingClientRect().top - to);
+    syncTopics();
     queue();
   }
   Array.prototype.forEach.call(document.querySelectorAll('[data-fold]'), function (b) {
     b.addEventListener('click', function () { foldAll(b.getAttribute('data-fold') === 'close'); });
   });
+  // 도구 절 머리의 소제목 칩. 도구마다 같은 소제목(출처 등)을 한꺼번에 접고 편다. 펼칠 때는 접혀 있던 도구 절도 연다.
+  // 칩 줄은 도구 절 맨 위에만 있다. 도구 한가운데서 자주 누르게 되면 sticky 로 붙이거나 목차 머리로 옮긴다
+  var topicBtns = document.querySelectorAll('[data-topic-btn]');
+  function topicSecs(k) { return document.querySelectorAll('#doc .s[data-topic="' + k + '"]'); }
+  function syncTopics() {
+    if (!topicBtns) return;
+    Array.prototype.forEach.call(topicBtns, function (b) {
+      var shown = Array.prototype.every.call(topicSecs(b.getAttribute('data-topic-btn')), function (s) { return !s.closest('.s.folded'); });
+      b.setAttribute('aria-pressed', String(shown));
+    });
+  }
+  Array.prototype.forEach.call(topicBtns, function (b) {
+    b.addEventListener('click', function () {
+      var show = b.getAttribute('aria-pressed') !== 'true', keep = topHeading();
+      var to = keep && keep.getBoundingClientRect().top;
+      Array.prototype.forEach.call(topicSecs(b.getAttribute('data-topic-btn')), function (s) {
+        if (show) unfoldTo(s); else setFold(s, true);
+      });
+      if (keep && keep.offsetParent) window.scrollBy(0, keep.getBoundingClientRect().top - to);
+      syncTopics();
+      queue();
+    });
+  });
+  syncTopics();
   function onWide() { if (wide.matches) closeToc(false); }
   if (wide.addEventListener) wide.addEventListener('change', onWide); else wide.addListener(onWide);
   window.addEventListener('popstate', function () {

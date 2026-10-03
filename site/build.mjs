@@ -23,6 +23,19 @@ if (!md.includes(FIRST)) throw new Error('TOOLS.md 에 "## 읽는 법" 절이 �
 const at = md.indexOf(FIRST);
 const src = `${md.slice(0, at)}\n\n${changelog.trimEnd().replace(/^(#{1,3}) /gm, '#$1 ')}\n${md.slice(at)}`;
 
+// 도구마다 되풀이되는 소제목. 도구 절 머리의 칩이 이 묶음째 12개를 한꺼번에 접고 편다.
+// Claude 는 "기준선 — 클로드가 직접 못 하는 것" 이라 끝말로 묶는다. 여기 안 걸리는 소제목(Obsidian 의 경로 표)은 칩과 무관하다
+const TOOLS_ID = '도구';
+const TOPICS = [
+  ['이용 조건', (t) => t === '무료·유료와 이용 조건'],
+  ['요금', (t) => t === '요금과 등급별 권한'],
+  ['못 하는 것', (t) => t.endsWith('못 하는 것')],
+  ['라이선스', (t) => t === '라이선스'],
+  ['출처', (t) => t === '출처'],
+];
+const TOPIC_BAR = '<div class="topics" role="group" aria-label="도구마다 같은 소제목을 한꺼번에 접고 펴기"><span>소제목</span>' +
+  TOPICS.map(([label], k) => `<button type="button" data-topic-btn="${k}" aria-pressed="true">${label}</button>`).join('') + '</div>\n';
+
 const ROLE_CLASS = { 기준선: 'claude', 범용: 'general', 조사: 'research', 수집: 'collect', 제작: 'create', 게시: 'publish', 기록: 'record', 판정: 'judge' };
 
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -69,6 +82,9 @@ const open = [];
 let buf = [];
 let inChanges = false;
 let changeDates = 0;
+let inTools = false;
+let tools = 0;
+const topicCount = TOPICS.map(() => 0);
 
 const flush = () => {
   if (!buf.length) return;
@@ -95,16 +111,21 @@ for (const tok of tokens) {
   // 바뀐 것은 맨 위라 다 펼치면 첫 화면부터 여러 장이다(2026-10-04 폰에서 4,725px). 최신 날짜만 펼치고 나머지는 접는다
   if (d === 2) inChanges = id === CHANGES_ID;
   const fold = inChanges && d === 3 && changeDates++ > 0;
+  if (d === 2) inTools = id === TOOLS_ID;
+  if (inTools && d === 3) tools++;
+  const topic = inTools && d === 4 ? TOPICS.findIndex(([, is]) => is(plain(tok.text))) : -1;
+  if (topic >= 0) topicCount[topic]++;
   const role = d === 3 && roleOf[id];
   const chip = role ? ` <span class="chip r-${ROLE_CLASS[role]}">${role}</span>` : '';
   const numLink = num ? `<a class="num" href="#목차" title="목차로">${num}</a> ` : '';
   // 제목 안에 링크가 있으면 버튼 안에 링크가 들어가 잘못된 HTML 이 된다
   if (inner.includes('<a ')) throw new Error(`제목에 링크가 있음: ${tok.text}`);
   out.push(
-    `<section class="s s${d}${id === '목차' ? ' s-toc' : ''}${fold ? ' folded' : ''}">` +
+    `<section class="s s${d}${id === '목차' ? ' s-toc' : ''}${fold ? ' folded' : ''}"${topic >= 0 ? ` data-topic="${topic}"` : ''}>` +
     `<h${d} id="${id}">${numLink}<button type="button" class="ht" aria-expanded="${!fold}">${inner}</button>${chip}</h${d}>` +
     `<div class="sb">\n`,
   );
+  if (d === 2 && id === TOOLS_ID) out.push(TOPIC_BAR);
   open.push(d);
 }
 flush();
@@ -113,6 +134,9 @@ expect('관계도', diagrams, 3);
 expect('바뀐 것 절', toc.filter((t) => t.id === CHANGES_ID).length, 1);
 if (toc[0].id !== CHANGES_ID) throw new Error(`첫 번호 절이 바뀐 것이 아니라 ${toc[0].id}`);
 expect('바뀐 것의 날짜 절', changeDates, (changelog.match(/^## /gm) ?? []).length);
+// 칩은 "도구마다 하나씩" 을 믿고 그려진다. 새 도구에서 소제목이 빠지거나 이름이 바뀌면 칩이 일부만 접는다
+if (!tools) throw new Error('도구 절에 도구가 없음');
+TOPICS.forEach(([label], k) => expect(`도구 소제목 "${label}"`, topicCount[k], tools));
 
 let html = out.join('');
 

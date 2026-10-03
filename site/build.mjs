@@ -13,11 +13,15 @@ const root = path.join(here, '..');
 const REPO_BLOB = 'https://github.com/Ruminem/ai-crew-atlas/blob/main/';
 const md = fs.readFileSync(path.join(root, 'TOOLS.md'), 'utf8');
 const tpl = fs.readFileSync(path.join(here, 'atlas.tpl.html'), 'utf8');
-// CHANGELOG.md 는 페이지 맨 끝에 `바뀐 것` 절로 붙인다. 파일의 # 제목을 ## 절로, 날짜 ## 를 ### 로 한 단계씩 내린다
+// CHANGELOG.md 는 목차 바로 뒤, 첫 절(`읽는 법`) 앞에 `바뀐 것` 절로 끼운다 — 가장 자주 보는 절이다.
+// 파일의 # 제목을 ## 절로, 날짜 ## 를 ### 로 한 단계씩 내린다
 const CHANGES_ID = '바뀐-것';
 const changelog = fs.readFileSync(path.join(root, 'CHANGELOG.md'), 'utf8');
 if (!/^# 바뀐 것\n/.test(changelog)) throw new Error('CHANGELOG.md 첫 줄이 "# 바뀐 것" 이 아님');
-const src = `${md.trimEnd()}\n\n${changelog.replace(/^(#{1,3}) /gm, '#$1 ')}`;
+const FIRST = '\n## 읽는 법\n';
+if (!md.includes(FIRST)) throw new Error('TOOLS.md 에 "## 읽는 법" 절이 없음');
+const at = md.indexOf(FIRST);
+const src = `${md.slice(0, at)}\n\n${changelog.trimEnd().replace(/^(#{1,3}) /gm, '#$1 ')}\n${md.slice(at)}`;
 
 const ROLE_CLASS = { 기준선: 'claude', 범용: 'general', 조사: 'research', 수집: 'collect', 제작: 'create', 게시: 'publish', 기록: 'record', 판정: 'judge' };
 
@@ -63,6 +67,8 @@ const toc = [];
 const out = [];
 const open = [];
 let buf = [];
+let inChanges = false;
+let changeDates = 0;
 
 const flush = () => {
   if (!buf.length) return;
@@ -86,14 +92,17 @@ for (const tok of tokens) {
     num = counters.slice(2, d + 1).join('.') + '.';
     toc.push({ depth: d, id, num, label: esc(plain(tok.text)) });
   }
+  // 바뀐 것은 맨 위라 다 펼치면 첫 화면부터 여러 장이다(2026-10-04 폰에서 4,725px). 최신 날짜만 펼치고 나머지는 접는다
+  if (d === 2) inChanges = id === CHANGES_ID;
+  const fold = inChanges && d === 3 && changeDates++ > 0;
   const role = d === 3 && roleOf[id];
   const chip = role ? ` <span class="chip r-${ROLE_CLASS[role]}">${role}</span>` : '';
   const numLink = num ? `<a class="num" href="#목차" title="목차로">${num}</a> ` : '';
   // 제목 안에 링크가 있으면 버튼 안에 링크가 들어가 잘못된 HTML 이 된다
   if (inner.includes('<a ')) throw new Error(`제목에 링크가 있음: ${tok.text}`);
   out.push(
-    `<section class="s s${d}${id === '목차' ? ' s-toc' : ''}">` +
-    `<h${d} id="${id}">${numLink}<button type="button" class="ht" aria-expanded="true">${inner}</button>${chip}</h${d}>` +
+    `<section class="s s${d}${id === '목차' ? ' s-toc' : ''}${fold ? ' folded' : ''}">` +
+    `<h${d} id="${id}">${numLink}<button type="button" class="ht" aria-expanded="${!fold}">${inner}</button>${chip}</h${d}>` +
     `<div class="sb">\n`,
   );
   open.push(d);
@@ -102,12 +111,14 @@ flush();
 while (open.length) { out.push('</div></section>\n'); open.pop(); }
 expect('관계도', diagrams, 3);
 expect('바뀐 것 절', toc.filter((t) => t.id === CHANGES_ID).length, 1);
+if (toc[0].id !== CHANGES_ID) throw new Error(`첫 번호 절이 바뀐 것이 아니라 ${toc[0].id}`);
+expect('바뀐 것의 날짜 절', changeDates, (changelog.match(/^## /gm) ?? []).length);
 
 let html = out.join('');
 
 // 링크: 앵커는 사람이 읽는 글자로 되돌리고, 밖으로 나가는 것은 새 탭, 저장소 안 파일은 GitHub 로
 html = html.replace(/<a href="([^"]*)"/g, (_, href) => {
-  // TOOLS.md 목차의 CHANGELOG.md 링크는 GitHub 에서는 파일로, 페이지에서는 맨 끝 절로 간다
+  // TOOLS.md 목차의 CHANGELOG.md 링크는 GitHub 에서는 파일로, 페이지에서는 그 절로 간다
   if (href === 'CHANGELOG.md') return `<a href="#${CHANGES_ID}"`;
   if (href.startsWith('#')) return `<a href="#${decodeURIComponent(href.slice(1))}"`;
   if (/^https?:/.test(href)) return `<a href="${href}" target="_blank" rel="noopener"`;

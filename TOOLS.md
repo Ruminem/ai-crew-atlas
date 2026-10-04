@@ -194,7 +194,7 @@ flowchart LR
 | 도구 | 역할 | 무료·유료 | 유료 요금 (월) | 클로드와 잇는 법 | 라이선스 | 확인한 날짜 |
 |---|---|---|---|---|---|---|
 | [Claude](#claude) | 범용 · 기준선 | 부분 무료 · 개인·업무 모두 무료 등급 가능 · 생성물 상업 이용 가능 | Pro $20 (연 결제 $17)<br>Max 5x $100<br>Max 20x $200<br>Team Standard $25/좌석 (연 결제 $20)<br>Team Premium $125/좌석 (연 결제 $100)<br>Enterprise $20/좌석 + 사용량 과금 (연 결제만) | 해당 없음 | 독점 | 2026-10-03 |
-| [ChatGPT](#chatgpt) | 범용 | 부분 무료 · 개인 무료 · 업무 이용은 개인용 약관 부록으로 받아들임(EU판 원문, ROW판 확인 못 함) · 생성물 상업 이용 가능(음성 출력 제외) | Go $8<br>Plus $20<br>Pro $100 · $200 · $500<br>Business Standard $25/좌석 (연 결제 $20)<br>Business Premium 확인 못 함 (검색 요약 $125)<br>Enterprise·Edu 견적 | 공식 Claude Code 플러그인 | 독점 (Codex CLI·플러그인 Apache-2.0) | 2026-09-30 |
+| [ChatGPT](#chatgpt) | 범용 | 부분 무료 · 개인 무료 · 업무 이용은 EU판 약관이 부록으로 받아들이고, ROW판(한국)은 부록 없이 막는 문구도 없음 · 생성물 상업 이용 가능(음성 출력 제외) | Go $8<br>Plus $20<br>Pro $100 · $200 · $500<br>Business Standard $25/좌석 (연 결제 $20)<br>Business Premium $125/좌석 (연 결제 $100)<br>Enterprise·Edu 견적 | 공식 Claude Code 플러그인 | 독점 (Codex CLI·플러그인 Apache-2.0) | 2026-10-05 |
 | [Gemini](#gemini) | 범용 | 부분 무료 · 개인 무료 · 무료 등급 업무 이용을 약관이 막지 않음 · 생성물 상업 이용 가능(Google 이 소유권 주장 안 함) | AI Plus $4.99<br>AI Pro $19.99 (연 결제 $199.99/년)<br>AI Ultra 5x $99.99<br>AI Ultra 20x $199.99 | 커뮤니티 MCP · API 키 | 독점 (Gemini CLI Apache-2.0) | 2026-10-01 |
 | [Grok](#grok) | 범용 | 부분 무료 · 개인·업무 모두 무료 등급 가능(소비자 약관이 업무 이용을 막지 않음, 기업 이용은 기업 약관을 가리킴) · 생성물 소유는 사용자에게 남지만 "Created with Grok" 출처 표기 요구 · 학습 제외는 Business 부터 | SuperGrok Lite $10 (검색 요약)<br>SuperGrok $30<br>SuperGrok Plus $100<br>SuperGrok Heavy $300 (검색 요약)<br>Business $30/사용자<br>Enterprise 견적 | 커뮤니티 MCP · API 키 (공식 Docs MCP 는 문서 검색만) | 독점 (SDK Apache-2.0 · Grok-1 가중치 Apache-2.0) | 2026-09-30 |
 | [Perplexity](#perplexity) | 조사 | 부분 무료 · **개인 무료 + 상업 유료** — Free·Pro·Max 이미지는 비상업 전용(공식 도움말), 약관 5.1 도 등급 구분 없이 비상업 전용(2024 판 사본), 업무는 Enterprise | Education Pro $10<br>Pro $20 (연 결제 $200/년)<br>Max $200 (연 결제 $2,000/년, 웹에서만)<br>Enterprise Pro $40/석 (연 결제 $400/석/년)<br>Enterprise Max $325/석 (연 결제 $3,250/석/년)<br>API 는 종량제 | 공식 MCP · API 과금 | 독점 (MCP 서버 MIT) | 2026-09-30 |
@@ -275,8 +275,8 @@ flowchart LR
 
 - **역할**: 범용
 - **한 줄**: OpenAI 의 대화형 AI. 채팅·이미지 생성(ChatGPT Images)·음성·딥 리서치·에이전트 모드·코딩 에이전트(Codex)를 한 구독으로 씀
-- **클로드와 잇는 법**: 공식 Claude Code 플러그인 `openai/codex-plugin-cc` (설치: `/plugin marketplace add openai/codex-plugin-cc` → `/plugin install codex@openai-codex` → `/codex:setup`). `/codex:review`·`/codex:rescue` 등으로 Codex 에게 리뷰·작업을 넘김. 인증은 로컬 Codex CLI 로그인을 그대로 씀 — ChatGPT 계정(Free 포함) 또는 OpenAI API 키. 쓴 양은 Codex 사용 한도에서 빠짐. Codex CLI 를 MCP 서버로 띄우던 `codex mcp-server` 는 지금 `openai/codex` 소스에 없음(2026-09-29 main 에서 확인, 남은 것은 외부 MCP 서버를 관리하는 `codex mcp` 뿐). 없어진 버전·날짜는 2026-08-24 폐기 예고 후 Codex CLI 0.154.0(2026-09-09)이라는 제3자 서술임 — 그걸 쓰는 옛 글·커뮤니티 설정은 지금 안 돎. claude.ai 앱용 공식 커넥터는 확인 못 함 — 커넥터 디렉터리에서 찾아보지 않았음. API 키(`OPENAI_API_KEY`)로 모델을 부르는 커뮤니티 MCP 서버는 여럿 있음
-- **확인한 날짜**: 2026-09-30
+- **클로드와 잇는 법**: 공식 Claude Code 플러그인 `openai/codex-plugin-cc` (설치: `/plugin marketplace add openai/codex-plugin-cc` → `/plugin install codex@openai-codex` → `/codex:setup`). `/codex:review`·`/codex:rescue` 등으로 Codex 에게 리뷰·작업을 넘김. 인증은 로컬 Codex CLI 로그인을 그대로 씀 — ChatGPT 계정(Free 포함) 또는 OpenAI API 키. 쓴 양은 Codex 사용 한도에서 빠짐. Codex CLI 를 MCP 서버로 띄우던 `codex mcp-server` 는 지금 `openai/codex` 소스에 없음(2026-10-05 main 에서 다시 확인, 남은 것은 외부 MCP 서버를 관리하는 `codex mcp` 뿐). 없어진 버전·날짜는 2026-08-24 폐기 예고 후 Codex CLI 0.154.0(2026-09-09)이라는 제3자 서술임 — 그걸 쓰는 옛 글·커뮤니티 설정은 지금 안 돎. claude.ai 앱용 공식 커넥터는 확인 못 함 — 커넥터 디렉터리에서 찾아보지 않았음. API 키(`OPENAI_API_KEY`)로 모델을 부르는 커뮤니티 MCP 서버는 여럿 있음
+- **확인한 날짜**: 2026-10-05
 
 #### 무료·유료와 이용 조건
 
@@ -284,28 +284,28 @@ flowchart LR
 |---|---|
 | 분류 | 부분 무료 |
 | 개인 이용 | Free 로 가능함 |
-| 상업·업무 이용 | 개인용 Terms of Use 와 기업용 Services Agreement(API·Business·Enterprise)가 나뉨. EU판 개인용 약관(2026-01-16판)은 "including personal, non-commercial use of our Services by consumers" 라고 적고, 끝에 **"Business use of the Services addendum"** 을 두어 "If you use our Services for commercial or business use, the following terms apply" 로 업무 이용을 받아들임(책임 한도·면책·준거법만 달라짐). 등급으로 가르는 문구는 없음 — 원문 열어 봄. 한국에 걸리는 ROW판(row-terms-of-use)에 같은 부록이 있는지는 확인 못 함 — openai.com 이 Cloudflare 봇 확인(403)으로 막혀 원문을 못 열었음 |
-| 생성물의 상업적 이용 | 가능함. 개인용 약관(EU판) "you (a) retain your ownership rights in Input and (b) own the Output. We hereby assign to you all our right, title, and interest, if any, in and to Output." — 원문 열어 봄, 등급 구분 없음. Business·Enterprise 는 Services Agreement 4.1 "Customer … owns all Output" — 원문 열어 봄. 예외로 **음성 출력은 비상업 용도로만**: Service Terms(2026-09-29판) "ChatGPT Voice Output is for non-commercial use only and may not be distributed or repackaged as a standalone audio recording … Any rights in Output assigned to you do not include ChatGPT Voice Output." — 원문 열어 봄 |
+| 상업·업무 이용 | 개인용 Terms of Use 와 기업용 Services Agreement(API·Business·Enterprise)가 나뉨. EU판 개인용 약관(2026-01-16판)은 "including personal, non-commercial use of our Services by consumers" 라고 적고, 끝에 **"Business use of the Services addendum"** 을 두어 "If you use our Services for commercial or business use, the following terms apply" 로 업무 이용을 받아들임(책임 한도·면책·준거법만 달라짐). 등급으로 가르는 문구는 없음 — 원문 열어 봄. 한국에 걸리는 ROW판(row-terms-of-use, Effective 2026-01-01)에는 **이 부록이 없음**. 첫머리가 "services for individuals" 라고만 하고 비상업 한정 문구도 없으며, "If you are a business or organization, to the extent permitted by law, you will indemnify and hold harmless us" 처럼 조직 이용을 전제한 조항을 둠. 기업용(Enterprise·API)은 "Business Terms" 를 가리킴 — 원문 열어 봄(2026-10-05) |
+| 생성물의 상업적 이용 | 가능함. 개인용 약관(EU판·ROW판 같은 문장) "you (a) retain your ownership rights in Input and (b) own the Output. We hereby assign to you all our right, title, and interest, if any, in and to Output." — 원문 열어 봄, 등급 구분 없음. Business·Enterprise 는 Services Agreement 4.1 "Customer … owns all Output" — 원문 열어 봄. 예외로 **음성 출력은 비상업 용도로만**: Service Terms(2026-09-29판) "ChatGPT Voice Output is for non-commercial use only and may not be distributed or repackaged as a standalone audio recording … Any rights in Output assigned to you do not include ChatGPT Voice Output." — 원문 열어 봄 |
 
 - 특이점: 개인용 요금제는 끄지 않으면 대화가 학습에 쓰임 — 약관 "If you do not want us to use your Content to train our models, you have the option to opt out by updating your account settings". Business·Enterprise·API 는 Services Agreement 4.2 "will not use Customer Content to develop or improve the Services, unless Customer explicitly agrees" (둘 다 원문 열어 봄)
-- 약관 원문은 openai.com 이 막혀서 Open Terms Archive 가 공식 페이지에서 받아 둔 사본(2026-09-29 기준 최신)으로 읽었음. 그 수집기는 EU판만 받으므로 ROW판 문장은 이 사본으로 확인되지 않음
-- 이 절의 출처: [Europe Terms of Use + Service Terms (Open Terms Archive 사본)](https://github.com/OpenTermsArchive/genai-versions/blob/main/ChatGPT/Terms%20of%20Service.md) — 공식(원문 열어 봄) · [OpenAI Services Agreement (Open Terms Archive 사본)](https://github.com/OpenTermsArchive/genai-versions/blob/main/ChatGPT/Commercial%20Terms.md) — 공식(원문 열어 봄) · [Terms of Use (ROW)](https://openai.com/policies/row-terms-of-use/) — 공식(검색 요약, 원문 차단)
+- EU판 약관은 Open Terms Archive 가 공식 페이지에서 받아 둔 사본(2026-10-04 기준 최신)으로, ROW판은 openai.com 이 막혀 r.jina.ai 리더가 받아 준 원문으로 읽었음(2026-10-05)
+- 이 절의 출처: [Europe Terms of Use + Service Terms (Open Terms Archive 사본)](https://github.com/OpenTermsArchive/genai-versions/blob/main/ChatGPT/Terms%20of%20Service.md) — 공식(원문 열어 봄) · [OpenAI Services Agreement (Open Terms Archive 사본)](https://github.com/OpenTermsArchive/genai-versions/blob/main/ChatGPT/Commercial%20Terms.md) — 공식(원문 열어 봄) · [Terms of Use (ROW)](https://openai.com/policies/row-terms-of-use/) — 공식(원문 열어 봄, r.jina.ai 경유)
 
 #### 요금과 등급별 권한
 | 등급 | 월 요금 | 연 결제 시 | 할 수 있는 것 · 한도 |
 |---|---|---|---|
-| Free | $0 | – | 일상 텍스트 채팅 무제한(2026 변경). 이미지 생성(ChatGPT Images 2.0)·파일 업로드·음성·데이터 분석은 따로 좁은 한도. 음성은 GPT-Live-1 mini. 일부 국가에서 광고 붙음 (검색 요약). Codex 는 GPT-6 Luna 로 짧은 코딩 작업만(데스크톱 앱, 순차 배포 — 원문 열어 봄). 정확한 횟수 한도는 확인 못 함 — chatgpt.com·help.openai.com 이 Cloudflare 봇 확인으로 막힘 |
-| Go | $8 (원문엔 지역 표기 없음) | 확인 못 함 — 가격표 원문이 막혀 있음. 검색 요약은 월 결제만이라고 함 | Free 대비 메시지·파일 업로드·이미지 생성 10배. 광고 붙음. 2025 년 인도에서 시작해 2026-01 에 전 세계로 풀림(제3자). Codex 는 GPT-6 Luna 로 가벼운 작업(원문 열어 봄) |
-| Plus | $20 | 확인 못 함 — 가격표 원문이 막혀 있음. 검색 요약은 월 결제만이라고 함 | 광고 없음. 상위 모델·추론, Thinking 이미지 생성, 확장된 메모리, 딥 리서치(제한), 에이전트 모드, Projects, 커스텀 GPT. 음성은 GPT-Live-1 (검색 요약). Codex 는 웹·CLI·IDE·iOS, 자동 코드 리뷰·Slack 연동, GPT-6 Sol·Luna, 한도를 넘으면 ChatGPT 크레딧을 사서 이어 씀(원문 열어 봄) |
-| Pro $100 | $100 | 확인 못 함 — 연 결제 언급을 못 찾음 | Pro 는 $100·$200·$500 세 단계(원문 열어 봄 — "Plans at $100, $200, or $500 USD per month"). Pro 는 Codex 5시간 한도가 없음(원문 열어 봄 — "Pro plans currently have no five-hour limit", 주간 한도는 붙을 수 있음). 단계별 사용량 배수(옛 5x·20x)는 가격 페이지에서 빠졌음 |
-| Pro $200 | $200 (원문 열어 봄) | 확인 못 함 | 최상위 Pro 모델, 딥 리서치·에이전트 모드 최대 한도, 신기능 우선 (검색 요약). **2026-09-10 부터 신규 가입·업그레이드 일시 중단** (기존 구독자는 영향 없음, 제3자) |
-| Pro $500 | $500 (원문 열어 봄) | 확인 못 함 | Pro 중 유일하게 GPT-6 Astra Ultrafast 를 씀(원문 열어 봄 — "Astra Ultrafast access on Pro $500", Enterprise·Edu 일부도 씀). 2026-09-29 출시·사용량이 가장 큼은 제3자 |
+| Free | $0 | – | 일상 텍스트 채팅 무제한(GPT-5.6 Luna, 남용 방지 단서), Think 도 GPT-5.6 Luna. 이미지 생성(ChatGPT Images 2.0)·파일 업로드·음성·데이터 분석·딥 리서치는 따로 좁은 한도, 문맥 창 27K. 예약 작업·Sites 없음. 광고는 Free·Go 에만 붙고 2026-02-09 미국에서 시험을 시작해 일부 지역으로 넓히는 중(원문 열어 봄). 음성은 GPT-Live-1 mini (검색 요약). Codex 는 GPT-6 Luna 로 짧은 코딩 작업만(데스크톱 앱, 순차 배포 — 원문 열어 봄), GPT-5.6 Terra 도 Work·Codex 데스크톱에서 제한적으로 씀(원문 열어 봄). 정확한 횟수 한도는 공식 문서에 숫자가 없음 — 도움말은 한도에 닿으면 앱이 알린다고만 함 (2026-10-05) |
+| Go | $8 (USD 결제, 일부 국가만 현지 통화 — 원문 열어 봄) | 없음 — 월 결제만(도움말 "we do not support annual billing … for ChatGPT Go, Plus, or Pro", 원문 열어 봄) | Free 대비 메시지·파일 업로드·이미지 생성 10배(검색 요약 — 공식 도움말은 배수 없이 "higher limits" 라고만 함). 문맥 창 54K, 예약 작업·영상 음성 통화 됨. 채팅·Think 는 GPT-5.6 Luna, GPT-5.6 Sol·옛 모델(4o 등) 없음. 광고가 붙을 수 있음(원문 열어 봄). ChatGPT 가 되는 모든 나라에서 가입됨(원문 열어 봄), 2025 년 인도에서 시작했다는 것은 제3자. Codex 는 GPT-6 Luna 로 가벼운 작업(원문 열어 봄) |
+| Plus | $20 | 없음 — 월 결제만(원문 열어 봄) | 광고 없음. 채팅은 GPT-5.6 Sol(Instant·Medium·High, Extra High·Pro 없음), GPT-6 Astra·GPT-6.1 Sol 은 Work·Codex 에서. Thinking 이미지 생성, 확장된 메모리·딥 리서치, Projects·예약 작업·Sites, 문맥 창 54K(추론 256K)(원문 열어 봄). 가격표는 "custom GPTs" 를 적지만 Free FAQ 는 "New GPT creation and publishing are not available on personal ChatGPT accounts, including Free, Go, Plus, and Pro" 라고 함 — 둘 다 원문 열어 봄, 서로 어긋남. 에이전트 모드·음성 GPT-Live-1 은 검색 요약. Codex 는 웹·CLI·IDE·iOS, 자동 코드 리뷰·Slack 연동, GPT-6.1 Sol·GPT-6 Sol·Luna, 한도를 넘으면 ChatGPT 크레딧을 사서 이어 씀(원문 열어 봄) |
+| Pro $100 | $100 | 없음 — 월 결제만(Pro 도움말 "Pro is billed monthly. Annual billing … not available", 원문 열어 봄) | Pro 는 $100·$200·$500 세 단계(원문 열어 봄 — "Plans at $100, $200, or $500 USD per month"). Pro 는 Codex 5시간 한도가 없음(원문 열어 봄 — "Pro plans currently have no five-hour limit", 주간 한도는 붙을 수 있음). 단계별 사용량 배수(옛 5x·20x)는 가격 페이지에서 빠졌고, 도움말은 $200 이 $100 보다 많고 $500 이 가장 많다고만 함. 채팅에서 GPT-6 Pro(GPT-6 Astra 기반)·GPT-5.6 Sol Pro·Extra High, Dot(상시 도는 에이전트, 개인 요금제 중 Pro 만), 문맥 창 128K(추론 400K)(원문 열어 봄) |
+| Pro $200 | $200 (원문 열어 봄) | 없음 — 월 결제만(원문 열어 봄) | $100 보다 사용량이 많음(원문 열어 봄). 2026-09-10 께 멈췄던 신규 가입이 **다시 열림** — 새 가입자는 예전보다 낮은 사용량을 받고, 2026-09-22–09-29 사이에 구독 중이던 사람은 2026-10-29 까지 예전 사용량을 유지함(Pro 도움말 "Pro 200 is also available for new subscriptions again", 원문 열어 봄). 멈췄던 시점은 제3자 |
+| Pro $500 | $500 (원문 열어 봄) | 없음 — 월 결제만(원문 열어 봄) | Pro 중 유일하게 GPT-6 Astra Ultrafast 를 씀(원문 열어 봄 — "Astra Ultrafast access on Pro $500", Enterprise·Edu 일부도 씀). 사용량이 가장 큼(Pro 도움말, 원문 열어 봄). Astra Ultrafast 는 기본 한도를 Standard 의 8배로, Fast 는 2.5배로 씀(원문 열어 봄). 2026-09-29 출시는 제3자 |
 | Business Standard 좌석 | $25/좌석 | $20/좌석/월 | 2좌석 이상, $20 은 연 결제가(원문 열어 봄 — "*2+ users, billed annually. $25 per user per month when billed monthly."). SAML SSO·MFA·관리 기능, 업무 데이터는 기본으로 학습에 안 씀(원문 열어 봄). Codex 한도는 Plus 와 같은 5시간당 어림표이고 주간 한도가 더 붙을 수 있음(원문 열어 봄) |
-| Business Premium 좌석 | 확인 못 함 — 검색 요약은 $125 | 확인 못 함 — 검색 요약은 $100/좌석(연 결제) | 2026-08 신설(검색 요약). 2026-09-29 까지 가격 페이지에 있던 "Business ($100) uses the Pro 5x estimates" 줄이 2026-09-30 원문에서 빠져, 금액·한도 모두 원문으로 확인 못 함. 5시간 한도 없음·좌석 종류 섞어 배정은 검색 요약 |
-| Enterprise / Edu | 견적 ("Contact sales" — 원문 열어 봄) | 확인 못 함 — 검색 요약은 연 결제 | 맞춤 가격, SCIM·EKM·RBAC·감사 로그·데이터 보존·거주지 통제, 우선 처리(원문 열어 봄). flexible pricing 이면 고정 한도 없이 크레딧만큼 쓰고, 아니면 대부분 기능이 Plus 와 같은 좌석당 한도(원문 열어 봄) |
+| Business Premium 좌석 | $125/좌석 | $100/좌석/월 | 2026-08-25 부터 일반 제공(공식 공지). Standard 의 5배 사용량, 5시간 한도 없음, 주간 재설정. Standard·Premium 을 한 워크스페이스에 섞어 배정하고 바꿀 수 있고, 최소 2좌석은 종류를 가리지 않음. Business 에서 Dot(상시 에이전트)은 Premium 만 씀(원문 열어 봄). 가격표(chatgpt.com/pricing) Business 칸에는 Standard 금액만 있고 Premium 금액은 도움말·공지에만 있음 |
+| Enterprise / Edu | 견적 ("Contact sales" — 원문 열어 봄) | 연 결제 있음(가격표 FAQ "annual plans for Business and Enterprise", 원문 열어 봄). 크레딧제·토큰제 가격도 있음 | 맞춤 가격, SCIM·EKM·RBAC·감사 로그·데이터 보존·거주지 통제, 우선 처리(원문 열어 봄). flexible pricing 이면 고정 한도 없이 크레딧만큼 쓰고, 아니면 대부분 기능이 Plus 와 같은 좌석당 한도(원문 열어 봄) |
 
 - Codex 5시간당 로컬 메시지 어림(공식 가격 페이지, Plus 와 Business Standard 가 같음): GPT-6 Astra 5–45 · GPT-6.1 Sol 15–160 · GPT-6 Sol 15–150 · GPT-6 Luna 350–3,000. Pro 는 5시간 한도가 없음(주간 한도는 붙을 수 있음). 고정 한도가 아니라 작업 크기에 따라 달라진다는 단서가 붙음. ChatGPT Work 는 Codex 와 같은 요금·크레딧·한도를 나눠 씀
-- 등급별 모델: Codex 쪽만 원문으로 확인했음 — Free·Go 는 GPT-6 Luna, Plus 이상은 GPT-6 Sol·Luna 에 어림표상 GPT-6 Astra·GPT-6.1 Sol(2026-09-29 추가)도 씀. GPT-5.6 Sol·Terra·Luna 는 크레딧 단가표에만 남음. Astra Ultrafast 는 Pro $500 과 일부 Enterprise·Edu 만. GPT-6 Sol·Luna 는 ChatGPT 의 Work·Codex 에만 있고 채팅(Chat)에는 없음(공식 changelog 2026-09-22). GPT-5.5 는 2026-10-14 에 ChatGPT·Work·Codex 모든 등급에서 은퇴(공식 Models 문서). 채팅 쪽 등급별 모델은 확인 못 함 — 가격표 원문이 막혀 있음 (2026-09-30)
+- 등급별 모델: Codex 쪽만 원문으로 확인했음 — Free·Go 는 GPT-6 Luna, Plus 이상은 GPT-6 Sol·Luna 에 어림표상 GPT-6 Astra·GPT-6.1 Sol(2026-09-29 추가)도 씀. GPT-5.6 Sol·Terra·Luna 는 크레딧 단가표에만 남음. Astra Ultrafast 는 Pro $500 과 일부 Enterprise·Edu 만. GPT-6 Sol·Luna 는 ChatGPT 의 Work·Codex 에만 있고 채팅(Chat)에는 없음(공식 changelog 2026-09-22). GPT-5.5 는 2026-10-14 에 ChatGPT·Work·Codex 모든 등급에서 은퇴(공식 Models 문서). 채팅 쪽은 Free·Go 가 GPT-5.6 Luna(Think 포함), Plus 이상이 GPT-5.6 Sol, Pro·Business·Enterprise 는 GPT-5.6 Sol Pro·Extra High 도 씀. GPT-6 Pro(GPT-6 Astra 기반)는 도움말 문장상 Pro $100·$200·Business·Enterprise(Pro $500 은 그 문장에 없음). 가격표 비교표는 Plus 에 GPT-6.1 Sol·GPT-6 Astra·Sol·Luna 를 Yes 로 적음 (원문 열어 봄, 2026-10-05)
 - Pro 등급은 제3자 글 중 "$200 하나"로 적은 2025 기준 글이 섞여 있음. 공식 가격 페이지가 $100·$200·$500 세 단계라서 그쪽을 따름
 
 **영상(Sora)**: 지금은 **어느 등급에서도 영상 생성이 안 됨.** Sora 앱·웹이 2026-04-26 에 닫혔고(검색 요약 — 공식 요약 "As of April 26, 2026, the Sora product is no longer available"), Videos API 와 `sora-2`·`sora-2-pro` 모델도 **2026-09-24 에 API 에서 제거됨**(2026-03-24 공지, 원문 열어 봄). ChatGPT 안의 영상 생성 버튼도 같이 빠졌다는 것은 제3자 글에서만 봤음. 예전 한도(Plus 480p 월 50개 등)는 Sora 1 시절 공식 글 기준이라 지금은 맞지 않음
@@ -314,28 +314,29 @@ flowchart LR
 - **이미지 생성·편집**: ChatGPT Images 2.0 으로 대화 안에서 이미지를 만들고 고침. Free 에서도 됨(좁은 한도). 클로드는 이미지를 만들지 못하고 SVG·HTML 도표만 그림
 - 음성 대화·웹 검색·딥 리서치·에이전트·코딩 에이전트는 클로드에도 해당 기능이 있어서 이 칸에서 뺐음. 등급별 한도는 서로 다름
 - 영상 생성은 2026-04-26 이후 ChatGPT 에서도 안 되므로 차이가 아님
-- 그 밖에 ChatGPT 에만 있는 기능은 확인 못 함 — 공식 기능 비교 페이지(chatgpt.com/pricing)가 네트워크가 열린 뒤에도 Cloudflare 봇 확인(403)으로 막혀 있음
+- 그 밖에 ChatGPT 에만 있는 기능은 확인 못 함 — 공식 기능 비교표(chatgpt.com/pricing, r.jina.ai 경유로 원문 열어 봄)에 Dot(상시 에이전트)·Sites(웹사이트 게시)·Health·Finances·영상 음성 통화·Shopping 이 있으나, 클로드 기준선에 대응 항목이 없어 차이인지 판정 못 함 (2026-10-05)
 
 #### 라이선스
 - ChatGPT 는 독점 서비스임
 - Codex CLI(`openai/codex`)와 Claude Code 플러그인(`openai/codex-plugin-cc`)은 둘 다 Apache-2.0 오픈소스임
 
 #### 출처
-네트워크가 열린 뒤에도 openai.com·chatgpt.com·help.openai.com 은 Cloudflare 봇 확인(HTTP 403, `cf-mitigated: challenge`)으로 막혀 원문을 못 열었음. 원문을 연 것은 learn.chatgpt.com(가격·모델·changelog, 2026-09-30 확인) · developers.openai.com(API 폐기 안내), 약관의 Open Terms Archive 사본, GitHub 저장소임. 아래 `공식(검색 요약)` 은 공식 페이지지만 원문을 읽지 못했다는 뜻임.
+openai.com·chatgpt.com·help.openai.com 은 직접 받으면 Cloudflare 봇 확인(HTTP 403, `cf-mitigated: challenge`)으로 막힘. 2026-10-05 에는 r.jina.ai 리더 경유로 이 세 곳의 원문을 열었음(아래 `r.jina.ai 경유`). 그 밖에 원문을 연 것은 learn.chatgpt.com(가격·모델·changelog, 2026-10-05 확인) · developers.openai.com(API 폐기 안내), 약관의 Open Terms Archive 사본, GitHub 저장소임. 아래 `공식(검색 요약)` 은 공식 페이지지만 원문을 읽지 못했다는 뜻임.
 - [Pricing | ChatGPT Learn](https://learn.chatgpt.com/docs/pricing) — 공식(원문 열어 봄, 옛 주소 developers.openai.com/codex/pricing 에서 308 로 옮겨짐)
 - [Models](https://learn.chatgpt.com/docs/models) · [Changelog](https://learn.chatgpt.com/docs/changelog) | ChatGPT Learn — 공식(원문 열어 봄)
 - [Deprecations | OpenAI API](https://developers.openai.com/api/docs/deprecations) — 공식(원문 열어 봄)
 - [Europe Terms of Use + Service Terms (Open Terms Archive 사본)](https://github.com/OpenTermsArchive/genai-versions/blob/main/ChatGPT/Terms%20of%20Service.md) — 공식(원문 열어 봄)
 - [OpenAI Services Agreement (Open Terms Archive 사본)](https://github.com/OpenTermsArchive/genai-versions/blob/main/ChatGPT/Commercial%20Terms.md) — 공식(원문 열어 봄)
-- [Pricing | ChatGPT](https://chatgpt.com/pricing/) — 공식(검색 요약)
-- [What is ChatGPT Go? | OpenAI Help Center](https://help.openai.com/en/articles/11989085-what-is-chatgpt-go) — 공식(검색 요약)
+- [Pricing | ChatGPT](https://chatgpt.com/pricing/) — 공식(원문 열어 봄, r.jina.ai 경유)
+- [What is ChatGPT Go? | OpenAI Help Center](https://help.openai.com/en/articles/11989085-what-is-chatgpt-go) — 공식(원문 열어 봄, r.jina.ai 경유)
 - [Introducing ChatGPT Go, now available worldwide | OpenAI](https://openai.com/index/introducing-chatgpt-go/) — 자사 홍보(검색 요약)
-- [About ChatGPT Pro plans | OpenAI Help Center](https://help.openai.com/en/articles/9793128-about-chatgpt-pro-plans) — 공식(검색 요약)
+- [About ChatGPT Pro tiers | OpenAI Help Center](https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers) — 공식(원문 열어 봄, r.jina.ai 경유)
 - [ChatGPT Plan | Plus](https://chatgpt.com/plans/plus/) · [Pro](https://chatgpt.com/plans/pro/) — 공식(검색 요약)
-- [ChatGPT Free Tier FAQ | OpenAI Help Center](https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq) — 공식(검색 요약)
-- [Ads in ChatGPT | OpenAI Help Center](https://help.openai.com/en/articles/20001047-ads-in-chatgpt) — 공식(검색 요약)
-- [Premium seats are coming to ChatGPT Business | OpenAI](https://openai.com/index/premium-seats-chatgpt-business/) — 공식(검색 요약)
-- [ChatGPT Business - Overview | OpenAI Help Center](https://help.openai.com/en/articles/8792828-chatgpt-business-overview) — 공식(검색 요약)
+- [ChatGPT Free Tier FAQ | OpenAI Help Center](https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq) — 공식(원문 열어 봄, r.jina.ai 경유)
+- [Ads in ChatGPT | OpenAI Help Center](https://help.openai.com/en/articles/20001047-ads-in-chatgpt) — 공식(원문 열어 봄, r.jina.ai 경유)
+- [Premium seats are coming to ChatGPT Business | OpenAI](https://openai.com/index/premium-seats-chatgpt-business/) — 공식(원문 열어 봄, r.jina.ai 경유)
+- [ChatGPT Business - Overview | OpenAI Help Center](https://help.openai.com/en/articles/8792828-chatgpt-business-overview) — 공식(원문 열어 봄, r.jina.ai 경유)
+- [GPT-5.6 and GPT-6 Pro in ChatGPT | OpenAI Help Center](https://help.openai.com/en/articles/11909943) — 공식(원문 열어 봄, r.jina.ai 경유)
 - [Sora 2 is here | OpenAI](https://openai.com/index/sora-2/) — 자사 홍보(검색 요약, 2025 글)
 - [Sora is here | OpenAI](https://openai.com/index/sora-is-here/) — 자사 홍보(검색 요약, 2024 글 — Plus 월 50개 한도의 출처라 지금은 무효)
 - [OpenAI sets two-stage Sora shutdown… | The Decoder](https://the-decoder.com/openai-sets-two-stage-sora-shutdown-with-app-closing-april-2026-and-api-following-in-september/) — 제3자(검색 요약)

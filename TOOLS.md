@@ -194,9 +194,9 @@ flowchart LR
 | 도구 | 역할 | 무료·유료 | 유료 요금 (월) | 클로드와 잇는 법 | 라이선스 | 확인한 날짜 |
 |---|---|---|---|---|---|---|
 | [Claude](#claude) | 범용 · 기준선 | 부분 무료 · 개인·업무 모두 무료 등급 가능 · 생성물 상업 이용 가능 | Pro $20 (연 결제 $17)<br>Max 5x $100<br>Max 20x $200<br>Team Standard $25/좌석 (연 결제 $20)<br>Team Premium $125/좌석 (연 결제 $100)<br>Enterprise $20/좌석 + 사용량 과금 (연 결제만) | 해당 없음 | 독점 | 2026-10-03 |
-| [ChatGPT](#chatgpt) | 범용 | 부분 무료 · 개인 무료 · 업무 이용은 개인용 약관 부록으로 받아들임(EU판 원문, ROW판 확인 못 함) · 생성물 상업 이용 가능(음성 출력 제외) | Go $8<br>Plus $20<br>Pro $100 · $200 · $500<br>Business Standard $25/좌석 (연 결제 $20)<br>Business Premium 확인 못 함 (검색 요약 $125)<br>Enterprise·Edu 견적 | 공식 Claude Code 플러그인 | 독점 (Codex CLI·플러그인 Apache-2.0) | 2026-09-30 |
+| [ChatGPT](#chatgpt) | 범용 | 부분 무료 · 개인 무료 · 업무 이용은 EU판 약관이 부록으로 받아들이고, ROW판(한국)은 부록 없이 막는 문구도 없음 · 생성물 상업 이용 가능(음성 출력 제외) | Go $8<br>Plus $20<br>Pro $100 · $200 · $500<br>Business Standard $25/좌석 (연 결제 $20)<br>Business Premium $125/좌석 (연 결제 $100)<br>Enterprise·Edu 견적 | 공식 Claude Code 플러그인 | 독점 (Codex CLI·플러그인 Apache-2.0) | 2026-10-05 |
 | [Gemini](#gemini) | 범용 | 부분 무료 · 개인 무료 · 무료 등급 업무 이용을 약관이 막지 않음 · 생성물 상업 이용 가능(Google 이 소유권 주장 안 함) | AI Plus $4.99<br>AI Pro $19.99 (연 결제 $199.99/년)<br>AI Ultra 5x $99.99<br>AI Ultra 20x $199.99 | 커뮤니티 MCP · API 키 | 독점 (Gemini CLI Apache-2.0) | 2026-10-01 |
-| [Grok](#grok) | 범용 | 부분 무료 · 개인·업무 모두 무료 등급 가능(소비자 약관이 업무 이용을 막지 않음, 기업 이용은 기업 약관을 가리킴) · 생성물 소유는 사용자에게 남지만 "Created with Grok" 출처 표기 요구 · 학습 제외는 Business 부터 | SuperGrok Lite $10 (검색 요약)<br>SuperGrok $30<br>SuperGrok Plus $100<br>SuperGrok Heavy $300 (검색 요약)<br>Business $30/사용자<br>Enterprise 견적 | 커뮤니티 MCP · API 키 (공식 Docs MCP 는 문서 검색만) | 독점 (SDK Apache-2.0 · Grok-1 가중치 Apache-2.0) | 2026-09-30 |
+| [Grok](#grok) | 범용 | 부분 무료 · 개인·업무 모두 무료 등급 가능(소비자 약관이 업무 이용을 막지 않음, 기업 이용은 기업 약관을 가리킴) · 생성물 소유는 사용자에게 남지만 "Created with Grok" 출처 표기 요구 · 학습 제외는 Business 부터 | SuperGrok Lite $10 (연 결제 $100/년)<br>SuperGrok $30 (연 결제 $300/년)<br>SuperGrok Plus $100 (연 결제 $1,000/년)<br>SuperGrok Heavy $300 (연 결제 $3,000/년)<br>Business $30/사용자 (연 결제 $300/년)<br>Enterprise 견적 | 커뮤니티 MCP · API 키 (공식 Docs MCP 는 문서 검색만) | 독점 (SDK Apache-2.0 · Grok-1 가중치 Apache-2.0) | 2026-10-05 |
 | [Perplexity](#perplexity) | 조사 | 부분 무료 · **개인 무료 + 상업 유료** — Free·Pro·Max 이미지는 비상업 전용(공식 도움말), 약관 5.1 도 등급 구분 없이 비상업 전용(2024 판 사본), 업무는 Enterprise | Education Pro $10<br>Pro $20 (연 결제 $200/년)<br>Max $200 (연 결제 $2,000/년, 웹에서만)<br>Enterprise Pro $40/석 (연 결제 $400/석/년)<br>Enterprise Max $325/석 (연 결제 $3,250/석/년)<br>API 는 종량제 | 공식 MCP · API 과금 | 독점 (MCP 서버 MIT) | 2026-09-30 |
 | [NotebookLM](#notebooklm-2026-07-16-부터-gemini-notebook) | 조사 | 부분 무료 · 개인 무료 · 업무 이용을 막는 약관 조항 없음 · 생성물 소유권 주장 안 함(상업 이용 명시 문구는 없음, 한국은 이미지·영상 워터마크 강제) | Google AI Plus $4.99<br>Google AI Pro $19.99 (연 결제 $199.99/년)<br>Google AI Ultra 5× $99.99<br>Google AI Ultra 20× $199.99<br>Gemini Notebook Enterprise $9/라이선스 (최소 15개)<br>Workspace 는 그 요금에 포함 | 커뮤니티 MCP · 쿠키 | 독점 (커뮤니티 MCP MIT) | 2026-10-02 |
 | [Firecrawl](#firecrawl) | 수집 | 부분 무료 + 자체 호스팅 무료 · 자체 호스팅은 AGPL-3.0 조건으로 상업 이용 가능 · 클라우드 약관은 등급 구분 없이 "명시적 허락 없는 상업 이용" 금지 · 출력 권리 조항 없음 | Hobby $19 (연 결제 $16)<br>Standard $99 (연 결제 $83)<br>Growth $399 (연 결제 $333)<br>Scale $749 (연 결제 $599)<br>Enterprise 협의 | 공식 커넥터 + 공식 MCP | 본체 AGPL-3.0 · 클라우드 독점 · MCP 서버 MIT | 2026-10-04 |
@@ -275,8 +275,8 @@ flowchart LR
 
 - **역할**: 범용
 - **한 줄**: OpenAI 의 대화형 AI. 채팅·이미지 생성(ChatGPT Images)·음성·딥 리서치·에이전트 모드·코딩 에이전트(Codex)를 한 구독으로 씀
-- **클로드와 잇는 법**: 공식 Claude Code 플러그인 `openai/codex-plugin-cc` (설치: `/plugin marketplace add openai/codex-plugin-cc` → `/plugin install codex@openai-codex` → `/codex:setup`). `/codex:review`·`/codex:rescue` 등으로 Codex 에게 리뷰·작업을 넘김. 인증은 로컬 Codex CLI 로그인을 그대로 씀 — ChatGPT 계정(Free 포함) 또는 OpenAI API 키. 쓴 양은 Codex 사용 한도에서 빠짐. Codex CLI 를 MCP 서버로 띄우던 `codex mcp-server` 는 지금 `openai/codex` 소스에 없음(2026-09-29 main 에서 확인, 남은 것은 외부 MCP 서버를 관리하는 `codex mcp` 뿐). 없어진 버전·날짜는 2026-08-24 폐기 예고 후 Codex CLI 0.154.0(2026-09-09)이라는 제3자 서술임 — 그걸 쓰는 옛 글·커뮤니티 설정은 지금 안 돎. claude.ai 앱용 공식 커넥터는 확인 못 함 — 커넥터 디렉터리에서 찾아보지 않았음. API 키(`OPENAI_API_KEY`)로 모델을 부르는 커뮤니티 MCP 서버는 여럿 있음
-- **확인한 날짜**: 2026-09-30
+- **클로드와 잇는 법**: 공식 Claude Code 플러그인 `openai/codex-plugin-cc` (설치: `/plugin marketplace add openai/codex-plugin-cc` → `/plugin install codex@openai-codex` → `/codex:setup`). `/codex:review`·`/codex:rescue` 등으로 Codex 에게 리뷰·작업을 넘김. 인증은 로컬 Codex CLI 로그인을 그대로 씀 — ChatGPT 계정(Free 포함) 또는 OpenAI API 키. 쓴 양은 Codex 사용 한도에서 빠짐. Codex CLI 를 MCP 서버로 띄우던 `codex mcp-server` 는 지금 `openai/codex` 소스에 없음(2026-10-05 main 에서 다시 확인, 남은 것은 외부 MCP 서버를 관리하는 `codex mcp` 뿐). 없어진 버전·날짜는 2026-08-24 폐기 예고 후 Codex CLI 0.154.0(2026-09-09)이라는 제3자 서술임 — 그걸 쓰는 옛 글·커뮤니티 설정은 지금 안 돎. claude.ai 앱용 공식 커넥터는 확인 못 함 — 커넥터 디렉터리에서 찾아보지 않았음. API 키(`OPENAI_API_KEY`)로 모델을 부르는 커뮤니티 MCP 서버는 여럿 있음
+- **확인한 날짜**: 2026-10-05
 
 #### 무료·유료와 이용 조건
 
@@ -284,28 +284,28 @@ flowchart LR
 |---|---|
 | 분류 | 부분 무료 |
 | 개인 이용 | Free 로 가능함 |
-| 상업·업무 이용 | 개인용 Terms of Use 와 기업용 Services Agreement(API·Business·Enterprise)가 나뉨. EU판 개인용 약관(2026-01-16판)은 "including personal, non-commercial use of our Services by consumers" 라고 적고, 끝에 **"Business use of the Services addendum"** 을 두어 "If you use our Services for commercial or business use, the following terms apply" 로 업무 이용을 받아들임(책임 한도·면책·준거법만 달라짐). 등급으로 가르는 문구는 없음 — 원문 열어 봄. 한국에 걸리는 ROW판(row-terms-of-use)에 같은 부록이 있는지는 확인 못 함 — openai.com 이 Cloudflare 봇 확인(403)으로 막혀 원문을 못 열었음 |
-| 생성물의 상업적 이용 | 가능함. 개인용 약관(EU판) "you (a) retain your ownership rights in Input and (b) own the Output. We hereby assign to you all our right, title, and interest, if any, in and to Output." — 원문 열어 봄, 등급 구분 없음. Business·Enterprise 는 Services Agreement 4.1 "Customer … owns all Output" — 원문 열어 봄. 예외로 **음성 출력은 비상업 용도로만**: Service Terms(2026-09-29판) "ChatGPT Voice Output is for non-commercial use only and may not be distributed or repackaged as a standalone audio recording … Any rights in Output assigned to you do not include ChatGPT Voice Output." — 원문 열어 봄 |
+| 상업·업무 이용 | 개인용 Terms of Use 와 기업용 Services Agreement(API·Business·Enterprise)가 나뉨. EU판 개인용 약관(2026-01-16판)은 "including personal, non-commercial use of our Services by consumers" 라고 적고, 끝에 **"Business use of the Services addendum"** 을 두어 "If you use our Services for commercial or business use, the following terms apply" 로 업무 이용을 받아들임(책임 한도·면책·준거법만 달라짐). 등급으로 가르는 문구는 없음 — 원문 열어 봄. 한국에 걸리는 ROW판(row-terms-of-use, Effective 2026-01-01)에는 **이 부록이 없음**. 첫머리가 "services for individuals" 라고만 하고 비상업 한정 문구도 없으며, "If you are a business or organization, to the extent permitted by law, you will indemnify and hold harmless us" 처럼 조직 이용을 전제한 조항을 둠. 기업용(Enterprise·API)은 "Business Terms" 를 가리킴 — 원문 열어 봄(2026-10-05) |
+| 생성물의 상업적 이용 | 가능함. 개인용 약관(EU판·ROW판 같은 문장) "you (a) retain your ownership rights in Input and (b) own the Output. We hereby assign to you all our right, title, and interest, if any, in and to Output." — 원문 열어 봄, 등급 구분 없음. Business·Enterprise 는 Services Agreement 4.1 "Customer … owns all Output" — 원문 열어 봄. 예외로 **음성 출력은 비상업 용도로만**: Service Terms(2026-09-29판) "ChatGPT Voice Output is for non-commercial use only and may not be distributed or repackaged as a standalone audio recording … Any rights in Output assigned to you do not include ChatGPT Voice Output." — 원문 열어 봄 |
 
 - 특이점: 개인용 요금제는 끄지 않으면 대화가 학습에 쓰임 — 약관 "If you do not want us to use your Content to train our models, you have the option to opt out by updating your account settings". Business·Enterprise·API 는 Services Agreement 4.2 "will not use Customer Content to develop or improve the Services, unless Customer explicitly agrees" (둘 다 원문 열어 봄)
-- 약관 원문은 openai.com 이 막혀서 Open Terms Archive 가 공식 페이지에서 받아 둔 사본(2026-09-29 기준 최신)으로 읽었음. 그 수집기는 EU판만 받으므로 ROW판 문장은 이 사본으로 확인되지 않음
-- 이 절의 출처: [Europe Terms of Use + Service Terms (Open Terms Archive 사본)](https://github.com/OpenTermsArchive/genai-versions/blob/main/ChatGPT/Terms%20of%20Service.md) — 공식(원문 열어 봄) · [OpenAI Services Agreement (Open Terms Archive 사본)](https://github.com/OpenTermsArchive/genai-versions/blob/main/ChatGPT/Commercial%20Terms.md) — 공식(원문 열어 봄) · [Terms of Use (ROW)](https://openai.com/policies/row-terms-of-use/) — 공식(검색 요약, 원문 차단)
+- EU판 약관은 Open Terms Archive 가 공식 페이지에서 받아 둔 사본(2026-10-04 기준 최신)으로, ROW판은 openai.com 이 막혀 r.jina.ai 리더가 받아 준 원문으로 읽었음(2026-10-05)
+- 이 절의 출처: [Europe Terms of Use + Service Terms (Open Terms Archive 사본)](https://github.com/OpenTermsArchive/genai-versions/blob/main/ChatGPT/Terms%20of%20Service.md) — 공식(원문 열어 봄) · [OpenAI Services Agreement (Open Terms Archive 사본)](https://github.com/OpenTermsArchive/genai-versions/blob/main/ChatGPT/Commercial%20Terms.md) — 공식(원문 열어 봄) · [Terms of Use (ROW)](https://openai.com/policies/row-terms-of-use/) — 공식(원문 열어 봄, r.jina.ai 경유)
 
 #### 요금과 등급별 권한
 | 등급 | 월 요금 | 연 결제 시 | 할 수 있는 것 · 한도 |
 |---|---|---|---|
-| Free | $0 | – | 일상 텍스트 채팅 무제한(2026 변경). 이미지 생성(ChatGPT Images 2.0)·파일 업로드·음성·데이터 분석은 따로 좁은 한도. 음성은 GPT-Live-1 mini. 일부 국가에서 광고 붙음 (검색 요약). Codex 는 GPT-6 Luna 로 짧은 코딩 작업만(데스크톱 앱, 순차 배포 — 원문 열어 봄). 정확한 횟수 한도는 확인 못 함 — chatgpt.com·help.openai.com 이 Cloudflare 봇 확인으로 막힘 |
-| Go | $8 (원문엔 지역 표기 없음) | 확인 못 함 — 가격표 원문이 막혀 있음. 검색 요약은 월 결제만이라고 함 | Free 대비 메시지·파일 업로드·이미지 생성 10배. 광고 붙음. 2025 년 인도에서 시작해 2026-01 에 전 세계로 풀림(제3자). Codex 는 GPT-6 Luna 로 가벼운 작업(원문 열어 봄) |
-| Plus | $20 | 확인 못 함 — 가격표 원문이 막혀 있음. 검색 요약은 월 결제만이라고 함 | 광고 없음. 상위 모델·추론, Thinking 이미지 생성, 확장된 메모리, 딥 리서치(제한), 에이전트 모드, Projects, 커스텀 GPT. 음성은 GPT-Live-1 (검색 요약). Codex 는 웹·CLI·IDE·iOS, 자동 코드 리뷰·Slack 연동, GPT-6 Sol·Luna, 한도를 넘으면 ChatGPT 크레딧을 사서 이어 씀(원문 열어 봄) |
-| Pro $100 | $100 | 확인 못 함 — 연 결제 언급을 못 찾음 | Pro 는 $100·$200·$500 세 단계(원문 열어 봄 — "Plans at $100, $200, or $500 USD per month"). Pro 는 Codex 5시간 한도가 없음(원문 열어 봄 — "Pro plans currently have no five-hour limit", 주간 한도는 붙을 수 있음). 단계별 사용량 배수(옛 5x·20x)는 가격 페이지에서 빠졌음 |
-| Pro $200 | $200 (원문 열어 봄) | 확인 못 함 | 최상위 Pro 모델, 딥 리서치·에이전트 모드 최대 한도, 신기능 우선 (검색 요약). **2026-09-10 부터 신규 가입·업그레이드 일시 중단** (기존 구독자는 영향 없음, 제3자) |
-| Pro $500 | $500 (원문 열어 봄) | 확인 못 함 | Pro 중 유일하게 GPT-6 Astra Ultrafast 를 씀(원문 열어 봄 — "Astra Ultrafast access on Pro $500", Enterprise·Edu 일부도 씀). 2026-09-29 출시·사용량이 가장 큼은 제3자 |
+| Free | $0 | – | 일상 텍스트 채팅 무제한(GPT-5.6 Luna, 남용 방지 단서), Think 도 GPT-5.6 Luna. 이미지 생성(ChatGPT Images 2.0)·파일 업로드·음성·데이터 분석·딥 리서치는 따로 좁은 한도, 문맥 창 27K. 예약 작업·Sites 없음. 광고는 Free·Go 에만 붙고 2026-02-09 미국에서 시험을 시작해 일부 지역으로 넓히는 중(원문 열어 봄). 음성은 GPT-Live-1 mini (검색 요약). Codex 는 GPT-6 Luna 로 짧은 코딩 작업만(데스크톱 앱, 순차 배포 — 원문 열어 봄), GPT-5.6 Terra 도 Work·Codex 데스크톱에서 제한적으로 씀(원문 열어 봄). 정확한 횟수 한도는 공식 문서에 숫자가 없음 — 도움말은 한도에 닿으면 앱이 알린다고만 함 (2026-10-05) |
+| Go | $8 (USD 결제, 일부 국가만 현지 통화 — 원문 열어 봄) | 없음 — 월 결제만(도움말 "we do not support annual billing … for ChatGPT Go, Plus, or Pro", 원문 열어 봄) | Free 대비 메시지·파일 업로드·이미지 생성 10배(검색 요약 — 공식 도움말은 배수 없이 "higher limits" 라고만 함). 문맥 창 54K, 예약 작업·영상 음성 통화 됨. 채팅·Think 는 GPT-5.6 Luna, GPT-5.6 Sol·옛 모델(4o 등) 없음. 광고가 붙을 수 있음(원문 열어 봄). ChatGPT 가 되는 모든 나라에서 가입됨(원문 열어 봄), 2025 년 인도에서 시작했다는 것은 제3자. Codex 는 GPT-6 Luna 로 가벼운 작업(원문 열어 봄) |
+| Plus | $20 | 없음 — 월 결제만(원문 열어 봄) | 광고 없음. 채팅은 GPT-5.6 Sol(Instant·Medium·High, Extra High·Pro 없음), GPT-6 Astra·GPT-6.1 Sol 은 Work·Codex 에서. Thinking 이미지 생성, 확장된 메모리·딥 리서치, Projects·예약 작업·Sites, 문맥 창 54K(추론 256K)(원문 열어 봄). 가격표는 "custom GPTs" 를 적지만 Free FAQ 는 "New GPT creation and publishing are not available on personal ChatGPT accounts, including Free, Go, Plus, and Pro" 라고 함 — 둘 다 원문 열어 봄, 서로 어긋남. 에이전트 모드·음성 GPT-Live-1 은 검색 요약. Codex 는 웹·CLI·IDE·iOS, 자동 코드 리뷰·Slack 연동, GPT-6.1 Sol·GPT-6 Sol·Luna, 한도를 넘으면 ChatGPT 크레딧을 사서 이어 씀(원문 열어 봄) |
+| Pro $100 | $100 | 없음 — 월 결제만(Pro 도움말 "Pro is billed monthly. Annual billing … not available", 원문 열어 봄) | Pro 는 $100·$200·$500 세 단계(원문 열어 봄 — "Plans at $100, $200, or $500 USD per month"). Pro 는 Codex 5시간 한도가 없음(원문 열어 봄 — "Pro plans currently have no five-hour limit", 주간 한도는 붙을 수 있음). 단계별 사용량 배수(옛 5x·20x)는 가격 페이지에서 빠졌고, 도움말은 $200 이 $100 보다 많고 $500 이 가장 많다고만 함. 채팅에서 GPT-6 Pro(GPT-6 Astra 기반)·GPT-5.6 Sol Pro·Extra High, Dot(상시 도는 에이전트, 개인 요금제 중 Pro 만), 문맥 창 128K(추론 400K)(원문 열어 봄) |
+| Pro $200 | $200 (원문 열어 봄) | 없음 — 월 결제만(원문 열어 봄) | $100 보다 사용량이 많음(원문 열어 봄). 2026-09-10 께 멈췄던 신규 가입이 **다시 열림** — 새 가입자는 예전보다 낮은 사용량을 받고, 2026-09-22–09-29 사이에 구독 중이던 사람은 2026-10-29 까지 예전 사용량을 유지함(Pro 도움말 "Pro 200 is also available for new subscriptions again", 원문 열어 봄). 멈췄던 시점은 제3자 |
+| Pro $500 | $500 (원문 열어 봄) | 없음 — 월 결제만(원문 열어 봄) | Pro 중 유일하게 GPT-6 Astra Ultrafast 를 씀(원문 열어 봄 — "Astra Ultrafast access on Pro $500", Enterprise·Edu 일부도 씀). 사용량이 가장 큼(Pro 도움말, 원문 열어 봄). Astra Ultrafast 는 기본 한도를 Standard 의 8배로, Fast 는 2.5배로 씀(원문 열어 봄). 2026-09-29 출시는 제3자 |
 | Business Standard 좌석 | $25/좌석 | $20/좌석/월 | 2좌석 이상, $20 은 연 결제가(원문 열어 봄 — "*2+ users, billed annually. $25 per user per month when billed monthly."). SAML SSO·MFA·관리 기능, 업무 데이터는 기본으로 학습에 안 씀(원문 열어 봄). Codex 한도는 Plus 와 같은 5시간당 어림표이고 주간 한도가 더 붙을 수 있음(원문 열어 봄) |
-| Business Premium 좌석 | 확인 못 함 — 검색 요약은 $125 | 확인 못 함 — 검색 요약은 $100/좌석(연 결제) | 2026-08 신설(검색 요약). 2026-09-29 까지 가격 페이지에 있던 "Business ($100) uses the Pro 5x estimates" 줄이 2026-09-30 원문에서 빠져, 금액·한도 모두 원문으로 확인 못 함. 5시간 한도 없음·좌석 종류 섞어 배정은 검색 요약 |
-| Enterprise / Edu | 견적 ("Contact sales" — 원문 열어 봄) | 확인 못 함 — 검색 요약은 연 결제 | 맞춤 가격, SCIM·EKM·RBAC·감사 로그·데이터 보존·거주지 통제, 우선 처리(원문 열어 봄). flexible pricing 이면 고정 한도 없이 크레딧만큼 쓰고, 아니면 대부분 기능이 Plus 와 같은 좌석당 한도(원문 열어 봄) |
+| Business Premium 좌석 | $125/좌석 | $100/좌석/월 | 2026-08-25 부터 일반 제공(공식 공지). Standard 의 5배 사용량, 5시간 한도 없음, 주간 재설정. Standard·Premium 을 한 워크스페이스에 섞어 배정하고 바꿀 수 있고, 최소 2좌석은 종류를 가리지 않음. Business 에서 Dot(상시 에이전트)은 Premium 만 씀(원문 열어 봄). 가격표(chatgpt.com/pricing) Business 칸에는 Standard 금액만 있고 Premium 금액은 도움말·공지에만 있음 |
+| Enterprise / Edu | 견적 ("Contact sales" — 원문 열어 봄) | 연 결제 있음(가격표 FAQ "annual plans for Business and Enterprise", 원문 열어 봄). 크레딧제·토큰제 가격도 있음 | 맞춤 가격, SCIM·EKM·RBAC·감사 로그·데이터 보존·거주지 통제, 우선 처리(원문 열어 봄). flexible pricing 이면 고정 한도 없이 크레딧만큼 쓰고, 아니면 대부분 기능이 Plus 와 같은 좌석당 한도(원문 열어 봄) |
 
 - Codex 5시간당 로컬 메시지 어림(공식 가격 페이지, Plus 와 Business Standard 가 같음): GPT-6 Astra 5–45 · GPT-6.1 Sol 15–160 · GPT-6 Sol 15–150 · GPT-6 Luna 350–3,000. Pro 는 5시간 한도가 없음(주간 한도는 붙을 수 있음). 고정 한도가 아니라 작업 크기에 따라 달라진다는 단서가 붙음. ChatGPT Work 는 Codex 와 같은 요금·크레딧·한도를 나눠 씀
-- 등급별 모델: Codex 쪽만 원문으로 확인했음 — Free·Go 는 GPT-6 Luna, Plus 이상은 GPT-6 Sol·Luna 에 어림표상 GPT-6 Astra·GPT-6.1 Sol(2026-09-29 추가)도 씀. GPT-5.6 Sol·Terra·Luna 는 크레딧 단가표에만 남음. Astra Ultrafast 는 Pro $500 과 일부 Enterprise·Edu 만. GPT-6 Sol·Luna 는 ChatGPT 의 Work·Codex 에만 있고 채팅(Chat)에는 없음(공식 changelog 2026-09-22). GPT-5.5 는 2026-10-14 에 ChatGPT·Work·Codex 모든 등급에서 은퇴(공식 Models 문서). 채팅 쪽 등급별 모델은 확인 못 함 — 가격표 원문이 막혀 있음 (2026-09-30)
+- 등급별 모델: Codex 쪽만 원문으로 확인했음 — Free·Go 는 GPT-6 Luna, Plus 이상은 GPT-6 Sol·Luna 에 어림표상 GPT-6 Astra·GPT-6.1 Sol(2026-09-29 추가)도 씀. GPT-5.6 Sol·Terra·Luna 는 크레딧 단가표에만 남음. Astra Ultrafast 는 Pro $500 과 일부 Enterprise·Edu 만. GPT-6 Sol·Luna 는 ChatGPT 의 Work·Codex 에만 있고 채팅(Chat)에는 없음(공식 changelog 2026-09-22). GPT-5.5 는 2026-10-14 에 ChatGPT·Work·Codex 모든 등급에서 은퇴(공식 Models 문서). 채팅 쪽은 Free·Go 가 GPT-5.6 Luna(Think 포함), Plus 이상이 GPT-5.6 Sol, Pro·Business·Enterprise 는 GPT-5.6 Sol Pro·Extra High 도 씀. GPT-6 Pro(GPT-6 Astra 기반)는 도움말 문장상 Pro $100·$200·Business·Enterprise(Pro $500 은 그 문장에 없음). 가격표 비교표는 Plus 에 GPT-6.1 Sol·GPT-6 Astra·Sol·Luna 를 Yes 로 적음 (원문 열어 봄, 2026-10-05)
 - Pro 등급은 제3자 글 중 "$200 하나"로 적은 2025 기준 글이 섞여 있음. 공식 가격 페이지가 $100·$200·$500 세 단계라서 그쪽을 따름
 
 **영상(Sora)**: 지금은 **어느 등급에서도 영상 생성이 안 됨.** Sora 앱·웹이 2026-04-26 에 닫혔고(검색 요약 — 공식 요약 "As of April 26, 2026, the Sora product is no longer available"), Videos API 와 `sora-2`·`sora-2-pro` 모델도 **2026-09-24 에 API 에서 제거됨**(2026-03-24 공지, 원문 열어 봄). ChatGPT 안의 영상 생성 버튼도 같이 빠졌다는 것은 제3자 글에서만 봤음. 예전 한도(Plus 480p 월 50개 등)는 Sora 1 시절 공식 글 기준이라 지금은 맞지 않음
@@ -314,28 +314,29 @@ flowchart LR
 - **이미지 생성·편집**: ChatGPT Images 2.0 으로 대화 안에서 이미지를 만들고 고침. Free 에서도 됨(좁은 한도). 클로드는 이미지를 만들지 못하고 SVG·HTML 도표만 그림
 - 음성 대화·웹 검색·딥 리서치·에이전트·코딩 에이전트는 클로드에도 해당 기능이 있어서 이 칸에서 뺐음. 등급별 한도는 서로 다름
 - 영상 생성은 2026-04-26 이후 ChatGPT 에서도 안 되므로 차이가 아님
-- 그 밖에 ChatGPT 에만 있는 기능은 확인 못 함 — 공식 기능 비교 페이지(chatgpt.com/pricing)가 네트워크가 열린 뒤에도 Cloudflare 봇 확인(403)으로 막혀 있음
+- 그 밖에 ChatGPT 에만 있는 기능은 확인 못 함 — 공식 기능 비교표(chatgpt.com/pricing, r.jina.ai 경유로 원문 열어 봄)에 Dot(상시 에이전트)·Sites(웹사이트 게시)·Health·Finances·영상 음성 통화·Shopping 이 있으나, 클로드 기준선에 대응 항목이 없어 차이인지 판정 못 함 (2026-10-05)
 
 #### 라이선스
 - ChatGPT 는 독점 서비스임
 - Codex CLI(`openai/codex`)와 Claude Code 플러그인(`openai/codex-plugin-cc`)은 둘 다 Apache-2.0 오픈소스임
 
 #### 출처
-네트워크가 열린 뒤에도 openai.com·chatgpt.com·help.openai.com 은 Cloudflare 봇 확인(HTTP 403, `cf-mitigated: challenge`)으로 막혀 원문을 못 열었음. 원문을 연 것은 learn.chatgpt.com(가격·모델·changelog, 2026-09-30 확인) · developers.openai.com(API 폐기 안내), 약관의 Open Terms Archive 사본, GitHub 저장소임. 아래 `공식(검색 요약)` 은 공식 페이지지만 원문을 읽지 못했다는 뜻임.
+openai.com·chatgpt.com·help.openai.com 은 직접 받으면 Cloudflare 봇 확인(HTTP 403, `cf-mitigated: challenge`)으로 막힘. 2026-10-05 에는 r.jina.ai 리더 경유로 이 세 곳의 원문을 열었음(아래 `r.jina.ai 경유`). 그 밖에 원문을 연 것은 learn.chatgpt.com(가격·모델·changelog, 2026-10-05 확인) · developers.openai.com(API 폐기 안내), 약관의 Open Terms Archive 사본, GitHub 저장소임. 아래 `공식(검색 요약)` 은 공식 페이지지만 원문을 읽지 못했다는 뜻임.
 - [Pricing | ChatGPT Learn](https://learn.chatgpt.com/docs/pricing) — 공식(원문 열어 봄, 옛 주소 developers.openai.com/codex/pricing 에서 308 로 옮겨짐)
 - [Models](https://learn.chatgpt.com/docs/models) · [Changelog](https://learn.chatgpt.com/docs/changelog) | ChatGPT Learn — 공식(원문 열어 봄)
 - [Deprecations | OpenAI API](https://developers.openai.com/api/docs/deprecations) — 공식(원문 열어 봄)
 - [Europe Terms of Use + Service Terms (Open Terms Archive 사본)](https://github.com/OpenTermsArchive/genai-versions/blob/main/ChatGPT/Terms%20of%20Service.md) — 공식(원문 열어 봄)
 - [OpenAI Services Agreement (Open Terms Archive 사본)](https://github.com/OpenTermsArchive/genai-versions/blob/main/ChatGPT/Commercial%20Terms.md) — 공식(원문 열어 봄)
-- [Pricing | ChatGPT](https://chatgpt.com/pricing/) — 공식(검색 요약)
-- [What is ChatGPT Go? | OpenAI Help Center](https://help.openai.com/en/articles/11989085-what-is-chatgpt-go) — 공식(검색 요약)
+- [Pricing | ChatGPT](https://chatgpt.com/pricing/) — 공식(원문 열어 봄, r.jina.ai 경유)
+- [What is ChatGPT Go? | OpenAI Help Center](https://help.openai.com/en/articles/11989085-what-is-chatgpt-go) — 공식(원문 열어 봄, r.jina.ai 경유)
 - [Introducing ChatGPT Go, now available worldwide | OpenAI](https://openai.com/index/introducing-chatgpt-go/) — 자사 홍보(검색 요약)
-- [About ChatGPT Pro plans | OpenAI Help Center](https://help.openai.com/en/articles/9793128-about-chatgpt-pro-plans) — 공식(검색 요약)
+- [About ChatGPT Pro tiers | OpenAI Help Center](https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers) — 공식(원문 열어 봄, r.jina.ai 경유)
 - [ChatGPT Plan | Plus](https://chatgpt.com/plans/plus/) · [Pro](https://chatgpt.com/plans/pro/) — 공식(검색 요약)
-- [ChatGPT Free Tier FAQ | OpenAI Help Center](https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq) — 공식(검색 요약)
-- [Ads in ChatGPT | OpenAI Help Center](https://help.openai.com/en/articles/20001047-ads-in-chatgpt) — 공식(검색 요약)
-- [Premium seats are coming to ChatGPT Business | OpenAI](https://openai.com/index/premium-seats-chatgpt-business/) — 공식(검색 요약)
-- [ChatGPT Business - Overview | OpenAI Help Center](https://help.openai.com/en/articles/8792828-chatgpt-business-overview) — 공식(검색 요약)
+- [ChatGPT Free Tier FAQ | OpenAI Help Center](https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq) — 공식(원문 열어 봄, r.jina.ai 경유)
+- [Ads in ChatGPT | OpenAI Help Center](https://help.openai.com/en/articles/20001047-ads-in-chatgpt) — 공식(원문 열어 봄, r.jina.ai 경유)
+- [Premium seats are coming to ChatGPT Business | OpenAI](https://openai.com/index/premium-seats-chatgpt-business/) — 공식(원문 열어 봄, r.jina.ai 경유)
+- [ChatGPT Business - Overview | OpenAI Help Center](https://help.openai.com/en/articles/8792828-chatgpt-business-overview) — 공식(원문 열어 봄, r.jina.ai 경유)
+- [GPT-5.6 and GPT-6 Pro in ChatGPT | OpenAI Help Center](https://help.openai.com/en/articles/11909943) — 공식(원문 열어 봄, r.jina.ai 경유)
 - [Sora 2 is here | OpenAI](https://openai.com/index/sora-2/) — 자사 홍보(검색 요약, 2025 글)
 - [Sora is here | OpenAI](https://openai.com/index/sora-is-here/) — 자사 홍보(검색 요약, 2024 글 — Plus 월 50개 한도의 출처라 지금은 무효)
 - [OpenAI sets two-stage Sora shutdown… | The Decoder](https://the-decoder.com/openai-sets-two-stage-sora-shutdown-with-app-closing-april-2026-and-api-following-in-september/) — 제3자(검색 요약)
@@ -419,8 +420,8 @@ flowchart LR
 
 - **역할**: 범용
 - **한 줄**: SpaceXAI(옛 xAI)의 대화형 AI. grok.com·iOS·Android 앱과 X 앱 안에서 쓰고, X 게시물 실시간 검색, 이미지·소리 붙은 영상 생성(Grok Imagine), 음성, 코딩 에이전트(Grok Build), 클라우드 컴퓨터 위 상시 에이전트(Grok Bot)를 SuperGrok 요금제로 묶어 팜. 2026-06 부터 유료 등급은 제품 구분 없는 주간 공용 사용량 풀을 씀. 이 사전에서 쓸모가 갈리는 지점은 **X 게시물 실시간 검색**임
-- **클로드와 잇는 법**: 공식 커넥터는 없음 — Claude 커넥터 디렉터리 주소(`claude.com/connectors/grok`·`xai`·`x-ai`·`spacexai`)가 모두 404 로 끝남(같은 방식으로 연 `firecrawl` 은 200, 2026-09-30 확인). 공식 MCP 는 **Docs MCP**(`https://docs.x.ai/api/mcp`, 원격 HTTP, 인증 없음)뿐이고 xAI 문서 검색용이라 Grok 모델을 부르지 않음. 모델·X 검색·Imagine 을 부르려면 **커뮤니티 MCP 서버**(`merterbak/Grok-MCP`·`libraz/grok-mcp` 등, 전부 MIT, `XAI_API_KEY` API 키 인증, API 단가로 과금)를 씀. X 검색만 필요하면 `guzus/grok-mcp` 같은 X 검색 전용 서버도 있음
-- **확인한 날짜**: 2026-09-30
+- **클로드와 잇는 법**: 공식 커넥터는 없음 — Claude 커넥터 디렉터리 주소(`claude.com/connectors/grok`·`xai`·`x-ai`·`spacexai`)가 모두 404 로 끝남(같은 방식으로 연 `firecrawl` 은 200, 2026-10-05 확인 — 주소는 `claude.com/marketplace/connectors/…` 로 넘어감). 공식 MCP 는 **Docs MCP**(`https://docs.x.ai/api/mcp`, 원격 HTTP, 인증 없음)뿐이고 xAI 문서 검색용이라 Grok 모델을 부르지 않음. 모델·X 검색·Imagine 을 부르려면 **커뮤니티 MCP 서버**(`merterbak/Grok-MCP`·`libraz/grok-mcp` 등, 전부 MIT, `XAI_API_KEY` API 키 인증, API 단가로 과금)를 씀. X 검색만 필요하면 `guzus/grok-mcp` 같은 X 검색 전용 서버도 있음
+- **확인한 날짜**: 2026-10-05
 
 #### 무료·유료와 이용 조건
 
@@ -432,27 +433,27 @@ flowchart LR
 | 생성물의 상업적 이용 | **소비자 등급(Free·SuperGrok 계열)**: 소유권은 사용자에게 남지만 명시적 양도 문구는 없음. 원문: "To the extent permitted by applicable law, and as between you and SpaceXAI, you retain your ownership rights to the User Content." (User Content = Input + Output). 같은 절이 "When using Output or SpaceXAI’s name, logos, trademarks, or other brand elements, you are required to obtain our permission and attribute your generation of the Output to the Service, as detailed in our Brand Guidelines." 라고 해서 **출처 표기를 요구함** — 브랜드 가이드(2025-02-14)는 생성물을 싣는 곳에 "Written with Grok" 또는 "Created with Grok" 를 눈에 띄게 적으라고 함. AI 생성 표시도 사용자가 붙이거나 SpaceXAI 가 붙일 수 있음("AI-Generated Disclosures"). 등급으로 가르는 문구는 없음. **Business·Enterprise(기업 약관)**: "Customer … owns all right, title, and interest in the Output in perpetuity and … SpaceXAI hereby assigns to Customer all of its right, title, and interest in such Output" — 명시적 양도가 있음. **공통 금지(AUP, 2026-08-14 시행)**: "Using the Service or any Output to develop (or assist anyone in developing) machine learning models or any products or services that compete with SpaceXAI", "Scraping, harvesting or reselling any Input or Output", 워터마크·출처 메타데이터 제거 금지. Imagine 이미지·영상에는 지울 수 없는 Grok 워터마크가 붙음(FAQ: "There is no setting to remove the watermark") — 전부 원문 열어 봄 |
 
 - 특이점: 소비자 약관은 입력물에 대해 SpaceXAI 에 "irrevocable, perpetual, transferable, sublicensable, royalty-free, and worldwide right" 를 주게 하고, 용도에 제품 개선·"other business purposes" 를 넣음. 로그인 상태에서는 학습 사용 여부를 고를 수 있음("you can select whether or not you want us to use your User Content to improve our products and services and train our models"). **로그인하지 않고 쓰면 학습에 쓰는 권리를 통째로 줌**("you grant us full rights to use any data you provide … for product development and model training purposes"). 가격표 비교표의 "No training" 은 Business·Enterprise 에만 체크돼 있음 — 원문 열어 봄
-- 특이점: **X 안의 Grok(Grok on X)은 이 약관이 아니라 X 서비스 약관을 따름** — 원문: "Use of Grok on the X platform is not governed by these Terms. To access Grok on X, you must agree to the X Terms of Service." X 약관의 생성물 조항은 확인 못 함 — help.x.com·x.com 이 봇 차단
-- 특이점: 운영사 이름이 약관·가격표·문서 모두 **SpaceXAI LLC**(네바다 법인, 텍사스 오스틴)로 바뀌어 있음. 문서 도메인과 API 는 그대로 x.ai 임. 언제 바뀌었는지는 확인 못 함 — 공식 공지를 찾지 않았음
+- 특이점: **X 안의 Grok(Grok on X)은 이 약관이 아니라 X 서비스 약관을 따름** — 원문: "Use of Grok on the X platform is not governed by these Terms. To access Grok on X, you must agree to the X Terms of Service." X 약관(x.com/en/tos)은 "You retain your rights to any Content … you submit, input, create, generate, post, or display on or through the Services." 라고 해서 생성물 권리를 사용자에게 남기고, 입력·프롬프트·출력의 책임도 사용자에게 둠. 게시한 콘텐츠에는 X 에 "broad, royalty-free license" 를 줌 — 원문 열어 봄. 다만 맨 위 시행일이 "October 9, 2026" 으로 확인한 날(2026-10-05)보다 뒤라, 지금 시행 중인 판과 문구가 같은지는 확인 못 함
+- 특이점: 운영사 이름이 약관·가격표·문서 모두 **SpaceXAI LLC**(네바다 법인, 텍사스 오스틴)로 바뀌어 있음. 문서 도메인과 API 는 그대로 x.ai 임. 언제 바뀌었는지는 확인 못 함 — 공식 공지를 찾지 않았음 (2026-10-05)
 - 이 절의 출처: [Terms of Service - Consumer](https://x.ai/legal/terms-of-service) — 공식(원문 열어 봄, 2026-09-11 갱신) · [Terms of Service - Enterprise](https://x.ai/legal/terms-of-service-enterprise) — 공식(원문 열어 봄, 2026-08-14 갱신) · [Acceptable Use Policy](https://x.ai/legal/acceptable-use-policy) — 공식(원문 열어 봄, 2026-08-14 시행) · [Brand Guidelines](https://x.ai/legal/brand-guidelines) — 공식(원문 열어 봄, 2025-02-14) · [FAQ - Grok Website / Apps](https://docs.x.ai/grok/faq) — 공식(원문 열어 봄)
 
 #### 요금과 등급별 권한
 | 등급 | 월 요금 | 연 결제 시 | 할 수 있는 것 · 한도 |
 |---|---|---|---|
-| Free | $0 | – | 웹·iOS·Android 앱, 이미지 생성(Imagine), Grok Build, 커넥터, 음성 모드. 실시간 웹·X 검색은 비교표에 **"Limited"**. 영상 생성·Grok Bot·Expert 는 없음. Chat·Voice 무료 한도는 유료 주간 풀과 따로 차고 따로 재설정됨(FAQ). 정확한 횟수는 확인 못 함 — 공식 문서가 숫자를 적지 않음 |
-| SuperGrok Lite | 확인 못 함 — 가격표는 비교표 열 이름만 싣고 금액을 안 보여 줌. 검색 요약은 $10 (2026-03 말 출시라고 함, 글 날짜 확인 못 함) | 확인 못 함 — 검색 요약은 $100/년 | 비교표 기준: Free 전부 + 영상 생성, 실시간 웹·X 검색 제한 없음, Expert. Grok Bot 없음. 검색 요약은 "480p·6초 영상 하루 몇 개, 2배 긴 대화" 라고 함 |
-| SuperGrok | $30 | 확인 못 함 — 가격표에 연 결제 토글이 없음. 검색 요약은 $300/년 | 카드 문구: "Grok 4.6 model", "Grok Bot access", "Connectors", "Higher rate limits across all features", "Expert", "Image and video generation". 가격표 첫 문장 "higher rate limits and access to frontier models" |
-| SuperGrok Plus | $100 | 확인 못 함 — 검색 요약은 $1,000/년 | SuperGrok 전부 + "Create 1080p videos", "Significantly higher usage across Chat, Imagine, Voice & Build", "Lightning-fast replies", "Priority access at peak times", "Early access to new features". 신설 시기는 제3자 기사 제목 날짜가 2026-08-02 임 |
-| SuperGrok Heavy | 확인 못 함 — 가격표는 열 이름만 있음. 검색 요약은 $300 | 확인 못 함 — 공식 FAQ 가 "SuperGrok Heavy yearly subscription" 이 있다는 것만 적음. 검색 요약은 $3,000/년 | 비교표 기준: SuperGrok 기능 전부 + **Priority support**(개인 등급 중 Heavy 만 체크). 검색 요약: "a larger team of agents collaborating on each answer", **X Premium+ 포함**(X 공식 계정 @premium 게시물, 검색 요약). 3개월 $99 할인이 있다는 검색 요약이 있으나 grok.com 원본 HTML 의 설정값이 `temp_supergrok_heavy_discount_enabled:false` 라서 지금 할인이 켜져 있는지는 확인 못 함 |
-| Business | $30/사용자/월 (Business 페이지: "$30 / month per user") | 확인 못 함 — 영업 문의 양식에 Monthly·Annual 선택지만 있음 | 기업 약관이 적용됨. Grok 4.6·Imagine·Voice·Grok Build·커넥터, 좌석 관리, 통합 결제, RBAC, 도메인 확인, 사용자 분석, 맞춤 데이터 보존, 고급 감사 통제, **No training**, SOC 2. 비교표상 **Grok Bot 없음** |
+| Free | $0 | – | 웹·iOS·Android 앱, 이미지 생성(Imagine), Grok Build, 커넥터, 음성 모드. 실시간 웹·X 검색은 비교표에 **"Limited"**. 영상 생성·Grok Bot·Expert 는 없음. Chat·Voice 무료 한도는 유료 주간 풀과 따로 차고 따로 재설정됨(FAQ). 정확한 횟수는 확인 못 함 — 공식 문서가 숫자를 적지 않음 (2026-10-05) |
+| SuperGrok Lite | $10 (grok.com 구독 화면, App Store 도 $10.00. 2026-03 말 출시라는 것은 검색 요약) | $100/년 ($8.33/월) | 비교표 기준: Free 전부 + 영상 생성, 실시간 웹·X 검색 제한 없음, Expert. Grok Bot 없음. 구독 화면 카드: "Create apps with a single prompt"(웹에 한 번에 배포), "2x longer conversations in Chat", "Expert mode", "Try out AI image & video creation", "Increased limits at regular speed". 영상 해상도·길이·개수는 확인 못 함 — 구독 화면이 숫자를 안 적음, 검색 요약은 "480p·6초 영상 하루 몇 개" (2026-10-05) |
+| SuperGrok | $30 | $300/년 ($25/월, grok.com 구독 화면의 연 결제 토글. x.ai 가격표에는 토글이 없음) | 카드 문구: "Grok 4.6 model", "Grok Bot access", "Connectors", "Higher rate limits across all features", "Expert", "Image and video generation". 가격표 첫 문장 "higher rate limits and access to frontier models". 구독 화면 카드: "5x longer conversations in Chat", 영상 "HD 720p, 30-second video", "Longer Voice conversations", "More powerful coding tools" |
+| SuperGrok Plus | $100 | $1,000/년 ($83.33/월) | SuperGrok 전부 + "Create 1080p videos", "Significantly higher usage across Chat, Imagine, Voice & Build", "Lightning-fast replies", "Priority access at peak times", "Early access to new features". 신설 시기는 제3자 기사 제목 날짜가 2026-08-02 임 |
+| SuperGrok Heavy | $300 (grok.com 구독 화면, App Store 도 $300.00. x.ai 가격표는 열 이름만 있음) | $3,000/년 ($250/월) | 비교표 기준: SuperGrok 기능 전부 + **Priority support**(개인 등급 중 Heavy 만 체크). 구독 화면 카드: "Everything in SuperGrok Plus", "Highest usage at the fastest speed", "Larger team of agents collaborating to get you the best possible answers", **"X Premium+ at no extra cost"**(X 계정을 연결해 받음), "Dedicated support & early access". 3개월 $99 할인이 있다는 검색 요약이 있으나 grok.com 원본 HTML 의 설정값이 여전히 `temp_supergrok_heavy_discount_enabled:false` 이고 구독 화면에도 할인이 안 보임 (2026-10-05) |
+| Business | $30/사용자/월 (Business 페이지: "$30 / month per user", grok.com 구독 화면 "$30 USD/seat") | $300/년 ($25/월, grok.com 구독 화면의 연 결제 토글 — 연 결제 카드에는 좌석 표기가 없음) | 기업 약관이 적용됨. Grok 4.6·Imagine·Voice·Grok Build·커넥터, 좌석 관리, 통합 결제, RBAC, 도메인 확인, 사용자 분석, 맞춤 데이터 보존, 고급 감사 통제, **No training**, SOC 2. 비교표상 **Grok Bot 없음** |
 | Enterprise | 견적 ("Contact Sales") | 견적 | Business 전부 + SSO·SCIM, 맞춤 RBAC, 고객 관리 암호화 키, 전용 데이터 플레인, 전담 온보딩. 기업 약관의 기본 계약 기간은 1년 자동 갱신 |
 
-- **주간 사용량 풀(2026-06 도입)**: 유료 등급은 Chat·Imagine·Voice·Build·API 를 따로 세지 않고 **한 주 단위 공용 풀**에서 씀. 원문: "Instead of separate daily limits for each product (like Chat, Imagine, Voice, or Build), you get one shared weekly usage pool". 풀이 차면 유료 기능이 멈추고 Free 의 Chat·Voice 한도만 남음. **Extra Usage Credits** 로 이어 쓸 수 있음 — 웹에서만 사고 최소 $5, 1년 뒤 만료, 정가라 포함 사용량보다 비쌈, Auto Top Up 가능(FAQ 원문 열어 봄). 등급별 풀 크기는 확인 못 함 — 공식 문서가 숫자를 안 적음
-- **등급 이름**: 공식 가격표 비교표 열은 Free · SuperGrok Lite · SuperGrok · SuperGrok Plus · SuperGrok Heavy · Business · Enterprise 임. 가격표 위 카드에는 Free·SuperGrok·SuperGrok Plus 셋만 금액이 나옴. Lite·Heavy 금액이 가격표에 없는 것은 원문에서 확인한 사실이고, 금액은 전부 검색 요약임 — 원문을 열 수 있는 제3자 글은 프록시가 막아서 날짜를 못 봄. 참고로 grok.com 원본 HTML 의 구독 상품 ID 가 `grok.pro.monthly.30`·`supergrok.pro.monthly.300` 이라 $30·$300 과 맞아떨어지지만 ID 는 금액 근거가 아님
-- **세금·앱 결제**: 약관 "We will charge tax or other applicable fees when required". 앱스토어 결제가는 확인 못 함 — apps.apple.com 이 프록시 정책으로 막힘. 환불은 웹·Google Play 결제는 xAI, App Store 결제는 Apple 이 처리함(FAQ)
-- **X Premium 경로**: X 앱 안의 Grok 은 X 구독(Premium·Premium+)으로 한도가 늘고, **X 약관**을 따름(소비자 약관 8절). X 계정을 grok.com 계정에 연결하면 "xAI will be able to retrieve your X subscription status and grant relevant benefits"(FAQ 원문). X Premium 환불은 X 가 처리함. 금액은 확인 못 함 — help.x.com 은 봇 확인, x.com 은 프록시 차단. 검색 요약: X Premium $8/월, **X Premium+ $40/월 · $395/년(웹)이고 SuperGrok 접근과 Grok Bot 을 포함**한다고 함(글 날짜 확인 못 함)
+- **주간 사용량 풀(2026-06 도입)**: 유료 등급은 Chat·Imagine·Voice·Build·API 를 따로 세지 않고 **한 주 단위 공용 풀**에서 씀. 원문: "Instead of separate daily limits for each product (like Chat, Imagine, Voice, or Build), you get one shared weekly usage pool". 풀이 차면 유료 기능이 멈추고 Free 의 Chat·Voice 한도만 남음. **Extra Usage Credits** 로 이어 쓸 수 있음 — 웹에서만 사고 최소 $5, 1년 뒤 만료, 정가라 포함 사용량보다 비쌈, Auto Top Up 가능(FAQ 원문 열어 봄). 등급별 풀 크기는 확인 못 함 — 공식 문서가 숫자를 안 적음 (2026-10-05)
+- **등급 이름**: 공식 가격표 비교표 열은 Free · SuperGrok Lite · SuperGrok · SuperGrok Plus · SuperGrok Heavy · Business · Enterprise 임. 가격표 위 카드에는 Free·SuperGrok·SuperGrok Plus 셋만 금액이 나옴. Lite·Heavy 금액은 x.ai 가격표에 없고, 가격표의 Get Lite·Get Heavy 단추가 가는 grok.com 구독 화면(`grok.com/supergrok`)에 네 등급 금액과 연 결제 토글, Business 탭이 다 나옴. 로그인 없이 보이지만 금액이 글자가 아니라 그림처럼 그려져서 헤드리스 브라우저 스크린숏으로 읽었음(미국 IP, 2026-10-05). 지역마다 금액이 다른지는 확인 못 함
+- **세금·앱 결제**: 약관 "We will charge tax or other applicable fees when required". 미국 App Store 의 앱 내 구입은 SuperGrok Lite $10.00 · SuperGrok $30.00 · SuperGrok $300.00(이름이 같아 기간은 안 적힘, 연 결제로 보임) · SuperGrok Plus $100.00 · SuperGrok Heavy $300.00 으로 웹과 같음. Extra Usage Credits 도 $5·$20·$50·$100 으로 앱 내 구입에 올라 있음(FAQ 는 웹에서 산다고만 적음) — 원본 HTML 열어 봄. 환불은 웹·Google Play 결제는 xAI, App Store 결제는 Apple 이 처리함(FAQ)
+- **X Premium 경로**: X 앱 안의 Grok 은 X 구독(Premium·Premium+)으로 한도가 늘고, **X 약관**을 따름(소비자 약관 8절). X 계정을 grok.com 계정에 연결하면 "xAI will be able to retrieve your X subscription status and grant relevant benefits"(FAQ 원문). X Premium 환불은 X 가 처리함. 금액은 확인 못 함 — help.x.com 은 헤드리스 브라우저로도 Cloudflare 확인 화면(403) (2026-10-05). SuperGrok Heavy 에는 X Premium+ 가 딸려 옴(grok.com 구독 화면 "X Premium+ at no extra cost"). 검색 요약: X Premium $8/월, **X Premium+ $40/월 · $395/년(웹)이고 SuperGrok 접근과 Grok Bot 을 포함**한다고 함(글 날짜 확인 못 함)
 - **Grok Bot 은 Cursor 요금제로도 씀**: "included with every paid individual Cursor plan and with the Cursor Teams plan. You can also link an individual SuperGrok, SuperGrok Plus, or SuperGrok Heavy subscription."(docs 원문). 둘 다 있으면 사용량이 더 많은 쪽을 씀
-- 가격표 비교표와 grok.com 원본의 설정값이 어긋나는 곳: 비교표는 Grok Build 를 Free 포함 모든 등급에 체크하는데, grok.com 원본 HTML 의 설정값에 `grok_build_access_gate_web … "SuperGrok Heavy subscription required"` 가 있음. 웹판 Build 만 Heavy 로 막은 것인지는 확인 못 함 — 로그인해 봐야 갈림. 가격표 쪽을 적었음
+- 가격표 비교표와 grok.com 원본의 설정값이 어긋나는 곳: 비교표는 Grok Build 를 Free 포함 모든 등급에 체크하는데, grok.com 원본 HTML 의 설정값에 `grok_build_access_gate_web … "SuperGrok Heavy subscription required"` 가 있음. 웹판 Build 만 Heavy 로 막은 것인지는 확인 못 함 — 로그인해 봐야 갈림, 설정값은 그대로임 (2026-10-05). 가격표 쪽을 적었음
 
 **API 단가 (USD, 1M 토큰당, 공식 가격 문서 원문 열어 봄)** — 프롬프트가 200k 토큰을 넘으면 그 요청 전체가 높은 단가로 매겨짐
 
@@ -465,16 +466,16 @@ flowchart LR
 | grok-4.20-0309-reasoning · non-reasoning · multi-agent | 1M | $1.25 ($2.50) | $0.20 ($0.40) | $2.50 ($5.00) |
 | grok-build-0.1 | 256k | $1.00 ($2.00) | $0.20 ($0.40) | $2.00 ($4.00) |
 
-- 이미지: grok-imagine-image $0.02/장 · grok-imagine-image-2.0 $0.04/장 · grok-imagine-image-quality $0.05/장(2026-11-02 은퇴 예정, image-2.0 으로 넘어감). 영상: grok-imagine-video $0.050/초 · grok-imagine-video-1.5 $0.080/초. 음성: Speech to Speech $0.08/분($4.80/시간) + 텍스트 입력 $0.004, Speech to Text $0.10/시간(REST)·$0.20/시간(스트리밍), Text to Speech $15.00/1M자
+- 이미지: grok-imagine-image $0.02/장 · grok-imagine-image-2.0 $0.04/장 · grok-imagine-image-quality $0.05/장(2026-11-02 은퇴 예정, image-2.0 으로 넘어감). 영상: grok-imagine-video $0.050/초 · grok-imagine-video-1.5-lite $0.020/초 · grok-imagine-video-1.5 $0.080/초. 음성: Speech to Speech $0.08/분($4.80/시간) + 텍스트 입력 $0.004, Speech to Text $0.10/시간(REST)·$0.20/시간(스트리밍), Text to Speech $15.00/1M자
 - 서버 도구 호출: Web Search $5/1k 호출, **X Search $5/1k 게시물 · $10/1k 프로필**(호출이 아니라 가져온 항목 수로 매김), Code Execution $5/1k, 첨부 검색 $5/1k, Collections Search $2.50/1k, 원격 MCP 도구는 호출료 없이 토큰만
-- 할인·할증: Batch API 20% 할인(grok-4.3·4.20 계열만, 4.5 이상은 할인 없음), Priority Processing 2배, 미국 리전 엔드포인트 1.1배. Grok 4.7 Fast 는 공개 API 에 없고 Cursor·Grok Build 에서만 2배 단가로 씀. 이용 지침 위반 요청은 생성 전 차단돼도 건당 $0.05
-- API 크레딧은 환불 안 됨(FAQ). 가입 시 무료 API 크레딧이 있는지는 확인 못 함 — 공식 문서에서 문구를 못 찾음
+- 할인·할증: Batch API 20% 할인(grok-4.3·4.20 계열만, 4.5 이상은 할인 없음), Priority Processing 2배, 미국 리전 엔드포인트 1.1배. Grok 4.7 Fast 는 공개 API 에 없고 Cursor·Grok Build 에서만 씀 — 표준 단가의 2배(200k 미만 입력 $4.00 · 캐시 $1.00 · 출력 $12.00), 긴 컨텍스트는 1.5배($6.00 · $1.50 · $18.00). Grok Build 무료 등급에는 없음. 이용 지침 위반 요청은 생성 전 차단돼도 건당 $0.05
+- API 크레딧은 환불 안 됨(FAQ). 가입 시 무료 API 크레딧이 있는지는 확인 못 함 — 공식 문서에서 문구를 못 찾음 (2026-10-05)
 
 #### 클로드로는 못 하는 것
 - **X(옛 트위터) 게시물을 1차 데이터로 실시간 검색**: 클로드의 웹 검색은 검색 엔진에 잡힌 웹 페이지를 보는 것이고, Grok 은 X 게시물·프로필·스레드를 X 쪽 데이터로 직접 뒤짐. 공식 원문: "The X Search tool enables Grok to perform keyword search, semantic search, user search, and thread fetch on X". 특정 계정만 보거나 빼기(`allowed_x_handles`·`excluded_x_handles`, 각각 최대 20개), 날짜 범위(`from_date`·`to_date`), 게시물 안 이미지·**영상 분석**(`enable_video_understanding`)을 켤 수 있음. 앱에서는 Free 도 되지만 비교표에 "Limited" 로 적혀 있고, API 에서는 가져온 게시물 1k 개당 $5 임
 - **X 앱 안에서 부르는 AI(Grok on X)**: X 게시물 흐름 안에서 바로 Grok 을 부름. X 약관을 따르는 별도 서비스임(소비자 약관 8절). 클로드는 X 안에 들어가 있지 않음
 - **이미지 생성·편집(Grok Imagine)**: 대화 안에서 글·참고 사진으로 이미지를 만들고 고침, 한 요청에 최대 10장, 여러 장 참고 편집(최대 5장). Free 에도 이미지 생성이 체크돼 있음. 랜딩 문구는 "Up to 2K resolution" — 자사 홍보. 클로드는 이미지를 만들지 못하고 SVG·HTML 도표만 그림
-- **영상 생성(Grok Imagine)**: 글→영상, 이미지→영상, 참고→영상, 영상 편집·연장. 최대 15초, **기본으로 소리(오디오 트랙)가 붙음**("Generated videos include an audio track by default"), 프리셋 목소리를 넣을 수 있음. 앱에서는 SuperGrok Lite 부터이고 1080p 는 SuperGrok Plus 부터(가격표). 클로드는 영상을 만들지 못함
+- **영상 생성(Grok Imagine)**: 글→영상, 이미지→영상, 참고→영상, 영상 편집·연장. API 는 최대 15초(편집한 영상은 원본 길이로 8.7초 상한), 앱은 SuperGrok 구독 화면에 "HD 720p, 30-second video" 로 적힘, **기본으로 소리(오디오 트랙)가 붙음**("Generated videos include an audio track by default"), 프리셋 목소리를 넣을 수 있음. 앱에서는 SuperGrok Lite 부터이고 1080p 는 SuperGrok Plus 부터(가격표). 클로드는 영상을 만들지 못함
 - **음성 파일 생성·목소리 복제(API)**: Text to Speech 로 웃음·속삭임 같은 태그가 든 음성을 MP3 등으로 뽑고, 120초 이하 참고 음성으로 **맞춤 목소리(Custom Voices)** 를 만들어 TTS·실시간 음성에 씀. 전화(SIP) 연결 음성 에이전트도 문서에 있음. 클로드는 음성 모드로 대화는 하지만 오디오 파일을 만들지는 못함(기준선에서도 소리 생성은 확인 못 함)
 - **Companions**: 캐릭터와 음성으로 대화하는 기능, **iOS 앱에만** 있음(FAQ "Companions are available on the iOS app only")
 - 음성 대화·웹 검색·딥 리서치류·파일 분석·코딩 에이전트(Grok Build)·상시 에이전트(Grok Bot)·커넥터는 클로드에도 해당 기능(음성 모드·웹 검색·Research·Claude Code·Cowork·커넥터)이 있어 이 칸에서 뺐음. 여러 에이전트가 한 답을 나눠 푸는 Multi-agent·Heavy 모드도 클로드의 Research 와 겹쳐 뺐음 — 성능 차이는 자사 홍보만 있음
@@ -486,16 +487,16 @@ flowchart LR
 **클로드에 붙일 때 쓰는 부품**
 - **공식 Docs MCP 서버** (`https://docs.x.ai/api/mcp`, Streamable HTTP, 인증 없음): SpaceXAI 가 호스팅하는 서비스라 코드 라이선스가 없음. **xAI 문서를 찾아 주는 것뿐이고 Grok 모델을 부르지 않음**(docs 원문: "gives AI assistants and agents direct access to the SpaceXAI documentation")
 - **공식 SDK**: `xai-sdk`(Python) Apache-2.0 — PyPI 메타데이터와 GitHub `xai-org/xai-sdk-python` 의 LICENSE 원문 둘 다 확인. Vercel AI SDK 의 `@ai-sdk/xai` 도 Apache-2.0(npm 메타데이터, Vercel 제작이라 xAI 공식 아님). API 는 OpenAI 호환이라 OpenAI SDK 로도 부름
-- **Grok Build CLI** (`@xai-official/grok`, npm 1.0.44): 설치 래퍼의 package.json 이 `"license": "Apache-2.0"` 라고 적지만 패키지 안에 LICENSE 파일이 없고 소스 저장소 링크도 없음. 실제 실행 파일은 플랫폼별 하위 패키지(`@xai-official/grok-linux-x64` 등)로 따로 받음. **소스가 공개된 오픈소스인지는 확인 못 함** — 공개 저장소를 못 찾음
-- **커뮤니티 MCP 서버**(xAI 와 무관, `XAI_API_KEY` API 키 인증): LICENSE 원문을 직접 연 넷은 모두 **MIT** — `merterbak/Grok-MCP`, `libraz/grok-mcp`, `guzus/grok-mcp`(X 검색 전용), `wynandw87/claude-code-grok-mcp`. 이 서버들은 xAI API 키로 부르므로 콘솔의 API 단가로 과금됨. 한편 FAQ 는 SuperGrok 주간 풀의 사용처에 "API" 를 넣고 있어("A percentage breakdown by product (API, Build, Chat, Imagine, Voice)") 구독 풀로 API 를 쓰는 길이 있을 수 있음 — 어떤 조건인지는 확인 못 함, 해당 문서를 못 찾음
+- **Grok Build CLI** (`@xai-official/grok`, npm 1.0.46): 설치 래퍼의 package.json 이 `"license": "Apache-2.0"` 라고 적지만 패키지 안에 LICENSE 파일이 없고 소스 저장소 링크도 없음. 실제 실행 파일은 플랫폼별 하위 패키지(`@xai-official/grok-linux-x64` 등)로 따로 받음. **소스가 공개된 오픈소스인지는 확인 못 함** — 공개 저장소를 못 찾음, npm 메타데이터에 repository 필드도 없음 (2026-10-05)
+- **커뮤니티 MCP 서버**(xAI 와 무관, `XAI_API_KEY` API 키 인증): LICENSE 원문을 직접 연 넷은 모두 **MIT** — `merterbak/Grok-MCP`, `libraz/grok-mcp`, `guzus/grok-mcp`(X 검색 전용), `wynandw87/claude-code-grok-mcp`. 이 서버들은 xAI API 키로 부르므로 콘솔의 API 단가로 과금됨. 한편 FAQ 는 SuperGrok 주간 풀의 사용처에 "API" 를 넣고 있어("A percentage breakdown by product (API, Build, Chat, Imagine, Voice)") 구독 풀로 API 를 쓰는 길이 있을 수 있음 — 어떤 조건인지는 확인 못 함, 해당 문서를 못 찾음 (2026-10-05)
 
 **오픈 웨이트 모델**
-- **Grok-1** (314B 파라미터, 전문가 8개 MoE — README 원문. 공개 시기는 README 에 없어 확인 못 함): 코드와 가중치 모두 **Apache-2.0**. README 원문: "The code and associated Grok-1 weights in this release are licensed under the Apache 2.0 license."(원문 열어 봄)
-- **Grok-2**(xAI 는 Grok 2.5 라고 부름, 2025-08-24 Hugging Face 공개): **오픈소스 라이선스가 아니라 자체 커뮤니티 라이선스**. 지금 소비자 약관은 이것을 "SpaceXAI Community License Agreement (https://huggingface.co/xai-org/grok-2/blob/main/LICENSE)" 로 부름(원문 열어 봄). 조건 — 다른 AI 모델의 학습·개선에 쓰지 못함, 상업적 이용은 xAI 지침을 따라야 하고 연 매출 $1M 넘는 회사는 따로 계약 — 은 검색 요약임(LICENSE 원문은 huggingface.co 가 프록시에서 막혀 못 열었음)
-- **Grok 3 오픈 웨이트**: 확인 못 함 — 2025-08 에 "약 6개월 뒤" 공개하겠다 했고 2026-02-10 기사가 공개를 다시 확인했다고 하지만(검색 요약), 실제로 가중치가 올라왔는지는 Hugging Face 가 막혀 못 봄
+- **Grok-1** (314B 파라미터, 전문가 8개 MoE — README 원문. 공개 시기는 README 에 없음. Hugging Face 저장소는 2024-03-17 에 만들어짐(HF API)): 코드와 가중치 모두 **Apache-2.0**. README 원문: "The code and associated Grok-1 weights in this release are licensed under the Apache 2.0 license."(원문 열어 봄)
+- **Grok-2**(xAI 는 Grok 2.5 라고 부름, 2025-08-24 Hugging Face 공개): **오픈소스 라이선스가 아니라 자체 커뮤니티 라이선스**. 지금 소비자 약관은 이것을 "SpaceXAI Community License Agreement (https://huggingface.co/xai-org/grok-2/blob/main/LICENSE)" 로 부름(원문 열어 봄). LICENSE 원문 제목은 "xAI Community License Agreement", "Last Updated: November 4, 2025" 임. 비상업·연구 이용을 허락하고, **상업적 이용은 xAI AUP 의 가드레일을 지키는 조건으로 허락함**("For commercial use solely if you and your affiliates abide by all of the guardrails provided in xAI's Acceptable Use Policy"). 가중치·파생물·출력물로 기반·대형 언어·범용 AI 모델을 학습·개선하지 못함(xAI 자료의 미세조정은 예외). 배포하면 라이선스 사본과 고지문을 넣고 "Powered by xAI" 를 눈에 띄게 적어야 함. 출력물에는 제한을 안 둠. 예전 검색 요약의 "연 매출 $1M 넘는 회사는 따로 계약" 조항은 지금 원문에 없음 — 원문 열어 봄
+- **Grok 3 오픈 웨이트**: 아직 없음 — Hugging Face 의 xai-org 계정 모델 목록(API)이 grok-1·grok-2 둘뿐임(2026-10-05 확인). 2025-08 에 "약 6개월 뒤" 공개하겠다 했고 2026-02-10 기사가 공개를 다시 확인했다고 함(검색 요약)
 
 #### 출처
-x.ai 는 Cloudflare 봇 차단(403)이 걸려 있어 헤드리스 브라우저로 원문을 열었음. grok.com/plans 는 브라우저에서도 빈 화면이라 원본 HTML 의 설정값만 봤음. help.x.com·x.com·apps.apple.com·huggingface.co·cursor.com 과 제3자 글은 조사 환경에서 열리지 않아 검색 요약으로만 봤음 — 그래서 제3자 글 날짜를 하나도 확인하지 못했음.
+x.ai 는 Cloudflare 봇 차단(403)이 걸려 있어 헤드리스 브라우저로 원문을 열었음. grok.com/plans 는 브라우저에서도 빈 화면이라 원본 HTML 의 설정값만 봤음. help.x.com·cursor.com 과 제3자 글은 조사 환경에서 열리지 않아 검색 요약으로만 봤음(2026-10-05 에는 x.com 약관·apps.apple.com·huggingface.co 가 열려 원문을 봤고, help.x.com 은 여전히 봇 차단) — 그래서 제3자 글 날짜를 하나도 확인하지 못했음.
 - [Pricing: Compare Grok Plans](https://x.ai/pricing) — 공식 (원문 열어 봄, 비교표는 스크린숏으로 읽음)
 - [SpaceXAI for Business](https://x.ai/grok/business) — 공식 (원문 열어 봄)
 - [Grok](https://x.ai/grok) — 자사 홍보 (원문 열어 봄)
@@ -516,13 +517,16 @@ x.ai 는 Cloudflare 봇 차단(403)이 걸려 있어 헤드리스 브라우저�
 - [Voice | xAI Docs](https://docs.x.ai/developers/model-capabilities/audio/voice) — 공식 (원문 열어 봄)
 - [Docs MCP Server](https://docs.x.ai/developers/docs-mcp) — 공식 (원문 열어 봄)
 - [grok.com/plans 원본 HTML](https://grok.com/plans) — 공식 (원문 열어 봄, 요금은 스크립트로 그려져 없음. 설정값만 봄)
+- [SuperGrok 구독 화면](https://grok.com/supergrok) — 공식 (헤드리스 브라우저 스크린숏으로 월·연 금액과 Business 탭을 읽음, 2026-10-05)
+- [Grok - AI Assistant | App Store](https://apps.apple.com/us/app/grok-ai/id6670324846) — 공식 (원본 HTML 의 앱 내 구입 목록 열어 봄, 미국 스토어)
+- [X Terms of Service](https://x.com/en/tos) — 공식 (원문 열어 봄, 시행일 2026-10-09 표기)
 - [xai-org/grok-1 README·LICENSE](https://github.com/xai-org/grok-1) — 공식 (원문 열어 봄)
 - [xai-org/xai-sdk-python LICENSE](https://github.com/xai-org/xai-sdk-python) — 공식 (원문 열어 봄)
 - [xai-sdk | PyPI](https://pypi.org/project/xai-sdk/) — 공식 (원문 열어 봄)
 - [@xai-official/grok | npm](https://www.npmjs.com/package/@xai-official/grok) — 공식 (패키지를 받아 package.json 열어 봄)
 - [@ai-sdk/xai | npm](https://www.npmjs.com/package/@ai-sdk/xai) — 제3자 (레지스트리 메타데이터 열어 봄)
 - [merterbak/Grok-MCP](https://github.com/merterbak/Grok-MCP) · [libraz/grok-mcp](https://github.com/libraz/grok-mcp) · [guzus/grok-mcp](https://github.com/guzus/grok-mcp) · [wynandw87/claude-code-grok-mcp](https://github.com/wynandw87/claude-code-grok-mcp) — 제3자 (LICENSE 원문 열어 봄)
-- [xai-org/grok-2 · Hugging Face](https://huggingface.co/xai-org/grok-2) — 공식 (검색 요약, 원문 차단)
+- [xai-org/grok-2 LICENSE · Hugging Face](https://huggingface.co/xai-org/grok-2/blob/main/LICENSE) — 공식 (원문 열어 봄, 2025-11-04 갱신) · [xai-org 모델 목록](https://huggingface.co/xai-org) — 공식 (HF API 로 열어 봄)
 - [Premium on X: "SuperGrok Heavy now includes X Premium+ …"](https://x.com/premium/status/2077820074015293774) — 공식 (검색 요약, 원문 차단)
 - [Grok on X: "SuperGrok Lite is xAI's new $10/month entry tier …"](https://x.com/grok/status/2036955441565979113) — 공식 (검색 요약, 원문 차단)
 - [xAI added a $100/month "SuperGrok Plus" tier | Enterprise DNA](https://enterprisedna.co/resources/ai-pulse/ai-pulse-2026-08-02-xai-added-a-100-month-supergrok-plus-tier/) — 제3자 (검색 요약, 주소의 날짜 2026-08-02)

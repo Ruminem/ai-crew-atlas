@@ -2,6 +2,20 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-10-05
+
+**매일 재확인 — ChatGPT · Grok**
+
+- ChatGPT: Pro $200 신규 가입 일시 중단 → 다시 열림. 새 가입자는 예전보다 낮은 사용량을 받고, 2026-09-22–09-29 에 구독 중이던 사람은 2026-10-29 까지 예전 사용량을 유지함
+- ChatGPT: 한국에 걸리는 ROW판 개인용 약관(2026-01-01 시행)에는 EU판의 업무 이용 부록이 없음. 비상업 한정 문구도 없고 조직 이용을 전제한 면책 조항을 둠
+- ChatGPT: 개인 요금제(Free·Go·Plus·Pro)는 새 GPT 를 만들거나 게시할 수 없다고 Free FAQ 가 적음. 가격표 Plus 카드는 custom GPTs 를 적어 둘이 어긋남
+- ChatGPT: 채팅 등급별 모델이 드러남 — Free·Go 는 GPT-5.6 Luna, Plus 는 GPT-5.6 Sol, Pro·Business·Enterprise 는 GPT-5.6 Sol Pro·GPT-6 Pro. 상시 에이전트 Dot 은 Pro 와 Business Premium 에만 있음. 광고는 Free·Go 에만 붙고 2026-02-09 미국에서 시험을 시작함
+- ChatGPT: Business Premium 은 2026-08-25 부터 일반 제공, Standard 의 5배 사용량에 5시간 한도 없음. Go·Plus·Pro 는 연 결제가 없음
+- Grok: Grok-2 커뮤니티 라이선스의 "연 매출 $1M 넘는 회사는 따로 계약" → 원문(2025-11-04 판)에 그런 조항이 없고, xAI AUP 가드레일을 지키면 상업 이용을 허락함
+- Grok: SuperGrok Business 연 결제 $300/년($25/월)이 grok.com 구독 화면에 있음. 같은 화면에서 SuperGrok Heavy 에 X Premium+ 가 딸려 오는 것과 SuperGrok 앱 영상이 "HD 720p, 30-second video" 인 것도 확인함
+- Grok: API 영상 모델 grok-imagine-video-1.5-lite $0.020/초가 있음. Grok 4.7 Fast 는 긴 컨텍스트에서 표준 단가의 1.5배($6 · $1.50 · $18)이고 Grok Build 무료 등급에는 없음
+- Grok: Grok 3 오픈 웨이트는 아직 Hugging Face xai-org 계정에 없음(grok-1·grok-2 뿐). 미국 App Store 결제가는 웹과 같고 Extra Usage Credits($5–$100)도 앱 내 구입에 있음
+
 ## 2026-10-04
 
 **매일 재확인 — Firecrawl · Obsidian**

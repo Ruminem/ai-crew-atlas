@@ -197,7 +197,7 @@ flowchart LR
 | [ChatGPT](#chatgpt) | 범용 | 부분 무료 · 개인 무료 · 업무 이용은 EU판 약관이 부록으로 받아들이고, ROW판(한국)은 부록 없이 막는 문구도 없음 · 생성물 상업 이용 가능(음성 출력 제외) | Go $8<br>Plus $20<br>Pro $100 · $200 · $500<br>Business Standard $25/좌석 (연 결제 $20)<br>Business Premium $125/좌석 (연 결제 $100)<br>Enterprise·Edu 견적 | 공식 Claude Code 플러그인 | 독점 (Codex CLI·플러그인 Apache-2.0) | 2026-10-05 |
 | [Gemini](#gemini) | 범용 | 부분 무료 · 개인 무료 · 무료 등급 업무 이용을 약관이 막지 않음 · 생성물 상업 이용 가능(Google 이 소유권 주장 안 함) | AI Plus $4.99<br>AI Pro $19.99 (연 결제 $199.99/년)<br>AI Ultra 5x $99.99<br>AI Ultra 20x $199.99 | 커뮤니티 MCP · API 키 | 독점 (Gemini CLI Apache-2.0) | 2026-10-01 |
 | [Grok](#grok) | 범용 | 부분 무료 · 개인·업무 모두 무료 등급 가능(소비자 약관이 업무 이용을 막지 않음, 기업 이용은 기업 약관을 가리킴) · 생성물 소유는 사용자에게 남지만 "Created with Grok" 출처 표기 요구 · 학습 제외는 Business 부터 | SuperGrok Lite $10 (연 결제 $100/년)<br>SuperGrok $30 (연 결제 $300/년)<br>SuperGrok Plus $100 (연 결제 $1,000/년)<br>SuperGrok Heavy $300 (연 결제 $3,000/년)<br>Business $30/사용자 (연 결제 $300/년)<br>Enterprise 견적 | 커뮤니티 MCP · API 키 (공식 Docs MCP 는 문서 검색만) | 독점 (SDK Apache-2.0 · Grok-1 가중치 Apache-2.0) | 2026-10-05 |
-| [Perplexity](#perplexity) | 조사 | 부분 무료 · **개인 무료 + 상업 유료** — Free·Pro·Max 이미지는 비상업 전용(공식 도움말), 약관 5.1 도 등급 구분 없이 비상업 전용(2024 판 사본), 업무는 Enterprise | Education Pro $10<br>Pro $20 (연 결제 $200/년)<br>Max $200 (연 결제 $2,000/년, 웹에서만)<br>Enterprise Pro $40/석 (연 결제 $400/석/년)<br>Enterprise Max $325/석 (연 결제 $3,250/석/년)<br>API 는 종량제 | 공식 MCP · API 과금 | 독점 (MCP 서버 MIT) | 2026-09-30 |
+| [Perplexity](#perplexity) | 조사 | 부분 무료 · **개인 무료 + 상업 유료** — Free·Pro·Max 이미지는 비상업 전용(공식 도움말), 약관 5.1 도 등급 구분 없이 비상업 전용(2026-01-23판), 업무는 Enterprise | Education Pro $10<br>Pro $20 (연 결제 $200/년)<br>Max $200 (연 결제 $2,000/년, 웹에서만)<br>Enterprise Pro $40/석 (연 결제 $400/석/년)<br>Enterprise Max $325/석 (연 결제 $3,250/석/년)<br>API 는 종량제 | 공식 MCP · API 과금 | 독점 (MCP 서버 MIT) | 2026-10-08 |
 | [NotebookLM](#notebooklm-2026-07-16-부터-gemini-notebook) | 조사 | 부분 무료 · 개인 무료 · 업무 이용을 막는 약관 조항 없음 · 생성물 소유권 주장 안 함(상업 이용 명시 문구는 없음, 한국은 이미지·영상 워터마크 강제) | Google AI Plus $4.99<br>Google AI Pro $19.99 (연 결제 $199.99/년)<br>Google AI Ultra 5× $99.99<br>Google AI Ultra 20× $199.99<br>Gemini Notebook Enterprise $9/라이선스 (최소 15개)<br>Workspace 는 그 요금에 포함 | 커뮤니티 MCP · 쿠키 | 독점 (커뮤니티 MCP MIT) | 2026-10-02 |
 | [Firecrawl](#firecrawl) | 수집 | 부분 무료 + 자체 호스팅 무료 · 자체 호스팅은 AGPL-3.0 조건으로 상업 이용 가능 · 클라우드 약관은 등급 구분 없이 "명시적 허락 없는 상업 이용" 금지 · 출력 권리 조항 없음 | Hobby $19 (연 결제 $16)<br>Standard $99 (연 결제 $83)<br>Growth $399 (연 결제 $333)<br>Scale $749 (연 결제 $599)<br>Enterprise 협의 | 공식 커넥터 + 공식 MCP | 본체 AGPL-3.0 · 클라우드 독점 · MCP 서버 MIT | 2026-10-04 |
 | [Higgsfield](#higgsfield) | 제작 | 부분 무료 · 가격표는 **Free 상업 이용 불포함**, 약관·도움말은 출력의 상업 이용을 제한 안 함(어긋남) · Free 는 워터마크 | Starter $19<br>Plus $59 (연 결제 $47)<br>Ultra $129 (연 결제 $99)<br>Team $79/좌석 (연 결제 $65)<br>Scale $215/좌석 (연 결제 $150)<br>Enterprise 영업 문의<br>위는 데스크톱·T1 지역 기준, 휴대폰 화면은 Basic $5 · Pro $29 · Max $79 | 공식 MCP (Claude Code 는 CLI) · 유료 등급만 | 독점 (CLI·스킬 MIT) | 2026-10-01 |
@@ -544,7 +544,7 @@ x.ai 는 Cloudflare 봇 차단(403)이 걸려 있어 헤드리스 브라우저�
 - **역할**: 조사
 - **한 줄**: 질문마다 웹을 검색해 출처 번호가 달린 답을 내는 검색형 AI 서비스. 웹·앱·Comet 브라우저로 쓰고, 개발자용으로 Agent API·Search API·Embeddings API·Router API 를 팜(Sonar Chat Completions 는 2026-09-27 지원 종료)
 - **클로드와 잇는 법**: 공식 MCP 서버 — 원격 `https://api.perplexity.ai/mcp`(Streamable HTTP) 또는 로컬 npm `@perplexity-ai/mcp-server`(v1.3.0, 저장소 `perplexityai/modelcontextprotocol`). 인증은 API 키(`Authorization: Bearer` 헤더 또는 `PERPLEXITY_API_KEY`) 또는 원격 서버의 OAuth 로그인(OAuth 2.1 + PKCE). claude.ai 에는 공식 디렉터리 커넥터가 아니라 "사용자 지정 커넥터"로 URL 을 넣어 붙임(공식 MCP 문서, 원문 열어 봄. `claude.com/connectors` 목록 861개에 Perplexity 커넥터가 없고 `claude.com/connectors/perplexity` 는 404). 별도로 Perplexity Computer 용 MCP 서버도 있음(OAuth, 계정 크레딧 차감)
-- **확인한 날짜**: 2026-09-30
+- **확인한 날짜**: 2026-10-08
 
 #### 무료·유료와 이용 조건
 
@@ -552,27 +552,27 @@ x.ai 는 Cloudflare 봇 차단(403)이 걸려 있어 헤드리스 브라우저�
 |---|---|
 | 분류 | 부분 무료 |
 | 개인 이용 | Free 로 가능함 |
-| 상업·업무 이용 | **개인 무료 + 상업 유료(Enterprise) 구조**임. 공식 도움말이 Free·개인 Pro·Max 로 만든 이미지를 "personal, non-commercial use only" 로 묶고 Enterprise Pro·Max 만 상업 이용을 허용함(원문 열어 봄). 소비자 약관은 5.1 "We hereby permit you to use the Services for your personal, non-commercial use only" 로 등급 구분 없이 비상업 전용임 — Open Terms Archive 사본(2024-06-04판)에서 원문 열어 봄. 즉 이 조항은 **2024 판에 이미 있었음**. "2026-01-23 개정으로 그렇게 바뀌었다"는 제3자·SNS 서술은 이와 어긋남. 2026 판 원문은 확인 못 함 — perplexity.ai 가 Cloudflare 403 이고, 사본이 지금 최신판인지도 확인 못 함 (2026-09-30) |
-| 생성물의 상업적 이용 | 이미지: Free·개인 Pro·Max 는 비상업 전용, Enterprise Pro·Enterprise Max 는 상업 이용 가능(공식 도움말, 원문 열어 봄). 글 답변: 소비자 약관(2024-06-04판 사본)에는 Output 소유권을 사용자에게 넘기는 문구가 없고, 쓰는 것 자체가 5.1 의 비상업 조건에 묶임(원문 열어 봄). API 는 "Customer … owns all Output. Perplexity asserts no ownership rights in any Output"(API 약관 2025-05-23판 사본 2.3.1, 원문 열어 봄). Enterprise 는 확인 못 함 — 약관 403 이고 Open Terms Archive 가 추적 안 함 (2026-09-30) |
+| 상업·업무 이용 | **개인 무료 + 상업 유료(Enterprise) 구조**임. 공식 도움말이 Free·개인 Pro·Max 로 만든 이미지를 "personal, non-commercial use only" 로 묶고 Enterprise Pro·Max 만 상업 이용을 허용함(원문 열어 봄). 소비자 약관(2026-01-23판)은 5.1 "We hereby permit you to use the Services for your personal, non-commercial use only" 로 등급 구분 없이 비상업 전용임(원문 열어 봄, r.jina.ai 경유). 같은 조항이 Open Terms Archive 사본 2024-06-04판에도 있으므로 **2026-01-23 개정에서 생긴 조항이 아님** — 그렇게 적은 제3자·SNS 서술과 어긋남. Enterprise 는 별도 약관(2026-08-03판)을 따름 |
+| 생성물의 상업적 이용 | 이미지: Free·개인 Pro·Max 는 비상업 전용, Enterprise Pro·Enterprise Max 는 상업 이용 가능(공식 도움말, 원문 열어 봄). 글 답변: 소비자 약관(2026-01-23판)에는 Output 소유권을 사용자에게 넘기는 문구가 없고, 쓰는 것 자체가 5.1 의 비상업 조건에 묶임(원문 열어 봄, r.jina.ai 경유). API 는 "Customer … owns all Output. Perplexity asserts no ownership rights in any Output"(API 약관 2025-05-23판 사본 2.3.1, 원문 열어 봄). Enterprise 도 1.3.1 "Customer … owns all Output" 으로 Output 을 고객에게 넘기고, 8.2 에서 Output 의 지식재산 침해 청구를 Perplexity 가 면책함(Enterprise 약관 2026-08-03판, 원문 열어 봄, r.jina.ai 경유) |
 
-- 특이점: 자동화·봇·스크래퍼 금지(5.2)와 공개 시 출처 표기(1.1 "without clearly citing the Services")도 2024-06-04판 사본에 이미 있음(원문 열어 봄). 제3자 글은 2026 개정에서 생겼다고 적음. 소비자 약관은 "These Terms do not govern use of the Company's APIs" 라고 스스로 적으므로, API 로 과금되는 MCP 서버는 소비자 약관이 아니라 API 약관을 따름(원문 열어 봄)
-- 이 절의 출처: [Generating images with Perplexity — 도움말](https://intercom.help/perplexity-ai/en/articles/10354781-generating-images-with-perplexity) — 공식 (원문 열어 봄) · [Terms of Service 2024-06-04판 (Open Terms Archive 사본)](https://github.com/OpenTermsArchive/genai-versions/blob/main/Perplexity/Terms%20of%20Service.md) — 공식 (원문 열어 봄) · [API Terms 2025-05-23판 (Open Terms Archive 사본)](https://github.com/OpenTermsArchive/genai-versions/blob/main/Perplexity/Developer%20Terms.md) — 공식 (원문 열어 봄) · [Terms of Service](https://www.perplexity.ai/hub/legal/terms-of-service) — 공식 (Cloudflare 403, 검색 요약) · [Enterprise Terms](https://www.perplexity.ai/hub/legal/enterprise-terms-of-service) — 공식 (Cloudflare 403, 검색 요약) · [Perplexity Just Nuked Alot of Goodwill — Jaglion Press, 2026-02-19](https://jaglionpress.com/2026/02/19/perplexity-just-nuked-alot-of-goodwill/) — 제3자(검색 요약) · [Perplexity Automation Ban — Geeky Gadgets](https://www.geeky-gadgets.com/perplexity-bot-scraper-ban/) — 제3자(검색 요약)
+- 특이점: 자동화·봇·스크래퍼 금지(5.2 (d)·(i))와 공개 시 출처 표기(1.1.2 "without clearly citing the Services")는 현행 2026-01-23판에 있고(원문 열어 봄, r.jina.ai 경유), 2024-06-04판 사본에도 이미 있음(원문 열어 봄). 제3자 글은 2026 개정에서 생겼다고 적음. 소비자 약관은 "These Terms do not govern use of the Company's APIs … or Perplexity Pro for Enterprise" 라고 스스로 적으므로, API 로 과금되는 MCP 서버는 API 약관을, Enterprise 는 Enterprise 약관을 따름(원문 열어 봄)
+- 이 절의 출처: [Generating images with Perplexity — 도움말](https://intercom.help/perplexity-ai/en/articles/10354781-generating-images-with-perplexity) — 공식 (원문 열어 봄) · [Terms of Service 2024-06-04판 (Open Terms Archive 사본)](https://github.com/OpenTermsArchive/genai-versions/blob/main/Perplexity/Terms%20of%20Service.md) — 공식 (원문 열어 봄) · [API Terms 2025-05-23판 (Open Terms Archive 사본)](https://github.com/OpenTermsArchive/genai-versions/blob/main/Perplexity/Developer%20Terms.md) — 공식 (원문 열어 봄) · [Terms of Service 2026-01-23판](https://www.perplexity.ai/hub/legal/terms-of-service) — 공식 (원문 열어 봄, r.jina.ai 경유) · [Enterprise Terms 2026-08-03판](https://www.perplexity.ai/hub/legal/enterprise-terms-of-service) — 공식 (원문 열어 봄, r.jina.ai 경유) · [Perplexity Just Nuked Alot of Goodwill — Jaglion Press, 2026-02-19](https://jaglionpress.com/2026/02/19/perplexity-just-nuked-alot-of-goodwill/) — 제3자(검색 요약) · [Perplexity Automation Ban — Geeky Gadgets](https://www.geeky-gadgets.com/perplexity-bot-scraper-ban/) — 제3자(검색 요약)
 
 #### 요금과 등급별 권한
-소비자 요금제 (`perplexity.ai/pricing` 은 Cloudflare 403 이라 못 열었음. 값은 공식 도움말 — `perplexity.ai/help-center` 가 403 이라 같은 글을 원본 도메인 `intercom.help/perplexity-ai` 에서 열었음 — 과 미국 App Store 인앱 목록으로 확인함)
+소비자 요금제 (`perplexity.ai/pricing` 은 Cloudflare 403 이고 r.jina.ai 경유로도 가격이 안 옴. `perplexity.ai/pro`·`/max` 를 경유로 열면 연 결제 월 환산가 Pro $17·Max $167·Enterprise Max $271/석 이 보이고 아래 연 결제가와 맞음. 값은 공식 도움말 — `perplexity.ai/help-center` 가 403 이라 같은 글을 원본 도메인 `intercom.help/perplexity-ai` 에서 열었음 — 과 미국 App Store 인앱 목록으로 확인함)
 
 | 등급 | 월 요금 | 연 결제 시 | 할 수 있는 것 · 한도 |
 |---|---|---|---|
 | Free | $0 | — | 기본 검색 사실상 무제한, Pro Search 하루 3회, Research 월 1회, 파일 업로드 기본(제한), 고급 모델·이미지 생성 없음(도움말, 원문 열어 봄). Comet 브라우저 무료(제3자) |
-| Education Pro | $10 | 확인 못 함 — 도움말이 월 요금만 적고 웹 가격표는 403 | SheerID 로 대학 이상 학생·교직원 인증. Pro 전부 + Learn Mode·Perplexity Academic·Research 확장. Pro 의 50% 할인이라고 적힘 (도움말, 원문 열어 봄) |
+| Education Pro | $10 | 확인 못 함 — 도움말이 월 요금만 적고 웹 가격표는 r.jina.ai 경유로도 값이 안 옴 (2026-10-08) | SheerID 로 대학 이상 학생·교직원 인증. Pro 전부 + Learn Mode·Perplexity Academic·Research 확장. Pro 의 50% 할인이라고 적힘 (도움말, 원문 열어 봄) |
 | Pro | $20 | $200/년 | Pro Search 는 주간 한도, Research 는 월간 한도 — 정확한 숫자는 확인 못 함, 도움말이 "average use" 라고만 적음. GPT-5.4·Claude Sonnet 4.6·Gemini 3.1 Pro 등 외부 모델 선택(사용량 많은 주에는 고급 모델이 제한될 수 있음), 이미지·영상 생성(영상은 제한), 파일 업로드, Space 당 파일 50개, 파일·앱 만들기는 30일마다 제한된 수. Perplexity Computer 씀 — 월 크레딧 할당 없음, 가입 때 1회 보너스 4,000 크레딧(30일 뒤 만료), 그 뒤는 구매(100 크레딧 = $1), 자동 충전은 잔액 500 에서 걸림(도움말, 원문 열어 봄). 2026-03-13 에 Computer 를 Pro 에도 엶(공식 changelog 제목). 요금은 App Store 인앱 목록 $20.00·$200.00 과 도움말의 "12개월 Pro = $200 value" 로 확인 |
 | Max | $200 | $2,000/년 (웹에서만) | Pro 전부 + 최고 수준 모델 접근, 파일·앱 만들기 한도 확장, Model Council, Comet Max Assistant(브라우저 에이전트 주간 한도 최고), Brain(연구 미리보기), 신기능 선공개, 우선 지원. Computer 크레딧 월 10,000 + 1회 보너스 35,000(30일 뒤 만료), 자동 충전은 잔액 2,500 에서 걸림(도움말, 원문 열어 봄). 크레딧 지출 한도 기본 $200, 최대 $5,000 까지 조정(도움말, 원문 열어 봄 — "The default is $200, and you can set it anywhere up to $5,000") |
 | Enterprise Pro | $40/석 | $400/석/년 | Pro 전부 + Pro Search 주 400회, Research 월 80회, 좌석 관리·관리자 청구, 팀 Spaces·사내 지식 검색, Trust center, 데이터를 학습에 안 씀, Computer 월 500 크레딧. API 사용량은 포함 안 됨. 250석 이상·학교·비영리·정부 할인은 문의(도움말에 숫자 없음). 제3자는 교육기관·비영리 $30/석/월($300/년)이라 함 |
 | Enterprise Max | $325/석 | $3,250/석/년 | Enterprise Pro 전부 + Pro Search 주 4,000회, Research 월 800회, 영상 월 15개(8초·16:9·소리 포함), 개인 파일 10,000개·Space 당 5,000개, Model Council, SCIM·감사 로그·보존 기간 설정·Insights(조직에 Enterprise Max 가 한 명만 있어도 조직 전체에 열림), Computer 월 15,000 크레딧 |
 
 부가 상품
-- **Comet 브라우저**: 무료. 2025-07 에 Max 전용($200/월)으로 나왔다가 2025-10-02 무료 전환(TechCrunch). "2026-03-18 에 유료벽을 내렸다"는 글도 있음 — 날짜가 기사와 안 맞아 TechCrunch 쪽이 더 믿을 만함. 공식 Comet 도움말(`comet-help.perplexity.ai` → `www.perplexity.ai/help-center/comet/` 로 301)은 403 이라 원문 확인 못 함 (2026-09-30)
-- **Comet Plus**: $5/월, 언론사 기사 묶음, Pro·Max 에 포함(제3자). 확인 못 함 — 공식 도움말에 글이 없고 Comet 도움말은 403
+- **Comet 브라우저**: 무료. 2025-07 에 Max 전용($200/월)으로 나왔다가 2025-10-02 무료 전환(TechCrunch). "2026-03-18 에 유료벽을 내렸다"는 글도 있음 — 날짜가 기사와 안 맞아 TechCrunch 쪽이 더 믿을 만함. 공식 Comet 도움말(`comet-help.perplexity.ai` → `www.perplexity.ai/help-center/comet/` 로 301)은 403 이고, r.jina.ai 경유로 연 `perplexity.ai/comet` 은 "Is Comet free?" 질문만 있고 답이 접혀 안 보여 원문 확인 못 함 (2026-10-08)
+- **Comet Plus**: $5/월, 언론사 기사 묶음, Pro·Max 에 포함(제3자). 확인 못 함 — 공식 도움말에 글이 없고, Comet 도움말은 403, `perplexity.ai/comet/plus` 는 404 (2026-10-08)
 - **Pro 구독자 API 크레딧 월 $5**: 확인 못 함 — 공식 도움말 어디에도 없음. Pro 혜택 목록에 없고, API 결제 글은 구독 없이 API 를 쓸 수 있으며 API 크레딧은 Computer 크레딧과 별개라고만 적고, 요금제 비교는 API 칸에 "No complimentary API credits" 라고 적음. 없어진 쪽으로 보이지만(추정) 없앴다는 공지는 못 찾음
 
 API (docs.perplexity.ai 원문 열어 봄)
@@ -581,11 +581,12 @@ API (docs.perplexity.ai 원문 열어 봄)
 | 상품 | 입력 / 출력 (1M 토큰) | 요청·호출 요금 | 비고 |
 |---|---|---|---|
 | Agent API 모델 | 제공사 공개 단가 그대로(OpenAI·Anthropic·Google·xAI·Z.AI·Moonshot AI·NVIDIA). 자사 `perplexity/sonar` 는 $0.25 / $2.50 | — | 모델별 단가는 Agent API Models 문서에 있음 |
-| Agent API 도구 | — | `web_search` $0.0025/회(Fast Search $0.001) · `fetch_url` $0.0005 · `people_search`·`finance_search` $0.005 · `sandbox` $0.03/세션 | 도구 요금은 모델 토큰과 따로. sandbox 는 20분 과금 창 |
+| Agent API 도구 | — | `web_search` $0.0025/회(Fast Search $0.001) · `image_search` $0.0025/성공 호출 · `fetch_url` $0.0005 · `people_search`·`finance_search` $0.005 · `sandbox` $0.03/세션 | 도구 요금은 모델 토큰과 따로. sandbox 는 20분 과금 창이고 그 안에서 부른 검색은 따로 과금됨 |
 | Agent API 프리셋 | 프리셋이 고른 모델의 단가 | 쓴 도구만큼 | 지금 `fast`·`low`·`medium` 은 `openai/gpt-6-luna`($0.10 / $0.50, 272k 이하), `high` 는 `openai/gpt-6-sol`($2 / $10), `xhigh` 는 `anthropic/claude-opus-5-5`($4 / $20). 이름으로 부르면 프리셋 갱신을 따라 바뀜. 문서 예시로 `low` 대표 실행 1회 $0.007 |
 | Search API | 토큰 요금 없음 | $5/1,000건 (Fast Search $1/1,000건) | 성공한 `POST /search` 1건 = 쿼리 최대 5개. 잘못된 요청·속도 제한·업스트림 실패는 과금 안 함 |
 | Embeddings API | `pplx-embed-v1` 0.6b $0.004 · 4b $0.03, `pplx-embed-context-v1` 0.6b $0.008 · 4b $0.05 | — | |
 | Router API | 모델별 토큰 단가 | 요청 요금 없음 | 오픈 웨이트 모델을 OpenAI·Anthropic 형식 API 로 부름 |
+| Decisions API | `pplx-decider-v1.1-27b`·`pplx-decider-v1-27b` 입력 $0.02, 출력 무료 | 요청 요금 없음 | 예/아니오·객관식·점수 질문에 보정된 확률로 답함 |
 
 MCP 서버가 무엇으로 과금되는지
 - **API 키로 붙이면 API 사용량으로 과금됨.** v1.3.0 의 네 도구 중 `perplexity_search` 는 Search API, `perplexity_ask`·`perplexity_reason`·`perplexity_research` 는 Agent API 의 `fast`·`medium`·`high` 프리셋을 부름(공식 MCP 문서·README, 원문 열어 봄). 즉 MCP 비용은 위 Search API·Agent API 요금임
@@ -596,7 +597,7 @@ MCP 서버가 무엇으로 과금되는지
 #### 클로드로는 못 하는 것
 - **Comet 브라우저의 에이전트 조작**: 사용자의 실제 브라우저(로그인된 탭) 안에서 페이지를 읽고 클릭·입력·쇼핑 등을 대신 함. 클로드 앱의 웹 검색은 서버에서 페이지를 가져올 뿐 사용자의 로그인 세션을 쓰지 않음 (Claude in Chrome 확장은 별도 제품이라 여기서는 비교 안 함)
 - **Model Council**: 한 질문을 최상위 모델 셋(예: Claude Opus 4.7·GPT-5.2·Gemini 3.1 Pro)에 동시에 돌리고, 합성 모델이 어디서 일치하고 어디서 갈리는지 보여 주는 한 답으로 합침(Max·Enterprise Max, 웹에서만. 공식 도움말). 클로드는 자기 모델만 씀
-- **Perplexity Computer**: 웹·파일·커넥터를 오가며 여러 단계 작업을 이어 가는 에이전트. 400개 넘는 외부 서비스에 OAuth 로 붙고 크레딧으로 과금됨(공식 문서). 19개 모델을 하위 에이전트로 부린다는 설명은 제3자임
+- **Perplexity Computer**: 웹·파일·커넥터를 오가며 여러 단계 작업을 이어 가는 에이전트. 400개 넘는 외부 서비스에 OAuth 로 붙고 크레딧으로 과금됨(공식 문서). 공식 Enterprise 페이지는 "20 advanced models" 를 부린다고 적음(자사 홍보, 원문 열어 봄, r.jina.ai 경유). 19개라는 제3자 설명과 숫자가 다름
 - **검색 전용 색인과 요청 단위 필터**: Search API 가 순위 매긴 결과를 건당 $0.005(Fast Search $0.001)로 돌려주고 `search_recency_filter`·`search_after_date_filter`·`search_before_date_filter`·`search_domain_filter`·`search_language_filter` 로 기간·도메인·언어를 걸 수 있음(공식 문서). MCP 로 붙이면 클로드가 이 색인을 쓰게 되는 것이지, 클로드 자체 검색에는 이런 도메인·기간 필터 인자가 사용자에게 노출되지 않음
 - **Spaces·Discover·금융·인물 검색**: 파일을 모아 둔 공간 위에서 검색하는 Spaces, 뉴스 피드 Discover, Agent API 의 `people_search`·`finance_search` 도구(각 $0.005/회, 공식 가격표)
 

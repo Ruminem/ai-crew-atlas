@@ -2,6 +2,18 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-10-08
+
+**매일 재확인 — Perplexity · Jev**
+
+- Jev: 호출 한도 초당 40요청 → 80요청. 토큰 한도 초당 10만은 그대로임
+- Jev: 홈페이지 FAQ 가 "We can serve Jev profitably at our current prices" 라고 답함 — 발표 글의 "보조금이 아님을 증명할 수 없음"에서 지금 값으로 이익이 난다는 쪽으로 감(자사 홍보)
+- Jev: OpenRouter 에 `typesafe/jev-latest` 가 $0.042 로 있다던 것 → 지금은 요청마다 모델을 고르는 라우터 `typesafe/jev-router`(2026-09-25 등록, 고정 단가 없음) 하나뿐임. Vercel AI Gateway 의 `typesafe-ai/jev` 는 공식과 같은 입력 $0.042 · 출력 $0
+- Jev: 새 가입자 무료 크레딧 중단을 창업자가 2026-09-27 X 게시물로 직접 알렸음("temporarily", 악용 때문). $5 라는 금액은 여전히 제3자 기사에만 있음
+- Perplexity: Enterprise 약관(2026-08-03판)이 Output 을 고객 소유로 넘기고(1.3.1) Output 의 지식재산 침해 청구를 Perplexity 가 면책함(8.2). 소비자 약관 현행판(2026-01-23)도 5.1 비상업 전용 조항을 그대로 둠
+- Perplexity: API 에 Decisions API 가 있음 — `pplx-decider` 모델이 예/아니오·객관식·점수 질문에 보정된 확률로 답하고 입력 100만 토큰당 $0.02, 출력 무료. Agent API 도구에 `image_search` $0.0025/성공 호출도 있음
+- Perplexity: Computer 가 부리는 모델 수를 공식 Enterprise 페이지가 "20 advanced models" 로 적음(자사 홍보). 지금까지는 제3자 설명의 19개뿐이었음
+
 ## 2026-10-05
 
 **매일 재확인 — ChatGPT · Grok**

@@ -204,7 +204,7 @@ flowchart LR
 | [Blotato](#blotato) | 게시 | 체험만 무료(7일) · 업무 이용은 유료 등급 · 생성물 권리 확인 못 함 | Starter $29<br>Creator $97<br>Agency $499<br>연 결제는 약 17% 할인 (금액 표기 없음) | 공식 MCP · OAuth/API 키 · 유료 등급만 | 독점 | 2026-10-02 |
 | [Notion](#notion) | 기록 | 부분 무료 · 개인 무료 · 업무는 조직용 약관(MSA), Free 업무 이용을 막는 조항 없음 | Plus $12/멤버 (연 결제 $10)<br>Business $24/멤버 (연 결제 $20)<br>Enterprise 문의 | 공식 커넥터 · OAuth | 독점 (로컬 MCP 서버 MIT) || 2026-10-03 |
 | [Obsidian](#obsidian) | 기록 | 부분 무료 · 앱은 개인·업무 모두 무료(2025-02-20 부터) · Sync·Publish 만 유료 | 앱은 무료<br>Sync Standard $5 (연 결제 $4)<br>Sync Plus $10 (연 결제 $8)<br>Publish $10/사이트 (연 결제 $8)<br>Commercial license $50/사용자/년 (선택)<br>Catalyst 일회 $25 · $50 · $100 (선택 후원) | 커뮤니티 플러그인 MCP · 공식 CLI · 파일 | 독점 소프트웨어 (플러그인 MIT) | 2026-10-04 |
-| [Jev](#jev) | 판정 | 유료 · 무료 등급 없음(새 가입자 $5 크레딧은 2026-09-27 께 멈춤, 검색 요약) · 개인·업무 모두 같은 약관(MCA)으로 가능, 단독 재판매·증류 금지 · 출력 권리는 고객에게 양도 | 종량제 — 입력 100만 토큰당 $0.042, 출력 무료 (월 요금 없음)<br>맞춤·엔터프라이즈 협의 | 공식 Claude Code 플러그인(스킬) · 커뮤니티 MCP · API 키 | 독점 (SDK·스킬 MIT, 커뮤니티 MCP MIT) | 2026-09-30 |
+| [Jev](#jev) | 판정 | 유료 · 무료 등급 없음(새 가입자 $5 크레딧은 2026-09-27 멈춤 — 창업자 X 게시물, 금액은 제3자) · 개인·업무 모두 같은 약관(MCA)으로 가능, 단독 재판매·증류 금지 · 출력 권리는 고객에게 양도 | 종량제 — 입력 100만 토큰당 $0.042, 출력 무료 (월 요금 없음)<br>맞춤·엔터프라이즈 협의 | 공식 Claude Code 플러그인(스킬) · 커뮤니티 MCP · API 키 | 독점 (SDK·스킬 MIT, 커뮤니티 MCP MIT) | 2026-10-08 |
 
 ## 도구
 [<kbd>↑ 목차</kbd>](#목차)
@@ -1107,46 +1107,46 @@ MCP·커넥터가 무엇으로 과금되는지
 - **역할**: 판정
 - **한 줄**: TypeSafe AI, Inc.(샌프란시스코)의 첫 모델로, 글을 쓰지 않고 판정만 하는 API 임. 글·JSON 상태와 질문(선택지 고르기·등급 매기기·참일 확률)을 보내면 형이 정해진 답과 선택지별 확률·confidence 를 돌려주고, 질문 여러 개를 한 요청에서 병렬로 평가함. 분류·라우팅·가드레일처럼 코드 안에서 대량으로 도는 판정용이며 대화·글쓰기·코드 작성은 못 함. 2026-09-15 발표. Scala 쪽 Typesafe(현 Lightbend)와는 다른 회사임
 - **클로드와 잇는 법**: 공식 커넥터·공식 MCP 는 없음(Claude 디렉터리 주소 404, 공식 문서에 MCP 언급 없음). **공식 Claude Code 플러그인(에이전트 스킬)** 이 있음 — `claude plugin marketplace add typesafe-ai/skills` 뒤 `claude plugin install typesafe@typesafe-ai`. 이 플러그인은 API 를 부르지 않고 클로드에게 Jev 로 코드를 짜는 법을 가르치는 스킬임 — 실제 호출은 클로드가 짠 코드가 **API 키**(`Authorization: Bearer $TYPESAFE_API_KEY`, `console.typesafe.ai/keys` 에서 발급)로 함. 대화 중에 클로드가 직접 부르려면 **커뮤니티 MCP**(npm `jev-mcp`·`@jkudish/jev-mcp`, GitHub `typesafe-mcp` 등, 모두 MIT, `TYPESAFE_API_KEY` 환경 변수)를 씀. OAuth 는 없음
-- **확인한 날짜**: 2026-09-30
+- **확인한 날짜**: 2026-10-08
 
 #### 무료·유료와 이용 조건
 
 | 구분 | 조건 |
 |---|---|
-| 분류 | 유료 — 2026-09-30 새 가입자 기준. 크레딧을 사서 입력 토큰만큼 빠지는 선불 종량제이고 무료 등급은 없음. 2026-09-20 전체 가입을 열 때 새 계정에 $5 크레딧을 줬다가(그때는 체험만 무료) 2026-09-27 께 새 가입자 몫을 멈췄다는 것은 **검색 요약**임(아래) |
+| 분류 | 유료 — 2026-09-30 새 가입자 기준. 크레딧을 사서 입력 토큰만큼 빠지는 선불 종량제이고 무료 등급은 없음. 2026-09-20 전체 가입을 열 때 새 계정에 $5 크레딧을 줬다가(그때는 체험만 무료) 2026-09-27 새 가입자 몫을 "잠시" 멈췄음 — 멈춘 것은 창업자 X 게시물 원문으로 봤고, $5 라는 금액은 제3자 기사에만 있음(아래) |
 | 개인 이용 | 됨 — 무료는 아님. MCA(Master Customer Agreement, 2026-09-23 개정) 머리가 개인 명의 가입을 전제함: "YOU: (A) AGREE TO THE AGREEMENT ON BEHALF OF YOURSELF AS AN INDIVIDUAL, UNLESS YOU ARE USING THE SERVICES ON BEHALF OF AN ORGANIZATION…". 분쟁 조항도 "if Customer is an individual … consumer disputes" 와 "if Customer is a business" 를 나눠 둠 (공식, 원문 열어 봄) |
 | 상업·업무 이용 | 됨 — 등급 구분 없이 같은 약관임. MCA 2.2조가 API 를 자기 앱에 넣어 **최종 사용자에게 서비스하는 것**을 허락함: "the right to include the API into one or more software applications developed and operated by Customer for the benefit of Customer's end users". 막는 것은 2.3조 — API 를 단독 서비스로 되팔기("make the Services available as a standalone service"), 출력으로 모델 증류·모방 학습·경쟁 제품 개발("to perform model distillation, train a model to imitate the output of the Services, or develop … a similar or competing product"), 역공학, 사용량 한도 초과. 웹 콘솔은 고객의 직원·계약자만 쓸 수 있음(2.4조) (공식, 원문 열어 봄) |
 | 생성물의 상업적 이용 | 됨 — MCA 4.2조: "TypeSafe does not claim ownership of Input and TypeSafe disclaims ownership of Output. TypeSafe hereby assigns to Customer all of its right, title, and interest, if any, in Output." 다만 Jev 의 출력은 글·이미지가 아니라 **선택지·점수·확률 같은 판정 값**이라 저작물 권리가 문제 될 일이 적음. 9.3조는 출력이 틀릴 수 있고 다른 사용자도 같은 출력을 받을 수 있다고 적음 (공식, 원문 열어 봄) |
 
-- **무료 크레딧 변천(전부 검색 요약·제3자)**: 2026-09-15 발표 때는 대기열(waitlist)·조기 접근(early access)이었음(발표 글·홈페이지 "Try … Jev, in early access", 공식). 2026-09-20 `console.typesafe.ai` 가입을 모두에게 열고 $5 크레딧(회사 추산 약 1억 2천만 토큰)을 줌 → 2026-09-22 수요 때문에 새 가입 중단, 기존 계정은 계속 됨 (Firecrawl 블로그 2026-09-23 갱신본, 원문 열어 봄 — 제3자). 2026-09-28 께 가입을 다시 열었고 $5 무료 크레딧은 "악용(a few bad actors)" 때문에 새 가입자에게 잠시 멈췄다고 함(창업자 Diogo Almeida 의 2026-09-27 발언으로 인용됨, 검색 요약 — 원 기사 aifront-page.com 은 막혀 못 엶). 회사 공식 문서·약관에서 $5 라는 숫자는 못 찾음 — **확인 못 함 — 공식 발표는 X(x.com)·콘솔 쪽에 있을 것으로 보이나 두 도메인 모두 막힘**
+- **무료 크레딧 변천(창업자 게시물 하나 말고는 제3자)**: 2026-09-15 발표 때는 대기열(waitlist)·조기 접근(early access)이었음(발표 글·홈페이지 "Try … Jev, in early access", 공식). 2026-09-20 `console.typesafe.ai` 가입을 모두에게 열고 $5 크레딧(회사 추산 약 1억 2천만 토큰)을 줌 → 2026-09-22 수요 때문에 새 가입 중단, 기존 계정은 계속 됨 (Firecrawl 블로그 2026-09-23 갱신본, 원문 열어 봄 — 제3자). 2026-09-27(미국 시각) 창업자 Diogo Almeida 가 X 에 "ANYONE CAN SIGN UP" 과 함께 "we had to temporarily disable the free credits (just for new users)… a few bad actors were making it a bad time for everyone" 라고 올림 (창업자 X 게시물, X oEmbed 로 원문 열어 봄). 2026-09-28 aifront-page.com 기사가 이것을 "$5 in credit (120 million tokens)" 중단으로 전함 (제3자, r.jina.ai 경유로 원문 열어 봄). 회사 문서·약관·홈페이지에서 $5 라는 숫자와 크레딧 재개 소식은 못 찾음 — **확인 못 함 — 콘솔(console.typesafe.ai)이 Cloudflare 봇 확인으로 막힘, r.jina.ai 경유도 막힘 (2026-10-08)**
 - **약관 쪽 근거**: MCA 8.2조가 크레딧을 두 가지로 둠 — 산 크레딧(Purchased Credits)과 회사 재량으로 주는 프로모션 크레딧(Promotional Credits, "TypeSafe may, but has no obligation to, issue Promotional Credits"). 프로모션 크레딧을 더 받으려고 계정을 여럿 만드는 것을 금지함. 그러니 무료 크레딧은 약관상 보장된 등급이 아니라 회사가 줄 수도 안 줄 수도 있는 것임 (공식, 원문 열어 봄)
 - **크레딧 조건**(MCA 8.2(a), 공식): 산 크레딧은 계약 기간 끝이나 **산 날부터 12개월** 중 먼저 오는 날 소멸함. 환불·양도 안 됨("not redeemable, refundable, transferable"). 잔액이 0 이 되면 자동 충전을 켠 경우 고른 금액만큼 채우고, 안 켰으면 요청을 거절할 수 있음. 해지해도 안 쓴 선불금은 돌려주지 않음(10.3조). 요금은 세금 별도(8.4조)
 - **데이터**: MCA 4.1조 — 고객 데이터를 모델 가중치 학습에 "prior consent" 없이 넣지 않음. 개인정보처리방침(2025-11-19 개정)은 조건 없이 "We will not train or fine tune any artificial intelligence or machine learning models on your prompts or other Input" 이라고 적음 — 약관은 동의하면 학습할 여지를 두고 방침은 안 둠, 두 문서가 어긋남. 다만 로그·통계 같은 Telemetry 는 제한 없이 씀(4.3조). ZDR(데이터 무보존)은 엔터프라이즈 고객만 영업 문의로 (공식 문서 Legal·Models, 원문 열어 봄)
 - **지역**: 사이트 이용 약관(Terms of Use, 2026-09-19)은 "The Site is intended for visitors located within the United States" 라고 적음. 이것은 **웹사이트** 약관이고, 제품(API·콘솔)은 MCA 가 정함("If you enter into a separate agreement … the terms of that separate agreement will govern"). MCA 에는 거주 국가 제한 없이 미국 수출 통제·금수국 조항(16.12조)만 있음 — 한국에서 쓰는 것을 막는 문구는 없음. 준거법은 MCA 캘리포니아주, 개별 중재(JAMS)
 - **공개 표기**: MCA 16.4조 — TypeSafe 가 고객 이름·로고를 고객 목록·홍보물에 쓸 수 있음(서면 요청하면 멈춤)
-- 이 절의 출처: [Master Customer Agreement](https://typesafe.ai/legal/mca) — 공식 (원문 열어 봄, 2026-09-23 개정판) · [Terms of Use](https://typesafe.ai/legal/terms) — 공식 (원문 열어 봄, 2026-09-19 개정판) · [Acceptable Use Policy](https://typesafe.ai/legal/acceptable-use-policy) — 공식 (원문 열어 봄, 2026-09-23 개정판) · [Legal — TypeSafe docs](https://docs.typesafe.ai/legal) — 공식 (원문 열어 봄) · [What Is Jev? — Firecrawl 블로그](https://www.firecrawl.dev/blog/what-is-jev) — 제3자 (원문 열어 봄, 2026-09-23 갱신) · [TypeSafe AI Reopens Jev Sign-Ups, Suspends Free $5 Credit — aifront-page.com](https://aifront-page.com/typesafe-ai-reopens-jev-sign-ups-free-credit-suspended/) — 제3자 (검색 요약, 날짜 미상 · 2026-09-28 이후로 보임)
+- 이 절의 출처: [Master Customer Agreement](https://typesafe.ai/legal/mca) — 공식 (원문 열어 봄, 2026-09-23 개정판) · [Terms of Use](https://typesafe.ai/legal/terms) — 공식 (원문 열어 봄, 2026-09-19 개정판) · [Acceptable Use Policy](https://typesafe.ai/legal/acceptable-use-policy) — 공식 (원문 열어 봄, 2026-09-23 개정판) · [Legal — TypeSafe docs](https://docs.typesafe.ai/legal) — 공식 (원문 열어 봄) · [What Is Jev? — Firecrawl 블로그](https://www.firecrawl.dev/blog/what-is-jev) — 제3자 (원문 열어 봄, 2026-09-23 갱신) · [TypeSafe AI Reopens Jev Sign-Ups, Suspends Free $5 Credit — aifront-page.com](https://aifront-page.com/typesafe-ai-reopens-jev-sign-ups-free-credit-suspended/) — 제3자 (r.jina.ai 경유로 원문 열어 봄, 2026-09-28 게시)
 
 #### 요금과 등급별 권한
 구독 등급이 없는 **API 종량제**임. 공식 가격표 페이지는 없고(`typesafe.ai/pricing` 은 404), 단가는 공식 문서 [Models](https://docs.typesafe.ai/models) 표와 홈페이지·발표 글에 있음(원문 열어 봄, USD).
 
 | 등급 | 월 요금 | 연 결제 시 | 할 수 있는 것 · 한도 |
 |---|---|---|---|
-| 셀프서브(콘솔에서 크레딧 선불 구매) | 없음 — 쓴 만큼 | 없음 | 모델 `jev-1.13.0`(별칭 `jev-latest`·`jev-preview` 가 지금 둘 다 이것을 가리킴). 초당 10만 토큰 · 초당 40요청, 넘으면 `429`. 요청당 64k 토큰(`state` + 모든 질문), 그중 `state` + 가장 긴 질문 32k. 입력은 텍스트만(문자열·JSON 객체·텍스트 배열) — 이미지·오디오·영상 안 받음. 최소 충전 금액은 **확인 못 함 — 콘솔(`console.typesafe.ai`)이 막혔고 공식 문서·약관에 금액이 없음** |
+| 셀프서브(콘솔에서 크레딧 선불 구매) | 없음 — 쓴 만큼 | 없음 | 모델 `jev-1.13.0`(별칭 `jev-latest`·`jev-preview` 가 지금 둘 다 이것을 가리킴). 초당 10만 토큰 · 초당 80요청, 넘으면 `429`. 요청당 64k 토큰(`state` + 모든 질문), 그중 `state` + 가장 긴 질문 32k. 입력은 텍스트만(문자열·JSON 객체·텍스트 배열) — 이미지·오디오·영상 안 받음. 최소 충전 금액은 **확인 못 함 — 콘솔(`console.typesafe.ai`)이 Cloudflare 봇 확인으로 막히고 r.jina.ai 경유도 막힘, 공식 문서·약관에 금액 없음 (2026-10-08)** |
 | 맞춤·엔터프라이즈 | 협의 | 협의 | 더 높은 호출 한도("Higher limits are available on custom and enterprise plans"), ZDR(데이터 무보존). 문의 sales@typesafe.ai. 금액은 공개 안 됨 |
 
 단가 (공식 문서 Models, 원문 열어 봄)
 - **입력 토큰 100만 개당 $0.042 (10억 개당 $42). 출력 토큰은 무료** — 원문: "Charged per input token. Output tokens are free." 발표 글도 "Output tokens: FREE (too cheap to meter)" 라고 씀
 - 응답의 `usage` 에 `input_tokens`·`output_tokens` 가 찍힘. 한 요청 안의 질문은 같은 `state` 를 한 번만 읽으므로 질문을 한 요청에 몰면 쌈 — 공식 쿡북이 "13개 질문을 한 번에 보내면 12.2배 싸고 10.0배 빠르고 답은 같음"이라고 적음(공식 문서지만 자사 측정)
 - 크레딧 소모 속도는 "account settings, including the model used" 에 따라 다를 수 있다고 MCA 8.2조가 적음. 지금 모델은 하나뿐임
-- 가격 지속성: 발표 글이 "We can't prove it isn't subsidized; we'll need the long-term to prove the sustainability of our pricing (which we expect to go down, not up)" 라고 적음 — 보조금 가격일 가능성을 회사가 부정하지 않음 (공식 블로그, 원문 열어 봄). 홈페이지 FAQ "Are these prices temporary or subsidized?" 의 답은 **확인 못 함 — 답이 `framerusercontent.com` 에서 불러오는 모듈에 있고 그 도메인이 막힘**
+- 가격 지속성: 발표 글이 "We can't prove it isn't subsidized; we'll need the long-term to prove the sustainability of our pricing (which we expect to go down, not up)" 라고 적음 — 보조금 가격일 가능성을 회사가 부정하지 않음 (공식 블로그, 원문 열어 봄). 홈페이지 FAQ "Are these prices temporary or subsidized?" 의 답은 "We can serve Jev profitably at our current prices. Our goal is to make intelligence more affordable over time as we improve the technology." 임 — 발표 글의 "보조금이 아님을 증명할 수 없음"보다 한 걸음 나아가 지금 값으로 이익이 난다고 말함 (자사 홍보, `framerusercontent.com` 모듈로 원문 열어 봄)
 - 호출 한도는 고정이 아님: 원문 "Rate limits are adjusting dynamically … the limits above can change without notice" (공식 문서 Models)
 - 무료 크레딧: 등급이 아니라 프로모션임 — 위 `무료·유료와 이용 조건` 절 참고. 2026-09-20 가입자에게 준 $5 는 회사 추산 약 1억 2천만 토큰(제3자 글이 인용한 회사 추산, 검색 요약·Firecrawl 블로그 2026-09-23). 단가로 되짚으면 $5 ÷ $0.042 × 100만 ≈ 1억 1,900만 토큰이라 맞아떨어짐
 - 산 크레딧은 12개월 뒤 소멸, 환불 안 됨, 자동 충전은 선택 (MCA 8.2(a), 공식)
 
-다른 경로의 단가 (전부 검색 요약)
-- **OpenRouter**: `typesafe/jev-latest`·`typesafe/jev-1.13` 이 입력 100만 토큰당 $0.042 · 출력 $0 로 올라와 있다고 함(검색 요약, 날짜 미상 — openrouter.ai 가 막혀 못 엶). 공식 단가와 같음
-- **Vercel AI Gateway**: 2026-09-16 부터 `typesafe-ai/jev` 로 부를 수 있고 대기열 없음·ZDR 선택 가능이라고 함(Firecrawl 블로그 2026-09-23, 제3자). 게이트웨이 쪽 단가는 확인 못 함 — vercel.com 이 막힘
-- 두 경로는 TypeSafe 가입이 필요 없다고 제3자 글이 적음. TypeSafe 공식 문서에는 이 두 경로 언급이 없음
+다른 경로의 단가
+- **OpenRouter**: 지금 공개 모델 목록(API)에 TypeSafe 모델은 `typesafe/jev-router`(Jev Router, 2026-09-25 등록) 하나뿐이고, 고정 단가 없이 요청마다 "best model and reasoning effort" 를 고르는 라우터라고 적힘 — Jev 판정 API 를 그대로 내주는 것이 아님. `typesafe/jev-latest` 는 목록에 없음(endpoints API 404). 라우터가 판정 API 와 어떤 관계인지는 확인 못 함 (OpenRouter 모델 API 로 원문 열어 봄, 2026-10-08)
+- **Vercel AI Gateway**: `typesafe-ai/jev` 가 입력 100만 토큰당 $0.042 · 출력 $0, 컨텍스트 32k, ZDR "some", 학습 안 함 "all" 로 올라와 있음 — 공식 단가와 같음 (Vercel 게이트웨이 모델 API 로 원문 열어 봄, 2026-10-08). 2026-09-16 부터 대기열 없이 부를 수 있었다는 것은 Firecrawl 블로그(2026-09-23, 제3자)
+- Vercel 경로는 TypeSafe 가입이 필요 없다고 제3자 글이 적음. TypeSafe 공식 문서에는 이 경로들 언급이 없음
 
 #### 클로드로는 못 하는 것
 Jev 는 클로드 같은 대화·글쓰기 모델이 **아님**. 공식 문서 원문: "It does not generate text, write code, or hold a conversation." 클로드가 하는 일(글·코드 작성, 대화, 도구 호출, 웹 검색)을 대신하지 못하고, 클로드가 **짜는 프로그램 안에서** 판정 한 칸을 맡는 부품임. 그래서 이 칸은 "클로드 대화창에서 못 하는 것"이 아니라 "클로드로 같은 판정을 돌릴 때와 무엇이 다른지"로 적음.
@@ -1177,11 +1177,11 @@ Jev 는 클로드 같은 대화·글쓰기 모델이 **아님**. 공식 문서 �
 - **공식 MCP 서버는 없음** — 공식 문서 목차(llms.txt 전체)와 에이전트 스킬 문서에 MCP 언급이 없음. Claude 디렉터리에도 없음 — `claude.com/connectors/typesafe`·`/connectors/jev`·`/plugins/typesafe` 가 모두 404 로 끝남(같은 방식으로 연 `/connectors/firecrawl` 은 200 이라 주소 규칙은 맞음, 2026-09-30 확인). 플러그인은 디렉터리가 아니라 `typesafe-ai/skills` 자체 마켓플레이스로 깖
 
 커뮤니티·제3자 부품 (공식 아님)
-- **커뮤니티 MCP 서버**: 발표 뒤 며칠 사이 여럿 나옴. 라이선스는 본 것 모두 **MIT** — npm `jev-mcp`(rashedInt32, v0.5.1, 2026-09-17 생성) · `@jkudish/jev-mcp`(v0.11.0, 2026-09-17) · `typesafe-jev-mcp`(anasbekheit, v0.1.2, 2026-09-20)는 npm 레지스트리 `license` 필드로, GitHub `parksjr/typesafe-mcp` · `racecraft-lab/typesafe-mcp`(포크) · `codaaiteam/jev-mcp` · `BYK/jev-mcp` 는 LICENSE 원문 첫 줄로 확인. 모두 사용자의 `TYPESAFE_API_KEY` 를 환경 변수로 받는 방식이라고 검색 요약이 적음
-- **Vercel AI SDK 제공자** `@ai-sdk/typesafe-ai`(npm v3.0.11, 2026-09-16 생성, `vercel/ai` 저장소): **Apache-2.0** (npm 레지스트리로 확인). Vercel AI Gateway 로 부를 때 씀
+- **커뮤니티 MCP 서버**: 발표 뒤 며칠 사이 여럿 나옴. 라이선스는 본 것 모두 **MIT** — npm `jev-mcp`(rashedInt32, v0.5.1, 2026-09-17 생성) · `@jkudish/jev-mcp`(v0.14.1, 2026-09-17 생성) · `typesafe-jev-mcp`(anasbekheit, v0.1.2, 2026-09-20)는 npm 레지스트리 `license` 필드로, GitHub `parksjr/typesafe-mcp` · `racecraft-lab/typesafe-mcp`(포크) · `codaaiteam/jev-mcp` · `BYK/jev-mcp` 는 LICENSE 원문 첫 줄로 확인. 모두 사용자의 `TYPESAFE_API_KEY` 를 환경 변수로 받는 방식이라고 검색 요약이 적음
+- **Vercel AI SDK 제공자** `@ai-sdk/typesafe-ai`(npm v3.0.15, 2026-09-16 생성, `vercel/ai` 저장소): **Apache-2.0** (npm 레지스트리로 확인). Vercel AI Gateway 로 부를 때 씀
 
 #### 출처
-- [TypeSafe AI 홈페이지](https://typesafe.ai/) — 자사 홍보 (원문 열어 봄 — 단, FAQ 답은 `framerusercontent.com` 모듈이라 못 봄)
+- [TypeSafe AI 홈페이지](https://typesafe.ai/) — 자사 홍보 (원문 열어 봄 — FAQ 답은 `framerusercontent.com` 모듈로 열어 봄)
 - [Introducing System One Models & Jev — TypeSafe 블로그, 2026-09-15](https://typesafe.ai/blog/introducing-system-one-models-and-jev) — 자사 홍보 (원문 열어 봄)
 - [Master Customer Agreement](https://typesafe.ai/legal/mca) — 공식 (원문 열어 봄, 2026-09-23 개정판)
 - [Terms of Use](https://typesafe.ai/legal/terms) — 공식 (원문 열어 봄, 2026-09-19 개정판, 웹사이트 전용)
@@ -1208,7 +1208,8 @@ Jev 는 클로드 같은 대화·글쓰기 모델이 **아님**. 공식 문서 �
 - [npm jev-mcp](https://www.npmjs.com/package/jev-mcp) · [@jkudish/jev-mcp](https://www.npmjs.com/package/@jkudish/jev-mcp) · [typesafe-jev-mcp](https://www.npmjs.com/package/typesafe-jev-mcp) — 제3자 (레지스트리로 라이선스 확인)
 - [parksjr/typesafe-mcp](https://github.com/parksjr/typesafe-mcp) · [racecraft-lab/typesafe-mcp](https://github.com/racecraft-lab/typesafe-mcp) · [codaaiteam/jev-mcp](https://github.com/codaaiteam/jev-mcp) · [BYK/jev-mcp](https://github.com/BYK/jev-mcp) — 제3자 (raw 로 LICENSE 첫 줄 확인)
 - [What Is Jev? Inside TypeSafe's Decision-Only AI Model — Firecrawl 블로그, 2026-09-23 갱신](https://www.firecrawl.dev/blog/what-is-jev) — 제3자 (원문 열어 봄 — 가입·$5 크레딧·Vercel·OpenRouter 경로)
-- [TypeSafe AI Reopens Jev Sign-Ups, Suspends Free $5 Credit — aifront-page.com](https://aifront-page.com/typesafe-ai-reopens-jev-sign-ups-free-credit-suspended/) — 제3자 (검색 요약, 도메인 막힘)
+- [TypeSafe AI Reopens Jev Sign-Ups, Suspends Free $5 Credit — aifront-page.com](https://aifront-page.com/typesafe-ai-reopens-jev-sign-ups-free-credit-suspended/) — 제3자 (r.jina.ai 경유로 원문 열어 봄, 2026-09-28 게시)
+- [Diogo Almeida(TypeSafe 창업자) X 게시물, 2026-09-27](https://x.com/CompleteSkeptic/status/2104338649999626397) — 공식에 준함 (창업자 본인 계정, X oEmbed 로 원문 열어 봄 — 새 가입자 무료 크레딧 잠시 멈춤)
 - [Is Jev Free? — layer3labs.io](https://www.layer3labs.io/guides/is-jev-free) — 제3자 (검색 요약)
 - [Jev Latest — OpenRouter](https://openrouter.ai/~typesafe/jev-latest) — 제3자 (검색 요약, 도메인 막힘)
 

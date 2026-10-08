@@ -2,6 +2,19 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-10-09
+
+**매일 재확인 — Gemini · Higgsfield**
+
+- Gemini: AI Pro 에 Google Flow Music(flowmusic.app) Plus 등급 혜택이 붙음 — 월 10,000크레딧(약 2,000곡, AI 크레딧과 별개)·상업적 이용권 명시. Ultra 5x·20x 는 월 30,000크레딧. 요금 네 개는 그대로임
+- Gemini: 이미지 내려받기 해상도가 Google AI 요금제 2K · 무료 1K 임
+- Gemini: Google One 비교표의 영상 생성 모델 칸은 Pro·Ultra 모두 "Omni Flash" 로 적어, gemini.google 소개 칸의 Veo 3.1 Lite(Pro)·Veo 3.1(Ultra)과 공식 두 곳이 갈림
+- Higgsfield: 2026-09-30 까지의 Plus·Ultra 보너스 크레딧 행사 → 끝남. 지금은 "Ultra 7일 Nano Banana 2·Pro Unlimited + 30% 할인" 띠와 연 결제 30% 할인 문구가 떠 있음
+- Higgsfield: Ultra 월 결제 6,000 · 9,000크레딧 선택지에 첫 결제 할인이 생김 — $250 → $220, $375 → $310, 갱신은 정가
+- Higgsfield: Team 카드에 구매일부터 14일 Unlimited Seedance 2.0(15초·720p), Scale 카드에 30일 Unlimited Seedance 2.5(25초·720p)가 붙음. 둘 다 사업자 인증 필요하고, 같은 화면의 띠는 Team 도 30일이라 적어 어긋남
+- Higgsfield: Plus 는 월 결제면 동시 생성이 영상 6·이미지 8개로 묶이고, 월 결제 Plus·Ultra 에는 Kling 3.0 7일 Unlimited 가 없음. 연 결제는 동시 생성 제한 없음
+- Higgsfield: Team 카드에 Nano Banana Pro·Seedream 5.0 Pro 7일 Unlimited 가 있음. 앞 기록은 "Unlimited 모델 없음"이었고, 바뀐 것인지 지난번에 놓친 것인지는 모름
+
 ## 2026-10-08
 
 **매일 재확인 — Perplexity · Jev**

@@ -198,10 +198,10 @@ flowchart LR
 | [Gemini](#gemini) | 범용 | 부분 무료 · 개인 무료 · 무료 등급 업무 이용을 약관이 막지 않음 · 생성물 상업 이용 가능(Google 이 소유권 주장 안 함) | AI Plus $4.99<br>AI Pro $19.99 (연 결제 $199.99/년)<br>AI Ultra 5x $99.99<br>AI Ultra 20x $199.99 | 커뮤니티 MCP · API 키 | 독점 (Gemini CLI Apache-2.0) | 2026-10-09 |
 | [Grok](#grok) | 범용 | 부분 무료 · 개인·업무 모두 무료 등급 가능(소비자 약관이 업무 이용을 막지 않음, 기업 이용은 기업 약관을 가리킴) · 생성물 소유는 사용자에게 남지만 "Created with Grok" 출처 표기 요구 · 학습 제외는 Business 부터 | SuperGrok Lite $10 (연 결제 $100/년)<br>SuperGrok $30 (연 결제 $300/년)<br>SuperGrok Plus $100 (연 결제 $1,000/년)<br>SuperGrok Heavy $300 (연 결제 $3,000/년)<br>Business $30/사용자 (연 결제 $300/년)<br>Enterprise 견적 | 커뮤니티 MCP · API 키 (공식 Docs MCP 는 문서 검색만) | 독점 (SDK Apache-2.0 · Grok-1 가중치 Apache-2.0) | 2026-10-05 |
 | [Perplexity](#perplexity) | 조사 | 부분 무료 · **개인 무료 + 상업 유료** — Free·Pro·Max 이미지는 비상업 전용(공식 도움말), 약관 5.1 도 등급 구분 없이 비상업 전용(2026-01-23판), 업무는 Enterprise | Education Pro $10<br>Pro $20 (연 결제 $200/년)<br>Max $200 (연 결제 $2,000/년, 웹에서만)<br>Enterprise Pro $40/석 (연 결제 $400/석/년)<br>Enterprise Max $325/석 (연 결제 $3,250/석/년)<br>API 는 종량제 | 공식 MCP · API 과금 | 독점 (MCP 서버 MIT) | 2026-10-08 |
-| [NotebookLM](#notebooklm-2026-07-16-부터-gemini-notebook) | 조사 | 부분 무료 · 개인 무료 · 업무 이용을 막는 약관 조항 없음 · 생성물 소유권 주장 안 함(상업 이용 명시 문구는 없음, 한국은 이미지·영상 워터마크 강제) | Google AI Plus $4.99<br>Google AI Pro $19.99 (연 결제 $199.99/년)<br>Google AI Ultra 5× $99.99<br>Google AI Ultra 20× $199.99<br>Gemini Notebook Enterprise $9/라이선스 (최소 15개)<br>Workspace 는 그 요금에 포함 | 커뮤니티 MCP · 쿠키 | 독점 (커뮤니티 MCP MIT) | 2026-10-02 |
+| [NotebookLM](#notebooklm-2026-07-16-부터-gemini-notebook) | 조사 | 부분 무료 · 개인 무료 · 업무 이용을 막는 약관 조항 없음 · 생성물 소유권 주장 안 함(상업 이용 명시 문구는 없음, 한국은 이미지·영상 워터마크 강제) | Google AI Plus $4.99<br>Google AI Pro $19.99 (연 결제 $199.99/년)<br>Google AI Ultra 5× $99.99<br>Google AI Ultra 20× $199.99<br>Gemini Notebook Enterprise $9/라이선스 (최소 15개)<br>Workspace 는 그 요금에 포함 | 커뮤니티 MCP · 쿠키 | 독점 (커뮤니티 MCP MIT) | 2026-10-10 |
 | [Firecrawl](#firecrawl) | 수집 | 부분 무료 + 자체 호스팅 무료 · 자체 호스팅은 AGPL-3.0 조건으로 상업 이용 가능 · 클라우드 약관은 등급 구분 없이 "명시적 허락 없는 상업 이용" 금지 · 출력 권리 조항 없음 | Hobby $19 (연 결제 $16)<br>Standard $99 (연 결제 $83)<br>Growth $399 (연 결제 $333)<br>Scale $749 (연 결제 $599)<br>Enterprise 협의 | 공식 커넥터 + 공식 MCP | 본체 AGPL-3.0 · 클라우드 독점 · MCP 서버 MIT | 2026-10-04 |
 | [Higgsfield](#higgsfield) | 제작 | 부분 무료 · 가격표는 **Free 상업 이용 불포함**, 약관·도움말은 출력의 상업 이용을 제한 안 함(어긋남) · Free 는 워터마크 | Starter $19<br>Plus $59 (연 결제 $47)<br>Ultra $129 (연 결제 $99)<br>Team $79/좌석 (연 결제 $65)<br>Scale $215/좌석 (연 결제 $150)<br>Enterprise 영업 문의<br>위는 데스크톱·T1 지역 기준, 휴대폰 화면은 Basic $5 · Pro $29 · Max $79 | 공식 MCP (Claude Code 는 CLI) · 유료 등급만 | 독점 (CLI·스킬 MIT) | 2026-10-09 |
-| [Blotato](#blotato) | 게시 | 체험만 무료(7일) · 업무 이용은 유료 등급 · 생성물 권리 확인 못 함 | Starter $29<br>Creator $97<br>Agency $499<br>연 결제는 약 17% 할인 (금액 표기 없음) | 공식 MCP · OAuth/API 키 · 유료 등급만 | 독점 | 2026-10-02 |
+| [Blotato](#blotato) | 게시 | 체험만 무료(7일) · 업무 이용은 유료 등급 · 생성물 권리 확인 못 함 | Starter $29<br>Creator $97<br>Agency $499<br>연 결제는 약 17% 할인 (금액 표기 없음) | 공식 MCP · OAuth/API 키 · 유료 등급만 | 독점 | 2026-10-10 |
 | [Notion](#notion) | 기록 | 부분 무료 · 개인 무료 · 업무는 조직용 약관(MSA), Free 업무 이용을 막는 조항 없음 | Plus $12/멤버 (연 결제 $10)<br>Business $24/멤버 (연 결제 $20)<br>Enterprise 문의 | 공식 커넥터 · OAuth | 독점 (로컬 MCP 서버 MIT) || 2026-10-03 |
 | [Obsidian](#obsidian) | 기록 | 부분 무료 · 앱은 개인·업무 모두 무료(2025-02-20 부터) · Sync·Publish 만 유료 | 앱은 무료<br>Sync Standard $5 (연 결제 $4)<br>Sync Plus $10 (연 결제 $8)<br>Publish $10/사이트 (연 결제 $8)<br>Commercial license $50/사용자/년 (선택)<br>Catalyst 일회 $25 · $50 · $100 (선택 후원) | 커뮤니티 플러그인 MCP · 공식 CLI · 파일 | 독점 소프트웨어 (플러그인 MIT) | 2026-10-04 |
 | [Jev](#jev) | 판정 | 유료 · 무료 등급 없음(새 가입자 $5 크레딧은 2026-09-27 멈춤 — 창업자 X 게시물, 금액은 제3자) · 개인·업무 모두 같은 약관(MCA)으로 가능, 단독 재판매·증류 금지 · 출력 권리는 고객에게 양도 | 종량제 — 입력 100만 토큰당 $0.042, 출력 무료 (월 요금 없음)<br>맞춤·엔터프라이즈 협의 | 공식 Claude Code 플러그인(스킬) · 커뮤니티 MCP · API 키 | 독점 (SDK·스킬 MIT, 커뮤니티 MCP MIT) | 2026-10-08 |
@@ -636,8 +636,8 @@ MCP 서버가 무엇으로 과금되는지
 - **역할**: 조사
 - **한 줄**: 사용자가 넣은 자료(PDF·웹페이지·유튜브·구글 문서 등)만 근거로 답하고, 그 자료로 오디오·비디오 개요·마인드맵·슬라이드·퀴즈 등을 만들어 주는 구글의 노트북형 AI 서비스
 - **이름**: 2026-07-16 Google 공식 블로그 "NotebookLM is now Gemini Notebook" 으로 이름이 바뀜. 같은 단독 제품이고 공유 노트북·링크는 자동 리디렉트됨(Workspace Updates). 개인 계정·Workspace 모두 해당. 도움말 주소도 `support.google.com/gemininotebook` 으로 옮겨졌고, 기업판도 "Gemini Notebook Enterprise" 로 바뀌었으나 API 엔드포인트는 그대로임(Google Cloud 문서). 이름 변경과 함께 노트북마다 코드를 쓰고 돌리는 "secure cloud computer" 가 붙기 시작함 — 개명 당일에는 AI Ultra 와 Workspace 의 AI Ultra Access·AI Expanded Access 에만 있고, Pro 웹은 몇 주 안에 풀린다고 적음 (원문 열어 봄)
-- **클로드와 잇는 법**: 공식 커넥터 없음(`claude.com/connectors/notebooklm`·`/gemini-notebook` 둘 다 404), 공식 MCP 서버 없음(`google/mcp` 저장소의 "Official NotebookLM MCP Server" 요청 이슈 #19 가 2026-10-02 에도 열려 있음, Google Cloud 공식 MCP 지원 목록에도 없음). 커뮤니티 MCP 가 여럿 있음 — `PleasePrompto/notebooklm-mcp`(npm `notebooklm-mcp`, MIT): Patchright 로 실제 Chrome 을 띄워 구글 계정에 한 번 로그인하고 쿠키를 로컬 Chrome 프로필에 저장함. `jacob-bd/notebooklm-mcp-cli`(PyPI `notebooklm-mcp-cli`, MIT, `nlm login`): 브라우저 쿠키를 뽑아 **문서화 안 된 내부 API** 를 부름 — README 가 "언제든 바뀔 수 있으니 개인·실험용으로만"이라고 적음. 인증은 둘 다 구글 계정 쿠키이고 API 키·OAuth 가 아님. 공식 프로그램 접근은 Google Cloud 의 **Gemini Notebook Enterprise API**(`discoveryengine.googleapis.com` v1alpha, `notebooks.create`·`audioOverviews.create` 등, Google Cloud 인증)뿐임 (원문 열어 봄)
-- **확인한 날짜**: 2026-10-02
+- **클로드와 잇는 법**: 공식 커넥터 없음(`claude.com/connectors/notebooklm`·`/gemini-notebook` 둘 다 `claude.com/marketplace/connectors/…` 로 넘어간 뒤 404), 공식 MCP 서버 없음(`google/mcp` 저장소의 "Official NotebookLM MCP Server" 요청 이슈 #19 가 2026-10-10 에도 열려 있음, Google Cloud 공식 MCP 지원 목록에도 없음 — 목록의 `notebook` 서버는 Colab Enterprise 도구임). 커뮤니티 MCP 가 여럿 있음 — `PleasePrompto/notebooklm-mcp`(npm `notebooklm-mcp`, MIT): Patchright 로 실제 Chrome 을 띄워 구글 계정에 한 번 로그인하고 쿠키를 로컬 Chrome 프로필에 저장함. `jacob-bd/notebooklm-mcp-cli`(PyPI `notebooklm-mcp-cli`, MIT, `nlm login`): 브라우저 쿠키를 뽑아 **문서화 안 된 내부 API** 를 부름 — README 가 "언제든 바뀔 수 있으니 개인·실험용으로만"이라고 적음. 인증은 둘 다 구글 계정 쿠키이고 API 키·OAuth 가 아님. 공식 프로그램 접근은 Google Cloud 의 **Gemini Notebook Enterprise API**(`discoveryengine.googleapis.com` v1alpha, `notebooks.create`·`audioOverviews.create` 등, Google Cloud 인증)뿐임 (원문 열어 봄)
+- **확인한 날짜**: 2026-10-10
 
 #### 무료·유료와 이용 조건
 
@@ -654,28 +654,29 @@ MCP 서버가 무엇으로 과금되는지
 - 이 절의 출처: [Privacy and Terms of Use in Gemini Notebook](https://support.google.com/gemininotebook/answer/17004255?hl=en) · [Google 서비스 약관](https://policies.google.com/terms?hl=en-US) · [Upgrade Gemini Notebook](https://support.google.com/gemininotebook/answer/16213268?hl=en) — 공식 (원문 열어 봄)
 
 #### 요금과 등급별 권한
-NotebookLM 은 따로 파는 요금제가 없고 Google AI 구독(Google One)에 딸려 옴. 요금은 미국 공식 가격표(gemini.google·one.google.com), 한도는 도움말 "Upgrade Gemini Notebook" 표 기준 (원문 열어 봄).
+NotebookLM 은 따로 파는 요금제가 없고 Google AI 구독(Google One)에 딸려 옴. 요금은 미국 공식 가격표(gemini.google·one.google.com), 한도는 도움말 "Learn about Gemini Notebook's plans"(옛 제목 "Upgrade Gemini Notebook") 표 기준 (원문 열어 봄).
 
 | 등급 | 월 요금 | 연 결제 시 | 할 수 있는 것 · 한도 |
 |---|---|---|---|
 | 무료 (Standard) | $0 | — | 노트북 100개, 노트북당 소스 50개. 소스 하나당 500,000 단어 또는 업로드 200MB(쪽수 제한 없음). 오디오·비디오 개요·Deep Research·슬라이드 등 Studio 기능은 무료에도 한도를 두고 있음 |
-| Google AI Plus | $4.99 (400GB. 2026-06-08 인하, 그 전 $7.99·200GB — 기사) | 확인 못 함 — 가격표 원문에 월 요금만 있고, Google One 비교표 값은 스크립트로 채워져 HTML 에 없음 (2026-10-02) | 노트북 200개, 노트북당 소스 100개 |
+| Google AI Plus | $4.99 (400GB. 그 전 $7.99·200GB 는 Google 블로그 2026-01-27. 2026-06-08 인하라는 날짜만 기사) | 연 결제 플랜은 있음(Google One 도움말). 금액은 확인 못 함 — gemini.google·Google One 가격표를 헤드리스로 그려 봐도 연 금액이 없음 (2026-10-10) | 노트북 200개, 노트북당 소스 100개. 기존 Google One Premium 2TB 가입자용 "Google AI Plus 2 TB plan" 이 따로 있음 — 400GB 판 혜택 전부에 더 얹음, 가격은 확인 못 함 — 공식에 금액 없음 (2026-10-10) |
 | Google AI Pro | $19.99 (5TB) | $199.99/년 | 노트북 500개, 노트북당 소스 300개. 보이는 워터마크를 끌 수 있음(한국 제외) |
 | Google AI Ultra (5×) | $99.99 (20TB. I/O 2026 신설) | 없음 — "Ultra 는 월 결제만" | 노트북 500개, 노트북당 소스 500개 (도움말의 "Ultra (20 TB Plan)" 칸) |
 | Google AI Ultra (20×) | $199.99 (30TB. I/O 2026 에 $250 에서 인하) | 없음 — "Ultra 는 월 결제만" | 노트북 500개, 노트북당 소스 600개 (도움말의 "Ultra (30 TB Plan)" 칸) |
-| Gemini Notebook Enterprise | $9/라이선스 (최소 15개) | 1년 구독 가능, 금액은 확인 못 함 — 제품 페이지는 월 요금만 적고 Gemini Enterprise 가격 페이지는 본문이 404 (2026-10-02) | Google Cloud 콘솔로 구입, 구독당 15–5,000 라이선스. 무료 체험은 제품 페이지 "30일", 라이선스 문서 "14일 · 5,000 라이선스"로 공식끼리 어긋남. 산출물 한도 "5배 이상"(무엇 대비인지 안 적음), VPC-SC·IAM, 사람 검토·학습 없음. 공식 API 는 이 판에만 있음. Gemini Enterprise Standard·Plus·Frontline 에도 들어 있음 |
-| Workspace 포함분 | Workspace 요금에 포함, 따로 없음 | — | Business Starter·Enterprise Essentials·Frontline·Nonprofits·Education Fundamentals/Standard 는 핵심 서비스로 표준 한도, Education Plus 는 한 단계 위, Business Standard/Plus·Enterprise Standard/Plus·Google AI Pro for Education 은 그 위, AI Expanded Access·AI Ultra Access 애드온이 맨 위. 모두 사람 검토·학습 없음 |
+| Gemini Notebook Enterprise | $9/라이선스 (최소 15개) | 1년 구독 가능, 금액은 확인 못 함 — 제품 페이지는 월 요금만 적고 Gemini Enterprise 가격 페이지는 헤드리스로 그려도 404 (2026-10-10) | Google Cloud 콘솔로 구입, 구독당 15–5,000 라이선스. 무료 체험은 제품 페이지 "30일", 라이선스 문서 "14일 · 5,000 라이선스"로 공식끼리 어긋남. 산출물 한도는 도움말 "5배 이상", 제품 페이지 "오디오 개요·노트북·노트북당 소스 5배"(둘 다 무엇 대비인지 안 적음), VPC-SC·IAM, 사람 검토·학습 없음. 공식 API 는 이 판에만 있음. 도움말은 Gemini Enterprise Standard·Plus·Frontline 에도 들어 있다고 적고, gemini.google 의 Business 탭은 Gemini Enterprise Business($21/석/월부터, 최대 300석)에도 들어 있다고 적어 공식끼리 어긋남 |
+| Workspace 포함분 | Workspace 요금에 포함, 따로 없음 | — | 업무·학교 계정 도움말 표가 Standard · Standard · More · Higher · Expanded · Highest 여섯 칸으로 가름. Business Starter·Enterprise Essentials(Plus)·Frontline(Starter/Standard/Plus)·Nonprofits·Education Fundamentals/Standard 는 핵심 서비스로 표준 한도, Education Plus·Teaching and Learning 애드온은 한 단계 위(More), Business Standard/Plus·Enterprise Standard/Plus·Google AI Pro for Education 은 그 위(Higher), AI Expanded Access 가 그다음(Expanded), AI Ultra Access 가 맨 위(Highest). 모두 사람 검토·학습 없음 |
 
 사용량 한도 (2026-09-02 부터 바뀜)
-- **2026-09-02 이전**: 하루 고정 한도(24시간마다 초기화). 무료·Plus·Pro·Ultra 5×·Ultra 20× 순으로 채팅 50·200·500·2.5K·5K, 오디오 개요 3·6·20·100·200, 비디오 개요도 같은 수(시네마틱은 Pro 2·Ultra 10·20), 보고서·플래시카드·퀴즈·마인드맵 10·20·100·500·1K, Deep Research 무료 월 10·Plus 3·Pro 20·Ultra 75·200. 도움말 "Upgrade" 표는 9-02 공지를 달고도 이 숫자를 그대로 두고 있음 (원문 열어 봄)
+- **2026-09-02 이전**: 하루 고정 한도(24시간마다 초기화). 무료·Plus·Pro·Ultra 5×·Ultra 20× 순으로 채팅 50·200·500·2.5K·5K, 오디오 개요 3·6·20·100·200, 비디오 개요도 같은 수(시네마틱은 Pro 2·Ultra 10·20), 보고서·플래시카드·퀴즈·마인드맵 10·20·100·500·1K, Deep Research 무료 월 10·Plus 3·Pro 20·Ultra 75·200. 지난 숫자임 — 2026-10-10 의 도움말 한도 표에는 노트북 수·소스 수 두 줄만 남고 이 일일 숫자는 빠짐 (원문 열어 봄)
 - **2026-09-02 이후**: 개인 계정(웹·모바일)은 계산량 기준 한도로 바뀜. 질문 난이도·모델·기능·대화 길이·소스 수에 따라 깎이고, **5시간마다 차오르되 주간 상한**이 있음. 한도에 닿으면 비디오 개요·슬라이드 등을 "나중에 생성"으로 미뤄 둘 수 있음(웹만) (원문 열어 봄)
-- 등급별 배수는 도움말에 있음: 무료 standard · Plus 2배 · Pro 4배 · Ultra 는 **Pro 의** 5배 또는 20배(구독에 따라). 새 체계에서 오디오·비디오 개요를 하루 몇 개 만들 수 있는지는 확인 못 함 — 공식이 숫자를 안 냄 (2026-10-02)
+- 등급별 배수는 도움말에 있음: 무료 standard · Plus 2배 · Pro 4배 · Ultra 는 **Pro 의** 5배 또는 20배(구독에 따라). 새 체계에서 오디오·비디오 개요(시네마틱 포함)를 몇 개 만들 수 있는지는 확인 못 함 — 한도·오디오·비디오 도움말 어디에도 숫자가 없고, Google One 비교표도 More · Expanded · Higher · Highest 로만 적음 (2026-10-10)
+- 소스를 처음 넣을 때 자동으로 한 번 만들어지는 보고서·플래시카드·인포그래픽·슬라이드·오디오·비디오 개요는 한도에 안 듦 (도움말, 원문 열어 봄)
 
 #### 클로드로는 못 하는 것
-- **오디오 개요**: 넣은 자료를 두 진행자가 대화하는 팟캐스트 형식 음성으로 만들고, 중간에 끼어들어 질문하는 대화형 모드가 있음. 클로드는 음성 파일을 만들지 않음
-- **비디오 개요**: 자료로 내레이션이 붙은 슬라이드 영상(시네마틱 비디오 개요 포함)을 만들어 줌. 클로드는 영상을 만들지 않음
+- **오디오 개요**: 넣은 자료를 두 진행자가 대화하는 팟캐스트 형식 음성으로 만들고, 중간에 끼어들어 질문하는 대화형 모드가 있음(영어만, 새로 만든 개요에서만, 공유 링크로 받은 사람은 못 씀). 클로드는 음성 파일을 만들지 않음
+- **비디오 개요**: 자료로 내레이션이 붙은 영상을 만들어 줌. 형식은 Cinematic · Explainer · Short(약 60초) 셋이고, 시네마틱은 18세 이상·영어만 됨. 클로드는 영상을 만들지 않음
 - **노트북 단위 공유와 동기화**: 노트북을 링크로 남과 공유하고, Gemini 앱의 노트북과 양방향 동기화함. Google 검색 AI 모드에도 노트북이 저절로 뜸 — 영어만, EEA 제외, AI 모드 채팅은 다른 앱과 동기화 안 되고 AI 모드에서는 Studio 산출물을 못 만듦(도움말, 원문 열어 봄. 풀린 날짜는 안 적힘). 구글 문서·슬라이드 소스를 넣으면 원본과 다시 맞출 수 있음
-- **유튜브 영상을 소스로 바로 넣기**: 링크만 주면 영상 내용을 근거로 답함. 클로드는 유튜브 링크의 영상 내용을 직접 읽지 못함
+- **유튜브 영상을 소스로 바로 넣기**: 링크만 주면 그 영상의 자막 텍스트를 가져와 근거로 답함. 자막(자동 생성 포함)이 있는 공개 영상만 되고, 올라온 지 72시간이 안 됐거나 자막이 없으면 실패할 수 있음(도움말). 클로드는 유튜브 링크의 영상 내용을 직접 읽지 못함
 - **노트북당 최대 300–600개 소스를 한꺼번에 근거로 삼기**: 소스 하나 500,000 단어까지. 클로드 프로젝트는 컨텍스트 창에 들어가는 만큼(넘으면 검색 방식) 다룸
 - 참고: 마인드맵·퀴즈·플래시카드·보고서는 클로드도 글이나 아티팩트로 만들 수 있으므로 "못 하는 것"이 아니라 "버튼 하나로 되는 것" 차이임
 
@@ -689,23 +690,26 @@ NotebookLM 은 따로 파는 요금제가 없고 Google AI 구독(Google One)에
 - [We're introducing flexible usage limits for Gemini Notebook — Google 블로그, 2026-08-28](https://blog.google/innovation-and-ai/products/gemini-notebook/new-flexible-usage-limits/) — 공식 (원문 열어 봄)
 - [Use Gemini Notebook in AI Mode — 도움말](https://support.google.com/gemininotebook/answer/17513891?hl=en) — 공식 (원문 열어 봄)
 - [Manage your Gemini Notebook usage limits — 도움말](https://support.google.com/gemininotebook/answer/17670842?hl=en) — 공식 (원문 열어 봄)
-- [Upgrade Gemini Notebook — 도움말](https://support.google.com/gemininotebook/answer/16213268?hl=en) — 공식 (원문 열어 봄)
+- [Learn about Gemini Notebook's plans (옛 제목 Upgrade Gemini Notebook) — 도움말](https://support.google.com/gemininotebook/answer/16213268?hl=en) — 공식 (원문 열어 봄)
+- [Audio Overviews — 도움말](https://support.google.com/gemininotebook/answer/16212820?hl=en) · [Video Overviews — 도움말](https://support.google.com/gemininotebook/answer/16454555?hl=en) · [소스 넣기 — 도움말](https://support.google.com/gemininotebook/answer/16215270?hl=en) — 공식 (원문 열어 봄)
+- [Google AI Plus 혜택 — Google One 도움말](https://support.google.com/googleone/answer/16882689?hl=en) · [Google AI Plus 결제 — Google One 도움말](https://support.google.com/googleone/answer/16548195?hl=en) — 공식 (원문 열어 봄)
+- [Google AI Plus is now available everywhere — Google 블로그, 2026-01-27](https://blog.google/products-and-platforms/products/google-one/google-ai-plus-availability/) — 공식 (원문 열어 봄. 인하 전 $7.99·200GB 의 출처)
 - [Use Gemini Notebook with a work or school Google account — 도움말](https://support.google.com/gemininotebook/answer/16337734?hl=en) — 공식 (원문 열어 봄)
 - [Frequently asked questions — Gemini Notebook 도움말](https://support.google.com/gemininotebook/answer/16269187?hl=en) — 공식 (원문 열어 봄)
 - [Privacy and Terms of Use in Gemini Notebook — 도움말](https://support.google.com/gemininotebook/answer/17004255?hl=en) — 공식 (원문 열어 봄)
 - [Google 서비스 약관 (2026-07-30 시행)](https://policies.google.com/terms?hl=en-US) — 공식 (원문 열어 봄)
 - [Generative AI Additional Terms of Service (2024-05-22 부터 적용 안 됨)](https://policies.google.com/terms/generative-ai?hl=en-US) — 공식 (원문 열어 봄)
 - [Google AI Plans — Gemini 가격표 (미국)](https://gemini.google/us/subscriptions/?hl=en) — 공식 (원문 열어 봄)
-- [Google AI plans — Google One](https://one.google.com/about/google-ai-plans/?hl=en&gl=US) — 공식 (원문 열어 봄. 비교표 값 일부는 스크립트로 그려져 HTML 에 없음)
+- [Google AI plans — Google One](https://one.google.com/about/google-ai-plans/?hl=en&gl=US) — 공식(헤드리스 렌더링. 비교표 값 일부는 스크립트로 그려져 HTML 에 없음)
 - [Everything new in our Google AI subscriptions, fresh from I/O 2026 — Google 블로그, 2026-05-19](https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/) — 공식 (원문 열어 봄)
 - [Gemini Notebook for enterprise — Google Cloud](https://cloud.google.com/gemini-enterprise/gemini-notebook) — 공식 (원문 열어 봄)
 - [Get licenses for Gemini Notebook Enterprise — Google Cloud 문서](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing) — 공식 (원문 열어 봄)
 - [Create and manage notebooks (API) — Gemini Notebook Enterprise](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks) — 공식 (원문 열어 봄)
 - [Supported products — Google Cloud MCP (2026-09-30 갱신)](https://docs.cloud.google.com/mcp/supported-products) — 공식 (원문 열어 봄. Gemini Notebook 서버 없음)
-- [Official NotebookLM MCP Server · Issue #19 · google/mcp](https://github.com/google/mcp/issues/19) — 제3자 (요청 이슈. 2026-10-02 에 Open, 2026-02-02 에 열렸고 관리자 답 없음 — curl 은 403 이라 WebFetch 요약으로 봄)
+- [Official NotebookLM MCP Server · Issue #19 · google/mcp](https://github.com/google/mcp/issues/19) — 제3자 (요청 이슈. 2026-10-10 에 Open, 2026-02-02 에 열렸고 관리자 답 없음 — curl 은 403 이라 WebFetch 요약으로 봄)
 - [PleasePrompto/notebooklm-mcp](https://github.com/PleasePrompto/notebooklm-mcp) — 제3자 (README·LICENSE 원문 봄)
 - [jacob-bd/notebooklm-mcp-cli](https://github.com/jacob-bd/notebooklm-mcp-cli) — 제3자 (README·LICENSE 원문 봄)
-- [Google AI Plus gets price drop to $4.99 — 9to5Google, 2026-06-08](https://9to5google.com/2026/06/08/google-ai-plus-price-drop/) — 제3자 (원문 열어 봄. 인하 전 $7.99·200GB 의 출처)
+- [Google AI Plus gets price drop to $4.99 — 9to5Google, 2026-06-08](https://9to5google.com/2026/06/08/google-ai-plus-price-drop/) — 제3자 (원문 열어 봄. 인하 날짜의 출처)
 
 ### Firecrawl
 [<kbd>↑ 목차</kbd>](#목차) [<kbd>☰ 한눈에 보기</kbd>](#한눈에-보기) [<kbd>← NotebookLM</kbd>](#notebooklm-2026-07-16-부터-gemini-notebook) [<kbd>Higgsfield →</kbd>](#higgsfield)
@@ -909,7 +913,7 @@ MCP·커넥터가 무엇으로 과금되는지
 - **역할**: 게시
 - **한 줄**: 글·이미지·영상을 AI 로 만들고 9개 SNS 에 예약·게시하는 소셜 미디어 자동화 도구임. API·MCP 로 AI 에이전트가 직접 게시하게 하는 쪽을 앞세움
 - **클로드와 잇는 법**: 공식 MCP 서버 `https://mcp.blotato.com/mcp`(원격 호스팅, Streamable HTTP, 로컬 프로세스 없음) — claude.ai·Claude 데스크톱·Cowork 는 "사용자 지정 커넥터 추가"로 URL 을 넣고 **OAuth** 로 인증(브라우저에 Blotato 로그인 상태여야 함). Claude Code 는 연결 설정 도움말이 `claude mcp add --transport http blotato https://mcp.blotato.com/mcp` 뒤 `/mcp` 에서 브라우저 OAuth 를 먼저 안내하고, **API 키**를 `blotato-api-key` 헤더로 넣는 방법을 대안으로 둠. API keys·MCP FAQ 도움말은 "Claude.ai·데스크톱·Cowork 만 OAuth, 나머지는 API 키"라고 적어 도움말끼리 어긋남. Codex 는 CLI 의 OAuth 와 API 키(TOML) 두 길을 안내하고, Cursor·VS Code 는 API 키 헤더, 그 밖의 원격 클라이언트는 "되면 OAuth, 아니면 API 키 헤더"(키는 Settings › API 에서 복사, 끝의 `=` 까지 포함, 계정당 키 하나)(공식 도움말, 원문 열어 봄). 클로드 커넥터 디렉터리에는 없고 URL 로 추가하는 방식임(자사 블로그, 원문 열어 봄). **유료 구독이 있어야 API·MCP 를 쓸 수 있음** — 무료 체험 중에는 API 가 막히고, API 키를 만드는 순간 체험이 끝나고 Starter 유료 구독이 시작됨(공식 도움말, 원문 열어 봄). 호출 한도는 REST 라우트별 분당 한도이고 MCP 도구도 같은 라우트를 씀 — 게시 생성 30회/분, 게시 목록·상태 조회 60회/분, URL 로 미디어 올리기 30회/분 등(공식 도움말, 원문 열어 봄)
-- **확인한 날짜**: 2026-10-02
+- **확인한 날짜**: 2026-10-10
 
 #### 무료·유료와 이용 조건
 
@@ -918,7 +922,7 @@ MCP·커넥터가 무엇으로 과금되는지
 | 분류 | 체험만 무료 — 7일 체험 뒤 유료, 무료 등급 없음 |
 | 개인 이용 | 체험 7일만 무료임 |
 | 상업·업무 이용 | 유료 등급에서 됨. 약관(2026-05-18 개정)에 상업 이용을 막거나 등급별로 나누는 조항이 없고, 2조가 회사·단체 명의로 약관을 받아들이는 경우를 전제함. 가격표도 Agency 를 "여러 브랜드를 운영하는 에이전시·팀용"으로 둠 (공식, 원문 열어 봄) |
-| 생성물의 상업적 이용 | 확인 못 함 — 약관 원문을 열었으나 AI 생성물의 권리를 정한 조항이 없음. 8.1조가 "User Content 는 이용자 소유, Blotato 에 전 세계·영구·취소 불가·재허락 가능한 이용권 부여"만 정함. 도움말 전체에도 상업 이용·저작권 문구가 없음 (2026-10-02) |
+| 생성물의 상업적 이용 | 확인 못 함 — 약관 원문을 열었으나 AI 생성물의 권리를 정한 조항이 없음. 8.1조가 "User Content 는 이용자 소유, Blotato 에 전 세계·영구·취소 불가·재허락 가능한 이용권 부여"만 정함. 도움말 전체(llms-full.txt)를 commercial·copyright·ownership 으로 찾아도 상업 이용·저작권 문구가 없음 (2026-10-10) |
 
 - 이 절의 출처: [Terms of Service](https://www.blotato.com/terms-of-service) — 공식 (원문 열어 봄, 2026-05-18 개정판) · [Blotato Pricing](https://www.blotato.com/pricing) — 공식 (원문 열어 봄)
 
@@ -927,19 +931,21 @@ MCP·커넥터가 무엇으로 과금되는지
 
 | 등급 | 월 요금 | 연 결제 시 | 할 수 있는 것 · 한도 |
 |---|---|---|---|
-| 무료 체험 | $0 (7일) | — | 모든 등급에 7일 체험. API·MCP 를 뺀 모든 기능, AI 크레딧 60. 카드 없이 시작하는지는 확인 못 함 — 공식 원문에 그런 문장이 없고, 가격표 FAQ 는 "체험 뒤 가입한 요금제로 카드 청구"라고만 함 (2026-10-02) |
+| 무료 체험 | $0 (7일) | — | 모든 등급에 7일 체험. API·MCP 를 뺀 모든 기능, AI 크레딧 60. 카드가 있어야 시작함 — 체험이 끝나면 고른 요금제로 카드 청구, 그 전에 해지하면 청구 안 됨(자사 요금 카드 pricing.md "7 days, card required") |
 | Starter | $29 | 약 17% 할인 — "10개월 값으로 12개월"(공식 도움말). 연간 금액 숫자는 원문에 없음 | 연결 계정 20개, AI 크레딧 월 1,250, AI 글쓰기 무제한, ElevenLabs 음성, 활성 연락처(DM·댓글 답장) 월 1,000, 예약 대기 게시 200개, 업로드 파일 400 MB, TikTok 월 900게시까지·24시간에 서로 다른 TikTok 계정 3개까지, API·MCP 포함 |
 | Creator | $97 | 같음 | 연결 계정 40개, AI 크레딧 월 5,000, 활성 연락처 월 6,000, 예약 대기 게시 1,000개, 업로드 파일 1 GB, 빠른 영상 처리, 바이럴 게시물 DB 무제한 |
 | Agency | $499 | 같음 | 연결 계정 100개, AI 크레딧 월 28,000, 활성 연락처 월 15,000, 예약 대기 게시 3,000개, 업로드 파일 1 GB, 전용 영상 처리, 전용 지원 채널. 100개를 넘으면 앱 채팅으로 맞춤 계약 |
 
 - **연 결제**: 모든 등급에서 월 결제 대비 약 17%, "10개월 값을 내고 12개월"(공식 도움말). 가격표 페이지는 월 결제만 팔고, 연 결제는 가입 뒤 Billing Portal 의 Update subscription 에서 바꿈. 등급별 연간 금액은 원문에 숫자로 적혀 있지 않음
-- **예약·게시 한도**: 예약 범위는 모든 등급 9개월 앞까지. 게시 수 자체의 월 한도는 가격표에 없고 "게시당 요금 없음"만 적힘. Blotato 가 SNS 보다 엄격한 자체 상한을 둔다고 함 — Instagram 24시간 50개, Facebook 페이지당 24시간 25개, LinkedIn 프로필·회사 페이지당 50개, Pinterest 하루 10핀(자사 AI Info 페이지)
-- **AI 크레딧**: 이미지·영상 생성에만 쓰임. 게시·예약, API 호출, AI 음성(ElevenLabs), Viral AI Coach 에는 안 빠짐(모든 등급, 공식 도움말). 크레딧은 매달 이월됨(환불하면 이월 안 됨), 해지하면 그 결제 달이 끝날 때 사라짐 — 같은 도움말의 계정 삭제 절은 "해지하면 남은 크레딧이 바로 지워지고 예약 게시도 멈춤"이라 적어 한 페이지 안에서 어긋남. 추가 크레딧은 1,000개 $6.00. 실패한 생성에는 안 빠짐
+- **예약·게시 한도**: 예약 범위는 Billing & Credits 도움말 표가 모든 등급 9개월 앞까지, 자사 요금 카드 pricing.md(2026-09-10 기준)가 Starter 9개월 · Creator 1년 · Agency 2년이라 공식끼리 어긋남 — pricing.md 도 등급 한도의 출처를 그 도움말로 적으므로 도움말 쪽을 믿음. 게시 수 자체의 월 한도는 가격표에 없고 "게시당 요금 없음"만 적힘. Blotato 가 SNS 보다 엄격한 자체 상한을 둔다고 함 — Instagram 24시간 50개, Facebook 페이지당 24시간 25개, LinkedIn 프로필·회사 페이지당 50개, Pinterest 하루 10핀(자사 AI Info 페이지)
+- **AI 크레딧**: 이미지·영상 생성에만 쓰임. 게시·예약, API 호출, AI 음성(ElevenLabs), Viral AI Coach 에는 안 빠짐(모든 등급, 공식 도움말). 크레딧은 매달 이월됨(환불하면 이월 안 됨). 해지하면 결제 기간 끝까지 쓰고 그때 사라지며, 환불·즉시 해지면 바로 사라짐. 해지는 콘텐츠 삭제가 아니라 다시 구독하면 영상·게시·설정이 돌아옴(공식 도움말 — 지난번 같은 페이지 안의 어긋남은 풀림). 추가 크레딧은 1,000개 $6.00. 실패한 생성에는 안 빠짐
 - **모델별 차감**(공식 도움말): 이미지 1장 flux schnell 1 · flux dev 10 · luma photon 10 · nano-banana 15 · flux 1.1 pro 15 · recraft v3 15 · seedream v4.5 15 · flux 1.1 pro ultra 20 · gpt-image-1/2 25 · nano-banana-2 30 · ideogram v2 30 · nano-banana-pro 50. 영상 클립 framepack 55 · runway gen3 85 · luma dream machine·minimax 170 · kling v1.5/1.6 210 · veo3/fast 400 · veo2 835 · veo3 1,250, veo3.1 fast 는 초당 50(소리 있음)·35(소리 없음). 가장 싼 설정의 30초 영상이 7크레딧이라 Starter 로 178개라는 예시가 있음
-- **Replicate 키**: Creator·Agency 는 자기 Replicate API 키를 넣으면 AI 이미지를 무제한 생성함 — 비용은 Replicate 쪽 사용량 과금(공식 도움말)
+- **자기 API 키**: 예전에 Creator·Agency 가 자기 Replicate 키로 AI 이미지를 무제한 만들던 칸은 없어짐 — Settings › API 에 Replicate 키 칸이 더는 없다고 도움말이 적음. ElevenLabs 자기 키는 커스텀 음성용으로 남아 있음(공식 도움말)
+- **환불**: 약관 4.1조는 "약관·법이 정한 경우 말고는 환불 없음"인데, 가격표 FAQ 는 "제대로 안 되면 14일 안에 메일하면 바로잡아 줌"이라 적어 공식끼리 어긋남
+- 가격표 Creator 줄은 크레딧 용도를 "AI images, videos, voice" 로 적어 음성을 넣었으나, 도움말·pricing.md 는 ElevenLabs 음성에 크레딧이 안 든다고 함
 - **행사**: 가격표 FAQ 는 "지금 연 결제 시 AI 크레딧 +5,000($30 상당)과 무료 Claude Skills 5개"라고 적음. Current Promo 도움말은 "진행 중인 할인 코드 없음, BIRTHDAY2026 은 2026-09-01 종료"라 하고, 무료 Claude Skills 는 연 결제와 상관없는 7개 묶음으로 적음 — 두 공식 페이지가 어긋나므로 결제 전에 앱에서 확인할 것. Billing & Credits 도움말에는 Starter 전용 "$1 offer" 절도 있으나 누구에게 언제 주는지는 안 적음
 - **지원 플랫폼 9곳**: Instagram · TikTok · LinkedIn · Facebook · X(Twitter) · Threads · Bluesky · Pinterest · YouTube (공식, 원문 열어 봄). 분석은 LinkedIn 을 뺀 8곳, 댓글·DM 은 Instagram·Facebook 만(자사 AI Info)
-- MCP 도구 수는 자사 MCP 페이지·AI Info 가 36개, MCP FAQ 도움말이 35개라 어긋남
+- MCP 도구는 36개임(Tools 도움말·pricing.md·AI Info 공통. 지난번 35개라 적었던 MCP FAQ 에는 이제 개수 문장이 없음)
 
 #### 클로드로는 못 하는 것
 - SNS 계정에 실제로 게시·예약하는 것. 클로드는 글을 써 줄 수만 있고 Instagram·TikTok 등에 올리지 못함 — Blotato 가 9개 플랫폼의 공식 게시 API 를 대신 들고 있음
@@ -952,10 +958,13 @@ MCP·커넥터가 무엇으로 과금되는지
 #### 라이선스
 - 독점 SaaS 서비스임. 자체 서버에서 돌릴 라이선스는 없음(자사 AI Info, 원문 열어 봄)
 - 이용 약관(2026-05-18 개정, 원문 열어 봄): 사용자 콘텐츠의 소유권은 사용자에게 남지만, 올린 순간 Blotato 에 전 세계·비독점·무상·영구·취소 불가·완전 재허락 가능한 이용 허락을 주는 구조임. 서비스 운영 목적 한정("in connection with the Service")으로 적혀 있음. 분쟁은 개별 중재(30일 안에 거부 가능), 준거법은 미국 유타주
-- AI 생성물의 상업적 이용 권리를 등급별로 다르게 두는지는 확인 못 함 — 약관 원문에 AI 생성물 조항 자체가 없음. 생성에 쓰는 외부 모델(Kling·Runway·Veo 등) 제공사 약관이 따로 걸리는지도 확인 못 함 — Blotato 약관·도움말 어디에도 적혀 있지 않음 (2026-10-02)
+- AI 생성물의 상업적 이용 권리를 등급별로 다르게 두는지는 확인 못 함 — 약관 원문에 AI 생성물 조항 자체가 없음. 생성에 쓰는 외부 모델(Kling·Runway·Veo 등) 제공사 약관이 따로 걸리는지도 확인 못 함 — Blotato 약관 7조는 SNS·YouTube API 약관만 다루고 도움말 어디에도 적혀 있지 않음 (2026-10-10)
+- 공식 MCP 서버의 소스 저장소·라이선스는 확인 못 함 — 공식 문서에 저장소 링크가 없고 원격 호스팅만 안내함 (2026-10-10)
 
 #### 출처
 - [Blotato Pricing: Plans, Credits & Free Trial](https://www.blotato.com/pricing) — 공식 (원문 열어 봄)
+- [pricing.md — 자사가 기계 판독용으로 낸 요금 카드(2026-09-10 기준)](https://www.blotato.com/pricing.md) · [help.blotato.com/llms-full.txt — 도움말 전체](https://help.blotato.com/llms-full.txt) — 공식 (원문 열어 봄)
+- [MCP Tools | Blotato Help](https://help.blotato.com/start-with-an-ai-agent/mcp/tools) — 공식 (원문 열어 봄)
 - [Billing & Credits | Blotato Help](https://help.blotato.com/settings/billing-and-credits) — 공식 (원문 열어 봄)
 - [AI Video Credits | Blotato Help](https://help.blotato.com/web-app-features/videos/ai-video-credits) — 공식 (원문 열어 봄)
 - [Current Promo | Blotato Help](https://help.blotato.com/settings/current-promo) — 공식 (원문 열어 봄)

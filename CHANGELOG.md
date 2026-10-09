@@ -2,6 +2,23 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-10-10
+
+**매일 재확인 — NotebookLM · Blotato**
+
+- NotebookLM: 도움말 한도 표(제목 "Upgrade Gemini Notebook" → "Learn about Gemini Notebook's plans")에서 채팅·오디오·비디오 개요·보고서·Deep Research 의 일일 숫자가 빠지고 노트북 수·소스 수만 남음. 새 체계의 개수는 공식이 여전히 안 냄
+- NotebookLM: 소스를 처음 넣을 때 자동으로 만들어지는 보고서·슬라이드·오디오·비디오 개요 등은 한도에 안 듦
+- NotebookLM: Google AI Plus 에 연 결제 플랜이 있음(금액은 공식에 없음). 기존 Google One Premium 2TB 가입자용 "Google AI Plus 2 TB plan" 이 따로 있음
+- NotebookLM: 비디오 개요 형식이 Cinematic · Explainer · Short(약 60초) 셋이고 시네마틱은 18세 이상·영어만. 오디오 개요 대화형 모드는 영어만
+- NotebookLM: 유튜브 소스는 자막이 있는 공개 영상의 자막 텍스트만 가져옴 — 72시간 안 된 영상·자막 없는 영상은 실패할 수 있음
+- NotebookLM: gemini.google 의 Business 탭이 Gemini Enterprise Business($21/석/월부터)에도 Notebook for enterprise 가 들어 있다고 적음. 도움말의 포함 목록에는 Business 가 없어 공식끼리 갈림
+- Blotato: 7일 체험은 카드가 있어야 시작함("7 days, card required"). 지난번엔 확인 못 함이었음
+- Blotato: Creator·Agency 가 자기 Replicate 키로 AI 이미지를 무제한 만들던 칸이 Settings › API 에서 없어짐. ElevenLabs 자기 키는 남음
+- Blotato: 해지하면 크레딧은 결제 기간 끝에 사라지고 환불·즉시 해지면 바로 사라짐, 다시 구독하면 콘텐츠가 돌아옴 — 같은 도움말 안의 "해지하면 바로 지워짐"과의 어긋남이 풀림
+- Blotato: MCP 도구 수가 공식 세 곳 모두 36개로 맞춰짐(MCP FAQ 의 35개 문장이 빠짐)
+- Blotato: 예약 범위가 도움말 표는 모든 등급 9개월, 자사 요금 카드 pricing.md 는 9개월 · 1년 · 2년이라 공식끼리 갈림
+- Blotato: 환불은 약관이 "환불 없음(약관·법이 정한 경우 말고)", 가격표 FAQ 가 "14일 안에 메일하면 바로잡아 줌"이라 갈림
+
 ## 2026-10-09
 
 **매일 재확인 — Gemini · Higgsfield**

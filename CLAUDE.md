@@ -5,6 +5,7 @@
 ## 파일 지도
 - `TOOLS.md` — 사전 본문. 관계도 · 한눈에 보기 표 · 도구 항목. 이 저장소의 전부다
 - `CHANGELOG.md` — 조사 내용이 무엇에서 무엇으로 바뀌었는지 날짜별로. 동향을 따라가려는 것이라 페이지 모양은 안 적는다. 페이지 맨 위 `바뀐 것` 절이 된다. 아래 `갱신할 때`
+- `DESIGN.md` — 페이지 모양의 원본(Google DESIGN.md 형식 alpha). 색·글꼴·모서리·간격 토큰과 모양 규칙. 아래 `웹 페이지` 절
 - `NEXT.md` — 세션 끝에 남기는 3줄 (여기까지 됨 / 다음 할 것 / 막힌 것)
 - `.claude/skills/refresh/SKILL.md` — 항목을 공식 출처로 다시 확인하는 절차. 매일 도는 루틴과 `/refresh` 가 같이 쓴다. 옆의 `shot.mjs` 는 스크립트로 그리는 가격표를 헤드리스 크롬으로 찍는다
 - `README.md` — 영어·한국어 소개. 본문 내용을 옮겨 적지 않고 `TOOLS.md` 를 가리킨다
@@ -14,10 +15,11 @@
   - `atlas.tpl.html` — 페이지 틀. 색 · 글꼴 · 반응형 · 떠 있는 단추 · 스크롤 따라가는 목차 스크립트
   - `THIRD_PARTY_NOTICES.md` — 빌드에 쓰는 의존성과 페이지가 불러오는 글꼴·mermaid 의 라이선스. 셋 중 하나를 바꾸면 같이 고친다
   - `atlas.html` · `dist/index.html` — 생성물. 앞은 아티팩트용 조각, 뒤는 Pages 용 온전한 문서다. 커밋하지 않는다(`.gitignore`). 읽지 말고 틀을 읽는다
-- `.github/workflows/pages.yml` — main 에 `TOOLS.md`·`CHANGELOG.md`·`site/` 가 바뀌어 들어오면 `site/dist/` 를 만들어 GitHub Pages 에 올린다
+- `.github/workflows/pages.yml` — main 에 `TOOLS.md`·`CHANGELOG.md`·`DESIGN.md`·`site/` 가 바뀌어 들어오면 `DESIGN.md` 를 lint 하고 `site/dist/` 를 만들어 GitHub Pages 에 올린다
 
 ## 웹 페이지
 GitHub Pages https://ruminem.github.io/ai-crew-atlas/ 가 본판이다. main 에 푸시하면 `pages` 워크플로가 알아서 다시 올리므로 손으로 할 일이 없다.
+- **모양을 고칠 때는 `DESIGN.md` 부터 고친다.** 다른 세션·도구가 페이지 모양을 맞출 때 읽는 자리라서다. 색 토큰은 `atlas.tpl.html` 의 `:root`(밝음)·`[data-atlas-theme="dark"]`(어두움 — `DESIGN.md` 에서는 이름 끝에 `-dark`)에도 적혀 있고, 빌드가 둘의 이름·값을 대조해 하나라도 다르면 멈춘다. 그림자·글꼴·safe-area 변수는 색이 아니라 안 본다. 형식 검사는 `site` 에서 `npm run lint:design` 이고 워크플로도 돌린다 — 오류면 멈추고, 경고(대비 부족·컴포넌트가 안 쓰는 색)는 로그에만 남는다. `faint` 의 대비 경고(3.21:1 · 다크 3.87:1)는 곁 표시에만 쓰는 색이라 알고 둔 것이다
 - **워크플로는 저장소가 private 이면 잡을 건너뛴다.** 무료 요금제의 Pages 는 public 저장소에서만 켜지기 때문이다. 저장소 설정의 Pages 에서 Source 를 `GitHub Actions` 로 두어야 올라간다
 - 아티팩트 https://claude.ai/artifact/HswUSVDhrA1RkDQC18sq1Y 는 Pages 전에 쓰던 비공개 사본이다. 다시 올리는 것은 시켰을 때만 하고, 올릴 때는 `site/atlas.html` 을 `url` 에 위 주소를 넘겨 올린다 — 안 넘기면 새 주소가 생긴다
 - 빌드는 기대하는 개수(관계도 3 · 도구 10 · 절 머리 `↑ 목차` 줄 4 · 도구 단추 줄 10)가 안 맞으면 멈춘다. 도구를 넣거나 빼면 `build.mjs` 의 숫자도 같이 고친다 — 멈추는 것은 `TOOLS.md` 의 꼴이 바뀌어 페이지가 조용히 틀어지는 것을 막으려는 것이다

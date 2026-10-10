@@ -18,6 +18,27 @@ const tpl = fs.readFileSync(path.join(here, 'atlas.tpl.html'), 'utf8');
 const CHANGES_ID = '바뀐-것';
 const changelog = fs.readFileSync(path.join(root, 'CHANGELOG.md'), 'utf8');
 if (!/^# 바뀐 것\n/.test(changelog)) throw new Error('CHANGELOG.md 첫 줄이 "# 바뀐 것" 이 아님');
+// 색 토큰의 원본은 ../DESIGN.md 다. 틀의 :root(밝음)·[data-atlas-theme="dark"](어두움, DESIGN.md 에서는 -dark 꼬리)와
+// 이름·값이 하나라도 다르면 멈춘다 — 한쪽만 고치면 모양 문서가 조용히 거짓말이 된다. 그림자·글꼴·safe-area 는 색이 아니라 안 본다
+{
+  const design = fs.readFileSync(path.join(root, 'DESIGN.md'), 'utf8');
+  const block = design.match(/^colors:\n((?: {2}.+\n)+)/m);
+  if (!block) throw new Error('DESIGN.md 머리에 colors: 블록이 없음');
+  const norm = (v) => v.replace(/\s+/g, '').toLowerCase();
+  const want = new Map([...block[1].matchAll(/^ {2}([\w-]+): "?([^"\n]+)"?$/gm)].map((m) => [m[1], norm(m[2])]));
+  const got = new Map();
+  for (const [sel, tail] of [[':root {', ''], [':root[data-atlas-theme="dark"] {', '-dark']]) {
+    const at = tpl.indexOf(`\n${sel}\n`);
+    if (at < 0) throw new Error(`틀에 ${sel} 블록이 없음`);
+    const body = tpl.slice(at, tpl.indexOf('\n}', at + 1));
+    for (const m of body.matchAll(/^ {2}--([\w-]+): ([^;]+);/gm)) {
+      if (/^(shadow|safe-|f-)/.test(m[1])) continue;
+      got.set(m[1] + tail, norm(m[2]));
+    }
+  }
+  const diff = [...new Set([...want.keys(), ...got.keys()])].filter((k) => want.get(k) !== got.get(k));
+  if (diff.length) throw new Error(`DESIGN.md 와 틀의 색이 다름: ${diff.map((k) => `${k} ${want.get(k) ?? '없음'} ≠ ${got.get(k) ?? '없음'}`).join(' · ')}`);
+}
 const FIRST = '\n## 읽는 법\n';
 if (!md.includes(FIRST)) throw new Error('TOOLS.md 에 "## 읽는 법" 절이 없음');
 const at = md.indexOf(FIRST);

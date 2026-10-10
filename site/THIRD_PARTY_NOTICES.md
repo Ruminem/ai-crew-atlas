@@ -6,6 +6,7 @@
 |---|---|---|---|
 | marked | 18.0.14 | MIT (includes John Gruber's Markdown notice, BSD-3-Clause) | https://github.com/markedjs/marked |
 | github-slugger | 2.0.0 | ISC | https://github.com/Flet/github-slugger |
+| @google/design.md | 0.4.0 | Apache-2.0 (dev only: lints `../DESIGN.md`; its 92 transitive packages are MIT or ISC) | https://github.com/google-labs-code/design.md |
 
 The full license texts ship with each package in `node_modules/<package>/LICENSE`.
 

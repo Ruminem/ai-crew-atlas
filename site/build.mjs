@@ -48,9 +48,11 @@ function expect(name, got, want) {
 
 // 역할은 TOOLS.md 목차의 "  - 조사: [Perplexity](#perplexity) · …" 줄에서 앵커 단위로 읽는다
 const roleOf = {};
+// 바뀐 것의 도구 라벨(**Claude**)을 역할 색 칩으로 칠할 때 이름으로 찾는다
+const roleByName = {};
 for (const m of md.matchAll(/^ {2}- (\S+): (.+)$/gm)) {
   if (!ROLE_CLASS[m[1]]) continue;
-  for (const a of m[2].matchAll(/\]\(#([^)]+)\)/g)) roleOf[a[1]] = m[1];
+  for (const a of m[2].matchAll(/\[([^\]]+)\]\(#([^)]+)\)/g)) { roleOf[a[2]] = m[1]; roleByName[a[1]] = m[1]; }
 }
 expect('목차에서 읽은 도구', Object.keys(roleOf).length, 12);
 
@@ -83,12 +85,17 @@ let buf = [];
 let inChanges = false;
 let changeDates = 0;
 let inTools = false;
+let toolLabels = 0;
 let tools = 0;
 const topicCount = TOPICS.map(() => 0);
 
 const flush = () => {
   if (!buf.length) return;
-  out.push(marked.parser(Object.assign(buf, { links: tokens.links })));
+  let h = marked.parser(Object.assign(buf, { links: tokens.links }));
+  // 바뀐 것 안에서 도구 이름 하나만 굵게 쓴 줄은 도구 라벨이다. 같은 굵기의 하루 묶음 제목과 갈리게 역할 색 칩으로 그린다
+  if (inChanges) h = h.replace(/<p><strong>([^<]+)<\/strong><\/p>/g, (m, name) =>
+    roleByName[name] ? (toolLabels++, `<p class="tool-lbl"><span class="chip r-${ROLE_CLASS[roleByName[name]]}">${name}</span></p>`) : m);
+  out.push(h);
   buf = [];
 };
 
@@ -131,6 +138,8 @@ for (const tok of tokens) {
 flush();
 while (open.length) { out.push('</div></section>\n'); open.pop(); }
 expect('관계도', diagrams, 3);
+// 마크다운의 도구 라벨 줄이 다 칩이 됐는지 센다 — 이름이 목차와 다르면(오타·별칭) 조용히 굵은 글씨로 남는다
+expect('바뀐 것의 도구 라벨 칩', toolLabels, (changelog.match(/^\*\*([^*]+)\*\*$/gm) ?? []).filter((l) => roleByName[l.slice(2, -2)]).length);
 expect('바뀐 것 절', toc.filter((t) => t.id === CHANGES_ID).length, 1);
 if (toc[0].id !== CHANGES_ID) throw new Error(`첫 번호 절이 바뀐 것이 아니라 ${toc[0].id}`);
 expect('바뀐 것의 날짜 절', changeDates, (changelog.match(/^## /gm) ?? []).length);

@@ -139,6 +139,8 @@ flush();
 while (open.length) { out.push('</div></section>\n'); open.pop(); }
 expect('관계도', diagrams, 3);
 // 마크다운의 도구 라벨 줄이 다 칩이 됐는지 센다 — 이름이 목차와 다르면(오타·별칭) 조용히 굵은 글씨로 남는다
+// 번호 항목은 `① **제목** — 내용` 꼴이다. 제목이 빠진 줄은 페이지에서 긴 문장 하나로 남는다
+expect('바뀐 것의 제목 없는 항목', (changelog.match(/^[①-⑳](?! \*\*[^*]+\*\*( — |$))/gm) ?? []).length, 0);
 expect('바뀐 것의 도구 라벨 칩', toolLabels, (changelog.match(/^\*\*([^*]+)\*\*$/gm) ?? []).filter((l) => roleByName[l.slice(2, -2)]).length);
 expect('바뀐 것 절', toc.filter((t) => t.id === CHANGES_ID).length, 1);
 if (toc[0].id !== CHANGES_ID) throw new Error(`첫 번호 절이 바뀐 것이 아니라 ${toc[0].id}`);

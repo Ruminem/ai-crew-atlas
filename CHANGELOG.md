@@ -2,6 +2,15 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-10-11
+
+**매일 재확인 — Claude · Notion**
+
+- Claude: 가격표가 Claude Design·Slides·Docs 를 Free 에도 "Yes" 로 적음 — 지난번엔 Pro 부터라 릴리스 노트와 어긋났음. Enterprise 는 2026-10-15 부터 기본 켜짐
+- Claude: Max·Team 에 월 API 크레딧이 붙음(2026-10-07) — Max 5x $100 · Max 20x $200 · Team 은 Standard 좌석당 $20 · Premium 좌석당 $100 을 모아 월 $500 까지. Free·Pro·Enterprise 는 없음. 기준선의 "구독으로 API 못 씀"은 Free·Pro·Enterprise 만 맞게 됨
+- Claude: Claude Dashboards(베타, Pro 이상)와 Claude Motion(베타, Team·Enterprise) 이 가격표에 생김. Motion 도움말이 "영상 생성 모델을 쓰지 않아 사실적인 영상은 못 만든다"고 적어 기준선의 영상 생성 칸이 추정에서 공식 문장으로 바뀜
+- Notion: 요금·약관은 그대로. 지난 확인에서 빠졌던 릴리스 — Workers 베타(07-24, 베타 동안 무료 체험), AI Meeting Notes 가 Custom Agents 트리거(07-31), 3.7 에서 팀 스킬을 SKILL.md 로 Claude Code 등에 내려받기·Notion Agent 의 사용자 지정 MCP 연결 베타·Agent SDK 공개 베타(09-15)
+
 ## 2026-10-10
 
 **매일 재확인 — NotebookLM · Blotato**

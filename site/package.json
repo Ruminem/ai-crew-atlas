@@ -6,7 +6,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "build": "node build.mjs",
-    "lint:design": "design.md lint ../DESIGN.md"
+    "lint:design": "designmd lint ../DESIGN.md"
   },
   "dependencies": {
     "github-slugger": "2.0.0",

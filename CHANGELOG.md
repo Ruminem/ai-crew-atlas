@@ -2,6 +2,32 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-10-13
+
+**매일 재확인 — ChatGPT · Grok**
+
+**ChatGPT**
+
+① **채팅에 GPT-6 배포** — 지난번엔 GPT-6 Sol·Luna 가 Work·Codex 에만 있고 채팅에는 없었음. 도움말이 "GPT-6 is rolling out in Chat" 이라 적고, Plus·Pro·Business·Enterprise 모델 메뉴에서 GPT-6 가 Latest 를 대신함(GPT-6 Sol 이 Instant–Extra High, GPT-6 Pro 가 Pro). GPT-5.6 Sol 은 직접 고를 때만 씀
+
+② **Pro $500 에 6.1 Sol Ultrafast** — 2026-10-08 부터 GPT-6 Astra Ultrafast 에 더해 GPT-6.1 Sol Ultrafast 도 Pro $500 과 일부 Enterprise·Edu 에서 씀
+
+③ **MCP 서버 제거일 2026-09-05** — 제3자 서술 2026-09-09 대신 공식 changelog 가 2026-09-05 에 `codex mcp-server` 를 없앴다고 적음. 연동은 실험 단계인 `codex app-server` 로 하라고 함
+
+④ **놓쳤던 등급별 한도** — 음성은 Free GPT-Live-1 mini 제한 · Go mini 3시간 · Plus GPT-Live-1 3시간, 에이전트 모드는 Plus 월 40회 · Pro 400회
+
+**Grok**
+
+① **번들 구독 신설** — 소비자 약관이 2026-10-12 판으로 바뀌며 번들 구독 절이 생김. 번들 판매는 X Subscription Corp. 가 맡고 Cursor 가 묶음에 들어감. 그쪽 약관은 생성물을 사용자에게 명시적으로 양도함. 번들 금액은 공식 도움말이 404 라 모름
+
+② **회사 약칭 SpaceXSI** — 약관·가격표가 회사를 "SpaceXSI" 로 부름. 법인명은 SpaceXAI LLC 그대로
+
+③ **가격표 모델 Grok 4.7** — SuperGrok 카드 "Grok 4.6 model" → "Grok 4.7 model", 비교표는 Free 를 포함한 모든 열에 Grok 4.7. grok.com 구독 화면은 아직 4.6
+
+④ **Imagine API 단가 해상도별** — 장·초당 한 값이던 표가 해상도·품질별로 나뉨(image-2.0 $0.04–$0.08/장, video-1.5 480p $0.08 · 720p $0.14 · 1080p $0.25/초). 지난 값은 각 최저 칸과 같음
+
+⑤ **X Premium 금액 공식 확인** — 미국 웹가 Premium $8/월 · $84/년, Premium+ $40/월 · $395/년(SuperGrok·Grok Bot 포함)
+
 ## 2026-10-12
 
 **매일 재확인 — Firecrawl · Obsidian**

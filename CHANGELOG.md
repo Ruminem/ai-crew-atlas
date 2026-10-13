@@ -28,6 +28,26 @@
 
 ⑤ **X Premium 금액 공식 확인** — 미국 웹가 Premium $8/월 · $84/년, Premium+ $40/월 · $395/년(SuperGrok·Grok Bot 포함)
 
+## 2026-10-12
+
+**매일 재확인 — Firecrawl · Obsidian**
+
+**Firecrawl**
+
+① **약관 개정** — 2024-11-05 판 → 2026-10-07 판. 상업 이용·환불 없음 조항은 그대로. Alexandria 제공자 데이터는 제공자별 약관(일반 조항 v2.0.0, 2026-09-21 시행)을 따르고 일부는 따로 받아들여야 열림
+
+② **Universal Scrape** — 2026-10-08 부터 `/scrape` 하나로 웹페이지·PDF·이미지·Word·스프레드시트·프레젠테이션과 Alexandria 제공자 데이터를 부름
+
+③ **Alexandria 200곳 넘음** — 제공자 100여 곳 → 200곳 넘게. 2026-10-06 판타지 스포츠 데이터 추가
+
+④ **MCP 도구 하나씩 늘어남** — 전체 도구 26 → 27개, 검색 전용 엔드포인트 8 → 9개(`firecrawl_gov_search`). claude.ai 커넥터 페이지는 아직 8개. npm `firecrawl-mcp` v3.27.3 → v3.29.1
+
+**Obsidian**
+
+① **REST API 플러그인 5.4.0** — Local REST API with MCP v5.3.1 → v5.4.0, 앱 1.13.1 이상 필요. 요금·약관은 그대로
+
+② **Sync regions 생김** — 2026-10-08 도움말: 원격 볼트를 다른 지역 서버로 옮길 수 있고 Headless 는 `--region` 으로 고름
+
 ## 2026-10-11
 
 **매일 재확인 — Claude · Notion**

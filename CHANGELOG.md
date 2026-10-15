@@ -2,6 +2,22 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-10-16
+
+**매일 재확인 — Gemini · Higgsfield**
+
+**Gemini**
+
+① **Gemini 4 Argon 추가** — 2026-10-13 부터 AI Pro·Ultra 가 Gemini 앱·AI Mode 에서 씀. Antigravity 에서 Argon 을 쓰는 것은 Ultra 만. Plus·무료 칸에는 없음
+
+② **Spark 가 Tasks in Gemini 로** — 기능 표·Google One 가격표·도움말 제목이 모두 Tasks in Gemini 로 바뀜. AI Pro·Ultra, 18세 이상 조건은 그대로이고 개인 계정만 됨
+
+③ **무료 칸 모델은 Flash-Lite** — gemini.google 가격표가 무료는 Flash-Lite, Plus 는 Flash(3.6 Flash)로 적음. Flash-Lite 로 그린 이미지는 Nano Banana 2 Lite
+
+④ **스킬이 Gems 를 대체** — 2026-09-30 공지. 개인 계정 Gems 는 2026-11 에 지원이 끝나고 스킬로 자동 이전, Workspace 는 2027-03. 실험 앱 Opal 도 닫음
+
+⑤ **Workspace 요금 금액 채움** — Business Starter $7 · Standard $14 · Plus $22(사용자당 월, 1년 약정 화면, r.jina.ai 경유), 새 고객 도입가 $5.60 · $9.80 · $11
+
 ## 2026-10-14
 
 **매일 재확인 — Perplexity · Jev**

@@ -200,7 +200,7 @@ flowchart LR
 | [Perplexity](#perplexity) | 조사 | 부분 무료 · **개인 무료 + 상업 유료** — Free·Pro·Max 이미지는 비상업 전용(공식 도움말), 약관 5.1 도 등급 구분 없이 비상업 전용(2026-01-23판), 업무는 Enterprise | Education Pro $10<br>Pro $20 (연 결제 $200/년)<br>Max $200 (연 결제 $2,000/년, 웹에서만)<br>Enterprise Pro $40/석 (연 결제 $400/석/년)<br>Enterprise Max $325/석 (연 결제 $3,250/석/년)<br>API 는 종량제 | 공식 MCP · 공식 CLI · API 과금 | 독점 (MCP 서버 MIT · CLI 표기 없음) | 2026-10-14 |
 | [NotebookLM](#notebooklm-2026-07-16-부터-gemini-notebook) | 조사 | 부분 무료 · 개인 무료 · 업무 이용을 막는 약관 조항 없음 · 생성물 소유권 주장 안 함(상업 이용 명시 문구는 없음, 한국은 이미지·영상 워터마크 강제) | Google AI Plus $4.99<br>Google AI Pro $19.99 (연 결제 $199.99/년)<br>Google AI Ultra 5× $99.99<br>Google AI Ultra 20× $199.99<br>Gemini Notebook Enterprise $9/라이선스 (최소 15개)<br>Workspace 는 그 요금에 포함 | 커뮤니티 MCP · 쿠키 | 독점 (커뮤니티 MCP MIT) | 2026-10-10 |
 | [Firecrawl](#firecrawl) | 수집 | 부분 무료 + 자체 호스팅 무료 · 자체 호스팅은 AGPL-3.0 조건으로 상업 이용 가능 · 클라우드 약관은 등급 구분 없이 "명시적 허락 없는 상업 이용" 금지 · 출력 권리 조항 없음 | Hobby $19 (연 결제 $16)<br>Standard $99 (연 결제 $83)<br>Growth $399 (연 결제 $333)<br>Scale $749 (연 결제 $599)<br>Enterprise 협의 | 공식 커넥터 + 공식 MCP | 본체 AGPL-3.0 · 클라우드 독점 · MCP 서버 MIT | 2026-10-12 |
-| [Higgsfield](#higgsfield) | 제작 | 부분 무료 · 가격표는 **Free 상업 이용 불포함**, 약관·도움말은 출력의 상업 이용을 제한 안 함(어긋남) · Free 는 워터마크 | Starter $19<br>Plus $59 (연 결제 $47)<br>Ultra $129 (연 결제 $99)<br>Team $79/좌석 (연 결제 $65)<br>Scale $215/좌석 (연 결제 $150)<br>Enterprise 영업 문의<br>위는 데스크톱·T1 지역 기준, 휴대폰 화면은 Basic $5 · Pro $29 · Max $79 | 공식 MCP (Claude Code 는 CLI) · 유료 등급만 | 독점 (CLI·스킬 MIT) | 2026-10-09 |
+| [Higgsfield](#higgsfield) | 제작 | 부분 무료 · 가격표는 **Free 상업 이용 불포함**, 약관·도움말은 출력의 상업 이용을 제한 안 함(어긋남) · Free 는 워터마크 | Starter $19<br>Plus $59 (연 결제 $47)<br>Ultra $129 (연 결제 $99)<br>Team $79/좌석 (연 결제 $65)<br>Scale $215/좌석 (연 결제 $150)<br>Enterprise 영업 문의<br>위는 데스크톱·T1 지역 기준, 휴대폰 화면은 Basic $5 · Pro $29 · Max $79 | 공식 MCP (Claude Code 는 CLI) · 유료 등급만 | 독점 (CLI·스킬 MIT) | 2026-10-16 |
 | [Blotato](#blotato) | 게시 | 체험만 무료(7일) · 업무 이용은 유료 등급 · 생성물 권리 확인 못 함 | Starter $29<br>Creator $97<br>Agency $499<br>연 결제는 약 17% 할인 (금액 표기 없음) | 공식 MCP · OAuth/API 키 · 유료 등급만 | 독점 | 2026-10-10 |
 | [Notion](#notion) | 기록 | 부분 무료 · 개인 무료 · 업무는 조직용 약관(MSA), Free 업무 이용을 막는 조항 없음 | Plus $12/멤버 (연 결제 $10)<br>Business $24/멤버 (연 결제 $20)<br>Enterprise 문의 | 공식 커넥터 · OAuth | 독점 (로컬 MCP 서버 MIT) | 2026-10-11 |
 | [Obsidian](#obsidian) | 기록 | 부분 무료 · 앱은 개인·업무 모두 무료(2025-02-20 부터) · Sync·Publish 만 유료 | 앱은 무료<br>Sync Standard $5 (연 결제 $4)<br>Sync Plus $10 (연 결제 $8)<br>Publish $10/사이트 (연 결제 $8)<br>Commercial license $50/사용자/년 (선택)<br>Catalyst 일회 $25 · $50 · $100 (선택 후원) | 커뮤니티 플러그인 MCP · 공식 CLI · 파일 | 독점 소프트웨어 (플러그인 MIT) | 2026-10-12 |
@@ -831,14 +831,14 @@ MCP·커넥터가 무엇으로 과금되는지
 
 - **역할**: 제작
 - **한 줄**: Kling·Veo·Sora·Seedance·Nano Banana 등 여러 회사의 영상·이미지 생성 모델을 크레딧 하나로 묶어 쓰게 하는 모음형 생성 플랫폼임. 자체 모델(Soul 등)과 캐릭터 학습 기능도 있음
-- **클로드와 잇는 법**: 공식 MCP 서버 `https://mcp.higgsfield.ai/mcp` — claude.ai·데스크톱에서 설정 › 커넥터 › 사용자 지정 커넥터로 URL 을 넣고 Higgsfield 계정으로 OAuth 승인함(API 키 불필요). Claude Code 는 MCP 주소 대신 에이전트가 **Higgsfield CLI**(`npm i -g @higgsfield/cli` → `higgsfield auth login`)와 스킬(`npx skills add higgsfield-ai/skills`)을 깔아 붙는 방식으로 안내됨(공식 도움말, 원문 열어 봄). **활성 유료 구독이 있어야 함**(공식 도움말, 원문 열어 봄). 신규 사용자는 카드 인증으로 MCP 3일 체험(MCP 전용 100크레딧)을 받을 수 있고, 해지하지 않으면 월 결제 Plus 로 갱신됨(공식 변경 기록 2026-08-22, 원문 열어 봄). 커넥터 디렉터리 등록 여부는 확인 못 함 — 도움말은 사용자 지정 커넥터로만 안내함. 별도 개발자 제품인 Higgsfield API(2026-09-16 출시, 모델별 건당 과금, 구독 크레딧과 별개)는 MCP 와 다름(공식 변경 기록·도움말)
-- **확인한 날짜**: 2026-10-09
+- **클로드와 잇는 법**: 공식 MCP 서버 `https://mcp.higgsfield.ai/mcp` — claude.ai·데스크톱에서 설정 › 커넥터 › 사용자 지정 커넥터로 URL 을 넣고 Higgsfield 계정으로 OAuth 승인함(API 키 불필요). Claude Code 는 MCP 주소 대신 에이전트가 **Higgsfield CLI**(`npm i -g @higgsfield/cli` → `higgsfield auth login`)와 스킬(`npx skills add higgsfield-ai/skills`)을 깔아 붙는 방식으로 안내됨(공식 도움말, 원문 열어 봄). **활성 유료 구독이 있어야 함**(공식 도움말, 원문 열어 봄). 신규 사용자는 카드 인증으로 MCP 3일 체험(MCP 전용 100크레딧)을 받을 수 있고, 해지하지 않으면 월 결제 Plus 로 갱신됨(공식 변경 기록 2026-08-22, 원문 열어 봄). 커넥터 디렉터리 등록 여부는 확인 못 함 — 도움말은 사용자 지정 커넥터로만 안내함. 별도 개발자 제품인 Higgsfield API(2026-09-16 출시, 모델별 건당 과금, 구독 크레딧과 별개)는 MCP 와 다름(공식 변경 기록·도움말). 2026-10-08 에 Claude 용 스킬 Katana 가 나옴 — 참조 사진(최대 5장)과 프리셋으로 편집 영상을 만들고 MCP 로 Higgsfield 모델을 부름(공식 변경 기록, 원문 열어 봄)
+- **확인한 날짜**: 2026-10-16
 
 #### 무료·유료와 이용 조건
 
 | 구분 | 조건 |
 |---|---|
-| 분류 | 부분 무료 — 다만 가격표 비교표의 Free 크레딧은 **0**, 비교표 머리는 "Limited use"라고만 적고 하루 한도의 양은 안 밝힘(헤드리스 스크린숏). 앞 확인 때 카드에 있던 "Limited daily credits" 문구는 2026-10-08 로그인 전 데스크톱·휴대폰 화면에 없음. 실제로 무료로 몇 번 생성되는지는 확인 못 함 — 가격표·도움말 어디에도 숫자가 없음 |
+| 분류 | 부분 무료 — 다만 가격표 비교표의 Free 크레딧은 **0**, 비교표 머리는 "Limited use"라고만 적고 하루 한도의 양은 안 밝힘(헤드리스 스크린숏). 앞 확인 때 카드에 있던 "Limited daily credits" 문구는 2026-10-08 로그인 전 데스크톱·휴대폰 화면에 없음. 실제로 무료로 몇 번 생성되는지는 확인 못 함 — 가격표·도움말 어디에도 숫자가 없음(2026-10-16). 기능 하나만은 숫자가 있음: AI Influencer 는 2026-10-03 부터 모든 이용자에게 무료 생성 5회(공식 변경 기록, 원문 열어 봄) |
 | 개인 이용 | Free 로 제한적으로 가능함 — "Limited use", 일부 모델만, 모든 생성물에 워터마크 (가격표·도움말, 원문 열어 봄) |
 | 상업·업무 이용 | **문서끼리 어긋남.** 가격표 비교표는 Commercial use 를 Free "Not included" · Starter·Plus·Ultra "Included"로 표시함. 반면 약관 4.4조와 도움말은 출력의 상업적 이용을 요금제와 묶지 않음 (모두 공식, 원문 열어 봄) |
 | 생성물의 상업적 이용 | 약관 4.4조: 입력·출력의 소유권을 주장하지 않고 출력의 상업적 이용을 제한하지 않음. 도움말 "Who owns my generations": 모든 이용자에 적용되고 따로 사는 상업 라이선스는 없음. 다만 **무료 계정은 모든 생성물에 보이는 워터마크**가 붙고 유료는 안 붙음(도움말). 가격표는 Free 를 상업 이용 불포함으로 표시하므로 **상업용이면 유료 등급으로 쓰는 쪽이 안전함** — 약관이 법적 효력이 있는 쪽이나 가격표와 어긋남이 남아 있음 |
@@ -851,19 +851,19 @@ MCP·커넥터가 무엇으로 과금되는지
 > 주의: **가격표는 보는 사람마다 다른 요금 세트를 보여 줌.** 가격표 페이지는 스크립트로 그려지고, 서버가 준 `hf-tier` 쿠키(T1·T2·T3)·기기(데스크톱/휴대폰)·A/B 실험에 따라 요금 세트를 골라 API 에서 받아 옴(페이지 스크립트와 API 원문을 열어 봄). 아래 값은 이 조사 컨테이너(API 가 국가를 US 로 보고 서버가 `hf-tier=T1` 을 줌)에서 헤드리스 브라우저로 그려 본 것임. 한국에서 어느 세트가 보이는지는 확인 못 함 — 국가별 등급 배정표가 공개돼 있지 않고, 쿠키를 바꿔도 서버가 다시 덮어씀.
 > 등급 이름: 데스크톱 기본 화면과 약관(2026-07-26, "Starter, Plus, Ultra")·MCP 체험 전환 등급(Plus)이 모두 **Starter/Plus/Ultra** 를 씀. **Basic/Pro/Max** 는 휴대폰 화면과 A/B 실험 쪽 세트에 남아 있음 — 제3자 글이 "8월에 Basic/Pro/Max 로 바뀌었다"고 적은 것은 이 세트를 본 것으로 보임(추정).
 
-**데스크톱 가격표 (T1 · 2026-10-08 그려 봄, 헤드리스 스크린숏 · 요금 API ps_a3)**
+**데스크톱 가격표 (T1 · 2026-10-16 그려 봄, 헤드리스 스크린숏 · 요금 API ps_a3)**
 
 | 등급 | 월 요금 | 연 결제 시 | 할 수 있는 것 · 한도 |
 |---|---|---|---|
 | Free | $0 | — | 크레딧 0(비교표 "Limited use"), 일부 모델만, 워터마크, 가격표상 상업 이용 불포함, 비교표상 영상 동시 작업 1개. MCP 불가 |
 | Starter | $19 | $19/월 (월 결제와 차이 없음) | 월 270크레딧. 영상 2·이미지 4개 동시 생성, 일부 모델·기능만(Seedance 는 2.0 Fast·2.0 Mini), Supercomputer 이용 가능. Unlimited 모델 없음. 카드의 무료 생성 AI Influencer 10회 · Ads Studio 10회(웹에서만) |
-| Plus | $59 | $47/월 ($564/년) | 월 1,200크레딧. 모든 모델·기능, 신기능 조기 이용, Unlimited 마켓플레이스. **월 결제와 연 결제의 카드가 다름** — 연 결제는 유료 동시 생성 제한 없음("Unlimited paid parallel generations")·Nano Banana 2·Kling 3.0 7일 Unlimited·Genjutsu 720p 무료 생성 3회, 월 결제는 영상 6·이미지 8개 동시 생성·Nano Banana 2 만 7일 Unlimited·Genjutsu 2회. 둘 다 AI Influencer 30회·Ads Studio 10회 무료 생성(웹에서만) |
-| Ultra | $129 | $99/월 ($1,188/년) | 월 3,000크레딧(6,000 $250 · 9,000 $375 선택지 — 월 결제는 첫 결제 $220 · $310 뒤 정가로 갱신, 연 결제 월 $193.50 · $270). 유료 동시 생성 제한 없음 + 크레딧당 단가 가장 낮음. 카드에 Nano Banana Pro·Nano Banana 2 7일 Unlimited, 연 결제는 Kling 3.0 도. Genjutsu 720p 무료 생성 연 결제 3회 · 월 결제 2회, AI Influencer 30회·Ads Studio 10회(웹에서만) |
-| Team (좌석제) | $79/좌석 | $65/좌석/월 | 좌석당 1,000크레딧이 공용 잔액으로 합쳐짐, 2–9명, 공유 작업 공간, 표준 대기열. 카드에 Nano Banana Pro·Seedream 5.0 Pro 7일 Unlimited(Kling 3.0 없음)와 구매일부터 14일 Unlimited Seedance 2.0(15초·720p, 사업자 인증 필요) — 같은 화면의 띠는 Team 도 30일이라고 적어 어긋남 |
-| Scale (좌석제) | $215/좌석 | $150/좌석/월 | 좌석당 2,500크레딧 공용, 5–15명, 우선 대기열, SSO, 멤버별 사용 한도. 2026-09-03 부터 새 구독에 7일 Unlimited 모델(Nano Banana Pro·Seedream 5.0 Pro, 연 결제는 Kling 3.0 도). 카드에 구매일부터 30일 Unlimited Seedance 2.5(25초·720p, 사업자 인증 필요) |
+| Plus | $59 | $47/월 ($564/년) | 월 1,200크레딧. 모든 모델·기능, 신기능 조기 이용, Unlimited 마켓플레이스. **월 결제와 연 결제의 카드가 다름** — 연 결제는 유료 동시 생성 제한 없음("Unlimited paid parallel generations")·Nano Banana 2·Kling 3.0·Wan 3.0(3.0 Prime 포함) 7일 Unlimited·Genjutsu 720p 무료 생성 3회, 월 결제는 영상 6·이미지 8개 동시 생성·Nano Banana 2·Wan 3.0 7일 Unlimited·Genjutsu 2회. Wan 3.0 은 2026-10-13 부터의 행사임(공식 변경 기록). 둘 다 AI Influencer 30회·Ads Studio 10회 무료 생성(웹에서만) |
+| Ultra | $129 | $99/월 ($1,188/년) | 월 3,000크레딧(6,000 $250 · 9,000 $375 선택지 — 월 결제는 첫 결제 $220 · $310 뒤 정가로 갱신, 연 결제 월 $193.50 · $270). 유료 동시 생성 제한 없음 + 크레딧당 단가 가장 낮음. 카드에 Nano Banana Pro·Nano Banana 2·Wan 3.0(3.0 Prime 포함, 2026-10-13 부터 행사) 7일 Unlimited, 연 결제는 Kling 3.0 도. Genjutsu 720p 무료 생성 연 결제 3회 · 월 결제 2회, AI Influencer 30회·Ads Studio 10회(웹에서만) |
+| Team (좌석제) | $79/좌석 | $65/좌석/월 | 좌석당 1,000크레딧이 공용 잔액으로 합쳐짐, 2–9명, 공유 작업 공간, 표준 대기열. 카드에 Nano Banana Pro·Seedream 5.0 Pro 7일 Unlimited(Kling 3.0 없음)와 구매일부터 Unlimited Seedance 2.0(15초·720p, 사업자 인증 필요) — 연 결제 14일 · 월 결제 7일. 띠 머리는 "30일"이라고 크게 적지만 띠 본문은 Team 을 14일·7일로 가름 |
+| Scale (좌석제) | $215/좌석 | $150/좌석/월 | 좌석당 2,500크레딧 공용, 5–15명, 우선 대기열, SSO, 멤버별 사용 한도. 2026-09-03 부터 새 구독에 7일 Unlimited 모델(Nano Banana Pro·Seedream 5.0 Pro, 연 결제는 Kling 3.0 도). 카드에 구매일부터 Unlimited Seedance 2.5(25초·720p, 사업자 인증 필요) — 연 결제 30일 · 월 결제 7일 |
 | Enterprise | 영업 문의 | 영업 문의 | 좌석·크레딧 맞춤, 전용 용량(SLA), 입력·출력을 학습에 안 씀, IP 면책 |
 
-- 2026-10-08 행사: 개인 등급 띠에 "Ultra 7일 Nano Banana 2·Pro Unlimited + 특별 30% 할인"(할인 금액은 화면에 없어 확인 못 함), 연 결제 토글에 "30% OFF", 기업 등급 띠에 "Team·Scale 30일 Unlimited Seedance 2.5/2.0, 최대 30% 할인". 9-30 까지의 Plus·Ultra 보너스 크레딧 행사는 끝남. 요금 API 에는 월 결제 Team 첫 달 $69(갱신 $79), Scale $169.01(갱신도 $169.01)도 있음 — 기업 등급 월 결제 화면은 헤드리스로 토글이 안 눌려 확인 못 함(2026-10-09), 표에는 정가를 적음
+- 2026-10-08 부터의 행사(10-16 에도 있음): 개인 등급 띠에 "Ultra 7일 Nano Banana 2·Pro Unlimited + 특별 30% 할인"(할인 금액은 화면·요금 API 어디에도 없어 확인 못 함, 2026-10-16), 맨 위 띠에 "가입하면 추가 할인 · Nano Banana Pro·Nano Banana 2·Kling 3.0 Unlimited", 연 결제 토글에 "30% OFF", 기업 등급 띠에 "Team·Scale Unlimited Seedance 2.5/2.0, 최대 30% 할인" — 기간은 Scale 연 결제 30일(2.5) · Scale 월 결제 7일(2.5) · Team 연 결제 14일(2.0) · Team 월 결제 7일(2.0). 9-30 까지의 Plus·Ultra 보너스 크레딧 행사는 끝남. 기업 등급 월 결제 화면(2026-10-16 헤드리스 스크린숏): Team 은 첫 달 $69/좌석 뒤 $79 로 갱신, Scale 은 $169/좌석이고 갱신도 $169 라 정가 $215 는 줄 그은 값으로만 보임(요금 API 값은 $169.01). 표에는 정가를 적음
 - 가격에 부가세·지역 세금은 빠져 있고 결제 때 붙음(가격표)
 
 **휴대폰 화면·실험 세트 (2026-10-08 휴대폰 화면으로 그려 봄, 헤드리스 스크린숏 · 요금 API max_v2)** — 휴대폰으로 열면 T1 이어도 다른 세트가 뜸
@@ -878,7 +878,7 @@ MCP·커넥터가 무엇으로 과금되는지
 - A/B 실험 세트(요금 API `max_v1`·`max_v3`)는 Basic 이 **$9 / 120크레딧**이고 Pro·Max 는 위와 같음. 앞 조사의 "Basic $9" 는 이 세트 값임. 이 컨테이너가 받은 화면에는 안 나옴
 - T2 지역 세트(요금 API `default`)는 Starter $15/200 · Plus $49/1,000(연 결제 $39/월) · Ultra $129/3,000 임. 어느 나라가 T2 인지는 확인 못 함
 - 공식 도움말: 등급마다 **쓸 수 있는 모델 · 월 크레딧 · 동시 생성 수**가 다름. 구독 크레딧은 이월되지 않고 갱신 때 사라짐(연 결제는 30일마다 채워짐). 자동 갱신되고 언제든 해지할 수 있으며 해지해도 그 기간 끝까지 씀
-- 크레딧 팩: 고정 100·200·500·1,000·2,000·4,000 또는 5,000–25,000(1,000 단위). **값은 결제 화면에만 표시돼 확인 못 함.** 활성 구독이 있어야 사고, 90일 유효, 해지해도 남음, 쓰지 않았으면 7일 안에 환불, 수수료 최대 6%(공식 도움말)
+- 크레딧 팩: 고정 100·200·500·1,000·2,000·4,000 또는 5,000–25,000(1,000 단위). **값은 결제 화면에만 표시돼 확인 못 함 (2026-10-16, 도움말이 "shown at checkout" 이라고만 함).** 해지 뒤 남은 팩 크레딧은 Free 등급이 쓸 수 있는 모델에 쓸 수 있고, 구독 크레딧을 먼저 쓴 뒤 만료가 가까운 것부터 빠짐. 활성 구독이 있어야 사고, 90일 유효, 해지해도 남음, 쓰지 않았으면 7일 안에 환불, 수수료 최대 6%(공식 도움말)
 - "Unlimited 모델"(특정 모델을 기간 동안 크레딧 차감 없이 쓰는 혜택)은 중간 이상 등급에 붙고 등급 카드에 모델과 기간이 적힘. **웹(higgsfield.ai)에서 손으로 만들 때만 적용되고 MCP·CLI·Canvas·Supercomputer 로 만든 것은 항상 정가로 크레딧이 빠짐**(가격표·공식 도움말, 원문 열어 봄). Unlimited 생성은 표준 대기열, 크레딧 생성은 우선 대기열. 2026년 7월의 "Unlimited MCP" 는 신규 사용자 24시간 체험으로 7월 31일에 끝난 행사였음(자사 블로그)
 
 **크레딧당 생성량 대표 예시** (가격표 비교표, 원문 열어 봄 — 실제 값은 생성 버튼에 표시됨)
@@ -886,7 +886,8 @@ MCP·커넥터가 무엇으로 과금되는지
 | 모델 | 크레딧 | 비고 |
 |---|---|---|
 | Nano Banana Pro (이미지) | 1장 2 / 4K 4 | Nano Banana 2 도 2 |
-| Seedance 2.0 (영상) | 5초 720p 약 22 · 1080p 약 45 · 4K 약 110 | 2.0 Fast 720p 5초 약 12 |
+| Seedance 2.0 (영상) | 5초 720p 약 22 · 1080p 약 60 · 4K 약 110 | 2.0 Fast 720p 5초 약 12 |
+| Wan 3.0 (영상) | 5초 480p 5 · 720p 8.75 · 1080p 17.5 | Wan 3.0 Prime 7.5 · 15 · 30 |
 | Kling 3.0 (영상) | 5초 720p 약 7 · 1080p 약 8 · 4K 약 30 | 가격표 추천 도구는 8초 720p 약 14 로 계산함 |
 | Sora 2 (영상) | 4초 720p 약 10 | Sora 2 Pro 4초 720p 약 30 · 1080p 약 50 |
 | Veo 3.1 (영상) | 4초 720p·1080p 약 40 | Veo 3.1 Fast 4초 약 16 |
@@ -919,7 +920,7 @@ MCP·커넥터가 무엇으로 과금되는지
 - [Who Owns Your Higgsfield Generations](https://higgsfield.ai/creator-hub/help-center/account/who-owns-my-generations-and-can-i-use-them-commercially) — 공식 (원문 열어 봄)
 - [Why Is There a Watermark on Higgsfield](https://higgsfield.ai/creator-hub/help-center/credits/watermark-and-how-to-remove) — 공식 (원문 열어 봄)
 - [Terms of Use Agreement](https://higgsfield.ai/terms-of-use-agreement) — 공식 (원문 열어 봄, 2026-07-26 개정판)
-- [Changelog — Higgsfield](https://higgsfield.ai/creator-hub/changelog) — 공식 (원문 열어 봄, MCP 3일 체험·Scale 개편·Higgsfield API 출시)
+- [Changelog — Higgsfield](https://higgsfield.ai/creator-hub/changelog) — 공식 (원문 열어 봄, MCP 3일 체험·Scale 개편·Higgsfield API 출시·AI Influencer 무료 5회·Katana·Wan 3.0 행사)
 - [@higgsfield/cli — npm](https://www.npmjs.com/package/@higgsfield/cli) — 공식 (레지스트리 원문 열어 봄, MIT)
 - [higgsfield-ai/skills LICENSE](https://raw.githubusercontent.com/higgsfield-ai/skills/main/LICENSE) — 공식 (원문 열어 봄, MIT)
 - [Higgsfield MCP](https://higgsfield.ai/mcp) — 자사 홍보

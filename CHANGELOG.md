@@ -18,6 +18,20 @@
 
 ⑤ **Workspace 요금 금액 채움** — Business Starter $7 · Standard $14 · Plus $22(사용자당 월, 1년 약정 화면, r.jina.ai 경유), 새 고객 도입가 $5.60 · $9.80 · $11
 
+**Higgsfield**
+
+① **Plus·Ultra 에 Wan 3.0 Unlimited** — 2026-10-13 부터 Plus·Ultra 카드에 Wan 3.0·3.0 Prime 7일 Unlimited 가 붙음(월·연 결제 모두, 행사)
+
+② **Seedance 2.0 1080p 단가 오름** — 가격표 비교표의 5초 1080p 가 약 45 → 약 60크레딧
+
+③ **기업 월 결제가 처음 확인** — Team 첫 달 $69/좌석 뒤 $79, Scale 은 $169/좌석이고 갱신도 $169(정가 $215 는 줄 그은 값)
+
+④ **Team·Scale Seedance 기간 갈림** — Unlimited Seedance 가 Team 연 결제 14일 · 월 결제 7일, Scale 연 결제 30일 · 월 결제 7일로 적힘
+
+⑤ **AI Influencer 무료 5회** — 2026-10-03 부터 모든 이용자에게 줌. 무료 생성 횟수로는 첫 공식 숫자지만 이 기능 하나만
+
+⑥ **Claude 용 스킬 Katana** — 2026-10-08 출시. 참조 사진으로 편집 영상을 만들고 MCP 로 Higgsfield 모델을 부름
+
 ## 2026-10-14
 
 **매일 재확인 — Perplexity · Jev**

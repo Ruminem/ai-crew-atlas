@@ -2,6 +2,34 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-10-17
+
+**매일 재확인 — NotebookLM · Blotato**
+
+**NotebookLM**
+
+① **영상 공동 제작은 Ultra만** — 제작 노트를 먼저 받아 고친 뒤 렌더링하는 비디오 개요 공동 제작은 Google AI Ultra 가입자만 됨(도움말)
+
+② **채팅이 다른 앱 연결** — Gemini Notebook 채팅에 Connected apps(웹만)가 생김. 앱마다 켜고 노트북마다 끔. 공개 도움말에 앱 목록은 없음
+
+③ **고급 공유는 유료만** — 요금제 표에 고급 공유는 유료 등급만, 모델 접근 Access/Higher/Highest, 새 기능 먼저 쓰기 Standard/Early/Priority 가 있음
+
+④ **오디오 개요 형식 넷** — Deep Dive · Brief(한 사람, 2분 안) · Critique · Debate, 80개 넘는 언어. Longer 길이는 영어만
+
+⑤ **MCP notebook 은 별개** — Google Cloud MCP 목록의 `notebook` 엔드포인트는 Colab Enterprise → Agent Platform 노트북 런타임 툴셋으로 고쳐 적음. Gemini Notebook 공식 MCP 는 여전히 없음
+
+**Blotato**
+
+① **MCP 도구 32개로** — 36개 → 32개(Tools 도움말). pricing.md·AI Info 는 아직 36개라 적음
+
+② **MCP 로 이미지·영상 생성 안 됨** — "MCP 로 생성도 부를 수 있음" → 웹 앱·REST 로만 되고 MCP 는 게시·예약·댓글·DM 용(MCP FAQ)
+
+③ **플랫폼별 게시 상한 공식화** — AI Info 의 4개 플랫폼 → 도움말 기준으로 TikTok 25 · YouTube 10/25 · Pinterest 조회수별 10/20/50 더함. 가격표의 TikTok 월 900 은 허용량이 아니라 홍보 숫자
+
+④ **OAuth 안내 어긋남 바뀜** — MCP FAQ 는 이제 클라이언트마다 다르다고만 적음. API keys 도움말만 Claude Code 는 API 키라 적음
+
+⑤ **Team·Enterprise 는 관리자만 추가** — Claude Team·Enterprise 에서는 사용자 지정 커넥터를 워크스페이스 관리자만 넣을 수 있음(MCP FAQ)
+
 ## 2026-10-16
 
 **매일 재확인 — Gemini · Higgsfield**

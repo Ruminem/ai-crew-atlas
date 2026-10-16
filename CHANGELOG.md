@@ -2,6 +2,36 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-10-16
+
+**매일 재확인 — Gemini · Higgsfield**
+
+**Gemini**
+
+① **Gemini 4 Argon 추가** — 2026-10-13 부터 AI Pro·Ultra 가 Gemini 앱·AI Mode 에서 씀. Antigravity 에서 Argon 을 쓰는 것은 Ultra 만. Plus·무료 칸에는 없음
+
+② **Spark 가 Tasks in Gemini 로** — 기능 표·Google One 가격표·도움말 제목이 모두 Tasks in Gemini 로 바뀜. AI Pro·Ultra, 18세 이상 조건은 그대로이고 개인 계정만 됨
+
+③ **무료 칸 모델은 Flash-Lite** — gemini.google 가격표가 무료는 Flash-Lite, Plus 는 Flash(3.6 Flash)로 적음. Flash-Lite 로 그린 이미지는 Nano Banana 2 Lite
+
+④ **스킬이 Gems 를 대체** — 2026-09-30 공지. 개인 계정 Gems 는 2026-11 에 지원이 끝나고 스킬로 자동 이전, Workspace 는 2027-03. 실험 앱 Opal 도 닫음
+
+⑤ **Workspace 요금 금액 채움** — Business Starter $7 · Standard $14 · Plus $22(사용자당 월, 1년 약정 화면, r.jina.ai 경유), 새 고객 도입가 $5.60 · $9.80 · $11
+
+**Higgsfield**
+
+① **Plus·Ultra 에 Wan 3.0 Unlimited** — 2026-10-13 부터 Plus·Ultra 카드에 Wan 3.0·3.0 Prime 7일 Unlimited 가 붙음(월·연 결제 모두, 행사)
+
+② **Seedance 2.0 1080p 단가 오름** — 가격표 비교표의 5초 1080p 가 약 45 → 약 60크레딧
+
+③ **기업 월 결제가 처음 확인** — Team 첫 달 $69/좌석 뒤 $79, Scale 은 $169/좌석이고 갱신도 $169(정가 $215 는 줄 그은 값)
+
+④ **Team·Scale Seedance 기간 갈림** — Unlimited Seedance 가 Team 연 결제 14일 · 월 결제 7일, Scale 연 결제 30일 · 월 결제 7일로 적힘
+
+⑤ **AI Influencer 무료 5회** — 2026-10-03 부터 모든 이용자에게 줌. 무료 생성 횟수로는 첫 공식 숫자지만 이 기능 하나만
+
+⑥ **Claude 용 스킬 Katana** — 2026-10-08 출시. 참조 사진으로 편집 영상을 만들고 MCP 로 Higgsfield 모델을 부름
+
 ## 2026-10-14
 
 **매일 재확인 — Perplexity · Jev**

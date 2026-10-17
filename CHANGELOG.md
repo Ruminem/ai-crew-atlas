@@ -10,7 +10,7 @@
 
 ① **agy 로 영상·녹음 읽힘** — AI Pro 계정의 Antigravity CLI(1.4.0)에 mp4·wav 를 경로로 넘기니 내용을 정답대로 냄. 이미지 생성도 되고 영상·음악 생성 도구는 없음
 
-② **한 번에 Argon 주간 0.2–0.8%** — 읽기·그림 한 장·영상·녹음 일곱 번에 Antigravity 의 Gemini 4 Argon 주간 한도가 1.2% 줆
+② **한 번에 Argon 주간 0.2–0.8%** — 읽기·그림 한 장·영상·녹음과 짧은 물음 둘, 여섯 번에 Antigravity 의 Gemini 4 Argon 주간 한도가 1.2% 줆
 
 ③ **Antigravity 는 사람 검토 있음** — Antigravity 추가 약관이 대화를 Google 직원·계약자가 볼 수 있다고 적고 유료·무료 구분이 없음
 

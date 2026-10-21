@@ -15,6 +15,7 @@
   - `THIRD_PARTY_NOTICES.md` — 빌드에 쓰는 의존성과 페이지가 불러오는 글꼴·mermaid 의 라이선스. 셋 중 하나를 바꾸면 같이 고친다
   - `atlas.html` · `dist/index.html` — 생성물. 앞은 아티팩트용 조각, 뒤는 Pages 용 온전한 문서다. 커밋하지 않는다(`.gitignore`). 읽지 말고 틀을 읽는다
 - `.github/workflows/pages.yml` — main 에 `TOOLS.md`·`CHANGELOG.md`·`DESIGN.md`·`site/` 가 바뀌어 들어오면 `DESIGN.md` 를 lint 하고 `site/dist/` 를 만들어 GitHub Pages 에 올린다
+- `.github/workflows/routine-merge.yml` — `[routine:atlas-refresh]` PR 을 사람 손 없이 merge 한다. 바뀐 파일이 `TOOLS.md`·`CHANGELOG.md`·`CLAUDE.md` 시간 표 행뿐이고 빌드가 통과할 때만이다. `GITHUB_TOKEN` 으로 한 merge 는 push 이벤트를 안 내므로 `pages` 를 직접 부른다. 걸러진 PR 은 열린 채 남고, 열린 PR 이 있으면 루틴이 안 돌므로 사람이 풀어야 다시 돈다
 
 ## 웹 페이지
 GitHub Pages https://ruminem.github.io/ai-crew-atlas/ 가 본판이다. main 에 푸시하면 `pages` 워크플로가 알아서 다시 올리므로 손으로 할 일이 없다.

@@ -193,7 +193,7 @@ flowchart LR
 
 | 도구 | 역할 | 무료·유료 | 유료 요금 (월) | 클로드와 잇는 법 | 라이선스 | 확인한 날짜 |
 |---|---|---|---|---|---|---|
-| [Claude](#claude) | 범용 · 기준선 | 부분 무료 · 개인·업무 모두 무료 등급 가능 · 생성물 상업 이용 가능 | Pro $20 (연 결제 $17)<br>Max 5x $100<br>Max 20x $200<br>Team Standard $25/좌석 (연 결제 $20)<br>Team Premium $125/좌석 (연 결제 $100)<br>Enterprise $20/좌석 + 사용량 과금 (연 결제만, 최소 20석) | 해당 없음 | 독점 | 2026-10-22 |
+| [Claude](#claude) | 범용 · 기준선 | 부분 무료 · 개인·업무 모두 무료 등급 가능 · 생성물 상업 이용 가능 | Pro $20 (연 결제 $17)<br>Max 5x $100<br>Max 20x $200<br>Team Standard $25/좌석 (연 결제 $20)<br>Team Premium $125/좌석 (연 결제 $100)<br>Enterprise $20/좌석 + 사용량 과금 (연 결제만, 최소 20석) | 해당 없음 | 독점 | 2026-10-23 |
 | [ChatGPT](#chatgpt) | 범용 | 부분 무료 · 개인 무료 · 업무 이용은 EU판 약관이 부록으로 받아들이고, ROW판(한국)은 부록 없이 막는 문구도 없음 · 생성물 상업 이용 가능(음성 출력 제외) | Go $8<br>Plus $20<br>Pro $100 · $200 · $500<br>Business Standard $25/좌석 (연 결제 $20)<br>Business Premium $125/좌석 (연 결제 $100)<br>Enterprise·Edu 견적 | 공식 Claude Code 플러그인 | 독점 (Codex CLI·플러그인 Apache-2.0) | 2026-10-13 |
 | [Gemini](#gemini) | 범용 | 부분 무료 · 개인 무료 · 무료 등급 업무 이용을 약관이 막지 않음 · 생성물 상업 이용 가능(Google 이 소유권 주장 안 함) | AI Plus $4.99<br>AI Pro $19.99 (연 결제 $199.99/년)<br>AI Ultra 5x $99.99<br>AI Ultra 20x $199.99 | 커뮤니티 MCP · API 키 | 독점 (Gemini CLI Apache-2.0) | 2026-10-16 |
 | [Grok](#grok) | 범용 | 부분 무료 · 개인·업무 모두 무료 등급 가능(소비자 약관이 업무 이용을 막지 않음, 기업 이용은 기업 약관을 가리킴) · 생성물 소유는 사용자에게 남지만 "Created with Grok" 출처 표기 요구 · 학습 제외는 Business 부터 | SuperGrok Lite $10 (연 결제 $100/년)<br>SuperGrok $30 (연 결제 $300/년)<br>SuperGrok Plus $100 (연 결제 $1,000/년)<br>SuperGrok Heavy $300 (연 결제 $3,000/년)<br>Business $30/사용자 (연 결제 $300/년)<br>Enterprise 견적 | 커뮤니티 MCP · API 키 (공식 Docs MCP 는 문서 검색만) | 독점 (SDK Apache-2.0 · Grok-1 가중치 Apache-2.0) | 2026-10-13 |
@@ -202,7 +202,7 @@ flowchart LR
 | [Firecrawl](#firecrawl) | 수집 | 부분 무료 + 자체 호스팅 무료 · 자체 호스팅은 AGPL-3.0 조건으로 상업 이용 가능 · 클라우드 약관은 등급 구분 없이 "명시적 허락 없는 상업 이용" 금지 · 출력 권리 조항 없음 | Hobby $19 (연 결제 $16)<br>Standard $99 (연 결제 $83)<br>Growth $399 (연 결제 $333)<br>Scale $749 (연 결제 $599)<br>Enterprise 협의 | 공식 커넥터 + 공식 MCP | 본체 AGPL-3.0 · 클라우드 독점 · MCP 서버 MIT | 2026-10-12 |
 | [Higgsfield](#higgsfield) | 제작 | 부분 무료 · 가격표는 **Free 상업 이용 불포함**, 약관·도움말은 출력의 상업 이용을 제한 안 함(어긋남) · Free 는 워터마크 | Starter $19<br>Plus $59 (연 결제 $47)<br>Ultra $129 (연 결제 $99)<br>Team $79/좌석 (연 결제 $65)<br>Scale $215/좌석 (연 결제 $150)<br>Enterprise 영업 문의<br>위는 데스크톱·T1 지역 기준, 휴대폰 화면은 Basic $5 · Pro $29 · Max $79 | 공식 MCP (Claude Code 는 CLI) · 유료 등급만 | 독점 (CLI·스킬 MIT) | 2026-10-16 |
 | [Blotato](#blotato) | 게시 | 체험만 무료(7일) · 업무 이용은 유료 등급 · 생성물 권리 확인 못 함 | Starter $29<br>Creator $97<br>Agency $499<br>연 결제는 약 17% 할인 (금액 표기 없음) | 공식 MCP · OAuth/API 키 · 유료 등급만 | 독점 | 2026-10-17 |
-| [Notion](#notion) | 기록 | 부분 무료 · 개인 무료 · 업무는 조직용 약관(MSA), Free 업무 이용을 막는 조항 없음 | Plus $12/멤버 (연 결제 $10)<br>Business $24/멤버 (연 결제 $20)<br>Enterprise 문의 | 공식 커넥터 · OAuth | 독점 (로컬 MCP 서버 MIT) | 2026-10-11 |
+| [Notion](#notion) | 기록 | 부분 무료 · 개인 무료 · 업무는 조직용 약관(MSA), Free 업무 이용을 막는 조항 없음 | Plus $12/멤버 (연 결제 $10)<br>Business $24/멤버 (연 결제 $20)<br>Enterprise 문의 | 공식 커넥터 · OAuth | 독점 (로컬 MCP 서버 MIT) | 2026-10-23 |
 | [Obsidian](#obsidian) | 기록 | 부분 무료 · 앱은 개인·업무 모두 무료(2025-02-20 부터) · Sync·Publish 만 유료 | 앱은 무료<br>Sync Standard $5 (연 결제 $4)<br>Sync Plus $10 (연 결제 $8)<br>Publish $10/사이트 (연 결제 $8)<br>Commercial license $50/사용자/년 (선택)<br>Catalyst 일회 $25 · $50 · $100 (선택 후원) | 커뮤니티 플러그인 MCP · 공식 CLI · 파일 | 독점 소프트웨어 (플러그인 MIT) | 2026-10-12 |
 | [Jev](#jev) | 판정 | 유료 · 무료 등급 없음(새 가입자 $5 크레딧은 2026-09-27 멈춤 — 창업자 X 게시물, 금액은 제3자) · 개인·업무 모두 같은 약관(MCA)으로 가능, 단독 재판매·증류 금지 · 출력 권리는 고객에게 양도 | 종량제 — 입력 100만 토큰당 $0.042, 출력 무료 (월 요금 없음)<br>맞춤·엔터프라이즈 협의 | 공식 Claude Code 플러그인(스킬) · 커뮤니티 MCP · API 키 | 독점 (SDK·스킬 MIT, 커뮤니티 MCP MIT) | 2026-10-14 |
 
@@ -216,7 +216,7 @@ flowchart LR
 - **역할**: 범용
 - **한 줄**: Anthropic 의 대화형 AI. 웹·데스크톱·모바일 앱(claude.ai), 터미널·IDE 코딩 에이전트(Claude Code), 작업 위임(Cowork)을 한 구독으로 씀. 2026-09-16 부터 Pro·Max 에서 Cowork 가 따로 고르는 모드가 아니라 모든 대화 안으로 합쳐지는 중임
 - **클로드와 잇는 법**: 해당 없음 — 기준선 항목임. 밖의 도구는 클로드 쪽에서 커넥터(원격 MCP, OAuth)와 Claude Code 의 MCP 서버·플러그인으로 붙임
-- **확인한 날짜**: 2026-10-22
+- **확인한 날짜**: 2026-10-23
 
 #### 무료·유료와 이용 조건
 
@@ -238,7 +238,7 @@ flowchart LR
 | Max 5x | $100 | 없음 (월 결제만) | Pro 전부 + 5시간 세션당 Pro 의 5배 사용량, 더 높은 출력 한도, 새 기능 먼저, 혼잡 시간 우선 접근, Fable 은 주간 한도의 50% 까지. Claude Code 포함. **월 API 크레딧 $100**(Console 조직에 연결해 받음, 대화형 Claude Code 에는 안 씀, 2026-10-07 부터) |
 | Max 20x | $200 | 없음 (월 결제만) | Max 5x 와 같고 사용량이 Pro 의 20배. 월 API 크레딧 $200 |
 | Team Standard 좌석 | $25/좌석 | $20/좌석/월 | 2–150명. Pro 보다 많은 사용량, Claude Code·Cowork, Claude Design·Slides·Docs, Claude Science, Claude Dashboards(베타), 조직 전체 검색, 중앙 결제·관리, SSO, 기본값으로 학습에 안 씀. Claude Motion(베타, Team 은 기본 켜짐 — 글·차트를 코드로 움직이는 애니메이션, MP4 내보내기)·@Claude. 월 API 크레딧 Standard 좌석당 $20 · Premium 좌석당 $100 을 한 잔고로 모아 월 $500 까지. 웹 검색·커넥터는 Owner 가 조직 단위로 켜야 함 |
-| Team Premium 좌석 | $125/좌석 | $100/좌석/월 | Standard 좌석의 5배 사용량, Fable 은 주간 한도의 50% 까지(비교표 "50% of weekly limits on premium seats"). Standard 좌석의 Fable 한도는 확인 못 함 — 비교표에 없음 (2026-10-22). 나머지는 Standard 와 같음. 좌석 종류를 섞어 살 수 있음 |
+| Team Premium 좌석 | $125/좌석 | $100/좌석/월 | Standard 좌석의 5배 사용량, Fable 은 주간 한도의 50% 까지(비교표 "50% of weekly limits on premium seats"). Standard 좌석의 Fable 한도는 확인 못 함 — 비교표에 없음 (2026-10-23). 나머지는 Standard 와 같음. 좌석 종류를 섞어 살 수 있음 |
 | Enterprise | $20/좌석/월 + 사용량 과금 | 연 결제만 | 가격표 문구: "US$20/seat/month, billed annually, 20 seat minimum. Usage cost scales with model and task." 셀프 가입과 영업 상담 두 길이 있고 청구서·외상 결제(Invoicing / net terms)는 영업 상담 쪽만 됨. 사용량은 API 요금으로 매김. Team 전부 + 사용자·조직 지출 한도, 역할 기반 권한, SCIM, 감사 로그, Compliance API, 데이터 보존 설정, 네트워크 접근 제어·IP 허용 목록, HIPAA 대응, Claude Security(베타) |
 
 - 가격표는 세금 별도라고 적고("Prices shown don't include applicable tax"), Pro 도움말은 지역마다 표시 가격에 세금이 들어가기도 하고 결제 때 붙기도 한다고 씀. 웹 구독 기준이고 모바일 앱 결제가는 다를 수 있다고 Max 도움말에 적혀 있음
@@ -251,7 +251,7 @@ flowchart LR
 #### 기준선 — 클로드가 직접 못 하는 것
 - **이미지 생성·편집 못 함.** 도움말 원문: "Claude doesn't generate photos or illustrations the way image-generation tools do." 대신 HTML·SVG 로 도표·차트·인터랙티브 시각물을 대화 안에 만들고(웹·데스크톱 베타), 올린 이미지를 읽고 분석함
 - **사실적인 영상 생성 못 함.** Claude Motion 도움말 원문: "Claude Motion doesn't use a video generation model, so it doesn't create realistic footage or people." 대신 Team·Enterprise 에서 글·차트를 코드로 움직이는 애니메이션을 만들어 MP4 로 내보냄
-- **음악(오디오) 생성은 확인 못 함 — 기능이 있다는 공식 근거를 못 찾음.** 가격표 기능 비교표와 릴리스 노트 전체(2025-08-01–2026-10-21)에 음악·오디오 생성 항목이 없음. "없다"고 적은 공식 문서를 찾은 것은 아니라서 부재를 근거로 한 추정임 (2026-10-22)
+- **음악(오디오) 생성은 확인 못 함 — 기능이 있다는 공식 근거를 못 찾음.** 가격표 기능 비교표와 릴리스 노트 전체(2025-08-01–2026-10-21)에 음악·오디오 생성 항목이 없음. "없다"고 적은 공식 문서를 찾은 것은 아니라서 부재를 근거로 한 추정임 (2026-10-23)
 - **실시간 웹 검색은 됨 — "실시간 검색을 못 한다"는 말은 지금 틀림.** 웹 검색은 Free 포함 모든 등급에서 됨(Team·Enterprise 는 Owner 가 켜야 함, 새 Claude 경험에서는 스위치 없이 필요할 때 검색함). 웹 검색을 켜면 사용자가 준 URL 의 본문을 직접 가져오는 web fetch 도 됨. Free 에서 긴 글을 통째로 가져오면 사용량 한도를 많이 먹는다고 도움말이 경고함
 - **외부 게시·발송은 조건부로 됨 — 스스로는 못 하고 커넥터가 있어야 함.** Google Workspace 커넥터(모든 등급)로 Gmail 발송·답장·전달(기본은 사용자 승인 필요), Calendar 일정 생성·수정·삭제, Drive 업로드·공유가 됨. Microsoft 365 커넥터는 2026-07-07 에 쓰기 도구가 붙음(메일 발송, 일정, OneDrive·SharePoint 파일 생성·수정). SNS 게시처럼 커넥터가 없는 곳에는 직접 못 올림
 - **Claude Code 는 Free 에서 못 씀** — Pro 이상 또는 Console 의 API 크레딧이 필요함
@@ -271,6 +271,7 @@ flowchart LR
 - [Use Google Workspace connectors | Claude Help Center](https://support.claude.com/en/articles/10166901-use-google-workspace-connectors) — 공식 (원문 열어 봄)
 - [What are artifacts and how do I use them? | Claude Help Center](https://support.claude.com/en/articles/17153992-what-are-artifacts-and-how-do-i-use-them) — 공식 (원문 열어 봄)
 - [Get started with Claude Dashboards](https://support.claude.com/en/articles/17454700-get-started-with-claude-dashboards) · [Get started with Claude Motion](https://support.claude.com/en/articles/17454997-get-started-with-claude-motion) — 공식 (원문 열어 봄)
+- [Introducing Claude Duet](https://claude.com/resources/articles/claude-duet) — 공식 (원문 열어 봄)
 - [Monthly API credits for Max and Team plans](https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans) — 공식 (원문 열어 봄)
 - [Release notes | Claude Help Center](https://support.claude.com/en/articles/12138966-release-notes) — 공식 (원문 열어 봄)
 - [anthropics/claude-code LICENSE.md](https://github.com/anthropics/claude-code/blob/main/LICENSE.md) — 공식 (원문 열어 봄)
@@ -1007,7 +1008,7 @@ MCP·커넥터가 무엇으로 과금되는지
 - **역할**: 기록
 - **한 줄**: 문서·위키·데이터베이스·프로젝트 관리를 한 워크스페이스에 담는 협업 SaaS. Business 등급부터 Notion AI(Notion Agent, AI Meeting Notes, Enterprise Search)와 트리거로 스스로 도는 Custom Agents 가 붙음
 - **클로드와 잇는 법**: **공식 커넥터** — claude.ai 커넥터 디렉터리의 Notion(Notion 이 직접 냄, "Anthropic verified", 2025-11 등록). 실체는 Notion 이 호스팅하는 **공식 원격 MCP 서버** `https://mcp.notion.com/mcp`. 인증은 **OAuth**(브라우저에서 Notion 로그인, 사용자의 기존 Notion 권한을 그대로 따름). Notion 공식 연결 문서는 이 주소를 기본으로 안내하고, Streamable HTTP 를 못 쓰는 클라이언트에만 SSE 대체 주소 `https://mcp.notion.com/sse` 를 쓰라고 함. 커넥터 도구는 모든 등급에 노출되지만 연결 앱까지 찾는 AI 검색·회의록 조회·여러 데이터 소스에 걸친 SQL 무제한·일부 검색 필터는 **Business·Enterprise(Notion AI 포함)** 에서만 되고, 그 밖 등급은 키워드 검색으로 물러서거나 단일 데이터 소스 SQL 이 워크스페이스 사용량 한도에 묶임(Notion 개발자 문서 원문). 따로 자체 호스팅용 공식 로컬 서버 `@notionhq/notion-mcp-server`(v2.5.2, MIT)가 있으나 Notion 이 README 와 개발자 문서 양쪽에 "더 이상 적극 유지하지 않음, 원격 MCP 를 쓰라"고 적음 — 이쪽은 Notion 통합 토큰(`NOTION_TOKEN`)과 페이지마다 연결 추가가 필요함. 반대 방향으로 Notion 3.6(2026-07-01)의 **External Agents** 로 Claude 를 Notion 안의 에이전트로 부를 수 있음 — Claude·Cursor 가 첫 둘이고, **Claude agents in Notion** 은 베타·Business·Enterprise 전용, Notion credits 로 과금, 자기 Anthropic 계정은 못 씀, Enterprise·HIPAA 워크스페이스는 기본 꺼짐(Notion 릴리스 노트·도움말 원문)
-- **확인한 날짜**: 2026-10-11
+- **확인한 날짜**: 2026-10-23
 
 #### 무료·유료와 이용 조건
 
@@ -1016,7 +1017,7 @@ MCP·커넥터가 무엇으로 과금되는지
 | 분류 | 부분 무료 |
 | 개인 이용 | Free 로 가능함 |
 | 상업·업무 이용 | 개인용 약관(Personal Use Terms)은 개인 이용에만 걸리고, **조직·회사를 대신해 쓰거나 Plus·Business·Enterprise 구독이면 Master Subscription Agreement(MSA)** 만 걸림. MSA 에 Free 등급을 업무에 못 쓴다는 문장은 없음 — 업무에 Free 를 써도 약관 위반은 아님. 다만 가격표는 Free 를 "개인용"으로 소개하고, 멤버가 둘 이상인 Free 워크스페이스는 1,000 블록에서 막힘. MSA 는 2026-08-17 개정본 |
-| 생성물의 상업적 이용 | Notion AI 의 입력·출력은 고객의 Customer Data 이고(Notion AI 보충 약관), Customer Data 의 소유권은 고객에게 있음(MSA 3.1). 개인 약관도 출력을 User Content 에 넣고 소유권을 주장하지 않음. 출력이 유일하지 않아 다른 사람과 같거나 비슷할 수 있다는 단서가 붙음. 같은 보충 약관(2026-07-27 개정)이 Notion AI 와 출력의 쓰임을 막는 조항을 둠 — Notion 과 경쟁하는 기반 모델 개발, 출력을 사람이 다 쓴 것처럼 속이기, 스팸·선거 운동물 만들기("to develop foundation models or other large scale models that compete with Notion or Notion AI; (ii) to mislead any person that Output from the Services was solely human generated; (iii) to generate spam or content for dissemination in electoral campaigns"). 등급으로 나누는 문구는 없음. Notion AI 전체는 Business 이상에만 있음 |
+| 생성물의 상업적 이용 | Notion AI 의 입력·출력은 고객의 Customer Data 이고(Notion AI 보충 약관), Customer Data 의 소유권은 고객에게 있음(MSA 3.1). 개인 약관도 출력을 User Content 에 넣고 소유권을 주장하지 않음. 출력이 유일하지 않아 다른 사람과 같거나 비슷할 수 있다는 단서가 붙음. 같은 보충 약관(2026-07-27 개정 — 2026-10-23 에는 r.jina.ai 가 본문 일부만 줘 개정일을 다시 못 봄)이 Notion AI 와 출력의 쓰임을 막는 조항을 둠 — Notion 과 경쟁하는 기반 모델 개발, 출력을 사람이 다 쓴 것처럼 속이기, 스팸·선거 운동물 만들기("to develop foundation models or other large scale models that compete with Notion or Notion AI; (ii) to mislead any person that Output from the Services was solely human generated; (iii) to generate spam or content for dissemination in electoral campaigns"). 등급으로 나누는 문구는 없음. Notion AI 전체는 Business 이상에만 있음 |
 
 - 이 절의 출처: [Personal Use Terms of Service](https://www.notion.so/Personal-Use-Terms-of-Service-00e4e5d0f2b9411cbee6493f15779500) — 공식(원문 열어 봄) · [Master Subscription Agreement](https://www.notion.so/Master-Subscription-Agreement-4e1c5dd3e3de45dfa4a8ed60f1a43da0) — 공식(원문 열어 봄) · [Notion AI and Notion Credit Supplementary Terms](https://www.notion.so/fa9034c8b5a04818a6baf3eac2adddbb) — 공식(원문 열어 봄)
 
@@ -1025,10 +1026,10 @@ MCP·커넥터가 무엇으로 과금되는지
 |---|---|---|---|
 | Free | $0 | — | 페이지 무제한(혼자 쓸 때). 멤버가 둘 이상인 워크스페이스는 1,000 블록까지(지워도 안 줄고, 넘으면 3일 유예 뒤 새 블록 못 만듦). 파일당 업로드 5 MB. 페이지 기록 7일. 외부 게스트 10명. 차트 1개. **Notion AI 는 제한된 체험(Limited Trial)만** |
 | Plus | $12 / 멤버 | $10 / 멤버 / 월 (연 $120) | 블록·업로드 무제한(파일당 약 5 GB), 페이지 기록 30일, 게스트 무제한, 차트 무제한, 기본 연결(Slack·Google Drive). **Notion AI 는 Free 와 같은 제한된 체험** |
-| Business | $24 / 멤버 | $20 / 멤버 / 월 (연 $240) | **Notion AI 포함** — Notion Agent, AI Meeting Notes, Enterprise Search(연결 앱 검색, 베타), Research mode. 일부 AI 기능에는 사용량 허용치가 있어 넘으면 잠시 멈추거나 관리자가 credits 로 이어 쓰게 할 수 있음. 페이지 기록 90일. 비공개 팀스페이스, SAML SSO, 프리미엄 연결(GitHub·Asana 등). **Custom Agents** 는 2026-05-04 부터 Notion credits 로 과금 — 1,000 크레딧당 $10, 워크스페이스 관리자가 추가 구매, 쓰지 않은 credits 는 기간이 끝나면 만료되고 이월 안 됨. Custom Agents 의 MCP 연결은 Business·Enterprise 만 |
+| Business | $24 / 멤버 | $20 / 멤버 / 월 (연 $240) | **Notion AI 포함** — Notion Agent, AI Meeting Notes, Enterprise Search(연결 앱 검색, 베타), Research mode. 멤버마다 매달 AI 크레딧이 붙음 — Standard 1,500(Notion 이 모델을 고르는 Auto 작업: Notion Agent·글쓰기·번역·AI 블록, 2026-12-01 부터 AI Meeting Notes 도) · Select 500(모델을 직접 고른 작업·자기용 Custom Agents). 둘은 따로 세고 남은 것은 이월 안 됨. 다 쓰면 그 기능이 다음 달까지 멈추고, 관리자가 허락하면 워크스페이스 Notion credits 로 이어 씀(새 워크스페이스 2026-10-19 · 기존 워크스페이스 2026-11-02 부터, 등급·계약에 따라 양이 다를 수 있음). 페이지 기록 90일. 비공개 팀스페이스, SAML SSO, 프리미엄 연결(GitHub·Asana 등). **Custom Agents** 는 기본으로 만든 사람의 Select 크레딧을 쓰고, 관리자가 워크스페이스 Notion credits 로 예산을 줄 수 있음. Notion credits 는 Business·Enterprise 의 애드온 — 월 결제 1,000 크레딧당 $10(매달 초기화), 연 결제 1,000 크레딧당 $13(갱신 때 만료), 쓰지 않은 것은 이월 안 됨. 관리자가 사고, 비싼 모델·Workers 도 이것을 씀. Custom Agents 의 MCP 연결은 Business·Enterprise 만 |
 | Enterprise | 문의 | 문의 | Business 전부 + 페이지 기록 무제한, Notion AI 를 쓸 때 LLM 공급자 쪽 데이터 무보존(ZDR — 다른 등급은 30일 보존), SCIM 사용자 관리, 감사 로그, 외부 공유·게스트를 막는 고급 보안 통제, DLP·SIEM 연결, 도메인 관리, Notion MCP 로 붙일 수 있는 AI 앱을 관리자가 허용 목록으로 제한 |
 
-- **Notion AI 가 어디에 들어 있는지**: 따로 사는 애드온이 아니라 **Business·Enterprise 에 포함**되고, Free·Plus 는 "제한된 수의 무료 AI 응답"만 받음 (공식 도움말·가격표 원문). Custom Agents 와 프리미엄 모델만 등급 요금과 별도로 credits 를 씀
+- **Notion AI 가 어디에 들어 있는지**: 따로 사는 애드온이 아니라 **Business·Enterprise 에 포함**되고, Free·Plus 는 "제한된 수의 무료 AI 응답"만 받음 (공식 도움말·가격표 원문). 등급에 든 Standard·Select 크레딧을 넘는 사용, 비싼 모델, 워크스페이스 예산으로 도는 Custom Agents 만 등급 요금과 별도로 Notion credits 를 씀. Notion MCP·API 의 일상적인 읽기·쓰기는 크레딧을 안 씀(속도 제한만 걸림)
 - **월 결제가와 연 결제가**: 가격표 화면의 기본 토글이 연 결제라 $10 · $20 이 먼저 보임. 월 결제 $12 · $24 는 가격표 HTML 에 든 요금 데이터(`plus_monthly_usd_202407` · `business_monthly_usd_202505`)로 확인함. Enterprise 는 화면에 "Custom pricing" 만 나옴 — HTML 데이터에 Enterprise 값도 들어 있으나 공개 가격이 아니라 채택 안 함
 - **2025–2026 사이 바뀐 점**:
   - 2025-05-13 Notion 2.51 에서 "Business·Enterprise 에 Notion AI 포함"으로 요금제를 바꿈(그때 문구는 "무제한", 지금 도움말은 사용량 허용치를 둠). 같은 때 별도 AI 애드온(멤버당 월 $8, 연 결제 기준) 신규 판매를 멈추고 Business 가 $15 → $20(연 결제)으로 올랐다는 것은 제3자 값임 — 릴리스 노트에 그 문장은 없고, 가격표 HTML 에는 옛 AI 애드온 상품(월 $10 · 연 $96)이 아직 남아 있음
@@ -1036,12 +1037,14 @@ MCP·커넥터가 무엇으로 과금되는지
   - 2026-07-01 Notion 3.6 에서 External Agents(Claude·Cursor), AI Meeting Notes 화자 구분·오디오 파일 업로드, Custom Agents 의 MCP 연결 5개 추가(Mercury·Mixpanel·Miro·Box·ClickHouse), Notion CLI 의 Windows 설치 발표. "Notion MCP 사용량이 한 달에 10배" 는 자사 홍보 (공식 릴리스 노트 원문)
   - 2026-07-24 Workers 베타 — Business·Enterprise 에서 베타 동안 무료 체험("Workers are free to try during the beta on Business and Enterprise plans"), 가격표는 "Requires Notion credits" 로 적음. 2026-07-31 AI Meeting Notes 가 Custom Agents 의 트리거가 됨 (공식 릴리스 노트·가격표 원문)
   - 2026-09-15 Notion 3.7 에서 팀 스킬을 SKILL.md 파일로 Claude Code·Codex·Cursor 등에 내려받게 됨("Notion writes the skill as a SKILL.md file", MCP 도구 `notion-download-skill`). 같은 때 Notion Agent 의 사용자 지정 MCP 연결(베타, Business·Enterprise)과 Agent SDK 공개 베타 (공식 릴리스 노트 원문)
-- **Notion AI 에이전트 기능**: 개인용 **Notion Agent** 는 사용자가 부를 때만 움직이고 그 사용자가 볼 수 있는 것 전체에 접근함. **Custom Agents** 는 일정·Slack 메시지·메일·캘린더 이벤트·데이터베이스 변경 같은 트리거로 스스로 돌고, 허락한 범위만 보고, 팀과 공유됨. Slack·Notion Mail·Notion Calendar 와 MCP 연결(Linear·Figma·HubSpot 등)에 붙음. credits 는 워크스페이스 전체가 한 잔고를 같이 쓰고, 모자라면 에이전트가 자동으로 멈춤. 요금제를 Free·Plus 로 내리면 기존 Custom Agents 는 꺼지되 지워지지 않음 (공식 릴리스 노트·도움말 원문)
+  - 2026-10-13 Notion 3.8 에서 관리자가 MCP 로 붙은 AI 도구를 누가 붙였는지·마지막 사용 시각을 보고 사람별로 끊는 MCP 제어, Notion Agent·Custom Agents 의 MCP 연결 150개 넘게, Skills API, 데이터베이스 열 권한, ChatGPT Plus·Pro 구독으로 Notion AI 사용 발표 (공식 릴리스 노트 원문)
+  - 2026-10-19 새 크레딧 체계(Standard·Select·Notion credits), 모델 라우터 Auto 개편("Opus 5.5 와 비슷한 결과를 평균 약 90% 낮은 비용으로" 는 자사 홍보), ChatGPT Plus·Pro·Go 를 개인 Notion Agent 에 연결, BYOK(Enterprise 비공개 알파), Notion MCP 의 메모리 동기화 발표 (공식 릴리스 노트·도움말 원문). 가격표의 Custom Agents 문구는 이제 "Free to try, then $10 per 1,000 monthly Notion credits" 인데, 이 체험이 새 체계의 Select 크레딧을 말하는 것인지는 확인 못 함 (2026-10-23)
+- **Notion AI 에이전트 기능**: 개인용 **Notion Agent** 는 사용자가 부를 때만 움직이고 그 사용자가 볼 수 있는 것 전체에 접근함. **Custom Agents** 는 일정·Slack 메시지·메일·캘린더 이벤트·데이터베이스 변경 같은 트리거로 스스로 돌고, 허락한 범위만 보고, 팀과 공유됨. Slack·Notion Mail·Notion Calendar 와 MCP 연결(Linear·Figma·HubSpot 등)에 붙음. 워크스페이스 예산으로 도는 에이전트는 한 잔고를 같이 쓰고 모자라면 자동으로 멈춤. 자기용 에이전트는 만든 사람의 Select 크레딧이 떨어질 때까지 돌고 그 뒤 같은 규칙을 따름. 요금제를 Free·Plus 로 내리면 기존 Custom Agents 는 꺼지되 지워지지 않음 (공식 릴리스 노트·도움말 원문)
 
 #### 클로드로는 못 하는 것
 - Notion 안에서 이벤트를 받아 스스로 도는 Custom Agents — 데이터베이스 항목이 바뀌거나 Slack·메일·캘린더 이벤트가 오면 깨어나 일하는 것. Notion MCP 에 Custom Agent 세션을 시작·메시지·중지하는 도구가 있어 Claude 가 이미 만든 에이전트를 부를 수는 있지만, 트리거를 받아 깨어나는 것은 Notion 쪽 기능이고 MCP 에 Notion 이벤트를 구독하는 도구는 없음
 - AI Meeting Notes — Notion 이 회의를 받아 적고 화자를 나눠 요약하는 기능. MCP 의 회의록 조회 도구(Business 이상 + Notion AI)로 **이미 만들어진 회의록을 읽을 수는** 있지만, Claude 커넥터로 회의를 녹음·받아 적지는 못함
-- Notion 개발자 문서의 MCP 도구 목록(2026-10-03 기준 36개 — 2026-09-29 에 37개로 셌으나 하나가 빠졌는지 세는 법이 달랐는지는 확인 못 함, 옛 목록이 안 남음)에 **페이지 삭제, 페이지 기록 되돌리기, 공유·권한 설정, Notion Sites 게시가 없음** — 이것들은 Notion 앱에서 해야 함. 파일 업로드(파일당 20 MiB)와 데이터베이스 뷰 만들기·고치기(표·보드·타임라인·캘린더·차트 등 10종)는 MCP 로 됨. claude.com 커넥터 페이지는 아직 옛 목록 13개(search · fetch · create-pages 등)만 보여 줌
+- Notion 개발자 문서의 MCP 도구 목록(2026-10-23 기준 도구 이름 65개 — 전에 36·37개로 센 것과 세는 법이 같은지는 확인 못 함)에 **페이지 기록(버전) 되돌리기, 공유·권한 설정, Notion Sites 게시가 없음** — 이것들은 Notion 앱에서 해야 함. 페이지·데이터베이스를 휴지통으로 옮기고 되살리는 것, Notion Calendar 일정 만들기·고치기는 이제 MCP 로 됨. 파일 업로드(파일당 20 MiB)와 데이터베이스 뷰 만들기·고치기(표·보드·타임라인·캘린더·차트 등 10종)는 MCP 로 됨. claude.com 커넥터 페이지는 아직 옛 목록 13개(search · fetch · create-pages 등)만 보여 줌
 - 여러 사람이 같은 페이지를 실시간으로 같이 편집하는 화면, 알림·멘션 흐름은 Notion 앱의 것임
 
 #### 라이선스
@@ -1053,12 +1056,13 @@ MCP·커넥터가 무엇으로 과금되는지
 - [makenotion/notion-mcp-server README · LICENSE · package.json](https://github.com/makenotion/notion-mcp-server) — 공식 (원문 열어 봄)
 - [Notion Pricing Plans](https://www.notion.com/pricing) — 공식 (원문 열어 봄: 등급별 한도, 연 결제가, HTML 요금 데이터의 월 결제가)
 - [Notion credits & pricing for Custom Agents — Notion Help](https://www.notion.com/help/buy-and-track-notion-credits-for-custom-agents) — 공식 (원문 열어 봄)
+- [Manage your AI credits](https://www.notion.com/help/manage-your-ai-credits) · [Standard, Select, and Notion credits eligible features](https://www.notion.com/help/standard-select-and-notion-credits-eligible-features) · [What are Notion credits?](https://www.notion.com/help/what-are-notion-credits) — 공식 (원문 열어 봄: Standard 1,500 · Select 500, 연 결제 credits $13, MCP·API 는 크레딧 안 씀)
 - [MCP connections for Notion Custom Agents — Notion Help](https://www.notion.com/help/mcp-connections-for-custom-agents) — 공식 (원문 열어 봄: Business·Enterprise 만)
 - [What is Notion AI? FAQs](https://www.notion.com/help/notion-ai-faqs) — 공식 (원문 열어 봄: Business·Enterprise 포함, 사용량 허용치, Free·Plus 제한된 무료 응답)
 - [Images, files & media — Notion Help](https://www.notion.com/help/images-files-and-media) · [Understanding block usage](https://www.notion.com/help/understanding-block-usage) — 공식 (원문 열어 봄: Free 5 MB, 유료 5 GB, 1,000 블록)
 - [Connect AI tools with Notion MCP — Notion Help](https://www.notion.com/help/notion-mcp) · [Notion MCP — Notion Docs](https://developers.notion.com/guides/mcp/overview) · [Connect to Notion MCP](https://developers.notion.com/guides/mcp/get-started-with-mcp) · [Supported tools](https://developers.notion.com/guides/mcp/mcp-supported-tools) · [Hosting Notion MCP locally](https://developers.notion.com/guides/mcp/hosting-open-source-mcp) — 공식 (원문 열어 봄)
 - [Use Claude agents in Notion — Notion Help](https://www.notion.com/help/use-claude-agents-in-notion) — 공식 (원문 열어 봄)
-- [May 13, 2025 – Notion 2.51](https://www.notion.com/releases/2025-05-13) · [February 24, 2026 – Notion 3.3: Custom Agents](https://www.notion.com/releases/2026-02-24) · [July 1, 2026 – Notion 3.6: External Agents](https://www.notion.com/releases/2026-07-01) · [July 24, 2026 – Workers](https://www.notion.com/releases/2026-07-24) · [July 31, 2026 – AI Meeting Notes can now trigger Custom Agents](https://www.notion.com/releases/2026-07-31) · [September 15, 2026 – Notion 3.7](https://www.notion.com/releases/2026-09-15) — 공식 (원문 열어 봄. 고객 인용·"사용량 10배" 같은 수치는 자사 홍보)
+- [May 13, 2025 – Notion 2.51](https://www.notion.com/releases/2025-05-13) · [February 24, 2026 – Notion 3.3: Custom Agents](https://www.notion.com/releases/2026-02-24) · [July 1, 2026 – Notion 3.6: External Agents](https://www.notion.com/releases/2026-07-01) · [July 24, 2026 – Workers](https://www.notion.com/releases/2026-07-24) · [July 31, 2026 – AI Meeting Notes can now trigger Custom Agents](https://www.notion.com/releases/2026-07-31) · [September 15, 2026 – Notion 3.7](https://www.notion.com/releases/2026-09-15) · [October 13, 2026 – Notion 3.8](https://www.notion.com/releases/2026-10-13) · [October 19, 2026 – AI credits](https://www.notion.com/releases/2026-10-19) — 공식 (원문 열어 봄. 고객 인용·"사용량 10배" 같은 수치는 자사 홍보)
 - [What Happened to the Notion AI Add-On? — usecarly](https://www.usecarly.com/blog/notion-ai-pricing-change/) · [Notion AI Pricing 2026 — felloai](https://felloai.com/notion-ai-pricing/) — 제3자 (검색 요약: 2025-05-13 애드온 판매 중단, 기존 가입자 유지, Business $15 → $20)
 
 ### Obsidian

@@ -2,6 +2,32 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-10-23
+
+**매일 재확인 — Claude · Notion**
+
+**Claude**
+
+① **Enterprise 최소 20석** — 가격표가 "US$20/seat/month, billed annually, 20 seat minimum" 으로 적음. 청구서·외상 결제는 영업 상담 쪽만 됨
+
+② **Free 커넥터 한도는 커스텀만** — "연결 도구 1개" → 커스텀 커넥터 1개까지(도움말). Google Workspace 같은 기본 커넥터는 모든 등급에서 됨
+
+③ **Claude Duet 연구 미리보기** — 2026-10-21 부터 먼저 말을 걸고 연결한 앱을 지켜보며 일을 처리하는 에이전트 앱. 미국 Pro·Max 대기 명단부터, 같은 사용량 한도를 씀
+
+④ **Team 에 Dashboards·Fable** — Team 도 Claude Dashboards(베타)가 됨. Premium 좌석은 Fable 을 주간 한도의 50% 까지 씀
+
+**Notion**
+
+① **AI 크레딧 체계 바뀜** — "일부 기능에 사용량 허용치" → Business·Enterprise 멤버마다 매달 Standard 1,500 · Select 500 크레딧. 새 워크스페이스 2026-10-19 · 기존 2026-11-02 부터, AI Meeting Notes 는 2026-12-01 부터 Standard 를 씀
+
+② **Custom Agents 는 Select 부터** — 만든 사람의 Select 크레딧을 먼저 쓰고 워크스페이스 예산은 Notion credits. 연 결제 credits 는 1,000당 $13(월 결제 $10)
+
+③ **MCP·API 는 크레딧 안 씀** — 일상적인 읽기·쓰기는 속도 제한만 걸림(도움말)
+
+④ **MCP 로 휴지통·일정 됨** — 페이지·데이터베이스를 휴지통으로 옮기고 되살리기, Notion Calendar 일정 만들기·고치기가 도구 목록에 생김. 페이지 기록 되돌리기·권한 설정·Sites 게시는 여전히 없음
+
+⑤ **Notion 3.8 MCP 관리자 제어** — 2026-10-13, 관리자가 MCP 로 붙은 AI 도구를 사람별로 끊음, MCP 연결 150개 넘게, Skills API, ChatGPT 구독으로 Notion AI 사용
+
 ## 2026-10-17
 
 **매일 재확인 — NotebookLM · Blotato**

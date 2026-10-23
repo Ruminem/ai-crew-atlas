@@ -2,6 +2,26 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-10-24
+
+**매일 재확인 — Firecrawl · Obsidian**
+
+**Firecrawl**
+
+① **정부·법령 무료 색인 공개** — 2026-10-22, 미국 연방·주·지방 정부 사이트 3천만 페이지 검색. 크레딧 안 빠짐, MCP `firecrawl_gov_search`·CLI `firecrawl gov`
+
+② **Alexandria 제공자 늘어남** — 마케팅 묶음(10-13) · 투자 라운드 데이터 Fireround(10-15) · People Data 재출시(10-20, 기록 2억 7천만 건 넘게)
+
+③ **LinkedIn 페이지는 제공자 값** — 스크레이프 1 대신 Apollo 30 · Data Legion 10/40 · FullEnrich 5 크레딧(billing 문서에서 새로 찾음)
+
+④ **문서 없어도 빠지는 경우** — 위협 차단 검사 URL 당 2 · 프롬프트 주입 검사 5 · lockdown 캐시 미스 1(billing 문서에서 새로 찾음)
+
+⑤ **Enterprise 전용 보안 칸** — API 키별 형식·엔드포인트·IP 제한과 고정 송신 IP 는 Enterprise 만, 청구서 결제는 Scale 부터(가격표에서 새로 찾음)
+
+⑥ **커넥터 도구 9개로** — 커넥터 페이지에 `firecrawl_search_feedback` 이 더해짐
+
+⑦ **클라우드 마켓에서도 구매** — 2026-10-19 Google Cloud Marketplace 출시, AWS Marketplace 도 가격표 FAQ 에 있음. 가격은 영업 협의
+
 ## 2026-10-23
 
 **매일 재확인 — Claude · Notion**

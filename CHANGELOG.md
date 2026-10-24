@@ -2,6 +2,48 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-10-25
+
+**매일 재확인 — ChatGPT · Grok**
+
+**ChatGPT**
+
+① **음성 모델 1.1로** — 음성 모드가 GPT-Live-1 → GPT-Live-1.1, mini → GPT-Live-1.1 Quip
+
+② **GPT-5.5 은퇴 범위 좁음** — 2026-10-14 은퇴는 ChatGPT 로그인 Codex 에서만이고 API·API 키 Codex 는 그대로(앞서 "모든 등급 은퇴"로 적었던 것을 고침)
+
+③ **Service Terms 새 판** — 2026-09-29판 → 2026-10-16판, 음성 출력 비상업 조항은 그대로
+
+④ **mcp-server 제거 판 확인** — Codex CLI 0.154.0(2026-09-09)에서 없어졌다고 공식 changelog 에 적혀 있음
+
+⑤ **Pro 등급별 음성·에이전트** — 음성 Pro $100 15시간 · Pro $200 무제한, 에이전트 모드 Pro 월 400회(도움말에서 새로 찾음)
+
+⑥ **Business 음성 한도** — Standard 3시간 · Premium 15시간, 넘으면 분당 1.25크레딧(도움말에서 새로 찾음)
+
+⑦ **Pro 한도 넘을 때** — Pro $200 은 GPT-6 Pro 주간 한도에 닿으면 GPT-5.6 Thinking Medium 으로 자동 전환, Pro $100 은 GPT-6 Pro 와 GPT-5.6 Sol Pro 가 주간 한도 하나를 나눔(도움말에서 새로 찾음)
+
+⑧ **크레딧 Ultrafast 6배** — 한도를 다 쓴 뒤 크레딧으로 쓰는 Ultrafast 는 Standard 단가의 6배, Pro $100·$200 은 크레딧을 사도 Ultrafast 가 안 열림(도움말에서 새로 찾음)
+
+⑨ **Free 광고 끄기** — 광고가 도는 지역의 Free 는 Ads-Free 를 고를 수 있음. 대신 메시지 한도가 낮아지고 이미지 생성·딥 리서치가 빠짐(도움말에서 새로 찾음)
+
+**Grok**
+
+① **X 구독으로 재편** — 새 고객은 The X Subscription(Grok·Cursor·X 묶음)으로 시작. Plus $8 · Premium $30 · Super $100 · Ultra $200, 연 결제 $80 · $300 · $1,000 · $2,000
+
+② **옛 SuperGrok 신규 판매 끝** — 웹 가격표와 구독 화면에서 Lite $10 · SuperGrok $30 · Plus $100 · Heavy $300 · Business 가 빠짐. 기존 구독은 옮기지 않으면 그대로, App Store 앱 내 구입 목록에는 아직 남음
+
+③ **Business → Teams** — 좌석당 $30+/월, 좌석마다 Premium·Super·Ultra 를 고름
+
+④ **영상 Premium 부터** — 앱 영상 생성이 Lite 부터 → Premium 부터, 1080p 는 SuperGrok Plus 부터 → Super 부터
+
+⑤ **배치 할인 4.5 이상도** — Batch API 20% 할인이 4.3·4.20 계열만 → grok-4.7·4.6·4.5 에도
+
+⑥ **사용량 배수 공개** — Plus 를 1로 Premium 4배 · Super 15배 · Ultra 50배
+
+⑦ **옮기면 못 되돌림** — X 구독으로 옮기면 되돌릴 수 없고 옛 구독은 남은 기간만큼 일할 환불, 판매자는 X Subscription Corp.
+
+⑧ **생성물 양도 명시** — X Subscription 약관이 생성물을 사용자에게 명시적으로 양도함
+
 ## 2026-10-24
 
 **매일 재확인 — Firecrawl · Obsidian**

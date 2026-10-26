@@ -195,12 +195,12 @@ flowchart LR
 |---|---|---|---|---|---|---|
 | [Claude](#claude) | 범용 · 기준선 | 부분 무료 · 개인·업무 모두 무료 등급 가능 · 생성물 상업 이용 가능 | Pro $20 (연 결제 $17)<br>Max 5x $100<br>Max 20x $200<br>Team Standard $25/좌석 (연 결제 $20)<br>Team Premium $125/좌석 (연 결제 $100)<br>Enterprise $20/좌석 + 사용량 과금 (연 결제만, 최소 20석) | 해당 없음 | 독점 | 2026-10-23 |
 | [ChatGPT](#chatgpt) | 범용 | 부분 무료 · 개인 무료 · 업무 이용은 EU판 약관이 부록으로 받아들이고, ROW판(한국)은 부록 없이 막는 문구도 없음 · 생성물 상업 이용 가능(음성 출력 제외) | Go $8<br>Plus $20<br>Pro $100 · $200 · $500<br>Business Standard $25/좌석 (연 결제 $20)<br>Business Premium $125/좌석 (연 결제 $100)<br>Enterprise·Edu 견적 | 공식 Claude Code 플러그인 | 독점 (Codex CLI·플러그인 Apache-2.0) | 2026-10-25 |
-| [Gemini](#gemini) | 범용 | 부분 무료 · 개인 무료 · 무료 등급 업무 이용을 약관이 막지 않음 · 생성물 상업 이용 가능(Google 이 소유권 주장 안 함) | AI Plus $4.99<br>AI Pro $19.99 (연 결제 $199.99/년)<br>AI Ultra 5x $99.99<br>AI Ultra 20x $199.99 | 커뮤니티 MCP · API 키 | 독점 (Gemini CLI Apache-2.0) | 2026-10-16 |
+| [Gemini](#gemini) | 범용 | 부분 무료 · 개인 무료 · 무료 등급 업무 이용을 약관이 막지 않음 · 생성물 상업 이용 가능(Google 이 소유권 주장 안 함) | AI Plus $4.99<br>AI Pro $19.99 (연 결제 $199.99/년)<br>AI Ultra 5x $99.99<br>AI Ultra 20x $199.99 | 커뮤니티 MCP · API 키 | 독점 (Gemini CLI Apache-2.0) | 2026-10-27 |
 | [Grok](#grok) | 범용 | 부분 무료 · 개인·업무 모두 무료 등급 가능(소비자 약관이 업무 이용을 막지 않음, 기업 이용은 기업 약관을 가리킴) · 생성물 소유는 사용자에게 남지만 "Created with Grok" 출처 표기 요구 · 학습 안 함 약정은 팀(Teams)·Enterprise 쪽 | Plus $8 (연 결제 $80/년)<br>Premium $30 (연 결제 $300/년)<br>Super $100 (연 결제 $1,000/년)<br>Ultra $200 (연 결제 $2,000/년)<br>Teams $30+/사용자<br>Enterprise 견적<br>(옛 SuperGrok Lite $10 · SuperGrok $30 · Plus $100 · Heavy $300 · Business $30/사용자는 기존 구독자만) | 커뮤니티 MCP · API 키 (공식 Docs MCP 는 문서 검색만) | 독점 (SDK Apache-2.0 · Grok-1 가중치 Apache-2.0) | 2026-10-25 |
 | [Perplexity](#perplexity) | 조사 | 부분 무료 · **개인 무료 + 상업 유료** — Free·Pro·Max 이미지는 비상업 전용(공식 도움말), 약관 5.1 도 등급 구분 없이 비상업 전용(2026-01-23판), 업무는 Enterprise | Education Pro $10<br>Pro $20 (연 결제 $200/년)<br>Max $200 (연 결제 $2,000/년, 웹에서만)<br>Enterprise Pro $40/석 (연 결제 $400/석/년)<br>Enterprise Max $325/석 (연 결제 $3,250/석/년)<br>API 는 종량제 | 공식 MCP · 공식 CLI · API 과금 | 독점 (MCP 서버 MIT · CLI 표기 없음) | 2026-10-26 |
 | [NotebookLM](#notebooklm-2026-07-16-부터-gemini-notebook) | 조사 | 부분 무료 · 개인 무료 · 업무 이용을 막는 약관 조항 없음 · 생성물 소유권 주장 안 함(상업 이용 명시 문구는 없음, 한국은 이미지·영상 워터마크 강제) | Google AI Plus $4.99<br>Google AI Pro $19.99 (연 결제 $199.99/년)<br>Google AI Ultra 5× $99.99<br>Google AI Ultra 20× $199.99<br>Gemini Notebook Enterprise $9/라이선스 (최소 15개)<br>Workspace 는 그 요금에 포함 | 커뮤니티 MCP · 쿠키 | 독점 (커뮤니티 MCP MIT) | 2026-10-17 |
 | [Firecrawl](#firecrawl) | 수집 | 부분 무료 + 자체 호스팅 무료 · 자체 호스팅은 AGPL-3.0 조건으로 상업 이용 가능 · 클라우드 약관은 등급 구분 없이 "명시적 허락 없는 상업 이용" 금지 · 출력 권리 조항 없음 | Hobby $19 (연 결제 $16)<br>Standard $99 (연 결제 $83)<br>Growth $399 (연 결제 $333)<br>Scale $749 (연 결제 $599)<br>Enterprise 협의 | 공식 커넥터 + 공식 MCP | 본체 AGPL-3.0 · 클라우드 독점 · MCP 서버 MIT | 2026-10-24 |
-| [Higgsfield](#higgsfield) | 제작 | 부분 무료 · 가격표는 **Free 상업 이용 불포함**, 약관·도움말은 출력의 상업 이용을 제한 안 함(어긋남) · Free 는 워터마크 | Starter $19<br>Plus $59 (연 결제 $47)<br>Ultra $129 (연 결제 $99)<br>Team $79/좌석 (연 결제 $65)<br>Scale $215/좌석 (연 결제 $150)<br>Enterprise 영업 문의<br>위는 데스크톱·T1 지역 기준, 휴대폰 화면은 Basic $5 · Pro $29 · Max $79 | 공식 MCP (Claude Code 는 CLI) · 유료 등급만 | 독점 (CLI·스킬 MIT) | 2026-10-16 |
+| [Higgsfield](#higgsfield) | 제작 | 부분 무료 · 가격표는 **Free 상업 이용 불포함**, 약관·도움말은 출력의 상업 이용을 제한 안 함(어긋남) · Free 는 워터마크 | Starter $19<br>Plus $59 (연 결제 $47)<br>Ultra $129 (연 결제 $99)<br>Team $79/좌석 (연 결제 $65)<br>Scale $215/좌석 (연 결제 $150)<br>Enterprise 영업 문의<br>위는 데스크톱·T1 지역 기준, 휴대폰 화면은 Basic $5 · Pro $29 · Max $79 | 공식 MCP (Claude Code 는 CLI) · 유료 등급만 | 독점 (CLI·스킬 MIT) | 2026-10-27 |
 | [Blotato](#blotato) | 게시 | 체험만 무료(7일) · 업무 이용은 유료 등급 · 생성물 권리 확인 못 함 | Starter $29<br>Creator $97<br>Agency $499<br>연 결제는 약 17% 할인 (금액 표기 없음) | 공식 MCP · OAuth/API 키 · 유료 등급만 | 독점 | 2026-10-17 |
 | [Notion](#notion) | 기록 | 부분 무료 · 개인 무료 · 업무는 조직용 약관(MSA), Free 업무 이용을 막는 조항 없음 | Plus $12/멤버 (연 결제 $10)<br>Business $24/멤버 (연 결제 $20)<br>Enterprise 문의 | 공식 커넥터 · OAuth | 독점 (로컬 MCP 서버 MIT) | 2026-10-23 |
 | [Obsidian](#obsidian) | 기록 | 부분 무료 · 앱은 개인·업무 모두 무료(2025-02-20 부터) · Sync·Publish 만 유료 | 앱은 무료<br>Sync Standard $5 (연 결제 $4)<br>Sync Plus $10 (연 결제 $8)<br>Publish $10/사이트 (연 결제 $8)<br>Commercial license $50/사용자/년 (선택)<br>Catalyst 일회 $25 · $50 · $100 (선택 후원) | 커뮤니티 플러그인 MCP · 공식 CLI · 파일 | 독점 소프트웨어 (플러그인 MIT) | 2026-10-24 |
@@ -365,7 +365,7 @@ openai.com·chatgpt.com·help.openai.com 은 직접 받으면 Cloudflare 봇 확
 - **역할**: 범용
 - **한 줄**: Google 의 대화형 AI. Gemini 앱과 Gmail·Docs·Sheets 안의 Gemini, 이미지(Nano Banana)·영상(Gemini Omni·Veo·Flow)·음악(Lyria) 생성, 딥 리서치, 상시 에이전트(Tasks in Gemini, 옛 Gemini Spark)를 Google AI 요금제(Google One)로 묶어 팜
 - **클로드와 잇는 법**: 모델을 부르는 공식 MCP 서버·커넥터는 확인 못 함. 공식으로 있는 것은 **Gemini API Docs MCP** (`https://gemini-api-docs-mcp.dev`, 원격 HTTP, `npx add-mcp "https://gemini-api-docs-mcp.dev"` 로 붙임)와 공식 Gemini API 스킬(`google-gemini/gemini-skills`, 둘을 묶은 Gemini API Plugin 은 Antigravity 용)인데 **둘 다 Gemini 문서·SDK 사용법을 알려 주는 것뿐이고 Gemini 모델을 부르지는 않음**. 공식 문서는 이 MCP 를 "public MCP server" 라고만 하고 인증 절차는 적지 않음(원문 열어 봄). 모델을 부르려면 커뮤니티 MCP 서버(`GEMINI_API_KEY` API 키 인증)나 커뮤니티 Claude Code 플러그인(`gemini-plugin-cc` 류, Google 과 무관하다고 스스로 밝힘)을 씀. 주의: Gemini CLI 는 **2026-06-18 에 AI Pro·Ultra 구독과 무료 Code Assist 개인용 요청을 끊었고**, 그 뒤로는 **유료** Gemini API 키나 Code Assist Standard·Enterprise 라이선스로만 돎. 구독자는 Antigravity CLI(Google 계정 로그인)로 옮겨 감 — Gemini CLI 를 감싼 옛 플러그인은 유료 API 키가 있어야 돎(원문 열어 봄). AI Pro 계정의 Antigravity CLI(`agy` 1.4.0)를 Claude Code 에서 헤드리스(`agy -p … --output-format json`)로 불러 보니 아래가 됨: 작업 폴더의 mp4 영상·wav 녹음을 경로만 주고 넘기면 초 단위 내용과 문장을 정답대로 냄, 이미지 생성(1024² jpg 한 장에 44–68초, 물으면 "Imagen 3" 라고 하나 기록·메타데이터엔 모델 이름이 없음), 5만 4천 자 파일 읽기. 한 번에 Antigravity 의 Gemini 4 Argon 주간 한도를 0.2–0.8% 씩, 짧은 물음 둘까지 여섯 번에 1.2% 씀. 영상·음악 생성 도구는 없음 (직접 돌려 봄, 2026-10-17). 참고로 클로드의 Google Workspace 커넥터(Gmail·Calendar·Drive, OAuth)는 Google 앱에 붙는 것이지 Gemini 에 붙는 것이 아님
-- **확인한 날짜**: 2026-10-16
+- **확인한 날짜**: 2026-10-27
 
 #### 무료·유료와 이용 조건
 
@@ -374,7 +374,7 @@ openai.com·chatgpt.com·help.openai.com 은 직접 받으면 Cloudflare 봇 확
 | 분류 | 부분 무료 |
 | 개인 이용 | 무료 등급으로 가능함 |
 | 상업·업무 이용 | 개인 계정도 됨. Gemini 앱에는 Google 서비스 약관(2026-07-30 시행)과 생성형 AI 금지 정책만 적용되고, 약관은 업무 이용자(business user)를 따로 정의해 배상 책임 조항을 더할 뿐 업무 이용을 막지 않음. 조직 명의로 쓰려면 조직의 권한 있는 대리인이 약관에 동의해야 함 (원문 열어 봄). 회사 계정은 Workspace·Gemini Enterprise 로 따로 감 |
-| 생성물의 상업적 이용 | 가능함. Google 서비스 약관 본문에 "Google won't claim ownership over that content" 가 있음 — 첫 조사 때 근거로 삼은 생성형 AI 추가 약관은 **2024-05-22 부터 적용 안 되고** 그 내용이 본 약관으로 옮겨 갔음. 금지되는 것은 생성물로 AI 모델을 만드는 것, 생성물을 사람이 만든 것처럼 속이는 것 (원문 열어 봄). 보이지 않는 워터마크 SynthID 는 Google AI 생성물에 들어가고, Gemini 앱은 SynthID 와 Content Credentials 로 생성물 여부를 검증해 줌 (원문 열어 봄). 이미지의 **보이는 워터마크**가 무료·Pro 에만 붙는다는 것은 제3자 서술뿐이고 공식 도움말에는 등급 구분이 없음 — 확인 못 함 (2026-10-16, 이미지·검증 도움말 둘 다 보이는 워터마크 문구 없음). AI Pro 에 딸린 Google Flow Music Plus 혜택은 "Commercial use rights" 를 따로 적어 둠 (공식 도움말) |
+| 생성물의 상업적 이용 | 가능함. Google 서비스 약관 본문에 "Google won't claim ownership over that content" 가 있음 — 첫 조사 때 근거로 삼은 생성형 AI 추가 약관은 **2024-05-22 부터 적용 안 되고** 그 내용이 본 약관으로 옮겨 갔음. 금지되는 것은 생성물로 AI 모델을 만드는 것, 생성물을 사람이 만든 것처럼 속이는 것 (원문 열어 봄). 보이지 않는 워터마크 SynthID 는 Google AI 생성물에 들어가고, Gemini 앱은 SynthID 와 Content Credentials 로 생성물 여부를 검증해 줌 (원문 열어 봄). 이미지의 **보이는 워터마크**가 무료·Pro 에만 붙는다는 것은 제3자 서술뿐이고 공식 도움말에는 등급 구분이 없음 — 확인 못 함 (2026-10-27, 이미지·검증 도움말 둘 다 보이는 워터마크 문구 없음). AI Pro 에 딸린 Google Flow Music Plus 혜택은 "Commercial use rights" 를 따로 적어 둠 (공식 도움말) |
 
 - 특이점: 소비자 등급은 대화 일부를 사람이 검토하고 모델 개선에 씀. Keep Activity 를 끄거나 임시 채팅을 쓰면 앞으로의 대화는 검토에 안 쓰임. 검토된 대화는 활동을 지워도 최대 3년 보관, 기본 자동 삭제는 18개월 (원문 열어 봄). Gemini API 는 결제 계정이 붙은 Cloud 프로젝트로 부를 때만 유료 서비스라 프롬프트·응답을 개선에 안 쓰고, 무료 할당량·AI Studio 는 개선에 쓰고 사람이 읽을 수 있음(EEA·스위스·영국은 무료도 유료 규칙). API 약관은 "업무·전문 목적 개발자용, 소비자용 아님" 이라고 함 (원문 열어 봄, 2026-03-23 시행). Antigravity(CLI 포함)는 추가 약관이 따로 있어, 대화(Interactions)를 개선에 쓰고 "Google employees and contractors may access, view, review and use Interactions" 라고 적음. 유료·무료 구분은 없고 Gemini Enterprise·Workspace 로 쓰면 관리자 약관을 따름. 끄는 길은 "설정에서 바꾸라" 뿐임 (원문 열어 봄, 2026-10-17, 시행일 표기 없음)
 - 이 절의 출처: [Google Terms of Service](https://policies.google.com/terms?hl=en) — 공식(원문 열어 봄) · [Generative AI Additional Terms of Service](https://policies.google.com/terms/generative-ai?hl=en) — 공식(원문 열어 봄, 2024-05-22 부터 적용 안 됨) · [Gemini API Additional Terms of Service](https://ai.google.dev/gemini-api/terms) — 공식(원문 열어 봄) · [Gemini Apps Privacy Hub](https://support.google.com/gemini/answer/13594961?hl=en) — 공식(원문 열어 봄) · [Verify AI-generated images, videos, and audio](https://support.google.com/gemini/answer/16722517?hl=en) — 공식(원문 열어 봄) · [Gemini Watermark Policy by tier](https://www.removegeminiwatermarkai.com/blogs/gemini-watermark-policy-free-pro-ultra-api) — 제3자(원문 열어 봄, 워터마크 제거 도구 업체 글이고 Ultra 를 $34.99 로 적는 등 요금이 틀려 믿기 어려움)
@@ -382,13 +382,13 @@ openai.com·chatgpt.com·help.openai.com 은 직접 받으면 Cloudflare 봇 확
 #### 요금과 등급별 권한
 | 등급 | 월 요금 | 연 결제 시 | 할 수 있는 것 · 한도 |
 |---|---|---|---|
-| 무료 | $0 | – | 연산량 기준 한도가 5시간마다 차오르고 주간 상한이 있음(2026-05-17 부터). 가격표는 Flash-Lite 모델 접근만 적음(3.6 Flash 는 Plus 칸에 적힘). 3.1 Pro 접근은 확인 못 함 — 가격표·도움말에 무료 칸 문구 없음 (2026-10-16). 컨텍스트 32k 토큰. 딥 리서치 되지만 붐비면 무료 사용자가 먼저 막힐 수 있음. 이미지는 Nano Banana 2(Flash-Lite 로 그리면 Nano Banana 2 Lite, 내려받기 1K), Gemini 앱 안 영상 생성은 안 됨. Flow 는 구독과 상관없이 하루 50크레딧, Nano Banana Pro 제한 접근, 붐비는 시간(UTC 14–17시)엔 영상 생성이 막힐 수 있음. 저장공간 15GB |
-| AI Plus | $4.99 (2026-06-08 인하, 다음 갱신부터) — 전에는 $7.99 | 확인 못 함 — 공식 가격표(gemini.google·one.google.com)에 연 결제가가 없음 (2026-10-09) | 무료의 2배 한도, 컨텍스트 128k 토큰, 영상 생성(Gemini Omni)·Daily Brief(미국)·예약 작업, Nano Banana Pro 로 다시 그리기, 이미지 내려받기 2K(무료는 1K), Gmail 교정 등 Gmail·Vids 안의 Gemini, Flow 월 200크레딧 추가, 400GB 저장공간(전 200GB, 가족 5명 공유). 한도를 넘으면 AI 크레딧을 사서 늘릴 수 있음 |
+| 무료 | $0 | – | 연산량 기준 한도가 5시간마다 차오르고 주간 상한이 있음(2026-05-17 부터). 가격표는 Flash-Lite 모델 접근만 적음(3.6 Flash 는 Plus 칸에 적힘). 3.1 Pro 접근은 확인 못 함 — 가격표·도움말에 무료 칸 문구 없음 (2026-10-27). 컨텍스트 32k 토큰. 딥 리서치 되지만 붐비면 무료 사용자가 먼저 막힐 수 있음. 이미지는 Nano Banana 2(Flash-Lite 로 그리면 Nano Banana 2 Lite, 내려받기 1K), Gemini 앱 안 영상 생성은 안 됨. Flow 는 구독과 상관없이 하루 50크레딧, Nano Banana Pro 제한 접근, 붐비는 시간(UTC 14–17시)엔 영상 생성이 막힐 수 있음. 저장공간 15GB |
+| AI Plus | $4.99 (2026-06-08 인하, 다음 갱신부터) — 전에는 $7.99 | 확인 못 함 — 공식 가격표(gemini.google·one.google.com)에 연 결제가가 없음 (2026-10-27) | 무료의 2배 한도, 컨텍스트 128k 토큰, 영상 생성(Gemini Omni)·Daily Brief(미국)·예약 작업, Nano Banana Pro 로 다시 그리기, 이미지 내려받기 2K(무료는 1K), Gmail 교정 등 Gmail·Vids 안의 Gemini, Flow 월 200크레딧 추가, 400GB 저장공간(전 200GB, 가족 5명 공유). 한도를 넘으면 AI 크레딧을 사서 늘릴 수 있음 |
 | AI Pro | $19.99 | $199.99/년 (Google One 가격표 계산기) | 무료의 4배 한도, 컨텍스트 100만 토큰, Gemini 4 Argon(2026-10-13 부터, 앱·AI Mode)·Gemini 3.1 Pro·딥 리서치 확장, **Gmail·Docs·Sheets 안의 Gemini**, Tasks in Gemini(옛 Gemini Spark), Gemini Notebook(옛 NotebookLM) 상향 한도, Veo 3.1 Lite 제한 체험, Flow 월 1,000크레딧 추가, Google Flow Music(flowmusic.app) Plus 등급 혜택 — 월 10,000크레딧(약 2,000곡, AI 크레딧과 별개)·매일 충전·동시 생성 12개·상업적 이용권, Antigravity 입문 한도, Google Cloud 크레딧 월 $10, 저장공간 5TB(가입 요금제에 따라 10TB), YouTube Premium Lite 포함(일부 국가, 체험 중엔 안 켜지고 가족 공유 안 됨). Workspace 안 Google Pics(포스터·SNS 이미지)도 됨. Google Health Premium(기기 필요, 일부 국가)·Google Home Premium Standard 포함, Jules 상향 한도 |
 | AI Ultra (5x) | $99.99 | 없음 — 월 결제만 됨 (Google One 가격표) | 2026-05 I/O 신설. AI Pro 의 5배 Gemini·Antigravity 한도, Gemini 4 Argon 상향 접근(Antigravity 에서도 — Argon 의 Antigravity 접근은 Ultra 만), Deep Think(Ultra 전용), Flow 월 10,000크레딧 추가, Flow Music 월 30,000크레딧, 20TB 저장공간, YouTube Premium(40여 개국), Google Cloud 크레딧 월 $40. Google Home Premium Advanced·Google Health Premium 포함, Gemini Agent(미국·영어) |
 | AI Ultra (20x) | $199.99 (2026-05-19 I/O 에 $249.99 에서 인하) | 없음 — 월 결제만 됨 (Google One 가격표) | AI Pro 의 20배 한도, Gemini 4 Argon 최고 접근(Antigravity 포함), Deep Think, 신기능 먼저, Antigravity 에이전트 최고 한도, Veo 3.1 최고 접근, Project Genie(I/O 블로그는 $200 등급 전용이라 하고 Google One 가격표는 "Ultra 전용"이라고만 함), Flow 월 25,000크레딧 추가, Flow Music 월 30,000크레딧, 30TB 저장공간, Google Cloud 크레딧 월 $100. Google Home Premium Advanced·Google Health Premium 포함, Gemini Agent(미국·영어) |
 
-- 이 표의 값은 따로 적지 않은 것은 모두 공식 가격표·도움말 원문으로 확인함. 연 결제가는 Pro 만 있음($199.99), Ultra 는 월 결제만 됨, Plus 는 확인 못 함 — gemini.google 가격표는 월 요금만 싣고, one.google.com 은 가격이 스크립트로 그려져 헤드리스 브라우저로 그려 확인함(2026-10-01). 2026-10-09·10-16 재확인 때는 one.google.com 본문에 연 결제 문구가 안 나와 Pro $199.99/년은 다시 못 봤고 10-01 값을 둠
+- 이 표의 값은 따로 적지 않은 것은 모두 공식 가격표·도움말 원문으로 확인함. 연 결제가는 Pro 만 있음($199.99), Ultra 는 월 결제만 됨, Plus 는 확인 못 함 — gemini.google 가격표는 월 요금만 싣고, one.google.com 은 가격이 스크립트로 그려져 헤드리스 브라우저로 그려 확인함(2026-10-01). 2026-10-09·10-16·10-27 재확인 때는 one.google.com 본문에 연 결제 문구가 안 나와 Pro $199.99/년은 다시 못 봤고 10-01 값을 둠
 - **Tasks in Gemini(옛 이름 Gemini Spark, 2026-10 에 이름 바뀜)는 AI Pro·Ultra, 18세 이상, 개인 계정만** (기능 표·tasks 도움말·Google One 가격표가 같음). 2026-10-13 부터 채팅 창에서 chat↔tasks 토글로 맡김. 국가는 공식 원문 둘이 갈림: Gemini 도움말은 "Gemini 앱이 되는 곳 전부, EEA·나이지리아·스위스·영국 제외", Google One 의 AI Pro 혜택 도움말은 "미국만·영어만". 첫 조사의 "Ultra 전용·미국 베타"는 I/O 당시(2026-05) 계획이었음
 - **Workspace(회사 계정)**: Workspace 가격표는 Gemini 앱을 모든 Business 요금제에 넣어 둠(Starter 는 기본 접근, Standard 부터 확장 접근). 다만 Google One FAQ 는 아직 "Workspace 고객은 Gemini 애드온을 산다" 고 적어 공식 두 곳이 갈림. 요금제 금액은 Business Starter $7 · Standard $14 · Plus $22(사용자당 월, 1년 약정 화면 기준)이고, 새 고객은 첫 20명·12개월 동안 $5.60 · $9.80 · $11 도입가를 받음. Enterprise 는 문의. 월 단위 약정 없는 요금은 확인 못 함 — 가격표가 접속 국가별로 값을 내려 주어 r.jina.ai 경유로만 금액을 받았고 그 접속 지역은 모름 (2026-10-16). 회사용 Gemini 앱인 **Gemini Enterprise** 는 Business 판 $21/좌석/월부터(300좌석까지), Standard·Plus 판 $30/좌석/월부터이고 회사 데이터로 학습하지 않음
 - **2026 가을 업데이트(2026-09-09)**: 음성으로 초안 쓰기(Gmail·Keep 은 Plus 부터, Docs 는 Pro 부터), Sheets canvas(스프레드시트를 작은 앱으로, Pro·Ultra), Spark(지금 이름 Tasks in Gemini)가 Chrome·Google Photos 와 연결됨(Pro·Ultra, 미국)
@@ -407,7 +407,7 @@ openai.com·chatgpt.com·help.openai.com 은 직접 받으면 Cloudflare 봇 확
 - Antigravity CLI 는 오픈소스 라이선스가 없음 — 배포 저장소(`google-antigravity/antigravity-cli`)에 LICENSE 파일이 없고, README 가 Google 서비스 약관과 Antigravity 추가 약관을 따른다고 함
 
 #### 출처
-2026-10-16 재확인에서 아래 공식 원문을 다시 열어 대조했음. Plus 연 결제가는 원문에서도 값을 못 찾았고, Pro 연 결제가 $199.99 는 이번에도 다시 못 봐 2026-10-01 값을 둠. Workspace 요금제 금액은 r.jina.ai 경유로만 받았음.
+2026-10-27 재확인에서 가격표·한도·tasks 도움말·릴리스 노트(최신 10-13)·약관·저장소 라이선스를 다시 열어 대조했고 값이 같았음. Workspace 금액은 이번에 다시 안 봄(2026-10-16 값). Plus 연 결제가는 원문에서도 값을 못 찾았고, Pro 연 결제가 $199.99 는 이번에도 다시 못 봐 2026-10-01 값을 둠. Workspace 요금제 금액은 r.jina.ai 경유로만 받았음.
 - [Everything new in our Google AI subscriptions, fresh from I/O 2026](https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/) — 공식(원문 열어 봄, 2026-05-19)
 - [Get more done with the latest Google AI plan updates (fall 2026)](https://blog.google/products-and-platforms/products/google-one/fall-2026-ai-plan-updates/) — 자사 홍보(원문 열어 봄, 2026-09-09)
 - [Gemini 4 Argon is now available in the Gemini app](https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/) — 공식(원문 열어 봄, 2026-10-13)
@@ -845,42 +845,42 @@ MCP·커넥터가 무엇으로 과금되는지
 
 - **역할**: 제작
 - **한 줄**: Kling·Veo·Sora·Seedance·Nano Banana 등 여러 회사의 영상·이미지 생성 모델을 크레딧 하나로 묶어 쓰게 하는 모음형 생성 플랫폼임. 자체 모델(Soul 등)과 캐릭터 학습 기능도 있음
-- **클로드와 잇는 법**: 공식 MCP 서버 `https://mcp.higgsfield.ai/mcp` — claude.ai·데스크톱에서 설정 › 커넥터 › 사용자 지정 커넥터로 URL 을 넣고 Higgsfield 계정으로 OAuth 승인함(API 키 불필요). Claude Code 는 MCP 주소 대신 에이전트가 **Higgsfield CLI**(`npm i -g @higgsfield/cli` → `higgsfield auth login`)와 스킬(`npx skills add higgsfield-ai/skills`)을 깔아 붙는 방식으로 안내됨(공식 도움말, 원문 열어 봄). **활성 유료 구독이 있어야 함**(공식 도움말, 원문 열어 봄). 신규 사용자는 카드 인증으로 MCP 3일 체험(MCP 전용 100크레딧)을 받을 수 있고, 해지하지 않으면 월 결제 Plus 로 갱신됨(공식 변경 기록 2026-08-22, 원문 열어 봄). 커넥터 디렉터리 등록 여부는 확인 못 함 — 도움말은 사용자 지정 커넥터로만 안내함. 별도 개발자 제품인 Higgsfield API(2026-09-16 출시, 모델별 건당 과금, 구독 크레딧과 별개)는 MCP 와 다름(공식 변경 기록·도움말). 2026-10-08 에 Claude 용 스킬 Katana 가 나옴 — 참조 사진(최대 5장)과 프리셋으로 편집 영상을 만들고 MCP 로 Higgsfield 모델을 부름(공식 변경 기록, 원문 열어 봄)
-- **확인한 날짜**: 2026-10-16
+- **클로드와 잇는 법**: 공식 MCP 서버 `https://mcp.higgsfield.ai/mcp` — claude.ai·데스크톱에서 설정 › 커넥터 › 사용자 지정 커넥터로 URL 을 넣고 Higgsfield 계정으로 OAuth 승인함(API 키 불필요). Claude Code 는 MCP 주소 대신 에이전트가 **Higgsfield CLI**(`npm i -g @higgsfield/cli` → `higgsfield auth login`)와 스킬(`npx skills add higgsfield-ai/skills`)을 깔아 붙는 방식으로 안내됨(공식 도움말, 원문 열어 봄). **활성 유료 구독이 있어야 함**(공식 도움말, 원문 열어 봄). 신규 사용자는 카드 인증으로 MCP 3일 체험(MCP 전용 100크레딧)을 받을 수 있고, 해지하지 않으면 월 결제 Plus 로 갱신됨(공식 변경 기록 2026-08-22, 원문 열어 봄). 커넥터 디렉터리 등록 여부는 확인 못 함 — 도움말은 사용자 지정 커넥터로만 안내함. 별도 개발자 제품인 Higgsfield API(2026-09-16 출시, 모델별 건당 과금, 구독 크레딧과 별개)는 MCP 와 다름(공식 변경 기록·도움말). 2026-10-08 에 Claude 용 스킬 Katana 가 나옴 — 참조 사진(최대 5장)과 프리셋으로 편집 영상을 만들고 MCP 로 Higgsfield 모델을 부름(공식 변경 기록, 원문 열어 봄). 약관(2026-10-23 판) 11.12·11.13조: MCP 로 붙인 에이전트가 한 일은 모두 이용자 책임이고, Claude 같은 제3자 MCP 클라이언트는 그쪽 약관을 따로 따라야 하며 Higgsfield 는 그 클라이언트의 보안·데이터 처리를 책임지지 않음(원문 열어 봄)
+- **확인한 날짜**: 2026-10-27
 
 #### 무료·유료와 이용 조건
 
 | 구분 | 조건 |
 |---|---|
-| 분류 | 부분 무료 — 다만 가격표 비교표의 Free 크레딧은 **0**, 비교표 머리는 "Limited use"라고만 적고 하루 한도의 양은 안 밝힘(헤드리스 스크린숏). 앞 확인 때 카드에 있던 "Limited daily credits" 문구는 2026-10-08 로그인 전 데스크톱·휴대폰 화면에 없음. 실제로 무료로 몇 번 생성되는지는 확인 못 함 — 가격표·도움말 어디에도 숫자가 없음(2026-10-16). 기능 하나만은 숫자가 있음: AI Influencer 는 2026-10-03 부터 모든 이용자에게 무료 생성 5회(공식 변경 기록, 원문 열어 봄) |
+| 분류 | 부분 무료 — 다만 가격표 비교표의 Free 크레딧은 **0**, 비교표 머리는 "Limited use"라고만 적고 하루 한도의 양은 안 밝힘(헤드리스 스크린숏). 앞 확인 때 카드에 있던 "Limited daily credits" 문구는 2026-10-08 로그인 전 데스크톱·휴대폰 화면에 없음. 실제로 무료로 몇 번 생성되는지는 확인 못 함 — 가격표·도움말 어디에도 숫자가 없음(2026-10-27). 기능 하나만은 숫자가 있음: AI Influencer 는 2026-10-03 부터 모든 이용자에게 무료 생성 5회(공식 변경 기록, 원문 열어 봄) |
 | 개인 이용 | Free 로 제한적으로 가능함 — "Limited use", 일부 모델만, 모든 생성물에 워터마크 (가격표·도움말, 원문 열어 봄) |
 | 상업·업무 이용 | **문서끼리 어긋남.** 가격표 비교표는 Commercial use 를 Free "Not included" · Starter·Plus·Ultra "Included"로 표시함. 반면 약관 4.4조와 도움말은 출력의 상업적 이용을 요금제와 묶지 않음 (모두 공식, 원문 열어 봄) |
 | 생성물의 상업적 이용 | 약관 4.4조: 입력·출력의 소유권을 주장하지 않고 출력의 상업적 이용을 제한하지 않음. 도움말 "Who owns my generations": 모든 이용자에 적용되고 따로 사는 상업 라이선스는 없음. 다만 **무료 계정은 모든 생성물에 보이는 워터마크**가 붙고 유료는 안 붙음(도움말). 가격표는 Free 를 상업 이용 불포함으로 표시하므로 **상업용이면 유료 등급으로 쓰는 쪽이 안전함** — 약관이 법적 효력이 있는 쪽이나 가격표와 어긋남이 남아 있음 |
 
 - 특이점: 해지·계정 삭제 뒤에도 이미 뽑아 내려받은 출력의 권리는 남고 고객에게 넘기거나 재허락할 수 있음. 출력은 이용자마다 유일하지 않을 수 있음. 이용자의 입력·출력은 Higgsfield 모델 학습에 쓰임(Enterprise 계약만 제외). **출력으로 다른 AI 모델을 학습·미세조정·증류하는 것은 금지**(약관 5.1(iii)·5.2(iv)). 제3자 IP 청구에 대한 면책은 Enterprise 만 (약관·도움말, 원문 열어 봄)
-- 약관은 2026-07-26 개정판임. 그 전에 가입한 사용자는 2026-08-27 부터 적용
+- 약관은 2026-10-23 개정판임(앞 판 2026-07-26). 앞 판과 무엇이 달라졌는지는 확인 못 함 — 보관본(web.archive.org 2026-10-18)이 이 조사 환경에서 안 열림 (2026-10-27). 이 절이 인용한 4.4조·5.1(iii)·5.2(iv)·8절 문구는 새 판에도 그대로임. 바뀐 약관은 올린 때부터 효력이 있고 따로 알리지 않음(19.6조)
 - 이 절의 출처: [Terms of Use Agreement](https://higgsfield.ai/terms-of-use-agreement) — 공식(원문 열어 봄) · [Who Owns Your Higgsfield Generations](https://higgsfield.ai/creator-hub/help-center/account/who-owns-my-generations-and-can-i-use-them-commercially) — 공식(원문 열어 봄) · [Why Is There a Watermark on Higgsfield](https://higgsfield.ai/creator-hub/help-center/credits/watermark-and-how-to-remove) — 공식(원문 열어 봄) · [Pricing plans — Higgsfield](https://higgsfield.ai/pricing) — 공식(원문 열어 봄, 비교표)
 
 #### 요금과 등급별 권한
 > 주의: **가격표는 보는 사람마다 다른 요금 세트를 보여 줌.** 가격표 페이지는 스크립트로 그려지고, 서버가 준 `hf-tier` 쿠키(T1·T2·T3)·기기(데스크톱/휴대폰)·A/B 실험에 따라 요금 세트를 골라 API 에서 받아 옴(페이지 스크립트와 API 원문을 열어 봄). 아래 값은 이 조사 컨테이너(API 가 국가를 US 로 보고 서버가 `hf-tier=T1` 을 줌)에서 헤드리스 브라우저로 그려 본 것임. 한국에서 어느 세트가 보이는지는 확인 못 함 — 국가별 등급 배정표가 공개돼 있지 않고, 쿠키를 바꿔도 서버가 다시 덮어씀.
-> 등급 이름: 데스크톱 기본 화면과 약관(2026-07-26, "Starter, Plus, Ultra")·MCP 체험 전환 등급(Plus)이 모두 **Starter/Plus/Ultra** 를 씀. **Basic/Pro/Max** 는 휴대폰 화면과 A/B 실험 쪽 세트에 남아 있음 — 제3자 글이 "8월에 Basic/Pro/Max 로 바뀌었다"고 적은 것은 이 세트를 본 것으로 보임(추정).
+> 등급 이름: 데스크톱 기본 화면과 약관(2026-10-23 판 1.6조, "Starter, Plus, and Ultra")·MCP 체험 전환 등급(Plus)이 모두 **Starter/Plus/Ultra** 를 씀. **Basic/Pro/Max** 는 휴대폰 화면과 A/B 실험 쪽 세트에 남아 있음 — 제3자 글이 "8월에 Basic/Pro/Max 로 바뀌었다"고 적은 것은 이 세트를 본 것으로 보임(추정).
 
-**데스크톱 가격표 (T1 · 2026-10-16 그려 봄, 헤드리스 스크린숏 · 요금 API ps_a3)**
+**데스크톱 가격표 (T1 · 2026-10-27 그려 봄, 헤드리스 스크린숏 · 요금 API ps_a3)**
 
 | 등급 | 월 요금 | 연 결제 시 | 할 수 있는 것 · 한도 |
 |---|---|---|---|
 | Free | $0 | — | 크레딧 0(비교표 "Limited use"), 일부 모델만, 워터마크, 가격표상 상업 이용 불포함, 비교표상 영상 동시 작업 1개. MCP 불가 |
-| Starter | $19 | $19/월 (월 결제와 차이 없음) | 월 270크레딧. 영상 2·이미지 4개 동시 생성, 일부 모델·기능만(Seedance 는 2.0 Fast·2.0 Mini), Supercomputer 이용 가능. Unlimited 모델 없음. 카드의 무료 생성 AI Influencer 10회 · Ads Studio 10회(웹에서만) |
-| Plus | $59 | $47/월 ($564/년) | 월 1,200크레딧. 모든 모델·기능, 신기능 조기 이용, Unlimited 마켓플레이스. **월 결제와 연 결제의 카드가 다름** — 연 결제는 유료 동시 생성 제한 없음("Unlimited paid parallel generations")·Nano Banana 2·Kling 3.0·Wan 3.0(3.0 Prime 포함) 7일 Unlimited·Genjutsu 720p 무료 생성 3회, 월 결제는 영상 6·이미지 8개 동시 생성·Nano Banana 2·Wan 3.0 7일 Unlimited·Genjutsu 2회. Wan 3.0 은 2026-10-13 부터의 행사임(공식 변경 기록). 둘 다 AI Influencer 30회·Ads Studio 10회 무료 생성(웹에서만) |
-| Ultra | $129 | $99/월 ($1,188/년) | 월 3,000크레딧(6,000 $250 · 9,000 $375 선택지 — 월 결제는 첫 결제 $220 · $310 뒤 정가로 갱신, 연 결제 월 $193.50 · $270). 유료 동시 생성 제한 없음 + 크레딧당 단가 가장 낮음. 카드에 Nano Banana Pro·Nano Banana 2·Wan 3.0(3.0 Prime 포함, 2026-10-13 부터 행사) 7일 Unlimited, 연 결제는 Kling 3.0 도. Genjutsu 720p 무료 생성 연 결제 3회 · 월 결제 2회, AI Influencer 30회·Ads Studio 10회(웹에서만) |
+| Starter | $19 | $19/월 (월 결제와 차이 없음) | 월 270크레딧. 영상 2·이미지 4개 동시 생성, 일부 모델·기능만(Seedance 는 2.0 Fast·2.0 Mini), Supercomputer 이용 가능. 7일 Unlimited 모델 없음 — 365일 Unlimited 는 Seedream 5.0 Lite·Flux.2 Pro(1K) 둘뿐. 카드의 무료 생성 AI Influencer 10회 · Ads Studio 10회 · Soul V2·Cinema 300회(웹에서만) |
+| Plus | $59 | $47/월 ($564/년) | 월 1,200크레딧. 모든 모델·기능, 신기능 조기 이용, Unlimited 마켓플레이스. **월 결제와 연 결제의 카드가 다름** — 연 결제는 유료 동시 생성 제한 없음("Unlimited paid parallel generations")·Nano Banana 2·Kling 3.0 7일 Unlimited·Genjutsu 720p 무료 생성 3회·Soul V2·Cinema 5,000회, 월 결제는 영상 6·이미지 8개 동시 생성·Nano Banana 2 7일 Unlimited·Genjutsu 2회·Soul V2·Cinema 3,000회. 10-13 부터 카드에 있던 Wan 3.0 7일 Unlimited 는 2026-10-27 가격표에 없음. 둘 다 AI Influencer 30회·Ads Studio 10회 무료 생성, Seedream 5.0 Lite·Flux.2 Pro(1K)·Seedream 4.5·Nano Banana·Kling O1 Image·GPT Image 365일 Unlimited(웹에서만) |
+| Ultra | $129 | $99/월 ($1,188/년) | 월 3,000크레딧(6,000 $250 · 9,000 $375 선택지 — 월 결제는 첫 결제 $220 · $310 뒤 정가로 갱신, 연 결제 월 $193.50 · $270). 유료 동시 생성 제한 없음 + 크레딧당 단가 가장 낮음. 카드에 Nano Banana Pro·Nano Banana 2 7일 Unlimited, 연 결제는 Kling 3.0 도(10-13 부터 있던 Wan 3.0 은 2026-10-27 가격표에 없음). 365일 Unlimited 는 Plus 와 같은 여섯 모델(Seedream 4.5 는 4K). Genjutsu 720p 무료 생성 연 결제 3회 · 월 결제 2회, Soul V2·Cinema 연 결제 10,000회 · 월 결제 5,000회, AI Influencer 30회·Ads Studio 10회(웹에서만) |
 | Team (좌석제) | $79/좌석 | $65/좌석/월 | 좌석당 1,000크레딧이 공용 잔액으로 합쳐짐, 2–9명, 공유 작업 공간, 표준 대기열. 카드에 Nano Banana Pro·Seedream 5.0 Pro 7일 Unlimited(Kling 3.0 없음)와 구매일부터 Unlimited Seedance 2.0(15초·720p, 사업자 인증 필요) — 연 결제 14일 · 월 결제 7일. 띠 머리는 "30일"이라고 크게 적지만 띠 본문은 Team 을 14일·7일로 가름 |
 | Scale (좌석제) | $215/좌석 | $150/좌석/월 | 좌석당 2,500크레딧 공용, 5–15명, 우선 대기열, SSO, 멤버별 사용 한도. 2026-09-03 부터 새 구독에 7일 Unlimited 모델(Nano Banana Pro·Seedream 5.0 Pro, 연 결제는 Kling 3.0 도). 카드에 구매일부터 Unlimited Seedance 2.5(25초·720p, 사업자 인증 필요) — 연 결제 30일 · 월 결제 7일 |
 | Enterprise | 영업 문의 | 영업 문의 | 좌석·크레딧 맞춤, 전용 용량(SLA), 입력·출력을 학습에 안 씀, IP 면책 |
 
-- 2026-10-08 부터의 행사(10-16 에도 있음): 개인 등급 띠에 "Ultra 7일 Nano Banana 2·Pro Unlimited + 특별 30% 할인"(할인 금액은 화면·요금 API 어디에도 없어 확인 못 함, 2026-10-16), 맨 위 띠에 "가입하면 추가 할인 · Nano Banana Pro·Nano Banana 2·Kling 3.0 Unlimited", 연 결제 토글에 "30% OFF", 기업 등급 띠에 "Team·Scale Unlimited Seedance 2.5/2.0, 최대 30% 할인" — 기간은 Scale 연 결제 30일(2.5) · Scale 월 결제 7일(2.5) · Team 연 결제 14일(2.0) · Team 월 결제 7일(2.0). 9-30 까지의 Plus·Ultra 보너스 크레딧 행사는 끝남. 기업 등급 월 결제 화면(2026-10-16 헤드리스 스크린숏): Team 은 첫 달 $69/좌석 뒤 $79 로 갱신, Scale 은 $169/좌석이고 갱신도 $169 라 정가 $215 는 줄 그은 값으로만 보임(요금 API 값은 $169.01). 표에는 정가를 적음
+- 2026-10-08 부터의 행사(10-27 에도 있음): 개인 등급 띠에 "Ultra 7일 Nano Banana 2·Pro Unlimited + 특별 30% 할인"(할인 금액은 화면·요금 API 어디에도 없어 확인 못 함, 2026-10-27), 맨 위 띠에 "가입하면 추가 할인 · Nano Banana Pro·Nano Banana 2·Kling 3.0 Unlimited", 연 결제 토글에 "30% OFF", 기업 등급 띠에 "Team·Scale Unlimited Seedance 2.5/2.0, 최대 30% 할인" — 기간은 Scale 연 결제 30일(2.5) · Scale 월 결제 7일(2.5) · Team 연 결제 14일(2.0) · Team 월 결제 7일(2.0). 9-30 까지의 Plus·Ultra 보너스 크레딧 행사는 끝남. 기업 등급 월 결제 화면(2026-10-27 헤드리스 스크린숏): Team 은 첫 달 $69/좌석 뒤 $79 로 갱신, Scale 은 $169/좌석이고 갱신도 $169 라 정가 $215 는 줄 그은 값으로만 보임(요금 API 값은 $169.01). 표에는 정가를 적음
 - 가격에 부가세·지역 세금은 빠져 있고 결제 때 붙음(가격표)
 
-**휴대폰 화면·실험 세트 (2026-10-08 휴대폰 화면으로 그려 봄, 헤드리스 스크린숏 · 요금 API max_v2)** — 휴대폰으로 열면 T1 이어도 다른 세트가 뜸
+**휴대폰 화면·실험 세트 (2026-10-27 휴대폰 화면으로 그려 봄, 헤드리스 스크린숏 · 요금 API max_v2)** — 휴대폰으로 열면 T1 이어도 다른 세트가 뜸
 
 | 등급 | 월 요금 | 연 결제 시 | 할 수 있는 것 · 한도 |
 |---|---|---|---|
@@ -892,7 +892,7 @@ MCP·커넥터가 무엇으로 과금되는지
 - A/B 실험 세트(요금 API `max_v1`·`max_v3`)는 Basic 이 **$9 / 120크레딧**이고 Pro·Max 는 위와 같음. 앞 조사의 "Basic $9" 는 이 세트 값임. 이 컨테이너가 받은 화면에는 안 나옴
 - T2 지역 세트(요금 API `default`)는 Starter $15/200 · Plus $49/1,000(연 결제 $39/월) · Ultra $129/3,000 임. 어느 나라가 T2 인지는 확인 못 함
 - 공식 도움말: 등급마다 **쓸 수 있는 모델 · 월 크레딧 · 동시 생성 수**가 다름. 구독 크레딧은 이월되지 않고 갱신 때 사라짐(연 결제는 30일마다 채워짐). 자동 갱신되고 언제든 해지할 수 있으며 해지해도 그 기간 끝까지 씀
-- 크레딧 팩: 고정 100·200·500·1,000·2,000·4,000 또는 5,000–25,000(1,000 단위). **값은 결제 화면에만 표시돼 확인 못 함 (2026-10-16, 도움말이 "shown at checkout" 이라고만 함).** 해지 뒤 남은 팩 크레딧은 Free 등급이 쓸 수 있는 모델에 쓸 수 있고, 구독 크레딧을 먼저 쓴 뒤 만료가 가까운 것부터 빠짐. 활성 구독이 있어야 사고, 90일 유효, 해지해도 남음, 쓰지 않았으면 7일 안에 환불, 수수료 최대 6%(공식 도움말)
+- 크레딧 팩: 고정 100·200·500·1,000·2,000·4,000 또는 5,000–25,000(1,000 단위). **값은 결제 화면에만 표시돼 확인 못 함 (2026-10-27, 도움말이 "shown at checkout" 이라고만 함).** 해지 뒤 남은 팩 크레딧은 Free 등급이 쓸 수 있는 모델에 쓸 수 있고, 구독 크레딧을 먼저 쓴 뒤 만료가 가까운 것부터 빠짐. 활성 구독이 있어야 사고, 90일 유효, 해지해도 남음, 쓰지 않았으면 7일 안에 환불, 수수료 최대 6%(공식 도움말)
 - "Unlimited 모델"(특정 모델을 기간 동안 크레딧 차감 없이 쓰는 혜택)은 중간 이상 등급에 붙고 등급 카드에 모델과 기간이 적힘. **웹(higgsfield.ai)에서 손으로 만들 때만 적용되고 MCP·CLI·Canvas·Supercomputer 로 만든 것은 항상 정가로 크레딧이 빠짐**(가격표·공식 도움말, 원문 열어 봄). Unlimited 생성은 표준 대기열, 크레딧 생성은 우선 대기열. 2026년 7월의 "Unlimited MCP" 는 신규 사용자 24시간 체험으로 7월 31일에 끝난 행사였음(자사 블로그)
 
 **크레딧당 생성량 대표 예시** (가격표 비교표, 원문 열어 봄 — 실제 값은 생성 버튼에 표시됨)
@@ -917,7 +917,7 @@ MCP·커넥터가 무엇으로 과금되는지
 
 #### 라이선스
 - 독점 SaaS 서비스임
-- 클로드에 붙이는 부품: 원격 MCP 서버는 Higgsfield 가 운영하는 호스팅 서비스이고 소스 공개 여부는 확인 못 함. Claude Code 용 **Higgsfield CLI(`@higgsfield/cli`)는 MIT**(npm 1.1.26), **스킬 저장소 `higgsfield-ai/skills` 도 MIT**(원문 열어 봄)
+- 클로드에 붙이는 부품: 원격 MCP 서버는 Higgsfield 가 운영하는 호스팅 서비스이고 소스 공개 여부는 확인 못 함 — GitHub 조직 목록이 이 조사 환경에서 안 열림 (2026-10-27). Claude Code 용 **Higgsfield CLI(`@higgsfield/cli`)는 MIT**(npm 1.2.2), **스킬 저장소 `higgsfield-ai/skills` 도 MIT**(원문 열어 봄)
 - 생성물 권리: 약관 4.4조가 입력·출력의 소유권을 주장하지 않고 출력의 상업적 이용을 제한하지 않음(원문 열어 봄). 가격표 비교표는 Free 를 "Commercial use: Not included"로 표시해 어긋남. 유료 등급은 상업 이용 포함·워터마크 없음으로 가격표·도움말이 일치함
 - 생성에 쓰는 개별 모델: 약관 8절이 제3자 모델을 쓰면 **그 제공사의 이용 정책도 지켜야 하고 더 엄격한 쪽이 이긴다**고 적음(원문 열어 봄)
 
@@ -933,7 +933,7 @@ MCP·커넥터가 무엇으로 과금되는지
 - [What are Unlimited models and which plans include them?](https://higgsfield.ai/creator-hub/help-center/credits/what-are-unlimited-models-and-which-plans-include-them) — 공식 (원문 열어 봄)
 - [Who Owns Your Higgsfield Generations](https://higgsfield.ai/creator-hub/help-center/account/who-owns-my-generations-and-can-i-use-them-commercially) — 공식 (원문 열어 봄)
 - [Why Is There a Watermark on Higgsfield](https://higgsfield.ai/creator-hub/help-center/credits/watermark-and-how-to-remove) — 공식 (원문 열어 봄)
-- [Terms of Use Agreement](https://higgsfield.ai/terms-of-use-agreement) — 공식 (원문 열어 봄, 2026-07-26 개정판)
+- [Terms of Use Agreement](https://higgsfield.ai/terms-of-use-agreement) — 공식 (원문 열어 봄, 2026-10-23 개정판)
 - [Changelog — Higgsfield](https://higgsfield.ai/creator-hub/changelog) — 공식 (원문 열어 봄, MCP 3일 체험·Scale 개편·Higgsfield API 출시·AI Influencer 무료 5회·Katana·Wan 3.0 행사)
 - [@higgsfield/cli — npm](https://www.npmjs.com/package/@higgsfield/cli) — 공식 (레지스트리 원문 열어 봄, MIT)
 - [higgsfield-ai/skills LICENSE](https://raw.githubusercontent.com/higgsfield-ai/skills/main/LICENSE) — 공식 (원문 열어 봄, MIT)

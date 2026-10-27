@@ -201,7 +201,7 @@ flowchart LR
 | [NotebookLM](#notebooklm-2026-07-16-부터-gemini-notebook) | 조사 | 부분 무료 · 개인 무료 · 업무 이용을 막는 약관 조항 없음 · 생성물 소유권 주장 안 함(상업 이용 명시 문구는 없음, 한국은 이미지·영상 워터마크 강제) | Google AI Plus $4.99<br>Google AI Pro $19.99 (연 결제 $199.99/년)<br>Google AI Ultra 5× $99.99<br>Google AI Ultra 20× $199.99<br>Gemini Notebook Enterprise $9/라이선스 (최소 15개)<br>Workspace 는 그 요금에 포함 | 커뮤니티 MCP · 쿠키 | 독점 (커뮤니티 MCP MIT) | 2026-10-17 |
 | [Firecrawl](#firecrawl) | 수집 | 부분 무료 + 자체 호스팅 무료 · 자체 호스팅은 AGPL-3.0 조건으로 상업 이용 가능 · 클라우드 약관은 등급 구분 없이 "명시적 허락 없는 상업 이용" 금지 · 출력 권리 조항 없음 | Hobby $19 (연 결제 $16)<br>Standard $99 (연 결제 $83)<br>Growth $399 (연 결제 $333)<br>Scale $749 (연 결제 $599)<br>Enterprise 협의 | 공식 커넥터 + 공식 MCP | 본체 AGPL-3.0 · 클라우드 독점 · MCP 서버 MIT | 2026-10-24 |
 | [Higgsfield](#higgsfield) | 제작 | 부분 무료 · 가격표는 **Free 상업 이용 불포함**, 약관·도움말은 출력의 상업 이용을 제한 안 함(어긋남) · Free 는 워터마크 | Starter $19<br>Plus $59 (연 결제 $47)<br>Ultra $129 (연 결제 $99)<br>Team $79/좌석 (연 결제 $65)<br>Scale $215/좌석 (연 결제 $150)<br>Enterprise 영업 문의<br>위는 데스크톱·T1 지역 기준, 휴대폰 화면은 Basic $5 · Pro $29 · Max $79 | 공식 MCP (Claude Code 는 CLI) · 유료 등급만 | 독점 (CLI·스킬 MIT) | 2026-10-27 |
-| [Blotato](#blotato) | 게시 | 체험만 무료(7일) · 업무 이용은 유료 등급 · 생성물 권리 확인 못 함 | Starter $29<br>Creator $97<br>Agency $499<br>연 결제는 약 17% 할인 (금액 표기 없음) | 공식 MCP · OAuth/API 키 · 유료 등급만 | 독점 | 2026-10-17 |
+| [Blotato](#blotato) | 게시 | 체험만 무료(7일) · 업무 이용은 유료 등급 · 생성물 권리 확인 못 함 | Starter $29<br>Creator $97<br>Agency $499<br>연 결제는 약 17% 할인 (금액 표기 없음) | 공식 MCP · OAuth/API 키 · 유료 등급만 | 독점 | 2026-10-28 |
 | [Notion](#notion) | 기록 | 부분 무료 · 개인 무료 · 업무는 조직용 약관(MSA), Free 업무 이용을 막는 조항 없음 | Plus $12/멤버 (연 결제 $10)<br>Business $24/멤버 (연 결제 $20)<br>Enterprise 문의 | 공식 커넥터 · OAuth | 독점 (로컬 MCP 서버 MIT) | 2026-10-23 |
 | [Obsidian](#obsidian) | 기록 | 부분 무료 · 앱은 개인·업무 모두 무료(2025-02-20 부터) · Sync·Publish 만 유료 | 앱은 무료<br>Sync Standard $5 (연 결제 $4)<br>Sync Plus $10 (연 결제 $8)<br>Publish $10/사이트 (연 결제 $8)<br>Commercial license $50/사용자/년 (선택)<br>Catalyst 일회 $25 · $50 · $100 (선택 후원) | 커뮤니티 플러그인 MCP · 공식 CLI · 파일 | 독점 소프트웨어 (플러그인 MIT) | 2026-10-24 |
 | [Jev](#jev) | 판정 | 유료 · 무료 등급 없음(새 가입자 $5 크레딧은 2026-09-27 멈춤 — 창업자 X 게시물, 금액은 제3자) · 개인·업무 모두 같은 약관(MCA)으로 가능, 단독 재판매·증류 금지 · 출력 권리는 고객에게 양도 | 종량제 — 입력 100만 토큰당 $0.042, 출력 무료 (월 요금 없음)<br>맞춤·엔터프라이즈 협의 | 공식 Claude Code 플러그인(스킬) · 커뮤니티 MCP · API 키 | 독점 (SDK·스킬 MIT, 커뮤니티 MCP MIT) | 2026-10-26 |
@@ -947,8 +947,8 @@ MCP·커넥터가 무엇으로 과금되는지
 
 - **역할**: 게시
 - **한 줄**: 글·이미지·영상을 AI 로 만들고 9개 SNS 에 예약·게시하는 소셜 미디어 자동화 도구임. API·MCP 로 AI 에이전트가 직접 게시하게 하는 쪽을 앞세움
-- **클로드와 잇는 법**: 공식 MCP 서버 `https://mcp.blotato.com/mcp`(원격 호스팅, Streamable HTTP, 로컬 프로세스 없음) — claude.ai·Claude 데스크톱·Cowork 는 "사용자 지정 커넥터 추가"로 URL 을 넣고 **OAuth** 로 인증(브라우저에 Blotato 로그인 상태여야 함). Claude Code 는 연결 설정 도움말이 `claude mcp add --transport http blotato https://mcp.blotato.com/mcp` 뒤 `/mcp` 에서 브라우저 OAuth 를 먼저 안내하고, **API 키**를 `blotato-api-key` 헤더로 넣는 방법을 대안으로 둠. API keys 도움말은 아직 "Claude.ai·데스크톱·Cowork 만 OAuth, Claude Code 등은 API 키"라고 적고, 연결 설정 도움말의 문제 해결 절은 Claude Code 도 OAuth 클라이언트로 묶어 도움말끼리 어긋남. MCP FAQ 는 이제 "OAuth·API 키 둘 다 되고 클라이언트마다 다름"으로만 적음. Claude Team·Enterprise 에서는 워크스페이스 관리자만 사용자 지정 커넥터를 넣을 수 있음(MCP FAQ). Codex 는 CLI 의 OAuth 와 API 키(TOML) 두 길을 안내하고, Cursor·VS Code 는 API 키 헤더, 그 밖의 원격 클라이언트는 "되면 OAuth, 아니면 API 키 헤더"(키는 Settings › API 에서 복사, 끝의 `=` 까지 포함, 계정당 키 하나)(공식 도움말, 원문 열어 봄). 클로드 커넥터 디렉터리에는 없고 URL 로 추가하는 방식임(자사 블로그, 원문 열어 봄). **유료 구독이 있어야 API·MCP 를 쓸 수 있음** — 무료 체험 중에는 API 가 막히고, API 키를 만드는 순간 체험이 끝나고 Starter 유료 구독이 시작됨(공식 도움말, 원문 열어 봄). 호출 한도는 REST 라우트별 분당 한도이고 MCP 도구도 같은 라우트를 씀 — 게시 생성 30회/분, 게시 목록·상태 조회 60회/분, URL 로 미디어 올리기 30회/분 등(공식 도움말, 원문 열어 봄). **MCP 로는 이미지·영상 생성이 안 됨** — 웹 앱이나 REST 의 Create Visual 로 만든 뒤 그 URL 을 MCP 게시 도구에 넘기는 구조임(MCP FAQ·Tools 도움말, 2026-10-17)
-- **확인한 날짜**: 2026-10-17
+- **클로드와 잇는 법**: 공식 MCP 서버 `https://mcp.blotato.com/mcp`(원격 호스팅, Streamable HTTP, 로컬 프로세스 없음) — claude.ai·Claude 데스크톱·Cowork 는 "사용자 지정 커넥터 추가"로 URL 을 넣고 **OAuth** 로 인증(브라우저에 Blotato 로그인 상태여야 함). Claude Code 는 연결 설정 도움말이 `claude mcp add --transport http blotato https://mcp.blotato.com/mcp` 뒤 `/mcp` 에서 브라우저 OAuth 를 먼저 안내하고, **API 키**를 `blotato-api-key` 헤더로 넣는 방법을 대안으로 둠. API keys 도움말은 아직 "Claude.ai·데스크톱·Cowork 만 OAuth, Claude Code 등은 API 키"라고 적고, 연결 설정 도움말의 문제 해결 절은 Claude Code 도 OAuth 클라이언트로 묶어 도움말끼리 어긋남. MCP FAQ 는 인증 절에서 "OAuth·API 키 둘 다 되고 클라이언트마다 다름"이라 적으면서, 호스팅·클라우드 에이전트 절에서는 "OAuth 는 Claude.ai·데스크톱·Cowork 만"이라 적어 같은 페이지 안에서도 어긋남. Claude Team·Enterprise 에서는 워크스페이스 관리자만 사용자 지정 커넥터를 넣을 수 있음(MCP FAQ). Codex 는 CLI 의 OAuth 와 API 키(TOML) 두 길을 안내하고, Cursor·VS Code 는 API 키 헤더, 그 밖의 원격 클라이언트는 "되면 OAuth, 아니면 API 키 헤더"(키는 Settings › API 에서 복사, 끝의 `=` 까지 포함, 계정당 키 하나)(공식 도움말, 원문 열어 봄). 클로드 커넥터 디렉터리에는 없고 URL 로 추가하는 방식임(자사 블로그, 원문 열어 봄). **유료 구독이 있어야 API·MCP 를 쓸 수 있음** — 무료 체험 중에는 API 가 막히고, API 키를 만드는 순간 체험이 끝나고 Starter 유료 구독이 시작됨(공식 도움말, 원문 열어 봄). 호출 한도는 REST 라우트별 분당 한도이고 MCP 도구도 같은 라우트를 씀 — 게시 생성 30회/분, 게시 목록·상태 조회 60회/분, URL 로 미디어 올리기 30회/분 등(공식 도움말, 원문 열어 봄). **MCP 로도 템플릿 기반 시각물(이미지·인포그래픽·캐러셀·슬라이드쇼·영상)을 만들 수 있음** — Tools 도움말의 Videos and Images 절에 템플릿 목록·생성·상태 조회 도구 3개(`blotato_list_design_templates`·`blotato_create_design`·`blotato_get_design_status`)가 생겼고, MCP FAQ 는 AI 도구가 템플릿을 골라 만들고 렌더를 기다려 게시한다고 적음. 입력은 템플릿 ID·입력값·프롬프트뿐이라 모델(flux·veo 등)을 고르는 칸은 없음(MCP FAQ·Tools 도움말, 2026-10-28)
+- **확인한 날짜**: 2026-10-28
 
 #### 무료·유료와 이용 조건
 
@@ -957,7 +957,7 @@ MCP·커넥터가 무엇으로 과금되는지
 | 분류 | 체험만 무료 — 7일 체험 뒤 유료, 무료 등급 없음 |
 | 개인 이용 | 체험 7일만 무료임 |
 | 상업·업무 이용 | 유료 등급에서 됨. 약관(2026-05-18 개정)에 상업 이용을 막거나 등급별로 나누는 조항이 없고, 2조가 회사·단체 명의로 약관을 받아들이는 경우를 전제함. 가격표도 Agency 를 "여러 브랜드를 운영하는 에이전시·팀용"으로 둠 (공식, 원문 열어 봄) |
-| 생성물의 상업적 이용 | 확인 못 함 — 약관 원문을 열었으나 AI 생성물의 권리를 정한 조항이 없음. 8.1조가 "User Content 는 이용자 소유, Blotato 에 전 세계·영구·취소 불가·재허락 가능한 이용권 부여"만 정함. 도움말 전체(llms-full.txt)를 commercial·copyright·ownership 으로 찾아도 상업 이용·저작권 문구가 없음. 약관은 여전히 2026-05-18 판임 (2026-10-17) |
+| 생성물의 상업적 이용 | 확인 못 함 — 약관 원문을 열었으나 AI 생성물의 권리를 정한 조항이 없음. 8.1조가 "User Content 는 이용자 소유, Blotato 에 전 세계·영구·취소 불가·재허락 가능한 이용권 부여"만 정함. 도움말 전체(llms-full.txt)를 commercial·copyright·ownership 으로 찾아도 상업 이용·저작권 문구가 없음. 약관은 여전히 2026-05-18 판임 (2026-10-28) |
 
 - 이 절의 출처: [Terms of Service](https://www.blotato.com/terms-of-service) — 공식 (원문 열어 봄, 2026-05-18 개정판) · [Blotato Pricing](https://www.blotato.com/pricing) — 공식 (원문 열어 봄)
 
@@ -974,27 +974,26 @@ MCP·커넥터가 무엇으로 과금되는지
 - **연 결제**: 모든 등급에서 월 결제 대비 약 17%, "10개월 값을 내고 12개월"(공식 도움말). 가격표 페이지는 월 결제만 팔고, 연 결제는 가입 뒤 Billing Portal 의 Update subscription 에서 바꿈. 등급별 연간 금액은 원문에 숫자로 적혀 있지 않음
 - **예약·게시 한도**: 예약 범위는 Billing & Credits 도움말 표가 모든 등급 9개월 앞까지, 자사 요금 카드 pricing.md(2026-09-10 기준)가 Starter 9개월 · Creator 1년 · Agency 2년이라 공식끼리 어긋남 — pricing.md 도 등급 한도의 출처를 그 도움말로 적으므로 도움말 쪽을 믿음. 게시 수 자체의 월 한도는 가격표에 없고 "게시당 요금 없음"만 적힘. Blotato 가 SNS 보다 엄격한 자체 상한을 둠 — 모두 24시간 기준으로 Instagram 계정당 50개, Facebook 페이지당 25개, LinkedIn 프로필·회사 페이지당 50개, TikTok 계정당 25개(모든 등급), YouTube 채널당 Starter 10개 · Creator·Agency 25개, Pinterest 는 연결할 때 월 조회수로 정해져 1,000 이하 10개 · 10,000 이하 20개 · 그 위 50개(Social accounts 도움말). 같은 도움말이 가격표의 "TikTok 월 900게시"는 월 허용량이 아니라 홍보 숫자라고 적음
 - **AI 크레딧**: 이미지·영상 생성에만 쓰임. 게시·예약, API 호출, AI 음성(ElevenLabs), Viral AI Coach 에는 안 빠짐(모든 등급, 공식 도움말). 크레딧은 매달 이월됨(환불하면 이월 안 됨). 해지하면 결제 기간 끝까지 쓰고 그때 사라지며, 환불·즉시 해지면 바로 사라짐. 해지는 콘텐츠 삭제가 아니라 다시 구독하면 영상·게시·설정이 돌아옴(공식 도움말 — 지난번 같은 페이지 안의 어긋남은 풀림). 추가 크레딧은 1,000개 $6.00. 실패한 생성에는 안 빠짐
-- **모델별 차감**(공식 도움말): 이미지 1장 flux schnell 1 · flux dev 10 · luma photon 10 · nano-banana 15 · flux 1.1 pro 15 · recraft v3 15 · seedream v4.5 15 · flux 1.1 pro ultra 20 · gpt-image-1/2 25 · nano-banana-2 30 · ideogram v2 30 · nano-banana-pro 50. 영상 클립 framepack 55 · runway gen3 85 · luma dream machine·minimax 170 · kling v1.5/1.6 210 · veo3/fast 400 · veo2 835 · veo3 1,250, veo3.1 fast 는 초당 50(소리 있음)·35(소리 없음). 가장 싼 설정의 30초 영상이 7크레딧이라 Starter 로 178개라는 예시가 있음
+- **모델별 차감**(공식 도움말): 이미지 1장 flux schnell 1 · flux dev 10 · luma photon 10 · nano-banana 15 · flux 1.1 pro 15 · recraft v3 15 · seedream v4.5 15 · flux 1.1 pro ultra 20 · gpt-image-1/2 25 · nano-banana-2 30 · ideogram v2 30 · nano-banana-pro 50. 영상 클립 framepack 55 · runway gen3 85 · luma dream machine·minimax 170 · kling v1.5/1.6 210 · veo3/fast 400 · veo2 835 · veo3 1,250, gemini omni flash 1.1(글→영상·이미지→영상)은 초당 35(720p)·50(1080p). 가장 싼 설정의 30초 영상이 7크레딧이라 Starter 로 178개라는 예시가 있음
 - **자기 API 키**: 예전에 Creator·Agency 가 자기 Replicate 키로 AI 이미지를 무제한 만들던 칸은 없어짐 — Settings › API 에 Replicate 키 칸이 더는 없다고 도움말이 적음. ElevenLabs 자기 키는 커스텀 음성용으로 남아 있음(공식 도움말)
 - **환불**: 약관 4.1조는 "약관·법이 정한 경우 말고는 환불 없음"인데, 가격표 FAQ 는 "제대로 안 되면 14일 안에 메일하면 바로잡아 줌"이라 적어 공식끼리 어긋남
-- 가격표 Creator 줄은 크레딧 용도를 "AI images, videos, voice" 로 적어 음성을 넣었으나, 도움말·pricing.md 는 ElevenLabs 음성에 크레딧이 안 든다고 함
-- **행사**: 가격표 FAQ 는 "지금 연 결제 시 AI 크레딧 +5,000($30 상당)과 무료 Claude Skills 5개"라고 적음. Current Promo 도움말은 "진행 중인 할인 코드 없음, BIRTHDAY2026 은 2026-09-01 종료"라 하고, 무료 Claude Skills 는 연 결제와 상관없는 7개 묶음으로 적음 — 두 공식 페이지가 어긋나므로 결제 전에 앱에서 확인할 것. Billing & Credits 도움말에는 Starter 전용 "$1 offer" 절도 있으나 누구에게 언제 주는지는 안 적음
+- **행사**: 진행 중인 할인 코드 없음 — Current Promo 도움말이 2MILLION 은 2026-05-01, BIRTHDAY2026 은 2026-09-01 에 끝났다고 적고, 무료 Claude Skills 7개 묶음은 결제와 상관없이 받을 수 있다고 함. 가격표 FAQ 도 이제 "한정 행사가 있을 때만, Current Promo 페이지를 볼 것"으로 적어 두 공식 페이지가 맞음. Billing & Credits 도움말에는 Starter 전용 "$1 offer" 절도 있으나 누구에게 언제 주는지는 안 적음
 - **지원 플랫폼 9곳**: Instagram · TikTok · LinkedIn · Facebook · X(Twitter) · Threads · Bluesky · Pinterest · YouTube (공식, 원문 열어 봄). 분석은 LinkedIn 을 뺀 8곳, 댓글·DM 은 Instagram·Facebook 만(자사 AI Info)
-- MCP 도구는 32개임(Tools 도움말 — 계정·크레딧·게시·분석·댓글·DM·DM 자동화·콘텐츠 추출·캘린더·업로드 URL. 이미지·영상 생성 도구는 없음). pricing.md(2026-09-10 기준)·AI Info·MCP 랜딩은 아직 36개라 적어 자사 페이지끼리 어긋남 — 도구 목록을 실제로 나열한 Tools 도움말을 믿음 (2026-10-17)
+- MCP 도구는 35개임(Tools 도움말 — 계정·크레딧·게시·분석·댓글·DM·DM 자동화·콘텐츠 추출·시각물 생성·캘린더·업로드 URL). pricing.md("2026-10-20 기준 35개")·AI Info·MCP 랜딩도 35개로 맞음. 새로 든 3개는 템플릿 목록·시각물 생성·생성 상태 조회이고, MCP 랜딩은 이 셋의 이름을 Tools 도움말과 다르게(`list_visual_templates`·`create_visual`·`get_visual_status`) 적음 (2026-10-28)
 
 #### 클로드로는 못 하는 것
 - SNS 계정에 실제로 게시·예약하는 것. 클로드는 글을 써 줄 수만 있고 Instagram·TikTok 등에 올리지 못함 — Blotato 가 9개 플랫폼의 공식 게시 API 를 대신 들고 있음
 - 여러 계정(최대 20·40·100개)을 한곳에 연결해 두고 예약 일정(9개월 앞까지)으로 돌리는 것. 클로드에는 예약 게시 큐가 없음
 - Instagram·Facebook 댓글과 DM 에 답하고, 트리거로 DM 을 자동 발송하는 것(DM 자동화). 등급별 활성 연락처 한도 안에서 돔
-- AI 이미지·영상 생성(flux·recraft·ideogram·luma·gpt-image·nano-banana·seedream 이미지, framepack·kling·luma·runway·minimax·veo2·veo3·veo3.1 영상 — 공식 차감표 기준)과 ElevenLabs 음성을 붙인 얼굴 없는 영상(대본·보이스오버·자막) 만들기
+- AI 이미지·영상 생성(flux·recraft·ideogram·luma·gpt-image·nano-banana·seedream 이미지, framepack·kling·luma·runway·minimax·veo2·veo3·gemini omni flash 1.1 영상 — 공식 차감표 기준)과 ElevenLabs 음성을 붙인 얼굴 없는 영상(대본·보이스오버·자막) 만들기
 - 영상·글을 받아 플랫폼마다 형식에 맞게 다시 가공(리퍼포징)하는 것
-- 게시·예약·댓글·DM 은 MCP 로 붙이면 클로드 대화 안에서 부를 수 있지만 실제 게시는 Blotato 가 함. AI 이미지·영상 생성은 MCP 로 안 되고 웹 앱이나 REST API 로만 됨(MCP FAQ, 2026-10-17)
+- 게시·예약·댓글·DM 은 MCP 로 붙이면 클로드 대화 안에서 부를 수 있지만 실제 게시는 Blotato 가 함. 템플릿 기반 이미지·영상 생성도 MCP 로 부를 수 있으나, MCP 도구 입력에 모델을 고르는 칸은 없음(Tools 도움말·MCP FAQ, 2026-10-28)
 
 #### 라이선스
 - 독점 SaaS 서비스임. 자체 서버에서 돌릴 라이선스는 없음(자사 AI Info, 원문 열어 봄)
 - 이용 약관(2026-05-18 개정, 원문 열어 봄): 사용자 콘텐츠의 소유권은 사용자에게 남지만, 올린 순간 Blotato 에 전 세계·비독점·무상·영구·취소 불가·완전 재허락 가능한 이용 허락을 주는 구조임. 서비스 운영 목적 한정("in connection with the Service")으로 적혀 있음. 분쟁은 개별 중재(30일 안에 거부 가능), 준거법은 미국 유타주
-- AI 생성물의 상업적 이용 권리를 등급별로 다르게 두는지는 확인 못 함 — 약관 원문에 AI 생성물 조항 자체가 없음. 생성에 쓰는 외부 모델(Kling·Runway·Veo 등) 제공사 약관이 따로 걸리는지도 확인 못 함 — Blotato 약관 7조는 SNS·YouTube API 약관만 다루고 도움말 어디에도 적혀 있지 않음 (2026-10-17)
-- 공식 MCP 서버의 소스 저장소·라이선스는 확인 못 함 — 공식 문서에 저장소 링크가 없고 원격 호스팅만 안내함 (2026-10-17)
+- AI 생성물의 상업적 이용 권리를 등급별로 다르게 두는지는 확인 못 함 — 약관 원문에 AI 생성물 조항 자체가 없음. 생성에 쓰는 외부 모델(Kling·Runway·Veo 등) 제공사 약관이 따로 걸리는지도 확인 못 함 — Blotato 약관 7조는 SNS·YouTube API 약관만 다루고 도움말 어디에도 적혀 있지 않음 (2026-10-28)
+- 공식 MCP 서버의 소스 저장소·라이선스는 확인 못 함 — 공식 문서에 저장소 링크가 없고 원격 호스팅만 안내함 (2026-10-28)
 
 #### 출처
 - [Blotato Pricing: Plans, Credits & Free Trial](https://www.blotato.com/pricing) — 공식 (원문 열어 봄)

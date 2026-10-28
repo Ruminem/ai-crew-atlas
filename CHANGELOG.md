@@ -2,6 +2,32 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-10-29
+
+**매일 재확인 — Claude · Notion**
+
+**Claude**
+
+① **Team Standard Fable 은 크레딧만** — 확인 못 함 → 플랜 한도에 안 들고 처음부터 사용량 크레딧(종량)으로만 씀(Fable 도움말, 지난 확인에서 빠졌던 공식 사실)
+
+② **Team 도 우선 접근** — 가격표 비교표가 Team 의 혼잡 시간 우선 접근을 "Yes" 로 적음
+
+③ **Claude Tag 이름 붙음** — Team·Enterprise 의 Slack @Claude 를 Claude Tag 로 부름, Microsoft Teams 판은 대기 명단
+
+④ **Workspace 승인 생략은 Owner 가** — Team·Enterprise 는 Owner 가 Gmail·Drive 쓰기를 묻지 않고 실행하게 둘지 정함
+
+**Notion**
+
+① **MCP 도구 4개 더해짐** — 2026-10-27 개발자 변경 기록에 제안 편집 3개(Business·Enterprise, 사람이 Notion 에서 받아들이거나 거절함)와 과거 버전 보기 `notion-view-version` 이 들어옴. 되돌리기는 여전히 없음
+
+② **로컬 MCP 서버 2.6.0** — `@notionhq/notion-mcp-server` 2.5.2 → 2.6.0(2026-10-28), MIT 그대로
+
+③ **AI 보충 약관 개정일 확인** — 2026-07-27 판이고, 고객 데이터로 AI 모델을 학습하지 않는다는 문장과 온디맨드 credits(분기 후불·지정 등급) 조항이 있음
+
+④ **연 결제 credits 는 연 결제 등급만** — 연 결제 Business·Enterprise 만 살 수 있고, 온디맨드 credits 는 영업팀을 거침
+
+⑤ **회의록 1시간 ≈ 10 Standard** — 크레딧 도움말이 AI Meeting Notes 한 시간에 Standard 크레딧 약 10을 쓴다고 어림함
+
 ## 2026-10-28
 
 **매일 재확인 — NotebookLM · Blotato**

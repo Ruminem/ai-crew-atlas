@@ -193,7 +193,7 @@ flowchart LR
 
 | 도구 | 역할 | 무료·유료 | 유료 요금 (월) | 클로드와 잇는 법 | 라이선스 | 확인한 날짜 |
 |---|---|---|---|---|---|---|
-| [Claude](#claude) | 범용 · 기준선 | 부분 무료 · 개인·업무 모두 무료 등급 가능 · 생성물 상업 이용 가능 | Pro $20 (연 결제 $17)<br>Max 5x $100<br>Max 20x $200<br>Team Standard $25/좌석 (연 결제 $20)<br>Team Premium $125/좌석 (연 결제 $100)<br>Enterprise $20/좌석 + 사용량 과금 (연 결제만, 최소 20석) | 해당 없음 | 독점 | 2026-10-23 |
+| [Claude](#claude) | 범용 · 기준선 | 부분 무료 · 개인·업무 모두 무료 등급 가능 · 생성물 상업 이용 가능 | Pro $20 (연 결제 $17)<br>Max 5x $100<br>Max 20x $200<br>Team Standard $25/좌석 (연 결제 $20)<br>Team Premium $125/좌석 (연 결제 $100)<br>Enterprise $20/좌석 + 사용량 과금 (연 결제만, 최소 20석) | 해당 없음 | 독점 | 2026-10-29 |
 | [ChatGPT](#chatgpt) | 범용 | 부분 무료 · 개인 무료 · 업무 이용은 EU판 약관이 부록으로 받아들이고, ROW판(한국)은 부록 없이 막는 문구도 없음 · 생성물 상업 이용 가능(음성 출력 제외) | Go $8<br>Plus $20<br>Pro $100 · $200 · $500<br>Business Standard $25/좌석 (연 결제 $20)<br>Business Premium $125/좌석 (연 결제 $100)<br>Enterprise·Edu 견적 | 공식 Claude Code 플러그인 | 독점 (Codex CLI·플러그인 Apache-2.0) | 2026-10-25 |
 | [Gemini](#gemini) | 범용 | 부분 무료 · 개인 무료 · 무료 등급 업무 이용을 약관이 막지 않음 · 생성물 상업 이용 가능(Google 이 소유권 주장 안 함) | AI Plus $4.99<br>AI Pro $19.99 (연 결제 $199.99/년)<br>AI Ultra 5x $99.99<br>AI Ultra 20x $199.99 | 커뮤니티 MCP · API 키 | 독점 (Gemini CLI Apache-2.0) | 2026-10-27 |
 | [Grok](#grok) | 범용 | 부분 무료 · 개인·업무 모두 무료 등급 가능(소비자 약관이 업무 이용을 막지 않음, 기업 이용은 기업 약관을 가리킴) · 생성물 소유는 사용자에게 남지만 "Created with Grok" 출처 표기 요구 · 학습 안 함 약정은 팀(Teams)·Enterprise 쪽 | Plus $8 (연 결제 $80/년)<br>Premium $30 (연 결제 $300/년)<br>Super $100 (연 결제 $1,000/년)<br>Ultra $200 (연 결제 $2,000/년)<br>Teams $30+/사용자<br>Enterprise 견적<br>(옛 SuperGrok Lite $10 · SuperGrok $30 · Plus $100 · Heavy $300 · Business $30/사용자는 기존 구독자만) | 커뮤니티 MCP · API 키 (공식 Docs MCP 는 문서 검색만) | 독점 (SDK Apache-2.0 · Grok-1 가중치 Apache-2.0) | 2026-10-25 |
@@ -216,7 +216,7 @@ flowchart LR
 - **역할**: 범용
 - **한 줄**: Anthropic 의 대화형 AI. 웹·데스크톱·모바일 앱(claude.ai), 터미널·IDE 코딩 에이전트(Claude Code), 작업 위임(Cowork)을 한 구독으로 씀. 2026-09-16 부터 Pro·Max 에서 Cowork 가 따로 고르는 모드가 아니라 모든 대화 안으로 합쳐지는 중임
 - **클로드와 잇는 법**: 해당 없음 — 기준선 항목임. 밖의 도구는 클로드 쪽에서 커넥터(원격 MCP, OAuth)와 Claude Code 의 MCP 서버·플러그인으로 붙임
-- **확인한 날짜**: 2026-10-23
+- **확인한 날짜**: 2026-10-29
 
 #### 무료·유료와 이용 조건
 
@@ -237,8 +237,8 @@ flowchart LR
 | Pro | $20 | $17/월 ($200 선결제) | Free 전부 + 5시간 세션당 Free 의 5배 이상 사용량(가격표 FAQ: "at least 5x more usage per 5-hour session than Free"), 작업 위임·예약, Claude Science, Research, Claude Dashboards(베타 — 데이터 웨어하우스·연결 앱에 SQL 을 짜서 대시보드를 그림), Projects, Opus 포함 더 많은 모델(Fable 은 사용량 크레딧으로만), Claude in Chrome·Microsoft 365·Outlook, Claude Duet(연구 미리보기, 2026-10-21 — 먼저 말을 걸고 연결한 앱을 지켜보며 일을 처리하는 에이전트 앱, iOS·Android·claude.ai, 대기 명단으로 미국 Pro·Max 부터, 같은 사용량 한도를 씀), **Claude Code 포함**. 5시간 세션 한도 + 모든 모델에 걸리는 주간 한도. API(Console) 사용은 포함 안 됨 |
 | Max 5x | $100 | 없음 (월 결제만) | Pro 전부 + 5시간 세션당 Pro 의 5배 사용량, 더 높은 출력 한도, 새 기능 먼저, 혼잡 시간 우선 접근, Fable 은 주간 한도의 50% 까지. Claude Code 포함. **월 API 크레딧 $100**(Console 조직에 연결해 받음, 대화형 Claude Code 에는 안 씀, 2026-10-07 부터) |
 | Max 20x | $200 | 없음 (월 결제만) | Max 5x 와 같고 사용량이 Pro 의 20배. 월 API 크레딧 $200 |
-| Team Standard 좌석 | $25/좌석 | $20/좌석/월 | 2–150명. Pro 보다 많은 사용량, Claude Code·Cowork, Claude Design·Slides·Docs, Claude Science, Claude Dashboards(베타), 조직 전체 검색, 중앙 결제·관리, SSO, 기본값으로 학습에 안 씀. Claude Motion(베타, Team 은 기본 켜짐 — 글·차트를 코드로 움직이는 애니메이션, MP4 내보내기)·@Claude. 월 API 크레딧 Standard 좌석당 $20 · Premium 좌석당 $100 을 한 잔고로 모아 월 $500 까지. 웹 검색·커넥터는 Owner 가 조직 단위로 켜야 함 |
-| Team Premium 좌석 | $125/좌석 | $100/좌석/월 | Standard 좌석의 5배 사용량, Fable 은 주간 한도의 50% 까지(비교표 "50% of weekly limits on premium seats"). Standard 좌석의 Fable 한도는 확인 못 함 — 비교표에 없음 (2026-10-23). 나머지는 Standard 와 같음. 좌석 종류를 섞어 살 수 있음 |
+| Team Standard 좌석 | $25/좌석 | $20/좌석/월 | 2–150명. Pro 보다 많은 사용량, Claude Code·Cowork, Claude Design·Slides·Docs, Claude Science, Claude Dashboards(베타), 조직 전체 검색, 중앙 결제·관리, SSO, 기본값으로 학습에 안 씀. Claude Motion(베타, Team 은 기본 켜짐 — 글·차트를 코드로 움직이는 애니메이션, MP4 내보내기)·@Claude(Claude Tag — Slack 스레드에서 불러 씀, Microsoft Teams 판은 대기 명단). 혼잡 시간 우선 접근 됨(비교표 Team "Yes"). 월 API 크레딧 Standard 좌석당 $20 · Premium 좌석당 $100 을 한 잔고로 모아 월 $500 까지. 웹 검색·커넥터는 Owner 가 조직 단위로 켜야 함 |
+| Team Premium 좌석 | $125/좌석 | $100/좌석/월 | Standard 좌석의 5배 사용량, Fable 은 주간 한도의 50% 까지(비교표 "50% of weekly limits on premium seats"). Standard 좌석은 Fable 이 플랜 사용량에 안 들어가고 처음부터 사용량 크레딧(종량)으로만 씀(Fable 도움말 "standard seats on Team plans … run on pay-as-you-go usage credits"). 50% 는 주간 한도 안의 몫이라 한도가 늘지는 않음. 나머지는 Standard 와 같음. 좌석 종류를 섞어 살 수 있음 |
 | Enterprise | $20/좌석/월 + 사용량 과금 | 연 결제만 | 가격표 문구: "US$20/seat/month, billed annually, 20 seat minimum. Usage cost scales with model and task." 셀프 가입과 영업 상담 두 길이 있고 청구서·외상 결제(Invoicing / net terms)는 영업 상담 쪽만 됨. 사용량은 API 요금으로 매김. Team 전부 + 사용자·조직 지출 한도, 역할 기반 권한, SCIM, 감사 로그, Compliance API, 데이터 보존 설정, 네트워크 접근 제어·IP 허용 목록, HIPAA 대응, Claude Security(베타) |
 
 - 가격표는 세금 별도라고 적고("Prices shown don't include applicable tax"), Pro 도움말은 지역마다 표시 가격에 세금이 들어가기도 하고 결제 때 붙기도 한다고 씀. 웹 구독 기준이고 모바일 앱 결제가는 다를 수 있다고 Max 도움말에 적혀 있음
@@ -251,9 +251,9 @@ flowchart LR
 #### 기준선 — 클로드가 직접 못 하는 것
 - **이미지 생성·편집 못 함.** 도움말 원문: "Claude doesn't generate photos or illustrations the way image-generation tools do." 대신 HTML·SVG 로 도표·차트·인터랙티브 시각물을 대화 안에 만들고(웹·데스크톱 베타), 올린 이미지를 읽고 분석함
 - **사실적인 영상 생성 못 함.** Claude Motion 도움말 원문: "Claude Motion doesn't use a video generation model, so it doesn't create realistic footage or people." 대신 Team·Enterprise 에서 글·차트를 코드로 움직이는 애니메이션을 만들어 MP4 로 내보냄
-- **음악(오디오) 생성은 확인 못 함 — 기능이 있다는 공식 근거를 못 찾음.** 가격표 기능 비교표와 릴리스 노트 전체(2025-08-01–2026-10-21)에 음악·오디오 생성 항목이 없음. "없다"고 적은 공식 문서를 찾은 것은 아니라서 부재를 근거로 한 추정임 (2026-10-23)
+- **음악(오디오) 생성은 확인 못 함 — 기능이 있다는 공식 근거를 못 찾음.** 가격표 기능 비교표와 릴리스 노트 전체(2025-08-01–2026-10-21)에 음악·오디오 생성 항목이 없음. "없다"고 적은 공식 문서를 찾은 것은 아니라서 부재를 근거로 한 추정임 (2026-10-29, 도움말 검색 music·audio·song 에도 생성 문서 없음)
 - **실시간 웹 검색은 됨 — "실시간 검색을 못 한다"는 말은 지금 틀림.** 웹 검색은 Free 포함 모든 등급에서 됨(Team·Enterprise 는 Owner 가 켜야 함, 새 Claude 경험에서는 스위치 없이 필요할 때 검색함). 웹 검색을 켜면 사용자가 준 URL 의 본문을 직접 가져오는 web fetch 도 됨. Free 에서 긴 글을 통째로 가져오면 사용량 한도를 많이 먹는다고 도움말이 경고함
-- **외부 게시·발송은 조건부로 됨 — 스스로는 못 하고 커넥터가 있어야 함.** Google Workspace 커넥터(모든 등급)로 Gmail 발송·답장·전달(기본은 사용자 승인 필요), Calendar 일정 생성·수정·삭제, Drive 업로드·공유가 됨. Microsoft 365 커넥터는 2026-07-07 에 쓰기 도구가 붙음(메일 발송, 일정, OneDrive·SharePoint 파일 생성·수정). SNS 게시처럼 커넥터가 없는 곳에는 직접 못 올림
+- **외부 게시·발송은 조건부로 됨 — 스스로는 못 하고 커넥터가 있어야 함.** Google Workspace 커넥터(모든 등급)로 Gmail 발송·답장·전달(기본은 사용자 승인 필요, Team·Enterprise 는 Owner 가 멤버에게 묻지 않고 실행하게 둘지 정함), Calendar 일정 생성·수정·삭제, Drive 업로드·공유가 됨. Microsoft 365 커넥터는 2026-07-07 에 쓰기 도구가 붙음(메일 발송, 일정, OneDrive·SharePoint 파일 생성·수정). SNS 게시처럼 커넥터가 없는 곳에는 직접 못 올림
 - **Claude Code 는 Free 에서 못 씀** — Pro 이상 또는 Console 의 API 크레딧이 필요함
 - **Free·Pro·Enterprise 구독으로는 API 를 쓰지 못함** — Pro 도움말: "The Pro plan does not include API usage through the Claude Console." Max·Team 은 2026-10-07 부터 월 API 크레딧이 붙음(요금 표)
 
@@ -272,6 +272,8 @@ flowchart LR
 - [What are artifacts and how do I use them? | Claude Help Center](https://support.claude.com/en/articles/17153992-what-are-artifacts-and-how-do-i-use-them) — 공식 (원문 열어 봄)
 - [Get started with Claude Dashboards](https://support.claude.com/en/articles/17454700-get-started-with-claude-dashboards) · [Get started with Claude Motion](https://support.claude.com/en/articles/17454997-get-started-with-claude-motion) — 공식 (원문 열어 봄)
 - [Introducing Claude Duet](https://claude.com/resources/articles/claude-duet) — 공식 (원문 열어 봄)
+- [Claude Fable models on your plan](https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan) — 공식 (원문 열어 봄)
+- [Claude Tag](https://claude.com/product/tag) — 공식 (원문 열어 봄)
 - [Monthly API credits for Max and Team plans](https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans) — 공식 (원문 열어 봄)
 - [Release notes | Claude Help Center](https://support.claude.com/en/articles/12138966-release-notes) — 공식 (원문 열어 봄)
 - [anthropics/claude-code LICENSE.md](https://github.com/anthropics/claude-code/blob/main/LICENSE.md) — 공식 (원문 열어 봄)

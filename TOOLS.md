@@ -203,7 +203,7 @@ flowchart LR
 | [Higgsfield](#higgsfield) | 제작 | 부분 무료 · 가격표는 **Free 상업 이용 불포함**, 약관·도움말은 출력의 상업 이용을 제한 안 함(어긋남) · Free 는 워터마크 | Starter $19<br>Plus $59 (연 결제 $47)<br>Ultra $129 (연 결제 $99)<br>Team $79/좌석 (연 결제 $65)<br>Scale $215/좌석 (연 결제 $150)<br>Enterprise 영업 문의<br>위는 데스크톱·T1 지역 기준, 휴대폰 화면은 Basic $5 · Pro $29 · Max $79 | 공식 MCP (Claude Code 는 CLI) · 유료 등급만 | 독점 (CLI·스킬 MIT) | 2026-10-27 |
 | [Blotato](#blotato) | 게시 | 체험만 무료(7일) · 업무 이용은 유료 등급 · 생성물 권리 확인 못 함 | Starter $29<br>Creator $97<br>Agency $499<br>연 결제는 약 17% 할인 (금액 표기 없음) | 공식 MCP · OAuth/API 키 · 유료 등급만 | 독점 | 2026-10-28 |
 | [Notion](#notion) | 기록 | 부분 무료 · 개인 무료 · 업무는 조직용 약관(MSA), Free 업무 이용을 막는 조항 없음 | Plus $12/멤버 (연 결제 $10)<br>Business $24/멤버 (연 결제 $20)<br>Enterprise 문의 | 공식 커넥터 · OAuth | 독점 (로컬 MCP 서버 MIT) | 2026-10-29 |
-| [Obsidian](#obsidian) | 기록 | 부분 무료 · 앱은 개인·업무 모두 무료(2025-02-20 부터) · Sync·Publish 만 유료 | 앱은 무료<br>Sync Standard $5 (연 결제 $4)<br>Sync Plus $10 (연 결제 $8)<br>Publish $10/사이트 (연 결제 $8)<br>Commercial license $50/사용자/년 (선택)<br>Catalyst 일회 $25 · $50 · $100 (선택 후원) | 커뮤니티 플러그인 MCP · 공식 CLI · 파일 | 독점 소프트웨어 (플러그인 MIT) | 2026-10-24 |
+| [Obsidian](#obsidian) | 기록 | 부분 무료 · 앱은 개인·업무 모두 무료(2025-02-20 부터) · Sync·Publish 만 유료 | 앱은 무료<br>Sync Standard $5 (연 결제 $4)<br>Sync Plus $10 (연 결제 $8)<br>Publish $10/사이트 (연 결제 $8)<br>Commercial license $50/사용자/년 (선택)<br>Catalyst 일회 $25 · $50 · $100 (선택 후원) | 커뮤니티 플러그인 MCP · 공식 CLI · 파일 | 독점 소프트웨어 (플러그인 MIT) | 2026-10-30 |
 | [Jev](#jev) | 판정 | 유료 · 무료 등급 없음(새 가입자 $5 크레딧은 2026-09-27 멈춤 — 창업자 X 게시물, 금액은 제3자) · 개인·업무 모두 같은 약관(MCA)으로 가능, 단독 재판매·증류 금지 · 출력 권리는 고객에게 양도 | 종량제 — 입력 100만 토큰당 $0.042, 출력 무료 (월 요금 없음)<br>맞춤·엔터프라이즈 협의 | 공식 Claude Code 플러그인(스킬) · 커뮤니티 MCP · API 키 | 독점 (SDK·스킬 MIT, 커뮤니티 MCP MIT) | 2026-10-26 |
 
 ## 도구
@@ -1087,7 +1087,7 @@ MCP·커넥터가 무엇으로 과금되는지
   1. 커뮤니티 플러그인 **Local REST API with MCP**(coddingtonbear, MIT, v5.5.2 · 앱 1.13.1 이상, 데스크톱 전용) — 플러그인이 MCP 서버를 내장함. `https://127.0.0.1:27124/mcp/`(자체 발급 인증서) 또는 `http://127.0.0.1:27123/mcp/`(설정에서 켜야 함). 인증은 플러그인 설정의 API 키를 `Authorization: Bearer` 헤더로 보냄. 별도 파이썬 서버 `mcp-obsidian`(MarkusPfundstein, MIT, `uvx mcp-obsidian`, 환경 변수 `OBSIDIAN_API_KEY`)도 같은 플러그인에 붙음
   2. 공식 **Obsidian CLI**(`obsidian`, 앱 1.12 설치본 이상 · 1.12.7+ 권장) — 인증 없음, 대신 데스크톱 앱이 떠 있어야 함. 공식 **Obsidian Headless**(`npm install -g obsidian-headless`, 명령 `ob`, 오픈 베타, Node.js 22+) — Obsidian 계정 로그인(`ob login`, 2FA 지원)과 Sync/Publish 구독이 필요함
   3. Claude Code 가 볼트 폴더의 `.md` 파일을 직접 읽고 고침 — 인증 없음(파일 시스템 권한만)
-- **확인한 날짜**: 2026-10-24
+- **확인한 날짜**: 2026-10-30
 
 #### 무료·유료와 이용 조건
 
@@ -1113,7 +1113,7 @@ MCP·커넥터가 무엇으로 과금되는지
 - Sync·Publish 는 교육·비영리 40% 할인이 있음. Sync·Publish 는 7일 안 전액 환불, Catalyst·Commercial 과 선물용 Obsidian Credit 은 환불 불가 (가격표 FAQ 원문)
 - 달러 가격과 Sync 용량 표는 전부 원문 열어 봄 — Sync 가격·용량은 [Sync 페이지](https://obsidian.md/sync), Publish·Commercial 은 [가격표](https://obsidian.md/pricing)·[Publish 페이지](https://obsidian.md/publish), 100 GB 연 결제 월 $16 은 2024-03-20 Standard 요금제 공지
 - 일부 제3자 글의 "2026년에 Sync 가 한 요금제로 합쳐졌다"는 틀림 — Sync 페이지 원문에 Standard·Plus 두 등급이 그대로 있음. `/pricing` 요약 카드에는 Sync 가 $4/$5 한 칸으로만 보여 그것을 잘못 읽은 것으로 보임(추정)
-- Sync Plus 100 GB 증설의 월 결제가, 10–100 GB 사이 단계별 가격은 확인 못 함 — Sync 페이지·가격표·도움말 원문에 "100 GB 까지 올릴 수 있음"만 있고 값은 계정 대시보드 안에서만 보임(추정). 2026-10-24 에도 도움말(Sync FAQ 포함)·Sync 페이지·가격표 원문에 금액 없음
+- Sync Plus 100 GB 증설의 월 결제가, 10–100 GB 사이 단계별 가격은 확인 못 함 — Sync 페이지·가격표·도움말 원문에 "100 GB 까지 올릴 수 있음"만 있고 값은 계정 대시보드 안에서만 보임(추정). 2026-10-30 에도 도움말·Sync 페이지·가격표 원문에 금액 없음
 - 2026-10-08 도움말에 Sync regions 가 생김 — 원격 볼트를 다른 지역 서버로 옮길 수 있고 Headless 는 `--region` 옵션으로 고름. 선물용 Obsidian Credit 은 계정이 있는 한 만료되지 않는다고 같은 날 도움말에 더해짐 (공식, 원문 열어 봄)
 
 #### 클로드와 잇는 경로
@@ -1134,7 +1134,7 @@ MCP·커넥터가 무엇으로 과금되는지
 #### 라이선스
 - 앱은 **독점 소프트웨어**임 — 무료지만 오픈소스가 아님. 약관 원문: 소프트웨어는 "licensed and not sold", 회사가 권리를 모두 가짐, 역설계·수정·파생물 금지(비상업 서드파티 플러그인 개발 목적은 예외). 2025-02-20 부터 업무용도 무료이고 Commercial license 는 후원용 선택 사항임 (공식 도움말·License overview 원문)
 - Sync·Publish 는 독점 유료 서비스임
-- 경로별 부품: Local REST API 플러그인 MIT(© 2023 Adam Coddington), mcp-obsidian MIT(© 2024 Markus Pfundstein) — 두 저장소의 LICENSE 원문으로 확인. Obsidian CLI 는 앱에 든 공식 도구라 앱 약관을 따름. Obsidian Headless 는 **독점** — npm `obsidian-headless`(0.0.14) 의 `license` 가 `UNLICENSED` 이고 패키지 안에 LICENSE 파일이 없음 (npm 레지스트리 원문). 공개 GitHub 저장소 `obsidianmd/obsidian-headless` 가 있으나 묶어 줄인 `cli.js`·README·CHANGELOG 만 있고 LICENSE 파일이 없어 오픈소스가 아님 (저장소 원문, 2026-10-04 열어 봄)
+- 경로별 부품: Local REST API 플러그인 MIT(© 2023 Adam Coddington), mcp-obsidian MIT(© 2024 Markus Pfundstein) — 두 저장소의 LICENSE 원문으로 확인. Obsidian CLI 는 앱에 든 공식 도구라 앱 약관을 따름. Obsidian Headless 는 **독점** — npm `obsidian-headless`(0.0.14) 의 `license` 가 `UNLICENSED` 이고 패키지 안에 LICENSE 파일이 없음 (npm 레지스트리 원문). 공개 GitHub 저장소 `obsidianmd/obsidian-headless` 가 있으나 묶어 줄인 `cli.js`·README·CHANGELOG·package.json 과 플랫폼별 네이티브 바이너리(`btime/`)만 있고 LICENSE 파일이 없으며 package.json 의 `license` 도 `UNLICENSED` 라 오픈소스가 아님 (저장소 원문, 2026-10-30 열어 봄)
 
 #### 출처
 - [Commercial license — Obsidian Help (원문: obsidianmd/obsidian-help, en/Teams/Commercial license.md)](https://github.com/obsidianmd/obsidian-help/blob/master/en/Teams/Commercial%20license.md) — 공식

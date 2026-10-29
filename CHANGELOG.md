@@ -2,6 +2,30 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-10-30
+
+**매일 재확인 — Firecrawl · Obsidian**
+
+**Firecrawl**
+
+① **커넥터 도구 9 → 10개** — claude.ai 커넥터 목록에 `firecrawl_gov_search` 가 더해짐. MCP README 는 `firecrawl_search_feedback` 을 뺀 9개로 적어 여전히 하나 어긋남
+
+② **MCP 서버 3.36.0** — npm `firecrawl-mcp` 3.34.1 → 3.36.0(2026-10-27), MIT 그대로
+
+③ **Directory 공개** — 2026-10-28, Alexandria 안의 채용용 직업 프로필 모음. 규모는 changelog "250M+"·발표 글 "240M+" 로 갈림
+
+④ **Cybersecurity Data 공개** — 2026-10-29, 코드 의존성을 취약점 400,000+ 건과 대조함(NVD·CISA KEV·GitHub Advisory 등)
+
+⑤ **Monitor 결정적 추출 7 고정** — 지난번 다시 못 찾았던 "페이지·검사당 7" 이 가격표 HTML 요약 문단에 있음. pricing.md·billing 문서에는 없음
+
+⑥ **Interact ZDR 1분당 +2** — 데이터 무보존 세션은 코드만 4 · 프롬프트 9 (billing 문서, 지난 확인에서 빠졌던 사실)
+
+⑦ **종량 충전 여유분** — 잔액 0 뒤에도 Hobby 1,500 · Standard 30,000 · Growth 150,000 · Scale 600,000 만큼 더 쓰고 402 가 남. 남는 크레딧이 아니라 완충임 (billing 문서)
+
+⑧ **검색 피드백 1 크레딧 환급** — MCP `firecrawl_search_feedback` 으로 쓴 결과를 알리면 1 크레딧을 돌려줌 (MCP README)
+
+⑨ **서비스 중단 시 일할 환불** — 환불 없음 원칙의 예외로 Firecrawl 이 서비스를 못 하게 되면 안 쓴 몫을 돌려준다고 약관 6.e 가 둠
+
 ## 2026-10-29
 
 **매일 재확인 — Claude · Notion**

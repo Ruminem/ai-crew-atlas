@@ -2,6 +2,32 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-10-31
+
+**매일 재확인 — ChatGPT · Grok**
+
+**ChatGPT**
+
+① **GPT-6.1 Terra 추가** — 2026-10-26 부터 Work·Codex 에서 씀(Plus·Pro·Business·Enterprise·Edu, Chat 에는 없음, Free·Go 는 못 씀). Codex 어림은 5시간당 35–285 (Plus·Business Standard)
+
+② **이미지 생성은 한도 3–5배** — Work·Codex 의 이미지 생성은 포함 한도를 평균 3–5배 빨리 쓰고, Free 에는 없음 (지난 확인에서 빠졌던 공식 사실)
+
+③ **데스크톱 음성 분당 과금** — ChatGPT Voice in Desktop 은 Codex 예산에서 분당 $0.05, 크레딧이면 분당 1.25크레딧 (지난 확인에서 빠졌던 공식 사실)
+
+④ **앱스토어 Plus $19.99** — 웹 $20 과 달리 iOS 미국 앱스토어 구입 목록은 $19.99. 크레딧은 100개 $4 · 500개 $20 · 1000개 $40, 크레딧당 $0.04 (지난 확인에서 빠졌던 공식 사실)
+
+**Grok**
+
+① **운영 법인명 바뀜** — 소비자·X-Subscription 약관(둘 다 2026-10-27 갱신)과 기업 약관의 계약 당사자가 `SpaceXAI LLC` → `SpaceX Super Intelligence LLC`. 약관 문구는 그대로임
+
+② **API 는 구독 풀과 따로** — 가격표 FAQ: 유료 등급은 API 접근만 주고, 사용량은 API 단가로 따로 내며 주간 풀에서 빠지지 않음. 풀은 Chat·Imagine·Voice·Bot 을 덮음
+
+③ **Grok Voice 3.0 같은 값** — 2026-10-14 출시, Speech to Speech 는 2.0 과 같은 $0.08/분. `grok-voice-latest` 가 3.0 을 가리키고 2.0 은 Deprecated
+
+④ **재판매 구독 인정 안 함** — 구독은 X Subscription Corp. 이 직접만 팔고, 다른 곳에서 산 구독은 정지될 수 있음
+
+⑤ **Enterprise 혜택 더 확인** — 가격표에 Data residency·Volume pricing 이 있고, 청구서·송금 결제는 Enterprise 만 됨
+
 ## 2026-10-30
 
 **매일 재확인 — Firecrawl · Obsidian**

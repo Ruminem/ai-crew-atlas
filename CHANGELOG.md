@@ -6,6 +6,28 @@
 
 **매일 재확인 — Perplexity · Jev**
 
+**Perplexity**
+
+① **Pro 에 주간 Computer 포함** — 월 크레딧 할당 없음(가입 보너스 4,000 만) → 돈을 낸 Pro 에 매주 다시 채워지는 Computer 사용량이 포함됨(차례로 적용 중, 크레딧이 없으면 Light effort 만, Max·Enterprise·프로모션 Pro 는 제외)
+
+② **Model Council iOS·Computer로** — Max·Enterprise Max 웹에서만 → 웹·iOS 앱(26.16.0 이상)은 Max·Enterprise Max, Computer 안에서는 스킬로 모든 유료 등급(크레딧 차감)
+
+③ **Pro 모델 세대 바뀜** — GPT-5.4·Claude Sonnet 4.6·Gemini 3.1 Pro·Nemotron 3 Super → GPT-6.1 Sol·Gemini 3.8 Flash·Claude Sonnet 5.5·Kimi K3·GLM 5.3·Grok 4.7·Nemotron 3.5 Super VL(Max 만 GPT-6 Astra·Gemini 4 Argon·Claude Opus 5.5·Claude Fable 5.1)
+
+④ **Agent API high 모델 바뀜** — `openai/gpt-6-sol` → `openai/gpt-6.1-terra`(`high@2026-10-28.0`). MCP 의 `perplexity_research` 도 이 단계를 부름
+
+⑤ **새 effort ultra-preview** — 없음 → 넓은 조사용 단계 `ultra-preview`, 이름으로만 부름
+
+⑥ **Enterprise 가입 보너스** — Enterprise Pro 1회 8,000 · Enterprise Max 1회 40,000 크레딧(약 30일 뒤 만료) (지난 확인에서 빠졌던 공식 사실)
+
+⑦ **교육·비영리 할인 공식 확인** — 제3자 $30/석/월($300/년) → 공식 도움말에서 같은 값 확인
+
+⑧ **API 새 계정 $10 크레딧** — 일부 새 API 계정에 1회 $10 가입 크레딧, 60일 뒤 만료 (지난 확인에서 빠졌던 공식 사실)
+
+⑨ **조직 파일 저장소 종료** — Enterprise 의 Organization File Repository 가 2026-10-01 에 없어짐
+
+⑩ **무료 계정 Computer 맛보기** — 일부 무료 계정에 1회성 Computer 무료 턴 (지난 확인에서 빠졌던 공식 사실)
+
 **Jev**
 
 ① **엔터프라이즈 문의는 양식으로** — 문의 `sales@typesafe.ai` → 공식 문서가 지원 포털(`support.typesafe.ai`) 양식으로 안내함(호출 한도 올리기는 rate limit increase request, ZDR 은 support request). `sales@` 는 MCA 통지 주소로만 남음. 언제 바뀌었는지는 모름 — 지난 확인에서 빠졌던 공식 사실로 적음

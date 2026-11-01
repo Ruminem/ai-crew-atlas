@@ -2,6 +2,34 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-02
+
+**매일 재확인 — Gemini · Higgsfield**
+
+**Gemini**
+
+① **공식 Gemini API CLI 생김** — 클로드에서 Gemini 모델을 부르는 길이 커뮤니티 MCP 뿐 → Google 공식 `gemini-api` CLI(Apache-2.0)가 Claude Code 를 지원 대상으로 적고 `GEMINI_API_KEY` 로 이미지·미디어 생성·파일 분석·딥 리서치를 셸 명령으로 부름 (지난 확인에서 빠졌던 공식 사실)
+
+② **Argon 의 Antigravity 접근 Pro 도** — "Antigravity 의 Gemini 4 Argon 은 Ultra 만" → AI Pro 에도 Antigravity·AI Studio 의 Argon 확장 접근이 있음(Google One 가격표·AI Pro 혜택 도움말)
+
+③ **Project Genie 는 20x 전용** — Google One 가격표 각주 "Ultra 전용" → "Ultra 20x 전용"(gemini.google 각주는 여전히 "Ultra 전용")
+
+④ **Colab 컴퓨트 단위 포함** — AI Pro 월 200 · Ultra 5x 월 1,000 · Ultra 20x 월 2,000 (지난 확인에서 빠졌던 공식 사실)
+
+⑤ **Workspace 도입가 50% 할인** — 첫 20명·12개월 $5.60 · $9.80 · $11 → $3.50 · $7 · $11, 머리 띠는 "첫 3개월·한정 기간"이라 각주의 12개월과 갈림(r.jina.ai 경유로만 봄)
+
+**Higgsfield**
+
+① **7일 Unlimited 모델 교체** — Plus·Ultra·휴대폰 Pro 의 Nano Banana 2·Kling 3.0 → Nano Banana Pro·Seedream 5.0 Pro·GPT Image 2.5·Seedance 2.5(Plus·휴대폰 Pro 월 결제는 Seedream 5.0 Pro·GPT Image 2.5 둘만)
+
+② **365일 Unlimited 여섯 → 다섯** — GPT Image 가 빠지고 Plus·Ultra 의 Flux.2 Pro 가 1K → 2K
+
+③ **무료 생성 바뀜** — Ads Studio 10회가 없어지고 모든 유료 개인 등급에 Genjutsu Lite 1080p 5회가 붙음
+
+④ **Team·Scale 좌석 보너스** — Team 3번째 좌석부터 좌석당 400 · Scale 6번째 좌석부터 좌석당 1,250 크레딧(30일), 동시 생성 Team 16 · Scale 32 (지난 확인에서 빠졌던 공식 사실)
+
+⑤ **크레딧 이월은 Enterprise 만** — 도움말이 Enterprise 에만 크레딧 이월을 적음 (지난 확인에서 빠졌던 공식 사실)
+
 ## 2026-11-01
 
 **매일 재확인 — Perplexity · Jev**

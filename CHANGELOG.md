@@ -2,6 +2,26 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-03
+
+**매일 재확인 — NotebookLM · Blotato**
+
+**NotebookLM**
+
+① **공동 제작 범위 공식끼리 갈림** — 비디오 producer notes·슬라이드 outline notes 를 "Ultra 만"이라 적던 것 → 도움말은 여전히 Ultra 만, Google 블로그(2026-10-19)는 "모든 사용자에게 전 세계로 풀림"이라 적어 둘 다 적음 (지난 확인에서 빠졌던 공식 사실)
+
+② **교과서를 무료 소스로** — 2026-10-29 부터 미국·인도 제공처(OpenStax 등)의 교과서 수백 권을 "Add sources → Textbooks" 로 넣을 수 있음. Play 북 전자책을 소스로 넣는 것도 같이 적음
+
+③ **커뮤니티 MCP 이름 바뀜** — `jacob-bd/notebooklm-mcp-cli` → `jacob-bd/gemini-notebook-mcp-cli`(MCP 서버 이름 `gemini-notebook-mcp`, PyPI 이름·MIT 는 그대로, Claude Desktop 용 `.mcpb` 확장 냄)
+
+**Blotato**
+
+① **MCP 도구 이름 어긋남 풀림** — MCP 랜딩이 시각물 도구 셋을 `list_visual_templates` 등으로 적던 것 → Tools 도움말과 같은 `blotato_list_design_templates`·`blotato_create_design`·`blotato_get_design_status` 로 맞음
+
+② **환불 요청 길** — Billing & Credits 도움말이 앱 지원 채팅 Billing › I want a refund 로 요청하면 Stripe 로 처리하고 승인 시 5–10 영업일 안에 돌려준다고 적음, 기한·조건은 없음 (지난 확인에서 빠졌던 공식 사실)
+
+③ **커넥터 추가 링크** — 자사 블로그(2026-10-16 갱신)가 이름·URL 이 미리 채워진 claude.ai 사용자 지정 커넥터 추가 링크를 줌 (지난 확인에서 빠졌던 사실, 자사 홍보)
+
 ## 2026-11-02
 
 **매일 재확인 — Gemini · Higgsfield**

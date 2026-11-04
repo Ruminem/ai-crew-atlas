@@ -199,7 +199,7 @@ flowchart LR
 | [Grok](#grok) | 범용 | 부분 무료 · 개인·업무 모두 무료 등급 가능(소비자 약관이 업무 이용을 막지 않음, 기업 이용은 기업 약관을 가리킴) · 생성물 소유는 사용자에게 남지만 "Created with Grok" 출처 표기 요구 · 학습 안 함 약정은 팀(Teams)·Enterprise 쪽 | Plus $8 (연 결제 $80/년)<br>Premium $30 (연 결제 $300/년)<br>Super $100 (연 결제 $1,000/년)<br>Ultra $200 (연 결제 $2,000/년)<br>Teams $30+/사용자<br>Enterprise 견적<br>(옛 SuperGrok Lite $10 · SuperGrok $30 · Plus $100 · Heavy $300 · Business $30/사용자는 기존 구독자만) | 커뮤니티 MCP · API 키 (공식 Docs MCP 는 문서 검색만) | 독점 (SDK Apache-2.0 · Grok-1 가중치 Apache-2.0) | 2026-10-31 |
 | [Perplexity](#perplexity) | 조사 | 부분 무료 · **개인 무료 + 상업 유료** — Free·Pro·Max 이미지는 비상업 전용(공식 도움말), 약관 5.1 도 등급 구분 없이 비상업 전용(2026-01-23판), 업무는 Enterprise | Education Pro $10<br>Pro $20 (연 결제 $200/년)<br>Max $200 (연 결제 $2,000/년, 웹에서만)<br>Enterprise Pro $40/석 (연 결제 $400/석/년)<br>Enterprise Max $325/석 (연 결제 $3,250/석/년)<br>API 는 종량제 | 공식 MCP · 공식 CLI · API 과금 | 독점 (MCP 서버 MIT · CLI 표기 없음) | 2026-11-01 |
 | [NotebookLM](#notebooklm-2026-07-16-부터-gemini-notebook) | 조사 | 부분 무료 · 개인 무료 · 업무 이용을 막는 약관 조항 없음 · 생성물 소유권 주장 안 함(상업 이용 명시 문구는 없음, 한국은 이미지·영상 워터마크 강제) | Google AI Plus $4.99<br>Google AI Pro $19.99 (연 결제 $199.99/년)<br>Google AI Ultra 5× $99.99<br>Google AI Ultra 20× $199.99<br>Gemini Notebook Enterprise $9/라이선스 (최소 15개)<br>Workspace 는 그 요금에 포함 | 커뮤니티 MCP · 쿠키 | 독점 (커뮤니티 MCP MIT) | 2026-11-03 |
-| [Firecrawl](#firecrawl) | 수집 | 부분 무료 + 자체 호스팅 무료 · 자체 호스팅은 AGPL-3.0 조건으로 상업 이용 가능 · 클라우드 약관은 등급 구분 없이 "명시적 허락 없는 상업 이용" 금지 · 출력 권리 조항 없음 | Hobby $19 (연 결제 $16)<br>Standard $99 (연 결제 $83)<br>Growth $399 (연 결제 $333)<br>Scale $749 (연 결제 $599)<br>Enterprise 협의 | 공식 커넥터 + 공식 MCP | 본체 AGPL-3.0 · 클라우드 독점 · MCP 서버 MIT | 2026-10-30 |
+| [Firecrawl](#firecrawl) | 수집 | 부분 무료 + 자체 호스팅 무료 · 자체 호스팅은 AGPL-3.0 조건으로 상업 이용 가능 · 클라우드 약관은 등급 구분 없이 "명시적 허락 없는 상업 이용" 금지 · 출력 권리 조항 없음 | Hobby $19 (연 결제 $16)<br>Standard $99 (연 결제 $83)<br>Growth $399 (연 결제 $333)<br>Scale $749 (연 결제 $599)<br>Enterprise 협의 | 공식 커넥터 + 공식 MCP | 본체 AGPL-3.0 · 클라우드 독점 · MCP 서버 MIT | 2026-11-05 |
 | [Higgsfield](#higgsfield) | 제작 | 부분 무료 · 가격표는 **Free 상업 이용 불포함**, 약관·도움말은 출력의 상업 이용을 제한 안 함(어긋남) · Free 는 워터마크 | Starter $19<br>Plus $59 (연 결제 $47)<br>Ultra $129 (연 결제 $99)<br>Team $79/좌석 (연 결제 $65)<br>Scale $215/좌석 (연 결제 $150)<br>Enterprise 영업 문의<br>위는 데스크톱·T1 지역 기준, 휴대폰 화면은 Basic $5 · Pro $29 · Max $79 | 공식 MCP (Claude Code 는 CLI) · 유료 등급만 | 독점 (CLI·스킬 MIT) | 2026-11-02 |
 | [Blotato](#blotato) | 게시 | 체험만 무료(7일) · 업무 이용은 유료 등급 · 생성물 권리 확인 못 함 | Starter $29<br>Creator $97<br>Agency $499<br>연 결제는 약 17% 할인 (금액 표기 없음) | 공식 MCP · OAuth/API 키 · 유료 등급만 | 독점 | 2026-11-03 |
 | [Notion](#notion) | 기록 | 부분 무료 · 개인 무료 · 업무는 조직용 약관(MSA), Free 업무 이용을 막는 조항 없음 | Plus $12/멤버 (연 결제 $10)<br>Business $24/멤버 (연 결제 $20)<br>Enterprise 문의 | 공식 커넥터 · OAuth | 독점 (로컬 MCP 서버 MIT) | 2026-11-04 |
@@ -758,9 +758,9 @@ NotebookLM 은 따로 파는 요금제가 없고 Google AI 구독(Google One)에
 - **한 줄**: 웹페이지·사이트 전체를 긁어 LLM 이 읽기 좋은 마크다운이나 스키마에 맞춘 JSON 으로 돌려주는 웹 데이터 API. 검색·크롤·사이트맵·브라우저 조작·변경 감시까지 한 API 로 함
 - **클로드와 잇는 법**: 두 갈래 다 공식임
   - **claude.ai 공식 커넥터** — Anthropic 디렉터리 등재(페이지에 "Anthropic verified", 2026-07 추가). 로그인(OAuth)으로 붙이고 팀을 골라 승인함. 도구는 10개로 고정: `firecrawl_search`·`firecrawl_developer_search`·`firecrawl_gov_search`·`firecrawl_research_*` 4개(논문 검색·읽기·인용 추적)·`firecrawl_find_tools`·`firecrawl_scrape`(이 둘이 Alexandria 카탈로그를 찾고 실행함)·`firecrawl_search_feedback`. 검색 전용 엔드포인트 `https://mcp.firecrawl.dev/v2/mcp-search` 가 이 목록을 받치는데, README 는 `firecrawl_search_feedback` 을 뺀 9개라 적어 하나 어긋남(2026-10-30 — 2026-10-24 에는 커넥터 페이지에 `firecrawl_gov_search` 가 없었음). 커넥터 설명문은 브라우저 조작·여러 페이지 크롤·변경 감시·크레딧 확인도 한다고 적지만 도구 목록에는 크롤·맵·에이전트 도구가 없음
-  - **공식 MCP 서버** `firecrawl/firecrawl-mcp-server`(npm `firecrawl-mcp` v3.36.0, 2026-10-27 게시). 원격 `https://mcp.firecrawl.dev/v2/mcp` — 키 없이도 `scrape`·`search`·`parse` 3개는 속도 제한을 걸고 무료로 됨. 전체 도구(기본 27개)는 `https://mcp.firecrawl.dev/v2/mcp-oauth` 로 OAuth 로그인(`fco_…` 액세스 토큰)하거나 `Authorization: Bearer <FIRECRAWL_API_KEY>` 헤더로 붙임. 로컬은 `env FIRECRAWL_API_KEY=… npx -y firecrawl-mcp`, 자체 호스팅 본체를 쓰면 `FIRECRAWL_API_URL` 을 주고 키는 생략 가능
+  - **공식 MCP 서버** `firecrawl/firecrawl-mcp-server`(npm `firecrawl-mcp` v3.37.0, 2026-11-04 게시). 원격 `https://mcp.firecrawl.dev/v2/mcp` — 키 없이도 `scrape`·`search`·`parse` 3개는 속도 제한을 걸고 무료로 됨. 전체 도구(기본 27개)는 `https://mcp.firecrawl.dev/v2/mcp-oauth` 로 OAuth 로그인(`fco_…` 액세스 토큰)하거나 `Authorization: Bearer <FIRECRAWL_API_KEY>` 헤더로 붙임. 로컬은 `env FIRECRAWL_API_KEY=… npx -y firecrawl-mcp`, 자체 호스팅 본체를 쓰면 `FIRECRAWL_API_URL` 을 주고 키는 생략 가능
   - Claude Code 용 공식 플러그인 `firecrawl/firecrawl-claude-plugin` 도 있음. 2026-02-13 발표, `claude plugin install firecrawl@claude-plugins-official` 로 깔고 `/firecrawl:setup` 에서 API 키를 넣음. 명령은 `/firecrawl:scrape`·`crawl`·`search`·`map`·`agent` (자사 홍보 블로그, 원문 열어 봄)
-- **확인한 날짜**: 2026-10-30
+- **확인한 날짜**: 2026-11-05
 
 #### 무료·유료와 이용 조건
 
@@ -799,17 +799,18 @@ NotebookLM 은 따로 파는 요금제가 없고 Google AI 구독(Google One)에
 크레딧 단가 (공식 가격표·billing 문서, 원문 열어 봄 — 모든 등급 같음)
 - Scrape·Crawl: 페이지당 1. Monitor: 페이지·검사당 1, 판정(judge)을 켜면 바뀐 페이지마다 +1. 결정적 추출(deterministic-extraction) 엔진을 쓰면 그 대신 페이지·검사당 7 고정 — 가격표 HTML 요약 문단에만 있고 pricing.md·billing·monitoring 문서에는 없음 (2026-10-30, 원문 열어 봄)
 - Map: 호출당 1 — billing 문서와 가격표 표는 "per call", 가격표 요약 칸은 "1 / page" 라고 적어 원문끼리 어긋남
-- Search: 결과 10개당 2 (11개면 4). MCP 의 `firecrawl_search_feedback` 으로 쓴 결과를 알려 주면 1 크레딧을 돌려줌 (MCP README, 원문 열어 봄)
+- Search: 결과 10개당 2 (11개면 4). MCP 의 `firecrawl_search_feedback` 으로 쓴 결과를 알려 주면 1 크레딧을 돌려줌. 돌려받는 양은 팀당 UTC 하루 기본 100 크레딧까지(`dailyRefundCap`) (MCP README, 원문 열어 봄)
 - 추가 옵션은 겹쳐 붙음: JSON 형식 +4, question·highlights·audio·video 형식 +4, PII 가리기 +4, 프롬프트 주입 검사 +4, 데이터 무보존(ZDR) +1, PDF 페이지당 +1. 예: JSON + ZDR = 6, JSON + PII = 9
 - Enhanced(스텔스) 프록시: 추가 0 — 기본 요청과 같은 1. 2025-05-08 부터 5 였다가 2026-08-17 부터 다시 1 이 됨 (changelog)
 - Browser·Interact: 브라우저 1분당 2(코드로만 조작) 또는 7(프롬프트로 조작), 최소 1분. 데이터 무보존(ZDR) 세션은 1분당 +2(코드만 4 · 프롬프트 9) (billing 문서, 원문 열어 봄)
 - Agent(미리보기): 하루 5회 무료, 그 뒤 작업량에 따라 크레딧("dynamic"). `maxCredits` 로 상한을 걸 수 있음. 정확한 단가는 원문에도 없음. 문서에 남은 "Spark-1 Fast 병렬 칸당 10"은 Spark 1 이 폐기돼 모든 실행이 spark-2 로 가므로 지금도 맞는지 모름
 - Research Index 논문 엔드포인트(`search_papers`·`read_paper` 등): 무료
+- 두 무료 색인(Research·Gov)도 팀당 색인마다 하루 호출 한도가 있음: Free·Hobby·Standard 1,000 · Growth 2,000 · Scale·Enterprise 무제한, UTC 00:00 초기화. 분당은 모든 등급에서 `/search/gov` 300 · 논문 엔드포인트 100. 키 없이 부르면 IP 당 Free 한도를 받음 (rate-limits 문서, 원문 열어 봄)
 - Government & Legal Index 검색(`/search/gov`): 무료, 크레딧 안 빠짐. 키 없이도 되고 키를 넣으면 속도 한도가 올라감 (Gov 문서, 원문 열어 봄)
 - Alexandria(데이터 제공자 카탈로그): 도구 찾기·계약 읽기는 무료, 실행은 도구마다 붙은 가격만큼 크레딧이 빠짐 — 고정 단가표는 없음. 로그인(인증)이 있어야 되고, 제공자에 따라 조직 관리자가 그쪽 약관을 먼저 받아들여야 함. 등급 제한은 문서에 없음 (Alexandria 문서·changelog, 원문 열어 봄)
 - x.com 주소: Grok API 를 거쳐 요청당 30 (기본 1 + 29)
 - LinkedIn 인물·회사 페이지: 조직이 고른 제공자가 답하고 그 값을 냄(기본 1 대신) — Apollo 30 · Data Legion 기본 10 / 프리미엄 40 · FullEnrich 5. 어느 제공자에도 기록이 없으면 0. JSON +4 는 그대로 붙고 ZDR·PII 가리기는 못 씀 (billing 문서, 원문 열어 봄)
-- 대상 사이트가 403·404 를 내도 문서를 돌려받으면 1 크레딧이 빠짐. 문서가 안 오면 0 — 다만 위협 차단 검사(URL 당 2)·프롬프트 주입 검사(돈 뒤면 5)·lockdown 캐시 미스(1)는 문서가 없어도 빠짐 (billing 문서, 원문 열어 봄)
+- 대상 사이트가 403·404 를 내도 문서를 돌려받으면 1 크레딧이 빠짐. 문서가 안 오면 0 — 다만 위협 차단 검사(URL 당 2)·프롬프트 주입 검사(돈 뒤면 5)·lockdown 캐시 미스(1)는 문서가 없어도 빠짐. lockdown 이 캐시에서 답하면 페이지당 +4 (billing 문서, 원문 열어 봄)
 
 Extract 별도 과금 여부
 - **2025-11-14(v2.6.0) 부터 Extract 도 같은 크레딧에서 빠짐**, 1 크레딧 = 15 토큰 (공식 Token Usage 문서·changelog, 원문 열어 봄). 그 전의 별도 토큰 구독(Starter $89/월 등)을 적은 2026년 글은 옛 요금임
@@ -831,6 +832,8 @@ MCP·커넥터가 무엇으로 과금되는지
 - **정부·법령 색인**: 2026-10-22 공개. 미국 연방·주·지방 정부 사이트 3천만 페이지(법령·규정·조례·판결문·기관 안내)를 검색하는 무료 색인. API `/search/gov`·MCP `firecrawl_gov_search`·CLI `firecrawl gov` 로 부르고, Alexandria 의 `firecrawl-gov-index` 로 부르면 그 페이지가 인용한 법·판례와 관할·법원·날짜 필터가 붙음. 크레딧 안 빠짐 (changelog·Gov 문서, 원문 열어 봄)
 - **Directory — 채용용 인물 데이터**: 2026-10-28 공개. Alexandria 안의 직업 프로필 모음으로, 직무·회사·지역·키워드로 후보를 찾고 경력·업무 연락처를 받음. 규모는 changelog 가 "250M+", 발표 글이 "240M+" 라 공식끼리 갈림. 검색은 크레딧이 안 빠지고 상세 정보·연락처를 받을 때 빠진다고 발표 글(자사 홍보)이 적음 (changelog, 원문 열어 봄)
 - **Cybersecurity Data — 의존성 취약점 대조**: 2026-10-29 공개. Alexandria 에서 코드 의존성을 취약점 400,000+ 건과 대조하고 NVD·CISA·GitHub 권고를 찾음. 원천은 NVD·CVE Program·CISA KEV·GitHub Advisory Database·Red Hat Security Data·OSV.dev (changelog, 원문 열어 봄)
+- **선거 기록 — 미국 선거 결과·선거 자금·투표 기록**: 2026-11-03 공개. Alexandria 에서 하원·상원 470개 선거의 결과(주별 집계를 따라 갱신)·선거 자금·현직 의원 투표 기록을 무료로 부름 (changelog, 원문 열어 봄)
+- **headless Clay — 클로드 안에서 인물·회사 보강**: 2026-11-02 공개. Claude·ChatGPT 에서 인물 250M+·회사 26M+ 를 검색하고 업무 이메일·직무·회사 데이터를 받음. "매달 1,000 크레딧으로 무료 시작"이 Free 등급 크레딧과 같은 것인지는 원문에 없음. "Clay 보다 88% 쌈"은 Standard 연 결제와 Clay Launch 를 견준 자사 홍보 수치임 (changelog, 원문 열어 봄)
 
 #### 라이선스
 - 본체 `firecrawl/firecrawl`: **AGPL-3.0**(LICENSE 원문 확인). README 는 "주로 AGPL-3.0 이고 SDK 와 일부 UI 구성요소는 MIT"라고 적음. 클라우드판(firecrawl.dev)은 오픈소스판에 없는 기능이 더 있는 독점 SaaS
@@ -849,7 +852,7 @@ MCP·커넥터가 무엇으로 과금되는지
 - [Rate Limits — Firecrawl Docs](https://docs.firecrawl.dev/rate-limits) — 공식 (원문 열어 봄)
 - [Agent — Firecrawl Docs](https://docs.firecrawl.dev/features/agent) — 공식 (원문 열어 봄)
 - [Terms of Service — Firecrawl](https://www.firecrawl.dev/terms-of-service) — 공식 (원문 열어 봄, 2026-10-07 개정판)
-- [Changelog — Firecrawl](https://www.firecrawl.dev/changelog) — 공식 (원문 열어 봄, 2026-10-30 항목까지)
+- [Changelog — Firecrawl](https://www.firecrawl.dev/changelog) — 공식 (원문 열어 봄, 2026-11-04 항목까지)
 - [Alexandria — Firecrawl Docs](https://docs.firecrawl.dev/features/alexandria) — 공식 (원문 열어 봄)
 - [Government & Legal Index — Firecrawl Docs](https://docs.firecrawl.dev/features/gov) — 공식 (원문 열어 봄)
 - [Monitoring — Firecrawl Docs](https://docs.firecrawl.dev/features/monitoring) — 공식 (원문 열어 봄)

@@ -2,6 +2,28 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-06
+
+**매일 재확인 — ChatGPT · Grok**
+
+**ChatGPT**
+
+① **Pro·Business 월 API 크레딧** — Pro $100·$200·$500 은 매달 같은 금액의 OpenAI API 크레딧, Business 는 Standard 좌석당 $20 · Premium 좌석당 $100 을 합쳐 워크스페이스 월 $500 까지. Free·Go·Plus 는 없음, 7일 넘은 유료 구독을 자기 API 조직에 이어야 받고 남은 것은 주기 끝에 사라짐 (지난 확인에서 빠졌던 공식 사실)
+
+② **Go 추론 문맥 창** — 문맥 창 54K → 54K(추론 256K), 가격표 비교표 (지난 확인에서 빠졌던 공식 사실)
+
+**Grok**
+
+① **Teams 좌석 금액** — `$30+/사용자` → 좌석당 Premium $30 · Super $100 · Ultra $200 /월, Plus 좌석은 없음. 좌석마다 주간 풀이 따로고 선불 잔액만 같이 씀 (도움말 Pricing, 지난 확인에서 빠졌던 공식 사실)
+
+② **image-quality 은퇴** — `grok-imagine-image-quality` $0.05–$0.07/장이 2026-11-02 은퇴해 가격 표에서 빠짐, 그 이름으로 온 요청은 image-2.0 low 품질로 더 싸게 처리됨
+
+③ **Grok 부록 갱신** — X Subscription Grok Addendum 2026-10-07판 → 2026-10-27판. 학습 안 함 약정에 ZDR API 밖의 비식별·집계 데이터 이용, 피드백·안전 검토 데이터의 안전 목적 이용 단서가 붙어 있음
+
+④ **X Premium Business 에 포함** — X Premium Business 계정과 affiliate 계정은 X Subscription Premium 을 추가 요금 없이 받음 (도움말 2026-11-03 갱신판)
+
+⑤ **Companions 문항 빠짐** — FAQ 2026-11-03 갱신판에서 "iOS app only" 문항이 사라짐, 지금도 있는지는 확인 못 함
+
 ## 2026-11-05
 
 **매일 재확인 — Firecrawl · Obsidian**

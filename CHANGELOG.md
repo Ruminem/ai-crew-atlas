@@ -2,6 +2,30 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-07
+
+**매일 재확인 — Perplexity · Jev**
+
+**Perplexity**
+
+① **Enterprise 교육 할인 바뀜** — 교육기관·비영리 $30/석/월 · $300/석/년 → 교육기관·비영리·정부는 Enterprise Pro·Enterprise Max 좌석 25% 할인(신청 양식 → 할인 코드). $30 은 지금 FAQ 에 없음
+
+② **Agent API ultra 정식** — effort `ultra-preview` → 정식 `ultra`(`ultra@2026-11-05.0`), API changelog 2026-11
+
+③ **Decisions API 웹 검색** — web grounding 이 새로 생김. 질문마다 Fast Search $0.001/회, 요청당 최대 100회($0.10), URL 가져오기는 성공할 때 $0.001
+
+④ **flex·priority 등급** — Agent API 서비스 등급 `flex` 0.5배 · `priority` 2배, 그 등급을 적은 모델의 토큰 단가에만 붙고 도구 요금은 그대로 (지난 확인에서 빠졌던 공식 사실)
+
+⑤ **산 크레딧 1년 만료** — 산 Computer 크레딧은 1년 동안 Computer 를 안 쓰면 만료됨. Pro 에도 월 지출 한도가 있으나 금액은 안 적힘 (지난 확인에서 빠졌던 공식 사실)
+
+⑥ **App Store 크레딧 묶음** — 500 $5 · 1,000 $10 · 2,500 $25 · 5,000 $50, 100 크레딧 = $1 과 맞음 (지난 확인에서 빠졌던 공식 사실)
+
+**Jev**
+
+① **언어 지원 문구 빠짐** — "영어가 주 학습 언어, 한국어 등 CJK 는 handled but not equally well"(Models, 2026-10-26) 이 Models 와 문서 전문에서 사라짐. 남은 것은 모델 변경기록 1.14 의 "Better multilingual support" 뿐임
+
+② **학습 안 함 문구** — Models 문서에 "Jev is not trained on customer requests or responses." 가 있음 (지난 확인에서 빠졌던 공식 사실)
+
 ## 2026-11-06
 
 **매일 재확인 — ChatGPT · Grok**

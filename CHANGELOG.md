@@ -2,6 +2,52 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-08
+
+**매일 재확인 — Gemini · Higgsfield**
+
+**Gemini**
+
+① **Deep Think 대체 중** — Deep Think 도움말이 "Gemini 4 Argon 으로 대체되는 중"이라고 적음. Ultra(개인·Business) 전용·18세 이상은 그대로임
+
+② **Plus 에 Flow Music 크레딧** — Google One 비교표가 Plus 에 Google Flow Music 월 3,000크레딧을 적음(Pro 10,000 · Ultra 30,000) (지난 확인에서 빠졌던 공식 사실)
+
+③ **Pro 부터 Chrome 자동 탐색** — Gemini in Chrome 의 auto browse 가 AI Pro 혜택(미국·인도, 18세 이상)이고 Ultra 는 상향 한도임 (지난 확인에서 빠졌던 공식 사실)
+
+④ **Pro 혜택에 미국 전용 넷** — AI Pro 혜택 도움말에 Android Studio 의 Gemini, Google Earth 의 Gemini 상향 한도, Google TV Create Hub, Playground 가 들어 있음
+
+⑤ **한도 넘으면 Flash-Lite 로** — 유료 등급은 한도에 닿아도 Flash-Lite 로 대화를 이어 간다고 한도 도움말이 적음
+
+⑥ **Tasks 에 Keep Activity 필요** — Tasks in Gemini 는 Personal Intelligence 와 함께 Keep Activity 도 켜야 하고 모바일 앱·Mac 앱·웹에서만 됨
+
+⑦ **Plus 저장공간 표기 갈림** — Google One 비교표만 Plus 를 "400 GB or 2 TB" 로 적고 나머지 공식 문구는 400GB 임
+
+⑧ **Nano Banana 아바타** — 얼굴·목소리를 녹화해 만든 아바타를 이미지에 넣고 남과 나눌 수 있음(이미지 도움말)
+
+**Higgsfield**
+
+① **행사 모델이 바뀜** — Ultra 7일 행사가 Seedance 2.5·GPT Image 2.5·Seedream 5.0 Pro → GPT Image 2.6·Seedream 5.0 Pro·Nano Banana Pro Unlimited + 특별 30% 할인. 할인 금액은 여전히 안 밝힘
+
+② **GPT Image 2.6 으로 교체** — 2026-11-05 출시한 GPT Image 2.6 이 Plus·Ultra 와 휴대폰 Pro 카드의 7일 Unlimited 에서 2.5 를 대신함
+
+③ **Mangaka 무료 생성 추가** — 11-02 출시한 만화 도구 Mangaka 의 무료 생성이 Starter 1회 · Plus·Ultra·휴대폰 Pro 2회로 카드에 붙음
+
+④ **Scale 첫 달 크레딧 이월** — 가격표 Scale 카드에 "첫 달에 안 쓴 크레딧 이월"이 붙음(Team 은 없음). 도움말은 여전히 Enterprise 만 이월된다고 적어 공식 두 곳이 어긋남
+
+⑤ **Unlimited 자동화 금지** — Unlimited 는 사람이 손으로 쓰는 것 전용이라 자동화 도구·스크립트·계정 공유·재판매를 금지하고, 이상 사용이면 느려지거나 일시 정지될 수 있음 (지난 확인에서 빠졌던 공식 사실)
+
+⑥ **365 Unlimited 는 구독 동안만** — 구독이 끊기거나 그 혜택이 없는 등급으로 내리면 기간이 남아도 멈춤 (지난 확인에서 빠졌던 공식 사실)
+
+⑦ **크레딧 종류 셋 더 적힘** — 크레딧 팩 말고 자동 충전(Auto-Refill) · 프로모 · Boost Credits(Concurrency Boost 팩에 딸림)가 있고 프로모 말고는 90일 유효함. 금액은 도움말에 없음 (지난 확인에서 빠졌던 공식 사실)
+
+⑧ **Scale 연 결제 NBP 4K** — Scale 연 결제의 7일 Unlimited Nano Banana Pro 는 4K, 월 결제는 2K (지난 확인에서 빠졌던 공식 사실)
+
+⑨ **유료에도 숨은 AI 표지** — 유료는 보이는 워터마크가 없지만 AI 생성물임을 알리는 보이지 않는 표지·메타데이터는 넣을 수 있다고 워터마크 도움말이 적음 (지난 확인에서 빠졌던 공식 사실)
+
+⑩ **실험 세트 Pro 900 선택지** — A/B 실험 세트 `max_v1` 의 Pro 에 900크레딧 $43(연 결제 $34/월) 선택지가 있음 (지난 확인에서 빠졌던 공식 사실)
+
+⑪ **만화·쇼츠 생성 새로 생김** — Mangaka(최대 30화 만화·웹툰, 11-02)와 Shorts Studio(AI 아바타가 진행하는 세로 쇼츠, MCP 로 클로드 안에서 부름, 11-03)
+
 ## 2026-11-07
 
 **매일 재확인 — Perplexity · Jev**

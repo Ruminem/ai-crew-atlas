@@ -22,6 +22,18 @@
 
 ⑦ **디렉터리는 생성 도구 안 받음** — Software Directory Policy 4.B 가 이미지·영상·음성·음악을 AI 로 생성하는 소프트웨어를 커넥터 디렉터리에 안 받음, 디자인 보조용 이미지 도구만 예외 (지난 확인에서 빠졌던 공식 사실)
 
+**Notion**
+
+① **claude.com 목록 69개로** — Claude 커넥터 페이지의 Notion 도구 목록이 옛 13개 → 69개(개발자 문서는 71개)
+
+② **앱스토어 결제는 credits 못 삼** — Apple App Store·Google Play 로 결제한 구독은 Notion credits 를 살 수 없고, Standard·Select 가 떨어지면 다음 결제 주기까지 멈춤. 사려면 구독을 만료시키고 notion.com 결제로 옮겨야 함 (지난 확인에서 빠졌던 공식 사실)
+
+③ **MCP 토큰은 Business 부터** — 워크스페이스 소유자가 만든 MCP 토큰을 bearer 로 보내 브라우저 로그인 없이 Notion MCP 에 붙음. Business·Enterprise 만 (지난 확인에서 빠졌던 공식 사실)
+
+④ **Enterprise 일괄 MCP 연결** — SAML SSO 를 쓰는 Enterprise 는 회사 ID 공급자(Okta 등)나 Claude 의 팀 확인으로 MCP 연결을 한 번에 걸어 멤버마다 승인하지 않음 (지난 확인에서 빠졌던 공식 사실)
+
+⑤ **MCP 요청 한도 등급별** — MCP 도구 호출도 API 한도에 들어가고, 연결당 Business·Enterprise 분당 600 · 다른 등급 180. 게스트는 MCP 를 못 붙임 (지난 확인에서 빠졌던 공식 사실)
+
 ## 2026-11-09
 
 **매일 재확인 — NotebookLM · Blotato**

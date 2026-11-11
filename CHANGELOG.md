@@ -2,6 +2,46 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-12
+
+**매일 재확인 — ChatGPT · Grok**
+
+**ChatGPT**
+
+① **Pro 200 축소 취소** — 9-29 메일로 알린 Pro $200 사용량 축소가 2026-10-29 에 취소됨, 낮은 Work·Codex 한도를 받던 구독자·새 가입자 → 높은 쪽과 같은 한도
+
+② **Pro 100·500 한도 2배** — 2026-10-29 부터 Pro $100·$500 의 Work·Codex 한도가 전의 2배(Plus 는 그대로)
+
+③ **Business Pro 모델 한도** — 채팅의 GPT-6 Pro·GPT-5.6 Sol Pro 합산 Standard 월 15회 · Premium 주 50회 (지난 확인에서 빠졌던 공식 사실)
+
+④ **Go 광고 시험 시작** — Go 도움말 "may start testing ads … in the future" → "Ads are being tested with eligible ChatGPT Go users in select regions", 공식끼리 갈렸던 것이 맞춰짐
+
+⑤ **이미지 모델 2.6 으로** — ChatGPT Images 2.0 → Images 2.6(2026-11-04), 반복 GIF 만들기·저장한 참조 이미지 재사용이 더해짐
+
+⑥ **옛 음성 12-11 은퇴** — Advanced·Standard voice 가 2026-12-11 에 빠지고 Live(GPT-Live)로 넘어감(2026-11-10 공지)
+
+⑦ **API 크레딧 시작일** — 월 API 크레딧 혜택 시작일 확인 못 함 → 2026-10-28(릴리스 노트)
+
+⑧ **다른 앱에서 요금제 사용** — Go·Plus·Pro·Business 요금제 한도를 Sign in with ChatGPT 로 참여 앱에서 씀 (지난 확인에서 빠졌던 공식 사실)
+
+⑨ **Service Terms 11-10 판** — 2026-10-16 판 → 2026-11-10 판, Business Agent·Businesses in ChatGPT 절이 더해짐(음성 출력 비상업 조항은 그대로)
+
+**Grok**
+
+① **공식 Claude Code 플러그인** — 커뮤니티 MCP·API 키만 → xAI 의 `xai-org/grok-build-plugin-cc`(Apache-2.0, 2026-07 공개)로 Claude Code 에서 Grok Build 에 리뷰·비판·위임·대화 넘기기를 맡김 (지난 확인에서 빠졌던 공식 사실)
+
+② **Grok Build CLI 소스 공개** — 소스 공개 여부 확인 못 함 → GitHub `xai-org/grok-build` 에 Rust 소스, Apache-2.0(사내 저장소에서 주기적으로 옮김)
+
+③ **TypeScript SDK 도 Apache-2.0** — Python SDK 만 적음 → 공식 `@xai-official/sdk`(`xai-org/xai-sdk-ts`)도 Apache-2.0
+
+④ **미국 리전은 4.7·4.6 만** — 미국 리전 1.1배만 적음 → `us.api.x.ai` 는 grok-4.7·grok-4.6 만 됨, grok-4.7 이 $2.20 / $0.55 / $6.60
+
+⑤ **결제 수단·앱 전환 제한** — 웹 결제는 카드·Apple Pay·Google Pay·Link·Alipay, 기존 구독자의 X Subscription 전환은 앱에서 아직 안 됨 (지난 확인에서 빠졌던 공식 사실)
+
+**관계도**
+
+① **Grok 선 공식으로** — 점선(커뮤니티 MCP) → 실선(공식 Claude Code 플러그인)
+
 ## 2026-11-11
 
 **매일 재확인 — Firecrawl · Obsidian**

@@ -2,6 +2,26 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-13
+
+**매일 재확인 — Perplexity · Jev**
+
+**Perplexity**
+
+① **Max 전용 모델 교체** — 구독 모델 표(2026-11-11 기준)에서 Gemini 4 Argon → Gemini 4 Carbon, Claude Fable 5.1 → Claude Fable 5.2
+
+② **Decisions v1.3 나옴** — `pplx-decider-v1.3` $0.02 · `pplx-decider-flash-v1.3` $0.01(입력 100만 토큰), v1.2 와 같은 값. `*-latest` 가 v1.3 을 가리키고 새 질문 유형 `locate` 가 생김
+
+③ **fast 는 단가 2배** — Agent API `fast` 단계가 priority 처리라 gpt-6-luna 토큰을 $0.20 / $1.00 로 과금함 (지난 확인에서 빠졌던 공식 사실)
+
+④ **Portable Computer** — Pro·Max 가 NVIDIA GPU 기기에서 Computer 를 로컬로 돌리고, 로컬로 처리한 일은 크레딧을 안 씀 (지난 확인에서 빠졌던 공식 사실)
+
+⑤ **체험에 카드 필수** — 모든 체험·프로모션 구독은 카드를 등록해야 하고, 기존 프로모션 사용자는 알림 뒤 7일 안에 안 넣으면 무료로 내려감 (지난 확인에서 빠졌던 공식 사실)
+
+**Jev**
+
+① **DPA 문서 있음** — 공식 문서 Legal 이 Data Processing Addendum(2026-04-24 개정)을 데이터 보존 문서로 첫 줄에 걺 (지난 확인에서 빠졌던 공식 사실)
+
 ## 2026-11-12
 
 **매일 재확인 — ChatGPT · Grok**

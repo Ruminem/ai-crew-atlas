@@ -2,6 +2,32 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-14
+
+**매일 재확인 — Gemini · Higgsfield**
+
+**Gemini**
+
+① **Ultra 전용 Gemini 4 Carbon** — 2026-11-10 부터 모든 Ultra 구독자에게 Gemini 앱·AI Mode·Antigravity 로 열림(출시 글·모델 도움말·가격표). 옛 Deep Think 도움말 주소가 "About Gemini models" 로 바뀌어 Deep Think 는 더 안 적힘
+
+② **Gemini 4 Hydrogen 전 등급** — 2026-11-12 출시. 무료는 자동 모델 선택을 켤 때 물음에 따라 쓰이고, Plus 부터 직접 고름. Antigravity 에서는 유료 Pro·Ultra
+
+③ **등급별 모델 목록 공개** — 모델 도움말: 무료 Flash-Lite(자동 시 Hydrogen) · Plus Flash-Lite·Hydrogen·Pro · Pro 에 Argon 더함 · Ultra Flash-Lite·Hydrogen·Argon·Carbon. 무료에 Pro 모델이 없다는 것을 처음 공식으로 봄
+
+④ **Plus 에 Colab 월 50** — Google One 비교표의 Colab 컴퓨트 단위가 Plus 50 · Pro 200 · Ultra 1,000/2,000 (지난 확인에서 빠졌던 공식 사실)
+
+**Higgsfield**
+
+① **무료 등급 크레딧 0 명시** — 2026-11-11 새 도움말 "What does the Higgsfield free plan include?"가 무료 등급에 하루·월 크레딧이 없다고 밝힘. 생성은 크레딧이나 기능별 무료 생성으로만 되고, 무료 등급에선 크레딧 팩도 못 삼
+
+② **11.11 할인 11-15 까지** — 연 결제 Plus $35/월 · Ultra $65/월 · Team $45/좌석 · Scale $80/좌석(행사 전 $47 · $99 · $65 · $150), 월 결제는 첫 달 Plus $47 · Ultra $79 · Team $55 · Scale $119.99. Starter 는 할인 없음
+
+③ **할인 갱신 조건 갈림** — 변경 기록은 첫 해·첫 달 뒤 정가로 갱신한다고 적는데, 요금 API 는 연 결제 할인을 forever 로 두고 갱신가도 할인가로 줌
+
+④ **Unlimited 기간 늘어남** — 행사 카드에서 Seedance 2.5 Unlimited 14일, Nano Banana Pro·Seedream 5.0 Pro·GPT Image 2.5·2.6 60일(앞 확인 때 7일)
+
+⑤ **휴대폰 화면 등급 바뀜** — Basic $5 · Plus $49(1,000크레딧) · Ultra $129 로 보이고, 11-08 에 보이던 Pro $29 · Max $79 는 안 보임
+
 ## 2026-11-13
 
 **매일 재확인 — Perplexity · Jev**

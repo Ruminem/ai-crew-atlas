@@ -2,6 +2,26 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-15
+
+**매일 재확인 — NotebookLM · Blotato**
+
+**NotebookLM**
+
+① **AI Plus 2 TB 판 $9.99** — 지난 확인에서 `가격 확인 못 함` 이던 Google AI Plus 2 TB 판이 미국 Google One 요금제 쪽에 $9.99/월로 실려 있음(400GB 판 카드는 그 쪽에 없음). 연 결제 금액은 여전히 안 보임
+
+② **노트 소스 한도 따로** — 개인 요금제 도움말 표에 "Notes sources" 줄이 있음. 노트를 소스로 쓰는 것은 일반 소스와 따로 노트북당 무료·Plus·Pro 500개, Ultra 둘 600개
+
+③ **Workspace 는 하루 한도 그대로** — 업무·학교 계정 도움말 표는 개인 계정과 달리 아직 하루 고정 한도로 적음. Standard·More·Higher·Expanded·Highest 순으로 채팅 50·200·500·1K·5K/일, 오디오·비디오 개요 3·6·20·40·200/일, 시네마틱 Higher 2·Expanded 4·Highest 20/일, Expanded 는 노트북당 소스 400개
+
+**Blotato**
+
+① **3BOOKS 행사 띠 걸림** — 가격표·약관·AI Info·MCP 랜딩 맨 위 띠가 코드 `3BOOKS` 로 첫 달 50% 할인 + 보너스 AI 크레딧 5,000($43 상당)을 걸고 Starter 월 결제 가입으로 이음. Current Promo 도움말은 아직 "활성 할인 없음"이라 공식끼리 어긋남
+
+② **Slack 채널 게시 추가** — Social accounts·Slack 도움말에 Slack 채널 게시가 들어옴. 글 3,000자, 이미지 10장(영상 안 됨), 채널당 24시간 100개, 채널 하나가 계정 1개로 셈. pricing.md·AI Info 는 아직 9개 플랫폼이 전부라 적음
+
+③ **업로드로 학습 안 함** — FAQs 도움말이 올린 콘텐츠로 AI 를 학습하지 않고, 생성에 외부 제공사(OpenAI·Anthropic·Flux·Kling 등)를 쓰며 프롬프트·Brand Kit 설정만 보내고 올린 미디어는 안 보낸다고 적음
+
 ## 2026-11-14
 
 **매일 재확인 — Gemini · Higgsfield**

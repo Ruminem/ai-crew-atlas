@@ -2,6 +2,28 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-16
+
+**매일 재확인 — Claude · Notion**
+
+**Claude**
+
+① **Dashboards → Claude Data** — Claude Dashboards 가 Claude Data 로 이름이 바뀜(도움말 "previously called Claude Dashboards"). 대시보드 말고 데이터 스토리·내레이션 짧은 영상·편지 꼴 보고서도 만들고, Pro 이상에서 되며 certified queries·live sharing 만 베타. Enterprise 는 2026-11-20 부터 기본 켜짐
+
+② **Claude Sheets 베타** — Claude 안의 스프레드시트가 Pro·Max·Ultra·Team·Enterprise 에 생김(.xlsx·CSV 내보내기, Team 은 기본 켜짐). Free 는 안 됨
+
+③ **Claude Whiteboards 베타** — 같이 쓰는 보드가 같은 등급에 생김(PNG 내보내기, Lucid·Miro·Zoho Vani 로 보냄). Free 는 안 됨
+
+④ **Claude Meetings 베타** — 2026-11-12 부터 Team·Enterprise 에서 Google Meet 통화에 Claude 를 참가자로 넣어 메모·답변·아티팩트를 만듦. 녹음은 안 남김. 회의 중 만든 문서·보드는 2027-02-10 까지 무료
+
+⑤ **Enterprise 비용 코드 태그** — 2026-11-06 부터 프로젝트에 비용 코드 태그를 달아 지출을 나눠 봄(베타)
+
+**Notion**
+
+① **SSE 주소 2027-02-23 종료** — 원격 MCP 의 옛 SSE 주소 `mcp.notion.com/sse` 를 2027-02-23 에 닫는다고 공지함. SSE 만 되는 클라이언트는 Streamable HTTP 로 옮겨야 함
+
+② **커넥터 목록에 되돌리기 없음** — claude.com 커넥터 페이지의 도구 69개는 개발자 문서 71개에서 AI 검색·바뀐 내역 보기·과거 버전 되돌리기 셋이 빠지고 설정 마무리 도구 하나가 더해진 것임(지난 확인에서 못 가린 차이)
+
 ## 2026-11-15
 
 **매일 재확인 — NotebookLM · Blotato**

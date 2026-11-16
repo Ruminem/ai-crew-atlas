@@ -199,11 +199,11 @@ flowchart LR
 | [Grok](#grok) | 범용 | 부분 무료 · 개인·업무 모두 무료 등급 가능(소비자 약관이 업무 이용을 막지 않음, 기업 이용은 기업 약관을 가리킴) · 생성물 소유는 사용자에게 남지만 "Created with Grok" 출처 표기 요구 · 학습 안 함 약정은 팀(Teams)·Enterprise 쪽 | Plus $8 (연 결제 $80/년)<br>Premium $30 (연 결제 $300/년)<br>Super $100 (연 결제 $1,000/년)<br>Ultra $200 (연 결제 $2,000/년)<br>Teams Premium $30/좌석<br>Teams Super $100/좌석<br>Teams Ultra $200/좌석<br>Enterprise 견적<br>(옛 SuperGrok Lite $10 · SuperGrok $30 · Plus $100 · Heavy $300 · Business $30/사용자는 기존 구독자만) | 공식 Claude Code 플러그인(Grok Build CLI 로그인) · 커뮤니티 MCP · API 키 (공식 Docs MCP 는 문서 검색만) | 독점 (SDK·Grok Build CLI·플러그인 Apache-2.0 · Grok-1 가중치 Apache-2.0) | 2026-11-12 |
 | [Perplexity](#perplexity) | 조사 | 부분 무료 · **개인 무료 + 상업 유료** — Free·Pro·Max 이미지는 비상업 전용(공식 도움말), 약관 5.1 도 등급 구분 없이 비상업 전용(2026-01-23판), 업무는 Enterprise | Education Pro $10<br>Pro $20 (연 결제 $200/년)<br>Max $200 (연 결제 $2,000/년, 웹에서만)<br>Enterprise Pro $40/석 (연 결제 $400/석/년)<br>Enterprise Max $325/석 (연 결제 $3,250/석/년)<br>API 는 종량제 | 공식 MCP · 공식 CLI · API 과금 | 독점 (MCP 서버 MIT · CLI 표기 없음) | 2026-11-13 |
 | [NotebookLM](#notebooklm-2026-07-16-부터-gemini-notebook) | 조사 | 부분 무료 · 개인 무료 · 업무 이용을 막는 약관 조항 없음 · 생성물 소유권 주장 안 함(상업 이용 명시 문구는 없음, 한국은 이미지·영상 워터마크 강제) | Google AI Plus $4.99 · 2 TB 판 $9.99<br>Google AI Pro $19.99 (연 결제 $199.99/년)<br>Google AI Ultra 5× $99.99<br>Google AI Ultra 20× $199.99<br>Gemini Notebook Enterprise $9/라이선스 (최소 15개)<br>Workspace 는 그 요금에 포함 | 커뮤니티 MCP · 쿠키 | 독점 (커뮤니티 MCP MIT) | 2026-11-15 |
-| [Firecrawl](#firecrawl) | 수집 | 부분 무료 + 자체 호스팅 무료 · 자체 호스팅은 AGPL-3.0 조건으로 상업 이용 가능 · 클라우드 약관은 등급 구분 없이 "명시적 허락 없는 상업 이용" 금지 · 출력 권리 조항 없음 | Hobby $19 (연 결제 $16)<br>Standard $99 (연 결제 $83)<br>Growth $399 (연 결제 $333)<br>Scale $749 (연 결제 $599)<br>Enterprise 협의 | 공식 커넥터 + 공식 MCP | 본체 AGPL-3.0 · 클라우드 독점 · MCP 서버 MIT | 2026-11-11 |
+| [Firecrawl](#firecrawl) | 수집 | 부분 무료 + 자체 호스팅 무료 · 자체 호스팅은 AGPL-3.0 조건으로 상업 이용 가능 · 클라우드 약관은 등급 구분 없이 "명시적 허락 없는 상업 이용" 금지 · 출력 권리 조항 없음 | Hobby $19 (연 결제 $16)<br>Standard $99 (연 결제 $83)<br>Growth $399 (연 결제 $333)<br>Scale $749 (연 결제 $599)<br>Enterprise 협의 | 공식 커넥터 + 공식 MCP | 본체 AGPL-3.0 · 클라우드 독점 · MCP 서버 MIT | 2026-11-17 |
 | [Higgsfield](#higgsfield) | 제작 | 부분 무료 · Free 는 하루·월 크레딧 0(기능별 무료 생성만) · 가격표는 **Free 상업 이용 불포함**, 약관·도움말은 출력의 상업 이용을 제한 안 함(어긋남) · Free 는 워터마크 | Starter $19<br>Plus $59 (연 결제 $47)<br>Ultra $129 (연 결제 $99)<br>Team $79/좌석 (연 결제 $65)<br>Scale $215/좌석 (연 결제 $150)<br>Enterprise 영업 문의<br>11.11 행사(11-15 까지) 연 결제 Plus $35 · Ultra $65 · Team $45 · Scale $80<br>위는 데스크톱·T1 지역 기준, 휴대폰 화면은 Basic $5 · Plus $49 · Ultra $129 | 공식 MCP (Claude Code 는 CLI) · 유료 등급만 | 독점 (CLI·스킬 MIT) | 2026-11-14 |
 | [Blotato](#blotato) | 게시 | 체험만 무료(7일) · 업무 이용은 유료 등급 · 생성물 권리 확인 못 함 | Starter $29<br>Creator $97<br>Agency $499<br>연 결제는 약 17% 할인 (금액 표기 없음) | 공식 MCP · OAuth/API 키 · 유료 등급만 | 독점 | 2026-11-15 |
 | [Notion](#notion) | 기록 | 부분 무료 · 개인 무료 · 업무는 조직용 약관(MSA), Free 업무 이용을 막는 조항 없음 | Plus $12/멤버 (연 결제 $10)<br>Business $24/멤버 (연 결제 $20)<br>Enterprise 문의 | 공식 커넥터 · OAuth | 독점 (로컬 MCP 서버 MIT) | 2026-11-16 |
-| [Obsidian](#obsidian) | 기록 | 부분 무료 · 앱은 개인·업무 모두 무료(2025-02-20 부터) · Sync·Publish 만 유료 | 앱은 무료<br>Sync Standard $5 (연 결제 $4)<br>Sync Plus $10 (연 결제 $8)<br>Publish $10/사이트 (연 결제 $8)<br>Commercial license $50/사용자/년 (선택)<br>Catalyst 일회 $25 · $50 · $100 (선택 후원) | 커뮤니티 플러그인 MCP · 공식 CLI · 파일 | 독점 소프트웨어 (플러그인 MIT) | 2026-11-11 |
+| [Obsidian](#obsidian) | 기록 | 부분 무료 · 앱은 개인·업무 모두 무료(2025-02-20 부터) · Sync·Publish 만 유료 | 앱은 무료<br>Sync Standard $5 (연 결제 $4)<br>Sync Plus $10 (연 결제 $8)<br>Publish $10/사이트 (연 결제 $8)<br>Commercial license $50/사용자/년 (선택)<br>Catalyst 일회 $25 · $50 · $100 (선택 후원) | 커뮤니티 플러그인 MCP · 공식 CLI · 파일 | 독점 소프트웨어 (플러그인 MIT) | 2026-11-17 |
 | [Jev](#jev) | 판정 | 유료 · 무료 등급 없음(새 가입자 $5 크레딧은 2026-09-27 멈춤 — 창업자 X 게시물, 금액은 제3자) · 개인·업무 모두 같은 약관(MCA)으로 가능, 단독 재판매·증류 금지 · 출력 권리는 고객에게 양도 | 종량제 — 입력 100만 토큰당 $0.042, 출력 무료 (월 요금 없음)<br>맞춤·엔터프라이즈 협의 | 공식 Claude Code 플러그인(스킬) · 커뮤니티 MCP · API 키 | 독점 (SDK·스킬 MIT, 커뮤니티 MCP MIT) | 2026-11-13 |
 
 ## 도구
@@ -783,10 +783,10 @@ NotebookLM 은 따로 파는 요금제가 없고 Google AI 구독(Google One)에
 - **역할**: 수집
 - **한 줄**: 웹페이지·사이트 전체를 긁어 LLM 이 읽기 좋은 마크다운이나 스키마에 맞춘 JSON 으로 돌려주는 웹 데이터 API. 검색·크롤·사이트맵·브라우저 조작·변경 감시까지 한 API 로 함
 - **클로드와 잇는 법**: 두 갈래 다 공식임
-  - **claude.ai 공식 커넥터** — Anthropic 디렉터리 등재(페이지에 "Anthropic verified", 2026-07 추가). 로그인(OAuth)으로 붙이고 팀을 골라 승인함. 도구는 13개로 고정: `firecrawl_search`·`firecrawl_developer_search`·`firecrawl_gov_search`·`firecrawl_research_*` 4개(논문 검색·읽기·인용 추적)·`firecrawl_find_tools`·`firecrawl_scrape`(이 둘이 Alexandria 카탈로그를 찾고 실행함)·`firecrawl_search_feedback`·`firecrawl_agent`·`firecrawl_agent_status`·`firecrawl_agent_activity`(2026-11-11 확인 — 2026-11-05 에는 agent 3개 없이 10개). 검색 전용 엔드포인트 `https://mcp.firecrawl.dev/v2/mcp-search` 가 이 목록을 받치는데, README 는 이 엔드포인트를 11개(`firecrawl_search_feedback`·agent 3개는 없고 보강 도구 `people_company_search`·`people_company_enrich` 는 있음)라 적어 커넥터 페이지와 어긋남. `firecrawl_agent_activity` 는 README 에 아예 안 나옴 (원문 열어 봄, 2026-11-11). 커넥터 설명문은 브라우저 조작·여러 페이지 크롤·변경 감시·크레딧 확인도 한다고 적지만 도구 목록에는 크롤·맵 도구가 없음
-  - **공식 MCP 서버** `firecrawl/firecrawl-mcp-server`(npm `firecrawl-mcp` v3.39.0, 2026-11-10 게시). 원격 `https://mcp.firecrawl.dev/v2/mcp` — 키 없이도 `scrape`·`search`·`parse` 3개는 속도 제한을 걸고 무료로 됨. 전체 도구(기본 29개 — README "lists 29 tools when the full profile registers with default settings". 새 "Enrich Tools" 절의 `people_company_search`·`people_company_enrich` 는 Apollo·FullEnrich·People Data Labs·Data Legion 으로 인물·회사를 찾고 보강함)는 `https://mcp.firecrawl.dev/v2/mcp-oauth` 로 OAuth 로그인(`fco_…` 액세스 토큰)하거나 `Authorization: Bearer <FIRECRAWL_API_KEY>` 헤더로 붙임. 로컬은 `env FIRECRAWL_API_KEY=… npx -y firecrawl-mcp`, 자체 호스팅 본체를 쓰면 `FIRECRAWL_API_URL` 을 주고 키는 생략 가능
+  - **claude.ai 공식 커넥터** — Anthropic 디렉터리 등재(페이지에 "Anthropic verified", 2026-07 추가). 로그인(OAuth)으로 붙이고 팀을 골라 승인함. 도구는 13개로 고정: `firecrawl_search`·`firecrawl_developer_search`·`firecrawl_gov_search`·`firecrawl_research_*` 4개(논문 검색·읽기·인용 추적)·`firecrawl_find_tools`·`firecrawl_scrape`(이 둘이 Alexandria 카탈로그를 찾고 실행함)·`firecrawl_search_feedback`·`firecrawl_agent`·`firecrawl_agent_status`·`firecrawl_agent_activity`(2026-11-17 확인 — 2026-11-05 에는 agent 3개 없이 10개). 검색 전용 엔드포인트 `https://mcp.firecrawl.dev/v2/mcp-search` 가 이 목록을 받치는데, README 는 이 엔드포인트를 12개(`firecrawl_search_feedback`·agent 3개는 없고 보강 도구 `people_company_search`·`people_company_enrich` 와 채용 공고 도구 `jobs_search` 는 있음 — 2026-11-11 에는 11개)라 적어 커넥터 페이지와 어긋남. `firecrawl_agent_activity` 는 README 에 아예 안 나옴 (원문 열어 봄, 2026-11-17). 커넥터 설명문은 브라우저 조작·여러 페이지 크롤·변경 감시·크레딧 확인도 한다고 적지만 도구 목록에는 크롤·맵 도구가 없음
+  - **공식 MCP 서버** `firecrawl/firecrawl-mcp-server`(npm `firecrawl-mcp` v3.40.0, 2026-11-12 게시). 원격 `https://mcp.firecrawl.dev/v2/mcp` — 키 없이도 `scrape`·`search`·`parse` 3개는 속도 제한을 걸고 무료로 됨. 전체 도구(기본 34개 — README "lists 34 tools when the full profile registers with default settings", 2026-11-11 에는 29개. "Enrich Tools" 절의 `people_company_search`·`people_company_enrich` 는 Apollo·FullEnrich·People Data Labs·Data Legion 으로 인물·회사를 찾고 보강함. "Jobs Tool" 절의 `jobs_search` 는 채용 공고를 찾고 아직 열려 있는지 알려 줌(호출당 `max_credits` 기본 200). 엔드포인트 피드백 도구 `firecrawl_feedback` 도 목록에 있음)는 `https://mcp.firecrawl.dev/v2/mcp-oauth` 로 OAuth 로그인(`fco_…` 액세스 토큰)하거나 `Authorization: Bearer <FIRECRAWL_API_KEY>` 헤더로 붙임. 로컬은 `env FIRECRAWL_API_KEY=… npx -y firecrawl-mcp`, 자체 호스팅 본체를 쓰면 `FIRECRAWL_API_URL` 을 주고 키는 생략 가능
   - Claude Code 용 공식 플러그인 `firecrawl/firecrawl-claude-plugin` 도 있음. 2026-02-13 발표, `claude plugin install firecrawl@claude-plugins-official` 로 깔고 `/firecrawl:setup` 에서 API 키를 넣음. 명령은 `/firecrawl:scrape`·`crawl`·`search`·`map`·`agent` (자사 홍보 블로그, 원문 열어 봄)
-- **확인한 날짜**: 2026-11-11
+- **확인한 날짜**: 2026-11-17
 
 #### 무료·유료와 이용 조건
 
@@ -846,6 +846,7 @@ Extract 별도 과금 여부
 
 MCP·커넥터가 무엇으로 과금되는지
 - API 키든 OAuth 든 Firecrawl 계정(OAuth 는 승인 때 고른 팀)의 크레딧에서 빠짐. 키 없는 원격 MCP 엔드포인트는 Search·Scrape·Parse 3개만 열고 IP 당 하루 요청 수·크레딧 상한으로 막음 (rate-limits 문서, 원문 열어 봄). 커넥터의 논문 도구가 쓰는 Research Index 는 무료. claude.ai 커넥터 페이지는 가격을 안 적음
+- 2026-11-12 "Firecrawl MCP v3" 발표 글은 "every plan includes free MCP usage that refreshes daily"·속도 한도 최대 60배·사용량 4배라 적지만, 하루 무료량과 무엇에 견준 배수인지는 없음. 같은 날 가격표·billing·rate-limits 문서에는 이 무료 MCP 사용량이 안 나옴 — 자사 홍보 주장으로만 둠 (changelog·블로그, 원문 열어 봄, 2026-11-17)
 
 #### 클로드로는 못 하는 것
 - **사이트 통째로 크롤**: 시작 URL 하나로 하위 페이지 수백–수천 개를 비동기 작업으로 긁어 마크다운으로 모아 줌. 클로드의 웹 가져오기는 한 번에 URL 하나씩이고 대화 컨텍스트에 쌓임
@@ -864,7 +865,7 @@ MCP·커넥터가 무엇으로 과금되는지
 - **선거 기록 — 미국 선거 결과·선거 자금·투표 기록**: 2026-11-03 공개. Alexandria 에서 하원·상원 470개 선거의 결과(주별 집계를 따라 갱신)·선거 자금·현직 의원 투표 기록을 무료로 부름 (changelog, 원문 열어 봄)
 - **headless Clay — 클로드 안에서 인물·회사 보강**: 2026-11-02 공개. Claude·ChatGPT 에서 인물 250M+·회사 26M+ 를 검색하고 업무 이메일·직무·회사 데이터를 받음. "매달 1,000 크레딧으로 무료 시작"이 Free 등급 크레딧과 같은 것인지는 원문에 없음. "Clay 보다 88% 쌈"은 Standard 연 결제와 Clay Launch 를 견준 자사 홍보 수치임 (changelog, 원문 열어 봄)
 
-- **11월 새 데이터 묶음**: 2026-11-05 생명과학 논문 4,100만 편 넘게(약물·질병·유전자 물음에 ChatGPT·Claude 에서 무료로 답함), 2026-11-06 Alexandria 의 SEC 공시(상장사 8,000곳 넘게 — 10-K·8-K·내부자 거래·13F), 2026-11-10 ChatGPT·Claude 용 구직 도구(이력서를 채용 공고 700만 건 넘게에 맞추고 인물 2억 5천만 명 넘게에서 연락할 임원을 찾음). 규모 수치는 changelog 의 자사 표기임 (changelog, 원문 열어 봄)
+- **11월 새 데이터 묶음**: 2026-11-05 생명과학 논문 4,100만 편 넘게(약물·질병·유전자 물음에 ChatGPT·Claude 에서 무료로 답함), 2026-11-06 Alexandria 의 SEC 공시(상장사 8,000곳 넘게 — 10-K·8-K·내부자 거래·13F), 2026-11-10 ChatGPT·Claude 용 구직 도구(이력서를 채용 공고 700만 건 넘게에 맞추고 인물 2억 5천만 명 넘게에서 연락할 임원을 찾음), 2026-11-11 AI/ML 논문 색인(논문 300만 편 넘게, 올라온 당일 논문도 찾아 전문을 읽음), 2026-11-13 Alexandria 회사 데이터 7,500만 곳 넘게(인원·매출·투자·기술 스택, 도구 3,000개 넘게와 제공자 폭포식 대체). 규모 수치는 changelog 의 자사 표기임 (changelog, 원문 열어 봄)
 
 #### 라이선스
 - 본체 `firecrawl/firecrawl`: **AGPL-3.0**(LICENSE 원문 확인). README 는 "주로 AGPL-3.0 이고 SDK 와 일부 UI 구성요소는 MIT"라고 적음. 클라우드판(firecrawl.dev)은 오픈소스판에 없는 기능이 더 있는 독점 SaaS
@@ -883,7 +884,8 @@ MCP·커넥터가 무엇으로 과금되는지
 - [Rate Limits — Firecrawl Docs](https://docs.firecrawl.dev/rate-limits) — 공식 (원문 열어 봄)
 - [Agent — Firecrawl Docs](https://docs.firecrawl.dev/features/agent) — 공식 (원문 열어 봄)
 - [Terms of Service — Firecrawl](https://www.firecrawl.dev/terms-of-service) — 공식 (원문 열어 봄, 2026-10-07 개정판)
-- [Changelog — Firecrawl](https://www.firecrawl.dev/changelog) — 공식 (원문 열어 봄, 2026-11-10 항목까지)
+- [Changelog — Firecrawl](https://www.firecrawl.dev/changelog) — 공식 (원문 열어 봄, 2026-11-13 항목까지)
+- [Introducing Firecrawl MCP v3 — Firecrawl 블로그](https://www.firecrawl.dev/blog/firecrawl-mcp-v3) — 자사 홍보 (원문 열어 봄)
 - [Alexandria — Firecrawl Docs](https://docs.firecrawl.dev/features/alexandria) — 공식 (원문 열어 봄)
 - [Government & Legal Index — Firecrawl Docs](https://docs.firecrawl.dev/features/gov) — 공식 (원문 열어 봄)
 - [Monitoring — Firecrawl Docs](https://docs.firecrawl.dev/features/monitoring) — 공식 (원문 열어 봄)
@@ -1147,7 +1149,7 @@ MCP·커넥터가 무엇으로 과금되는지
   1. 커뮤니티 플러그인 **Local REST API with MCP**(coddingtonbear, MIT, v5.5.2 · 앱 1.13.1 이상, 데스크톱 전용) — 플러그인이 MCP 서버를 내장함. `https://127.0.0.1:27124/mcp/`(자체 발급 인증서) 또는 `http://127.0.0.1:27123/mcp/`(설정에서 켜야 함). 인증은 플러그인 설정의 API 키를 `Authorization: Bearer` 헤더로 보냄. 별도 파이썬 서버 `mcp-obsidian`(MarkusPfundstein, MIT, `uvx mcp-obsidian`, 환경 변수 `OBSIDIAN_API_KEY`)도 같은 플러그인에 붙음
   2. 공식 **Obsidian CLI**(`obsidian`, 앱 1.12 설치본 이상 · 1.12.7+ 권장) — 인증 없음, 대신 데스크톱 앱이 떠 있어야 함. 공식 **Obsidian Headless**(`npm install -g obsidian-headless`, 명령 `ob`, 오픈 베타, Node.js 22+) — Obsidian 계정 로그인(`ob login`, 2FA 지원)과 Sync/Publish 구독이 필요함
   3. Claude Code 가 볼트 폴더의 `.md` 파일을 직접 읽고 고침 — 인증 없음(파일 시스템 권한만)
-- **확인한 날짜**: 2026-11-11
+- **확인한 날짜**: 2026-11-17
 
 #### 무료·유료와 이용 조건
 
@@ -1173,14 +1175,14 @@ MCP·커넥터가 무엇으로 과금되는지
 - Sync·Publish 는 교육·비영리 40% 할인이 있음. Sync·Publish 는 7일 안 전액 환불, Catalyst·Commercial 과 선물용 Obsidian Credit 은 환불 불가 (가격표 FAQ 원문)
 - 달러 가격과 Sync 용량 표는 전부 원문 열어 봄 — Sync 가격·용량은 [Sync 페이지](https://obsidian.md/sync), Publish·Commercial 은 [가격표](https://obsidian.md/pricing)·[Publish 페이지](https://obsidian.md/publish), 100 GB 연 결제 월 $16 은 2024-03-20 Standard 요금제 공지
 - 일부 제3자 글의 "2026년에 Sync 가 한 요금제로 합쳐졌다"는 틀림 — Sync 페이지 원문에 Standard·Plus 두 등급이 그대로 있음. `/pricing` 요약 카드에는 Sync 가 $4/$5 한 칸으로만 보여 그것을 잘못 읽은 것으로 보임(추정)
-- Sync Plus 100 GB 증설의 월 결제가, 10–100 GB 사이 단계별 가격은 확인 못 함 — Sync 페이지·가격표·도움말 원문에 "100 GB 까지 올릴 수 있음"만 있고 값은 계정 대시보드 안에서만 보임(추정). 2026-10-30 에도 도움말·Sync 페이지·가격표 원문에 금액 없음
+- Sync Plus 100 GB 증설의 월 결제가, 10–100 GB 사이 단계별 가격은 확인 못 함 — Sync 페이지·가격표·도움말 원문에 "100 GB 까지 올릴 수 있음"만 있고 값은 계정 대시보드 안에서만 보임(추정). 2026-11-17 에도 도움말·Sync 페이지·가격표 원문에 금액 없고, `obsidian.md/account/sync` 는 로그인 전에는 금액을 안 보임 (2026-11-17)
 - 2026-10-08 도움말에 Sync regions 가 생김 — 원격 볼트를 다른 지역 서버로 옮길 수 있고 Headless 는 `--region` 옵션으로 고름. 선물용 Obsidian Credit 은 계정이 있는 한 만료되지 않는다고 같은 날 도움말에 더해짐 (공식, 원문 열어 봄)
 
 #### 클로드와 잇는 경로
 | 경로 | 되는 것 | 안 되는 것 · 조건 |
 |---|---|---|
 | Local REST API with MCP 플러그인 (+ 내장 MCP 또는 mcp-obsidian) | 노트 읽기·만들기·고치기·지우기(바이너리 포함), 제목·블록 참조·프런트매터 키 단위로 부분 패치, 전문 검색과 JsonLogic 메타데이터 질의, 태그 목록, 지금 열린 노트 읽기·쓰기, 명령 팔레트 명령 실행, 노트를 앱에서 열기, 볼트 이벤트 구독(SSE). Claude Code 는 `claude mcp add --transport http` 로 바로 붙음 | **Obsidian 데스크톱 앱이 떠 있어야 함**(플러그인이 앱 안에서 돔, `isDesktopOnly: true` 라 모바일 불가). 로컬 루프백이라 claude.ai 웹·모바일 앱에서는 그대로 못 씀. Claude Desktop 은 원격 HTTP MCP 를 직접 못 붙여 `mcp-remote` 다리가 필요함(플러그인 README). 커뮤니티 플러그인이라 Obsidian 이 보증하지 않음 |
-| 공식 Obsidian CLI | 앱에서 하는 거의 모든 것 — 노트 만들기·읽기·검색, 데일리 노트, 작업·태그·속성, Bases 질의(`base:query`), 링크·백링크, 이동·이름 바꾸기 때 **내부 링크 자동 갱신**(볼트 설정이 켜져 있으면), 파일 기록 비교, Sync·Publish 명령, 플러그인 재로드·스크린샷·`eval` 같은 개발자 명령. 공식 문서가 "agentic coding tools" 를 쓰는 쪽으로 직접 언급함 | **앱이 떠 있어야 함**(안 떠 있으면 첫 명령이 앱을 띄움). Claude Code 처럼 셸을 쓰는 클라이언트에서만 부름 — claude.ai 앱에서는 못 씀. MCP 서버가 아니라 셸 명령임 |
+| 공식 Obsidian CLI | 앱에서 하는 거의 모든 것 — 노트 만들기·읽기·검색, 데일리 노트, 작업·태그·속성, Bases 질의(`base:query`), 링크·백링크, 이동·이름 바꾸기 때 **내부 링크 자동 갱신**(볼트 설정이 켜져 있으면), 노트·데일리 노트의 정해진 제목 절 아래에 덧붙이기(`append`·`prepend` 의 `heading=`), 파일 기록 비교, Sync·Publish 명령, 플러그인 재로드·스크린샷·`eval` 같은 개발자 명령. 공식 문서가 "agentic coding tools" 를 쓰는 쪽으로 직접 언급함 | **앱이 떠 있어야 함**(안 떠 있으면 첫 명령이 앱을 띄움). Claude Code 처럼 셸을 쓰는 클라이언트에서만 부름 — claude.ai 앱에서는 못 씀. MCP 서버가 아니라 셸 명령임 |
 | 공식 Obsidian Headless (`ob`) | 데스크톱 앱 없이 서버·CI 에서 Sync 로 볼트를 받고 올림(일회·연속, pull-only·mirror 모드, 종단간 암호화 유지), Publish 로 게시(`ob publish`, dry-run 가능). 공식 문서가 "에이전트에게 컴퓨터 전체가 아니라 볼트만 주는 용도"를 이유로 듦 | 오픈 베타. **Sync 또는 Publish 유료 구독이 있어야 함**. 같은 기기에서 앱 Sync 와 같이 쓰면 충돌 날 수 있다고 공식 문서가 경고함. 노트 편집 기능은 없음 — 받은 파일을 Claude Code 가 고치고 다시 sync 하는 식으로 조합함 |
 | Claude Code 가 볼트 파일 직접 편집 | 볼트는 그냥 폴더의 마크다운이라 앱 없이 읽기·쓰기·검색·일괄 수정이 다 됨. 추가 설치·인증 없음 | 이름 바꾸기·이동 시 다른 노트의 `[[링크]]` 가 **자동으로 안 고쳐짐**(자동 갱신은 앱이 하는 일 — 공식 도움말). Bases·Dataview 같은 질의 결과, 그래프, 백링크 색인은 앱이 계산하는 것이라 파일만 봐서는 안 나옴. `.obsidian/` 설정을 잘못 건드리면 앱 설정이 깨질 수 있음(추정) |
 
@@ -1202,7 +1204,7 @@ MCP·커넥터가 무엇으로 과금되는지
 - [Plans and storage limits — Obsidian Help (원문: en/Obsidian Sync/Plans and storage limits.md)](https://github.com/obsidianmd/obsidian-help/blob/master/en/Obsidian%20Sync/Plans%20and%20storage%20limits.md) — 공식 (표 내용 최종 변경 2025-02-24)
 - [Publish limitations · Media files — Obsidian Help (원문)](https://github.com/obsidianmd/obsidian-help/blob/master/en/Obsidian%20Publish/Publish%20limitations.md) — 공식
 - [Catalyst license · Education and non-profit discount — Obsidian Help (원문)](https://github.com/obsidianmd/obsidian-help/blob/master/en/Licenses%20and%20payment/Catalyst%20license.md) — 공식
-- [Obsidian CLI — Obsidian Help (원문, 2026-09-08 수정)](https://github.com/obsidianmd/obsidian-help/blob/master/en/Extending%20Obsidian/Obsidian%20CLI.md) — 공식
+- [Obsidian CLI — Obsidian Help (원문, 2026-11-02 수정 — `heading=` 파라미터)](https://github.com/obsidianmd/obsidian-help/blob/master/en/Extending%20Obsidian/Obsidian%20CLI.md) — 공식 (원문 열어 봄)
 - [Formulas — Obsidian Help (원문: en/Bases/Formulas.md, 2026-11-05 수정)](https://github.com/obsidianmd/obsidian-help/blob/master/en/Bases/Formulas.md) — 공식 (원문 열어 봄)
 - [Obsidian Headless · Headless Sync · Headless Publish — Obsidian Help (원문, 2026-03 작성)](https://github.com/obsidianmd/obsidian-help/blob/master/en/Extending%20Obsidian/Obsidian%20Headless.md) — 공식
 - [Pricing — Obsidian](https://obsidian.md/pricing) — 공식 (원문 열어 봄 — Sync $4/$5 · Publish $8/$10 · Catalyst $25 부터 · Commercial $50, 환불·할인 FAQ)

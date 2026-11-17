@@ -2,6 +2,20 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-18
+
+**매일 재확인 — ChatGPT · Grok**
+
+**ChatGPT**
+
+① **GPT-6.2 Astra·Sol 추가** — 2026-11-17 에 Plus·Pro·Business·Enterprise·Edu 의 Work·Codex 에 들어옴(채팅에는 안 들어옴). Plus·Business Standard 5시간 어림 GPT-6.2 Astra 6–50 · GPT-6.2 Sol 17–180, 크레딧 단가 100만 토큰당 입력·캐시·출력 Astra 200·10·1,000 · Sol 50·2.5·250
+
+② **Pro $200 에 Ultrafast 일부** — 2026-11-17 부터 Codex 에서 GPT-6.2 Sol Ultrafast 를 씀(포함 한도 6배, 산 크레딧 2027-02-28 까지 3배). 전에는 Ultrafast 가 Pro $500 만이었음. Pro 도움말은 아직 Pro $500 만이라고 적어 공식끼리 갈림
+
+③ **Pro $500 Ultrafast 에 GPT-6.2 둘** — GPT-6.2 Astra·Sol Ultrafast 가 더해짐. 포함 한도 6배, 산 크레딧은 2027-02-28 까지 3배 · 2027-03-01 부터 6배
+
+④ **ChatGPT Wallet 출시** — 2026-11-13, Dot 이 대신 결제하는 지갑. 미국 18세 이상 Pro 에 순차 배포. Service Terms 가 11-13 판으로 바뀌고 Dots 절 결제 조항이 Wallet 약관을 가리킴
+
 ## 2026-11-17
 
 **매일 재확인 — Firecrawl · Obsidian**

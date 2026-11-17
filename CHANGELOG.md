@@ -2,6 +2,30 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-18
+
+**매일 재확인 — ChatGPT · Grok**
+
+**ChatGPT**
+
+① **GPT-6.2 Astra·Sol 추가** — 2026-11-17 에 Plus·Pro·Business·Enterprise·Edu 의 Work·Codex 에 들어옴(채팅에는 안 들어옴). Plus·Business Standard 5시간 어림 GPT-6.2 Astra 6–50 · GPT-6.2 Sol 17–180, 크레딧 단가 100만 토큰당 입력·캐시·출력 Astra 200·10·1,000 · Sol 50·2.5·250
+
+② **Pro $200 에 Ultrafast 일부** — 2026-11-17 부터 Codex 에서 GPT-6.2 Sol Ultrafast 를 씀(포함 한도 6배, 산 크레딧 2027-02-28 까지 3배). 전에는 Ultrafast 가 Pro $500 만이었음. Pro 도움말은 아직 Pro $500 만이라고 적어 공식끼리 갈림
+
+③ **Pro $500 Ultrafast 에 GPT-6.2 둘** — GPT-6.2 Astra·Sol Ultrafast 가 더해짐. 포함 한도 6배, 산 크레딧은 2027-02-28 까지 3배 · 2027-03-01 부터 6배
+
+④ **ChatGPT Wallet 출시** — 2026-11-13, Dot 이 대신 결제하는 지갑. 미국 18세 이상 Pro 에 순차 배포. Service Terms 가 11-13 판으로 바뀌고 Dots 절 결제 조항이 Wallet 약관을 가리킴
+
+**Grok**
+
+① **CLI 1.0.88** — Grok Build CLI npm `@xai-official/grok` 1.0.77 → 1.0.88(2026-11-16 게시), 라이선스 Apache-2.0 그대로
+
+② **팀 타사 모델에 토큰 요율** — Teams 는 Cursor 의 타사 모델 요청에 100만 토큰당 $0.25 를 API 정가 위에 더 냄, Grok·Composer 면제·개인 등급 해당 없음(도움말 Cursor Token Rate, 지난 확인에서 빠졌던 공식 사실)
+
+③ **월 추가 사용량 상한** — 개인·셀프서브 팀이 유료 추가 사용량에 월 상한을 걸 수 있고, 잔액이 남아도 상한에 닿으면 멈춤(도움말 Spending caps, 지난 확인에서 빠졌던 공식 사실)
+
+④ **앱 결제 구독의 전환 처리** — X Subscription 으로 옮길 때 App Store 로 산 Grok·Grok Bot·X Premium 은 SpaceXSI 가 취소하고 Apple 에 환불을 요청함, Google Play 로 산 것은 직접 취소(도움말, 지난 확인에서 빠졌던 공식 사실)
+
 ## 2026-11-17
 
 **매일 재확인 — Firecrawl · Obsidian**

@@ -2,6 +2,28 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-19
+
+**매일 재확인 — Perplexity · Jev**
+
+**Perplexity**
+
+① **Pro·Max 모델 교체** — 도움말 모델 표(2026-11-18 기준)에서 Pro 의 GPT-6.1 Sol → GPT-6.2 Sol, Gemini 3.8 Flash → Gemini 4 Hydrogen, Max 전용 GPT-6 Astra → GPT-6.2 Astra
+
+② **Education Pro 연 결제 생김** — 도움말이 "$10/month, or a lower per-month equivalent when billed yearly" 로 연 결제를 적음, 연 금액은 안 적힘. 교육 할인은 웹 결제에만 붙고 App Store·Google Play·PayPal 결제에는 안 붙음
+
+③ **Max 연 결제는 새 구독만** — Pro 에서 Max 로 올리면 월 결제로만 됨(Max 도움말)
+
+④ **Portable Computer 조건 명시** — RTX GPU 는 VRAM 24GB 이상이어야 하고, 개인·Enterprise 의 Pro·Max 모두 따로 내는 구독 없이 씀
+
+⑤ **Monitor·Context API 등장** — API 가격표에 Monitor API(성공한 run 하나 또는 가져온 URL 하나당 $0.001)와 Context API($1/1,000 URL)가 생김. API changelog 에 항목이 없어 나온 날은 모름
+
+⑥ **Embeddings v2 나옴** — `pplx-embed-v2-context` 100만 토큰당 9b 글 $0.12·이미지 $0.42, 0.6b 글 $0.02·이미지 $0.40. 글·이미지를 한 모델로 임베딩함
+
+⑦ **크레딧 묶음 $100 추가** — 미국 App Store 인앱 목록에 10,000 크레딧 $100.00 이 더해짐
+
+⑧ **Pro 지출 한도 못 올림** — 크레딧 도움말이 "You can't raise the Pro cap" 이라 적음(지난 확인에서 빠졌던 공식 사실)
+
 ## 2026-11-18
 
 **매일 재확인 — ChatGPT · Grok**

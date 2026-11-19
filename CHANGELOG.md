@@ -2,6 +2,28 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-20
+
+**매일 재확인 — Gemini · Higgsfield**
+
+**Gemini**
+
+① **Argon 대신 Gemini 4 Neon** — 2026-11-18 출시. Pro·Ultra 의 앱·Antigravity·AI Studio 모델이 Argon → Neon 으로 바뀜. 모델 도움말·가격표 두 곳에서 Argon 이 빠짐(내렸다는 공지 문구는 못 찾음)
+
+② **등급별 모델 목록 줄어듦** — 무료 Flash-Lite(자동 시 Hydrogen) → Auto 만 · Plus Hydrogen·Pro → Hydrogen · Pro 는 Argon·3.1 Pro → Neon · Ultra Flash-Lite·Hydrogen·Argon·Carbon → Hydrogen·Neon·Carbon
+
+③ **Tasks 여섯 나라 무료** — AI Pro·Ultra 전용 → 2026-11-17 부터 미국·인도·캐나다·호주·일본·한국은 구독 없이 됨(Hydrogen). 그 밖은 Pro·Ultra 그대로
+
+④ **Plus 에 Chrome 자동 탐색** — auto browse 가 Pro 부터 → Plus 부터(미국·인도). Plus 칸에 Tasks 상향 한도도 새로 적힘
+
+⑤ **Mac 앱 Computer use** — 2026-11-19 부터 Plus·Pro·Ultra, 미국·영어·18세 이상
+
+⑥ **Pro 의 AI Mode 에 Carbon** — AI Pro 혜택 도움말 목록이 "Gemini 4 Carbon model in AI Mode" 를 적음
+
+⑦ **Ultra 의 YouTube Premium Family** — YouTube Premium 40여 개국 → Premium Family 100여 개국
+
+⑧ **Workspace 도입가 20% 할인** — $3.50 · $7 · $11 → $5.60 · $11.20 · $17.60, 머리 띠 "최대 50%" → "최대 20%"(r.jina.ai 경유로만 봄)
+
 ## 2026-11-19
 
 **매일 재확인 — Perplexity · Jev**

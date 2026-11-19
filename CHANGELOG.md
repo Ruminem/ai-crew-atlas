@@ -2,6 +2,42 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-20
+
+**매일 재확인 — Gemini · Higgsfield**
+
+**Gemini**
+
+① **Argon 대신 Gemini 4 Neon** — 2026-11-18 출시. Pro·Ultra 의 앱·Antigravity·AI Studio 모델이 Argon → Neon 으로 바뀜. 모델 도움말·가격표 두 곳에서 Argon 이 빠짐(내렸다는 공지 문구는 못 찾음)
+
+② **등급별 모델 목록 줄어듦** — 무료 Flash-Lite(자동 시 Hydrogen) → Auto 만 · Plus Hydrogen·Pro → Hydrogen · Pro 는 Argon·3.1 Pro → Neon · Ultra Flash-Lite·Hydrogen·Argon·Carbon → Hydrogen·Neon·Carbon
+
+③ **Tasks 여섯 나라 무료** — AI Pro·Ultra 전용 → 2026-11-17 부터 미국·인도·캐나다·호주·일본·한국은 구독 없이 됨(Hydrogen). 그 밖은 Pro·Ultra 그대로
+
+④ **Plus 에 Chrome 자동 탐색** — auto browse 가 Pro 부터 → Plus 부터(미국·인도). Plus 칸에 Tasks 상향 한도도 새로 적힘
+
+⑤ **Mac 앱 Computer use** — 2026-11-19 부터 Plus·Pro·Ultra, 미국·영어·18세 이상
+
+⑥ **Pro 의 AI Mode 에 Carbon** — AI Pro 혜택 도움말 목록이 "Gemini 4 Carbon model in AI Mode" 를 적음
+
+⑦ **Ultra 의 YouTube Premium Family** — YouTube Premium 40여 개국 → Premium Family 100여 개국
+
+⑧ **Workspace 도입가 20% 할인** — $3.50 · $7 · $11 → $5.60 · $11.20 · $17.60, 머리 띠 "최대 50%" → "최대 20%"(r.jina.ai 경유로만 봄)
+
+**Higgsfield**
+
+① **블랙프라이데이 할인** — 11.11 할인(11-15 끝) 뒤 연 결제 Plus $35 → $33/월 · Ultra $65 → $50/월(6K·9K $110 · $150 → $95 · $136). Team $45 · Scale $80, 월 결제 첫 결제 Plus $47 · Ultra $79 는 그대로
+
+② **Unlimited 다시 7일** — Plus·Ultra 카드의 Seedance 2.5 14일 · 이미지 모델 60일 Unlimited 가 빠지고 Nano Banana Pro·Seedream 5.0 Pro·GPT Image 2.6 7일로 돌아감. 월 결제 Plus 는 Nano Banana Pro 에 Unlimited 표시가 없음
+
+③ **Ultra 게임 기프트 카드** — 11-20 부터 새 연 결제 Ultra 가입자 선착순 10,000명에게 약 $100 게임 기프트 카드(가격표 각주)
+
+④ **휴대폰 Plus $27** — 휴대폰 화면 연 결제 행사가 Plus $29 → $27/월 · Ultra $65 → $50/월
+
+⑤ **Higgsfield GPU 출시** — 2026-11-13, 클로드·ChatGPT 대화에서 클라우드 GPU 를 빌려 렌더·LoRA 작업, 켜진 시간만큼 과금 (지난 확인에서 빠졌던 공식 사실)
+
+⑥ **Short Drama Studio** — 2026-11-16, 대본을 같은 인물이 나오는 짧은 시리즈로 만들고 클로드에서 MCP 로 부를 수 있음
+
 ## 2026-11-19
 
 **매일 재확인 — Perplexity · Jev**

@@ -24,6 +24,20 @@
 
 ⑧ **Workspace 도입가 20% 할인** — $3.50 · $7 · $11 → $5.60 · $11.20 · $17.60, 머리 띠 "최대 50%" → "최대 20%"(r.jina.ai 경유로만 봄)
 
+**Higgsfield**
+
+① **블랙프라이데이 할인** — 11.11 할인(11-15 끝) 뒤 연 결제 Plus $35 → $33/월 · Ultra $65 → $50/월(6K·9K $110 · $150 → $95 · $136). Team $45 · Scale $80, 월 결제 첫 결제 Plus $47 · Ultra $79 는 그대로
+
+② **Unlimited 다시 7일** — Plus·Ultra 카드의 Seedance 2.5 14일 · 이미지 모델 60일 Unlimited 가 빠지고 Nano Banana Pro·Seedream 5.0 Pro·GPT Image 2.6 7일로 돌아감. 월 결제 Plus 는 Nano Banana Pro 에 Unlimited 표시가 없음
+
+③ **Ultra 게임 기프트 카드** — 11-20 부터 새 연 결제 Ultra 가입자 선착순 10,000명에게 약 $100 게임 기프트 카드(가격표 각주)
+
+④ **휴대폰 Plus $27** — 휴대폰 화면 연 결제 행사가 Plus $29 → $27/월 · Ultra $65 → $50/월
+
+⑤ **Higgsfield GPU 출시** — 2026-11-13, 클로드·ChatGPT 대화에서 클라우드 GPU 를 빌려 렌더·LoRA 작업, 켜진 시간만큼 과금 (지난 확인에서 빠졌던 공식 사실)
+
+⑥ **Short Drama Studio** — 2026-11-16, 대본을 같은 인물이 나오는 짧은 시리즈로 만들고 클로드에서 MCP 로 부를 수 있음
+
 ## 2026-11-19
 
 **매일 재확인 — Perplexity · Jev**

@@ -2,6 +2,30 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-22
+
+**매일 재확인 — Claude · Notion**
+
+**Claude**
+
+① **Team·Enterprise 에 Computer use 베타** — 없음 → 2026-11-20 부터 조직마다 차례로 열림. 기본 꺼짐이라 Owner 가 켜고, 새 Claude 경험(Chat and Cowork unified)에서만 되며, ZDR·CMEK 조직은 못 켬
+
+② **Pro·Max·Ultra 의 Computer use** — Claude Desktop 의 Cowork·Claude Code 에서 화면을 보고 앱을 다룸(macOS·Windows, 2026-03-23 연구 미리보기로 시작) (지난 확인에서 빠졌던 공식 사실)
+
+③ **Pro 의 Fable 한 주 끝남** — Pro·Team Standard 좌석의 Fable 5.2 출시 혜택이 2026-11-16 23:59 PT 에 끝나 다시 사용량 크레딧으로만 씀. Max·Ultra·Premium 재설정의 2027-03-08 만료는 그대로임
+
+④ **Gmail 발송 Auto 모드 예외** — 발송·공유는 기본이 사용자 승인 → Auto 모드에서는 자동 점검이 막지 않으면 묻지 않고 실행됨(도움말 "The check can miss risky actions"). 언제 생긴 문구인지는 못 가림
+
+**Notion**
+
+① **MCP 로 회의록 만들기** — MCP 로는 회의록 읽기만 됨 → 2026-11-16 부터 회의록 만들기(`notion-create-meeting-note`)·일정에 묶기·회의 데이터베이스로 바꾸기도 됨. 녹음·받아 적기는 여전히 안 됨
+
+② **MCP 도구 이름 74개** — 도구 참고 문서 71 → 74(회의록 도구 셋). 도구 FAQ 표는 71행 그대로이고, claude.com 커넥터 페이지 69개에는 새 셋이 없음
+
+③ **credits 종류가 결제 주기에 묶임** — 제품 안에서 사면 월 결제 등급은 월 credits($10/1,000)만, 연 결제 등급은 연 credits($13/1,000)만 삼. 계약 고객은 월·연·온디맨드 모두, 차감은 월 → 연 → 온디맨드 순 (지난 확인에서 빠졌던 공식 사실)
+
+④ **Business 의 행 단위 권한** — 가격표 Business 카드의 Granular database permissions(담당자로 지정된 행만 보게 함)·페이지 검증 배지·도메인 확인을 항목에 넣음 (지난 확인에서 빠졌던 공식 사실)
+
 ## 2026-11-21
 
 **매일 재확인 — NotebookLM · Blotato**

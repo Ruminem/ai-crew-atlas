@@ -2,6 +2,26 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-23
+
+**매일 재확인 — Firecrawl · Obsidian**
+
+**Firecrawl**
+
+① **로컬판 Firecrawl Local** — 2026-11-18 공개. Rust 단일 바이너리로 scrape·crawl·map 을 PC 에서 돌리고 `firecrawl-local init` 으로 Claude Code·Claude Desktop 에 MCP 로 붙음. 검색·Alexandria 는 Cloud 로 넘김. AGPL-3.0
+
+② **UltraSearch** — 2026-11-17 공개. 검색 결과에 인물·회사·주식 데이터 조각을 붙임. 단가는 공식 문서에 없음
+
+③ **Alexandria 제공자 550곳 넘게** — 200곳 넘게(2026-10-08 changelog) → 550+(본체 README·가격표). 2026-11-20 팟캐스트 400만 편 넘게도 더해짐
+
+④ **Alexandria 피드백 환불** — 피드백 하나에 1 크레딧, 20분 안·사이트당 10·팀당 100/일 (지난 확인에서 빠졌던 공식 사실)
+
+⑤ **MCP 서버 v3.41.0** — v3.40.0(11-12) → v3.41.0(11-19)
+
+**Obsidian**
+
+① **공식 Agent Skills 생김** — 도움말에 Obsidian Skills 페이지가 생김(2026-11-19). `obsidianmd/obsidian-skills`(MIT)를 Claude Code 플러그인 마켓플레이스로 깔고, claude.ai 앱은 스킬마다 ZIP 으로 올림. 마크다운·Bases·Canvas·CLI·Headless·Defuddle·Knap 스킬 7개
+
 ## 2026-11-22
 
 **매일 재확인 — Claude · Notion**

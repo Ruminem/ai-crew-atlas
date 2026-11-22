@@ -2,6 +2,14 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-23
+
+**매일 재확인 — Firecrawl · Obsidian**
+
+**Obsidian**
+
+① **공식 Agent Skills 생김** — 도움말에 Obsidian Skills 페이지가 생김(2026-11-19). `obsidianmd/obsidian-skills`(MIT)를 Claude Code 플러그인 마켓플레이스로 깔고, claude.ai 앱은 스킬마다 ZIP 으로 올림. 마크다운·Bases·Canvas·CLI·Headless·Defuddle·Knap 스킬 7개
+
 ## 2026-11-22
 
 **매일 재확인 — Claude · Notion**

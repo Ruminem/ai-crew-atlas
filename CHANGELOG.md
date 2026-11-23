@@ -2,6 +2,30 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-24
+
+**매일 재확인 — ChatGPT · Grok**
+
+**ChatGPT**
+
+① **채팅에 GPT-6.2 들어옴** — 2026-11-23 부터 채팅용 GPT-6.2(GPT-6.2 Sol 의 한 판)가 Plus·Pro·Business·Enterprise 채팅 탭에 순차 배포됨. 전에는 GPT-6.2 가 Work·Codex 에만 있었음. Pro 단계는 GPT-6 Pro 그대로라 GPT-6.2 Pro 는 없음
+
+② **Pro $200 Ultrafast 문서 맞춰짐** — Pro 도움말이 "Ultrafast 는 Pro 500 만" → "Pro 200 은 Codex 의 GPT-6.2 Sol 만" 으로 바뀌어 Work·Codex 도움말과 같아짐
+
+③ **Space 가 Plus 로 넓어짐** — ChatGPT Space(대화형 페이지·발표 자료) Pro 만 → 2026-11-20 부터 18세 이상 Plus 에도 순차 배포, Library 를 대신함. 가격표 비교표는 아직 Plus 를 No 로 적음
+
+④ **custom GPT 12-11 은퇴** — 모든 요금제에서 2026-12-11 에 은퇴하고 플러그인으로 옮김(FedRAMP·유예 승인 Enterprise 는 2027-02-28). custom action 은 안 옮겨짐
+
+⑤ **새 Business 2배 판촉** — 2026-11-23–11-30 에 만든 Business 워크스페이스는 Standard·Premium 좌석의 Work·Codex 주간 포함 사용량이 2026-12-31 까지 2배
+
+**Grok**
+
+① **첫 달 할인 표시 사라짐** — grok.com 구독 화면의 첫 달 50% 할인 표시(Premium $15 · Super $50 · Ultra $100, 2026-11-18 까지) → 2026-11-24 에는 정가 $30 · $100 · $200 만 보임. 할인이 끝났는지 계정·지역에 따라 갈리는지는 확인 못 함
+
+② **grok-build-0.1 단종** — API 모델 `grok-build-0.1` 이 2026-11-19 에 단종돼 API 에서 더는 안 나옴(릴리스 노트). 가격 문서 표에는 아직 남아 있음
+
+③ **Grok Bot 에 X Premium+ 연결됨** — 옛 Cursor 요금제의 Grok Bot 에 연결할 수 있는 구독에 SuperGrok·Plus·Heavy 말고 **X Premium+** 도 있고, SuperGrok Lite·Grok Enterprise 는 연결 못 함(Grok Bot FAQ, 지난 확인에서 빠졌던 공식 사실)
+
 ## 2026-11-23
 
 **매일 재확인 — Firecrawl · Obsidian**

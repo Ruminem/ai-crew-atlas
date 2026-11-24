@@ -2,6 +2,32 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-25
+
+**매일 재확인 — Perplexity · Jev**
+
+**Perplexity**
+
+① **새 약관서 비상업 빠짐** — 2027-01-01 효력 새 소비자 약관 5.1 이 "personal, non-commercial use only" → "purposes that comply with these Terms and our AUP" 로 바뀌고, 회사를 대신해 쓰면 "you" 에 그 회사가 들어간다는 문장이 생김. 2026-12-31 까지는 2026-01-23판이 효력 있음. 이미지 비상업 도움말은 그대로임
+
+② **새 약관서 출처 표기 빠짐** — 1.1.2 "without clearly citing the Services" 가 새 판에 없고, 대리 작업을 다루는 1.3 Agentic Actions 가 새로 생김
+
+③ **xhigh 가 GPT-6.2 Sol 로** — Agent API `xhigh@2026-11-18.0` 이 `anthropic/claude-opus-5-5`($4/$20) → `openai/gpt-6.2-sol`($2/$10), 대체 모델 없음. `xhigh@2026-11-11.0` 으로 고정하면 옛 설정을 씀
+
+④ **Decisions URL 가져오기 반값** — web grounding 의 URL 가져오기가 성공 1건 $0.001 → $0.0005
+
+⑤ **Pro 모델 Gemini 4 Neon 으로** — Pro Search 모델 표(2026-11-19)가 Gemini 4 Hydrogen → Gemini 4 Neon. Agent API 에도 `google/gemini-4-neon` $3/$15 가 들어옴
+
+⑥ **Agent API 에 DeepSeek** — 제공사 목록에 DeepSeek 이 생기고 `perplexity/deepseek-v4-pro-0813` 이 $1.32/$3.96
+
+⑦ **sandbox 과금 단위 명시** — "$0.03/세션" → 시작한 20분 블록마다 $0.03, 안에서 부른 SDK 웹 검색은 $0.001/회
+
+⑧ **teammates 미리보기** — 진행 중인 일을 맡아 끝까지 이어 가는 AI 에이전트. Max·Enterprise Max 만 쓰고 Max 월 크레딧을 씀(지난 확인에서 빠졌던 공식 사실)
+
+⑨ **Mac·AMD 로컬 모델** — 로컬 모델이 NVIDIA 말고 Apple silicon Mac(통합 메모리 32GB 이상)·AMD Ryzen AI Max(Windows)에서도 돎. Pro·Max·Enterprise(지난 확인에서 빠졌던 공식 사실)
+
+⑩ **Brain 대상 글끼리 갈림** — Brain·Max 글은 Max·Enterprise Max 라 적고, 요금제 비교 글은 Computer 를 쓰는 Pro 에도 준다고 적음
+
 ## 2026-11-24
 
 **매일 재확인 — ChatGPT · Grok**

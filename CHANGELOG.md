@@ -2,6 +2,52 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-27
+
+**매일 재확인 — NotebookLM · Blotato**
+
+**NotebookLM**
+
+① **플래시카드 그림·알림** — 없음 → 2026-11-24 부터 소스 그림 자동 삽입·스톱워치·모바일 복습 알림 예약, 모든 Workspace·개인 계정 (Workspace Updates)
+
+② **Workspace MCP 에도 없음** — 확인 안 함 → 2026-11-24 GA 된 Google Workspace MCP 서버(Claude 커스텀 커넥터로 붙음)의 지원 제품에 Gemini Notebook 없음, 공식 MCP 여전히 없음 (Workspace 개발자 가이드)
+
+③ **기업판 이름 갈림** — "Gemini Notebook Enterprise"·"for enterprise" → Google Cloud 라이선스 문서(2026-11-13 갱신)는 "Gemini Notebook for business" 로 부름, 제품 페이지·도움말은 "for enterprise" 그대로
+
+④ **앱 주소 notebook.google.com** — 적혀 있지 않음 → 도움말·Google One FAQ 가 `notebook.google.com`·`notebook.google` 로 안내, 옛 `notebooklm.google.com` 은 301 로 넘어감
+
+**Blotato**
+
+① **등급 이름 바뀜** — Starter → Solo, Creator → Team (요금 $29 · $97 은 그대로)
+
+② **Agency 요금 내려감** — $499 → $197
+
+③ **포함 계정 수 바뀜** — Starter·Creator·Agency 20 · 40 · 100 → Solo·Team·Agency 5 · 50 · 100. 넘으면 계정당 월 $5 · $3 · $2 로 늘림(전에는 넘을 수 없는 상한)
+
+④ **DM 자동화 계정 따로 셈** — 모든 등급 2개 포함, 넘으면 계정당 월 $9 (전에는 계정 수 제한 없음)
+
+⑤ **활성 연락처 늘고 넘으면 청구** — 월 1,000 · 6,000 · 15,000 → 3,000 · 10,000 · 25,000. 넘어도 안 멈추고 1명당 $0.02 · $0.01 · $0.0035 청구(전에는 넘을 수 없는 상한)
+
+⑥ **AI 크레딧 바뀜** — Creator 5,000 → Team 7,500, Agency 28,000 → 15,000 (Solo 1,250 그대로)
+
+⑦ **예약 범위 등급별로** — 모든 등급 9개월 → Solo 9 · Team 14 · Agency 16개월. 지난번 공식끼리 어긋남도 풀림
+
+⑧ **Agency 예약 대기 늘어남** — 3,000 → 10,000개
+
+⑨ **연 결제 없어짐** — "약 17% 할인, 10개월 값으로 12개월" → 월 결제만. 옛 연 결제 구독은 옮길 때 월 결제가 되고 남은 기간은 청구서에서 깎음
+
+⑩ **체험 한도 새로 생김** — 체험 크레딧 60 → 300, 등급과 상관없이 계정 5 · 게시 5 · 예약 5(7일 앞까지) · DM 1계정·연락처 250 · 브랜드 1
+
+⑪ **고객 초대 링크는 Team 부터** — 고객이 로그인 공유 없이 자기 계정을 붙이는 링크, Solo 에는 없음
+
+⑫ **기존 구독도 옮겨짐** — 모든 기존 구독이 새 요금으로 옮겨지는 중. 안 옮긴 Legacy 구독은 계정 20 · 40 · 100, 연락처 1,000 · 6,000 · 15,000 상한
+
+⑬ **Google Business Profile 추가** — 게시 대상 11곳 → 12곳(위치마다 업데이트·이벤트·쿠폰, 위치당 24시간 25개). AI Info·가격표 꼬리말은 아직 11곳이라 공식끼리 어긋남
+
+⑭ **TikTok 3계정 제한은 Solo 만** — 24시간에 서로 다른 TikTok 계정 3개 제한이 Team·Agency 에는 없다고 Social accounts 도움말이 적음(항목에 처음 넣는 공식 사실)
+
+⑮ **Claude Code 자동 설정 길** — 연결 설정 도움말이 Claude Code 에 "Setup blotato from blotato.com/claude" 를 보내 설정하는 길을 맨 앞에 둠
+
 ## 2026-11-26
 
 **매일 재확인 — Gemini · Higgsfield**

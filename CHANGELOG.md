@@ -2,6 +2,28 @@
 
 조사 내용 — 요금·등급·약관·기능 — 이 무엇에서 무엇으로 바뀌었는지 날짜별로 적어 도구들의 동향을 따라가는 곳임. 최신이 위임. 웹 페이지의 모양·쓰는 법이 바뀐 것은 적지 않음. 값마다의 근거는 각 도구 항목의 출처 줄에 있음.
 
+## 2026-11-28
+
+**매일 재확인 — Claude · Notion**
+
+**Claude**
+
+① **월간 돌아보기 정식** — 베타 → 2026-11-24 Free·Pro·Max·Ultra 정식(Settings 의 Reflect), 클라우드의 Claude Code 세션·Cowork 작업도 담음, Team·Enterprise 에는 없음
+
+② **아티팩트를 앱으로 설치** — 없음 → 2026-11-24 모든 등급 베타(Claude for Mac·Windows), 허락하면 프로그램 실행·파일 읽기·알림까지, 설치 전 검토 없음
+
+③ **커넥터로 파일 주고받기** — 없음 → 2026-11-24 Pro·Max·Ultra 부터 차례로 베타, Team·Enterprise 는 Owner 가 켬, Free 는 나중, 직접 붙인 커스텀 커넥터·MCP 는 안 됨
+
+**Notion**
+
+① **Free 혼자도 블록 한도** — "페이지 무제한(혼자 쓸 때)" → 도움말이 혼자 쓰는 Free 워크스페이스도 5,000 블록 한도를 적음("Every Free workspace has a block limit"), 둘 이상은 1,000 그대로
+
+② **워크스페이스 파일 저장 한도** — 적혀 있지 않음 → Free 512 MB · Plus 256 GB + 멤버당 5 GB · Business 512 GB + 멤버당 10 GB (가격표·도움말)
+
+③ **회의록 크레딧은 아직 안 깎음** — "2026-12-01 부터 AI Meeting Notes 도 Standard 크레딧" → 도움말이 "do not currently reduce credit balance" 로 적고 시작일이 없음
+
+④ **가격표 Custom Agents 문구 바뀜** — "Free to try, then $10 per 1,000 monthly Notion credits" → 문구 없어지고 Select 크레딧 설명에 "Custom Agents you own and Routines (coming soon)" 이 붙음
+
 ## 2026-11-27
 
 **매일 재확인 — NotebookLM · Blotato**
